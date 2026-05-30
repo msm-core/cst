@@ -253,8 +253,8 @@
     "level2": "know.news"
   },
   "report": {
-    "field": "know",
-    "gloss": "report, findings"
+    "field": "write",
+    "gloss": "report, document, write up"
   },
   "trivia": {
     "field": "know",
@@ -2710,5 +2710,130 @@
   "silver": {
     "field": "material",
     "gloss": "silver (material)"
+  },
+  "setup": {
+    "field": "fix",
+    "gloss": "setup, configure"
+  },
+  "use": {
+    "field": "work",
+    "gloss": "use, utilize"
+  },
+  "world": {
+    "field": "place",
+    "gloss": "world, globe"
+  },
+  "water": {
+    "field": "nature",
+    "gloss": "water, liquid"
+  },
+  "programming": {
+    "field": "tech",
+    "gloss": "programming, coding"
+  },
+  "coding": {
+    "field": "tech",
+    "gloss": "coding, programming"
+  },
+  "balance": {
+    "field": "trade",
+    "gloss": "balance, account balance"
+  },
+  "bill": {
+    "field": "trade",
+    "gloss": "bill, invoice, payment"
+  },
+  "payment": {
+    "field": "trade",
+    "gloss": "payment, pay"
+  },
+  "account": {
+    "field": "trade",
+    "gloss": "account, bank account"
+  },
+  "withdraw": {
+    "field": "trade",
+    "gloss": "withdraw, take out money"
+  },
+  "withdrawal": {
+    "field": "trade",
+    "gloss": "withdrawal, cash out"
+  },
+  "deposit": {
+    "field": "trade",
+    "gloss": "deposit, put in money"
+  },
+  "credit": {
+    "field": "trade",
+    "gloss": "credit, credit card"
+  },
+  "debit": {
+    "field": "trade",
+    "gloss": "debit, debit card"
+  },
+  "fee": {
+    "field": "trade",
+    "gloss": "fee, charge, cost"
+  },
+  "insurance": {
+    "field": "health",
+    "gloss": "insurance, coverage"
+  },
+  "workout": {
+    "field": "sport",
+    "gloss": "workout, training session"
+  },
+  "run": {
+    "field": "sport",
+    "gloss": "run, jog"
+  },
+  "climate": {
+    "field": "weather",
+    "gloss": "climate, long-term weather"
+  },
+  "joke": {
+    "field": "social",
+    "gloss": "joke, humor"
+  },
+  "fun": {
+    "field": "social",
+    "gloss": "fun, entertainment"
+  },
+  "party": {
+    "field": "social",
+    "gloss": "party, celebration"
+  },
+  "chat": {
+    "field": "social",
+    "gloss": "chat, conversation"
+  },
+  "calc": {
+    "field": "math",
+    "gloss": "calc, calculator"
+  },
+  "math": {
+    "field": "math",
+    "gloss": "math, arithmetic"
+  },
+  "solve": {
+    "field": "math",
+    "gloss": "solve, work out"
+  },
+  "remind": {
+    "field": "time",
+    "level2": "time.alarm",
+    "gloss": "remind, reminder"
+  },
+  "order": {
+    "field": "trade",
+    "gloss": "order, purchase order"
+  },
+  "refund": {
+    "field": "trade",
+    "gloss": "refund, money back"
+  },
+  "transaction": {
+    "field": "trade",
+    "gloss": "transaction, financial operation"
   }
 }

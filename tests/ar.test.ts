@@ -13,7 +13,7 @@ import type { CSTToken } from "../src/types.js";
 
 function fields(text: string): string[] {
   return tokenizeAr(text)
-    .tokens.filter((t) => t.type === "CONCEPT")
+    .tokens.filter((t) => t.type === "ROOT")
     .map((t) => t.field!);
 }
 
@@ -36,7 +36,7 @@ function litSurfaces(text: string): string[] {
 }
 
 function firstField(text: string): string | undefined {
-  return tokenizeAr(text).tokens.find((t) => t.type === "CONCEPT")?.field;
+  return tokenizeAr(text).tokens.find((t) => t.type === "ROOT")?.field;
 }
 
 // ── CONCEPT tokens ────────────────────────────────────────────────────────────
@@ -207,18 +207,30 @@ describe("Augmented verb stripping", () => {
 describe("Morphological role detection (Arabic)", () => {
   test("فاعل pattern → agent", () => {
     // كاتب (kātib) = writer — فاعل pattern, len 4, [1]==ا
+    // Now emits ROOT:write + ROLE:agent as separate tokens
     const toks = tokenizeAr("كاتب مشهور");
-    const t = toks.tokens.find((t) => t.surface === "كاتب");
-    expect(t?.field).toBe("write");
-    expect(t?.role).toBe("agent");
+    const rootTok = toks.tokens.find(
+      (t) => t.type === "ROOT" && t.surface === "كاتب",
+    );
+    const roleTok = toks.tokens.find(
+      (t) => t.type === "ROLE" && t.surface === "كاتب",
+    );
+    expect(rootTok?.field).toBe("write");
+    expect(roleTok?.role).toBe("agent");
   });
 
   test("مفعول pattern → patient", () => {
     // مكتوب (maktūb) = written — م C C و C, len 5, [0]==م, [3]==و
+    // Now emits ROOT:write + ROLE:patient as separate tokens
     const toks = tokenizeAr("رسالة مكتوب");
-    const t = toks.tokens.find((t) => t.surface === "مكتوب");
-    expect(t?.field).toBe("write");
-    expect(t?.role).toBe("patient");
+    const rootTok = toks.tokens.find(
+      (t) => t.type === "ROOT" && t.surface === "مكتوب",
+    );
+    const roleTok = toks.tokens.find(
+      (t) => t.type === "ROLE" && t.surface === "مكتوب",
+    );
+    expect(rootTok?.field).toBe("write");
+    expect(roleTok?.role).toBe("patient");
   });
 });
 

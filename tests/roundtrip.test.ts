@@ -100,7 +100,7 @@ describe("Roundtrip: English", () => {
   test("compact string contains token type prefix", () => {
     const { tokens } = tokenizeEn("write a report");
     for (const t of tokens) {
-      expect(t.compact).toMatch(/^(CONCEPT|REL|STR|LIT):/);
+      expect(t.compact).toMatch(/^(ROOT|ROLE|REL|STR|LIT):/);
     }
   });
 });

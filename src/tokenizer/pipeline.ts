@@ -114,13 +114,15 @@ function splitMixedRuns(text: string): Run[] {
 
 function computeCoverage(tokens: CSTOutput["tokens"]): CSTOutput["coverage"] {
   const total = tokens.length;
-  const concept = tokens.filter((t) => t.type === "CONCEPT").length;
+  const root = tokens.filter((t) => t.type === "ROOT").length;
+  const role = tokens.filter((t) => t.type === "ROLE").length;
   const rel = tokens.filter((t) => t.type === "REL").length;
   const str = tokens.filter((t) => t.type === "STR").length;
   const lit = tokens.filter((t) => t.type === "LIT").length;
   return {
     total,
-    concept,
+    root,
+    role,
     rel,
     str,
     lit,

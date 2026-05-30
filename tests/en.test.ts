@@ -13,7 +13,7 @@ import type { CSTToken } from "../src/types.js";
 
 function fields(text: string): string[] {
   return tokenizeEn(text)
-    .tokens.filter((t) => t.type === "CONCEPT")
+    .tokens.filter((t) => t.type === "ROOT")
     .map((t) => t.field!);
 }
 
@@ -36,7 +36,7 @@ function litSurfaces(text: string): string[] {
 }
 
 function firstField(text: string): string | undefined {
-  return tokenizeEn(text).tokens.find((t) => t.type === "CONCEPT")?.field;
+  return tokenizeEn(text).tokens.find((t) => t.type === "ROOT")?.field;
 }
 
 // ── CONCEPT tokens — core field mapping ──────────────────────────────────────
@@ -167,32 +167,52 @@ describe("REL: relation categories", () => {
 
 describe("Morphology: role detection", () => {
   test("agent suffix -er", () => {
+    // writer → ROOT:write + ROLE:agent (separate tokens, same surface)
     const tokens = tokenizeEn("the writer published");
-    const w = tokens.tokens.find((t) => t.surface === "writer");
-    expect(w?.role).toBe("agent");
-    expect(w?.field).toBe("write");
+    const root = tokens.tokens.find(
+      (t) => t.type === "ROOT" && t.surface === "writer",
+    );
+    const role = tokens.tokens.find(
+      (t) => t.type === "ROLE" && t.surface === "writer",
+    );
+    expect(root?.field).toBe("write");
+    expect(role?.role).toBe("agent");
   });
 
   test("instance suffix -tion", () => {
-    // publication is a direct stem entry (no morphological stripping needed)
+    // publication is a direct stem entry → ROOT:write, no role suffix detected on stem match
     const tokens = tokenizeEn("the publication was late");
-    const p = tokens.tokens.find((t) => t.surface === "publication");
+    const p = tokens.tokens.find(
+      (t) => t.type === "ROOT" && t.surface === "publication",
+    );
     expect(p?.field).toBe("write");
-    expect(p?.type).toBe("CONCEPT");
+    expect(p?.type).toBe("ROOT");
   });
 
   test("negate prefix un-", () => {
+    // disconnect → ROOT:connect + ROLE:negate
     const tokens = tokenizeEn("disconnect the device");
-    const d = tokens.tokens.find((t) => t.surface === "disconnect");
-    expect(d?.role).toBe("negate");
-    expect(d?.field).toBe("connect");
+    const root = tokens.tokens.find(
+      (t) => t.type === "ROOT" && t.surface === "disconnect",
+    );
+    const role = tokens.tokens.find(
+      (t) => t.type === "ROLE" && t.surface === "disconnect",
+    );
+    expect(root?.field).toBe("connect");
+    expect(role?.role).toBe("negate");
   });
 
   test("repeat prefix re-", () => {
+    // rewrite → ROOT:write + ROLE:repeat
     const tokens = tokenizeEn("rewrite the code");
-    const r = tokens.tokens.find((t) => t.surface === "rewrite");
-    expect(r?.role).toBe("repeat");
-    expect(r?.field).toBe("write");
+    const root = tokens.tokens.find(
+      (t) => t.type === "ROOT" && t.surface === "rewrite",
+    );
+    const role = tokens.tokens.find(
+      (t) => t.type === "ROLE" && t.surface === "rewrite",
+    );
+    expect(root?.field).toBe("write");
+    expect(role?.role).toBe("repeat");
   });
 });
 
@@ -250,6 +270,7 @@ describe("Compound bigrams", () => {
     const compound = tokens.find((t) => t.surface === "play music");
     expect(compound?.field).toBe("art.music");
     expect(compound?.surface).toBe("play music"); // surface is the bigram
+    expect(compound?.type).toBe("ROOT");
   });
 });
 
@@ -262,8 +283,8 @@ describe("Detokenizer APIs", () => {
   test("digest returns compact string", () => {
     const d = digest(tokens);
     expect(d).toContain("STR:modal");
-    expect(d).toContain("CONCEPT:time.alarm");
-    expect(d).toContain("CONCEPT:time");
+    expect(d).toContain("ROOT:time.alarm");
+    expect(d).toContain("ROOT:time");
   });
 
   test("toLLMContext returns readable string", () => {
@@ -275,7 +296,7 @@ describe("Detokenizer APIs", () => {
   test("gloss returns annotated string", () => {
     const g = gloss(tokens);
     expect(g).toContain("|STR:modal");
-    expect(g).toContain("|CONCEPT:time");
+    expect(g).toContain("|ROOT:time");
   });
 });
 

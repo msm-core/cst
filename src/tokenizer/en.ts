@@ -170,8 +170,10 @@ function makeToken(
 
   // Build compact string
   let compact: string;
-  if (type === "CONCEPT") {
-    compact = role ? `CONCEPT:${field}:${role}` : `CONCEPT:${field}`;
+  if (type === "ROOT") {
+    compact = `ROOT:${field}`;
+  } else if (type === "ROLE") {
+    compact = `ROLE:${role}`;
   } else if (type === "REL") {
     compact = `REL:${relation}`;
   } else if (type === "STR") {
@@ -233,7 +235,7 @@ export function tokenizeEn(text: string): CSTOutput {
         const spanOffset: [number, number] = [offset[0], next.offset[1]];
         const surface = word + " " + next.word;
         tokens.push(
-          makeToken("CONCEPT", surface, spanOffset, {
+          makeToken("ROOT", surface, spanOffset, {
             field: compound.field,
             gloss: compound.gloss,
             confidence: 0.95,
@@ -264,14 +266,23 @@ export function tokenizeEn(text: string): CSTOutput {
     if (stemEntry) {
       // Also check morphological role (e.g. -er → agent for "teacher")
       const stripped = stripMorphology(lower);
+      const field = stemEntry.level2 ?? stemEntry.field;
+      // Emit ROOT first, then separate ROLE if morphological pattern detected
       tokens.push(
-        makeToken("CONCEPT", word, offset, {
-          field: stemEntry.level2 ?? stemEntry.field,
-          role: stripped?.role,
+        makeToken("ROOT", word, offset, {
+          field,
           gloss: stemEntry.gloss,
           confidence: 0.9,
         }),
       );
+      if (stripped?.role) {
+        tokens.push(
+          makeToken("ROLE", word, offset, {
+            role: stripped.role,
+            confidence: 0.9,
+          }),
+        );
+      }
       i++;
       continue;
     }
@@ -281,11 +292,18 @@ export function tokenizeEn(text: string): CSTOutput {
     if (stripped) {
       const reEntry = lookupEnStem(stripped.stem);
       if (reEntry) {
+        const field = reEntry.level2 ?? reEntry.field;
+        // Emit ROOT + ROLE as separate tokens
         tokens.push(
-          makeToken("CONCEPT", word, offset, {
-            field: reEntry.level2 ?? reEntry.field,
-            role: stripped.role,
+          makeToken("ROOT", word, offset, {
+            field,
             gloss: reEntry.gloss,
+            confidence: 0.8,
+          }),
+        );
+        tokens.push(
+          makeToken("ROLE", word, offset, {
+            role: stripped.role,
             confidence: 0.8,
           }),
         );
@@ -306,13 +324,15 @@ export function tokenizeEn(text: string): CSTOutput {
 
 function computeCoverage(tokens: CSTToken[]) {
   const total = tokens.length;
-  const concept = tokens.filter((t) => t.type === "CONCEPT").length;
+  const root = tokens.filter((t) => t.type === "ROOT").length;
+  const role = tokens.filter((t) => t.type === "ROLE").length;
   const rel = tokens.filter((t) => t.type === "REL").length;
   const str = tokens.filter((t) => t.type === "STR").length;
   const lit = tokens.filter((t) => t.type === "LIT").length;
   return {
     total,
-    concept,
+    root,
+    role,
     rel,
     str,
     lit,

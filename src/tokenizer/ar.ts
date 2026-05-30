@@ -237,8 +237,8 @@ function makeArToken(
 ): CSTToken {
   const { field, role, relation, structure, gloss, confidence = 1.0 } = opts;
   let compact: string;
-  if (type === "CONCEPT")
-    compact = role ? `CONCEPT:${field}:${role}` : `CONCEPT:${field}`;
+  if (type === "ROOT") compact = `ROOT:${field}`;
+  else if (type === "ROLE") compact = `ROLE:${role}`;
   else if (type === "REL") compact = `REL:${relation}`;
   else if (type === "STR") compact = `STR:${structure}`;
   else compact = `LIT:${surface}`;
@@ -316,7 +316,7 @@ export function tokenizeAr(text: string): CSTOutput {
         const spanOffset: [number, number] = [offset[0], next.offset[1]];
         const surface = word + " " + next.word;
         tokens.push(
-          makeArToken("CONCEPT", surface, spanOffset, {
+          makeArToken("ROOT", surface, spanOffset, {
             field: compoundsNorm[bigram],
             confidence: 0.95,
           }),
@@ -391,7 +391,7 @@ export function tokenizeAr(text: string): CSTOutput {
           }),
         );
         tokens.push(
-          makeArToken("CONCEPT", word, offset, {
+          makeArToken("ROOT", word, offset, {
             field: futureField,
             confidence: 0.8,
           }),
@@ -428,9 +428,17 @@ export function tokenizeAr(text: string): CSTOutput {
 
     if (field) {
       const role = detectRoleAr(matchStem);
+      // Emit ROOT first, then a separate ROLE token if morphological pattern detected
+      // This is the Arabic algebra: roots × patterns = coverage without enumerating all combos
       tokens.push(
-        makeArToken("CONCEPT", word, offset, { field, role, confidence }),
+        makeArToken("ROOT", word, offset, {
+          field,
+          gloss: undefined,
+          confidence,
+        }),
       );
+      if (role)
+        tokens.push(makeArToken("ROLE", word, offset, { role, confidence }));
       i++;
       continue;
     }
@@ -461,13 +469,15 @@ function nemoTypeToStructure(nemoType: string): string | null {
 
 function computeCoverageAr(tokens: CSTToken[]) {
   const total = tokens.length;
-  const concept = tokens.filter((t) => t.type === "CONCEPT").length;
+  const root = tokens.filter((t) => t.type === "ROOT").length;
+  const role = tokens.filter((t) => t.type === "ROLE").length;
   const rel = tokens.filter((t) => t.type === "REL").length;
   const str = tokens.filter((t) => t.type === "STR").length;
   const lit = tokens.filter((t) => t.type === "LIT").length;
   return {
     total,
-    concept,
+    root,
+    role,
     rel,
     str,
     lit,

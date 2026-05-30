@@ -13,16 +13,25 @@
 // ── Token Types ───────────────────────────────────────────────────────────────
 
 /**
- * CONCEPT  — content word mapped to a semantic field
- *            compact: "CONCEPT:tech.code" or "CONCEPT:tech.code:agent"
- * REL      — relational/function word (preposition, conjunction)
- *            compact: "REL:in" / "REL:causes"
- * STR      — sentence-level structure marker
- *            compact: "STR:question" / "STR:negation" / "STR:modal"
- * LIT      — literal fallback (named entity, unknown word)
- *            compact: "LIT:iPhone" (surface preserved)
+ * ROOT  — content word mapped to a semantic field (the Arabic algebra root)
+ *         compact: "ROOT:write" | "ROOT:tech.code"
+ *         Every content word emits exactly one ROOT token.
+ *
+ * ROLE  — morphological/derivational pattern of the preceding ROOT
+ *         compact: "ROLE:agent" | "ROLE:patient" | "ROLE:place"
+ *         Only emitted when the morphological form is detectable.
+ *         Separate from ROOT so models compose them freely:
+ *         ROOT:write × ROLE:agent = كاتب / writer / scribes — without
+ *         needing to enumerate all (field × role) combinations as atoms.
+ *
+ * REL   — relational/function word (preposition, conjunction)
+ *         compact: "REL:in" / "REL:causes"
+ * STR   — sentence-level structure marker
+ *         compact: "STR:question" / "STR:negation" / "STR:modal"
+ * LIT   — literal fallback (named entity, unknown word)
+ *         compact: "LIT:iPhone" (surface preserved)
  */
-export type TokenType = "CONCEPT" | "REL" | "STR" | "LIT";
+export type TokenType = "ROOT" | "ROLE" | "REL" | "STR" | "LIT";
 
 // ── Main token interface ──────────────────────────────────────────────────────
 
@@ -31,17 +40,21 @@ export interface CSTToken {
   type: TokenType;
 
   // Semantic analysis (consumed by HDC / ML)
-  field?: string; // "tech.code" | "tech" — level-2 or level-1
-  role?: string; // morphological role: "agent" | "patient" | "instance" ...
-  relation?: string; // REL category: "in" | "causes" | "before" ...
-  structure?: string; // STR marker: "question" | "negation" | "modal" | "past" ...
+  field?: string; // "tech.code" | "write" — set on ROOT tokens
+  role?: string; // "agent" | "patient" | "place" ... — set on ROLE tokens
+  relation?: string; // REL category: "in" | "causes" | "before" ... — set on REL tokens
+  structure?: string; // STR marker: "question" | "negation" | "modal" ... — set on STR tokens
 
   // Surface preservation (NEVER dropped)
   surface: string; // exact original word from input
   gloss?: string; // human-readable meaning: "write, record" — from vocab file
 
   // Serializable compact form for model consumption
-  // Format: "TYPE:field" | "TYPE:field:role" | "STR:marker" | "LIT:surface"
+  // ROOT:  "ROOT:write"  |  "ROOT:tech.code"
+  // ROLE:  "ROLE:agent"  |  "ROLE:patient"
+  // REL:   "REL:in"      |  "REL:causes"
+  // STR:   "STR:modal"   |  "STR:negation"
+  // LIT:   "LIT:iPhone"  (surface preserved verbatim)
   compact: string;
 
   // Language and position
@@ -50,10 +63,6 @@ export interface CSTToken {
 
   // Confidence 0.0–1.0
   confidence: number;
-
-  // Arabic-specific (undefined for English)
-  root?: string; // trilateral root: "كتب"
-  pattern?: string; // وزن form label: "agent" | "patient" | "instance" ...
 }
 
 // ── Tokenizer output ─────────────────────────────────────────────────────────
@@ -65,7 +74,8 @@ export interface CSTOutput {
 
 export interface CoverageSummary {
   total: number;
-  concept: number; // CONCEPT tokens
+  root: number; // ROOT tokens (content words successfully mapped)
+  role: number; // ROLE tokens (morphological pattern detected)
   rel: number; // REL tokens
   str: number; // STR tokens
   lit: number; // LIT (unrecognized) tokens
