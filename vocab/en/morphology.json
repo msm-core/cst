@@ -1,0 +1,43 @@
+{
+  "_comment": "English suffix → morphological role. Used by en.ts to assign role to CONCEPT tokens. Ordered longest-first (checked in order).",
+
+  "suffixes": [
+    { "suffix": "tion",   "role": "instance",     "gloss": "act or result of" },
+    { "suffix": "sion",   "role": "instance",     "gloss": "act or result of" },
+    { "suffix": "ment",   "role": "instance",     "gloss": "act or result of" },
+    { "suffix": "ness",   "role": "state",        "gloss": "quality or state of" },
+    { "suffix": "ance",   "role": "state",        "gloss": "quality or state of" },
+    { "suffix": "ence",   "role": "state",        "gloss": "quality or state of" },
+    { "suffix": "ity",    "role": "state",        "gloss": "quality of" },
+    { "suffix": "able",   "role": "possible",     "gloss": "capable of being" },
+    { "suffix": "ible",   "role": "possible",     "gloss": "capable of being" },
+    { "suffix": "ery",    "role": "place",        "gloss": "place of" },
+    { "suffix": "ory",    "role": "place",        "gloss": "place of" },
+    { "suffix": "ary",    "role": "place",        "gloss": "place of" },
+    { "suffix": "ful",    "role": "has",          "gloss": "full of, having" },
+    { "suffix": "less",   "role": "negate",       "gloss": "without, lacking" },
+    { "suffix": "ion",    "role": "instance",     "gloss": "act or result of" },
+    { "suffix": "er",     "role": "agent",        "gloss": "one who does" },
+    { "suffix": "or",     "role": "agent",        "gloss": "one who does" },
+    { "suffix": "ee",     "role": "patient",      "gloss": "one who receives" },
+    { "suffix": "ist",    "role": "agent",        "gloss": "one who practices" },
+    { "suffix": "ian",    "role": "agent",        "gloss": "one skilled in" },
+    { "suffix": "ly",     "role": "manner",       "gloss": "in the manner of" },
+    { "suffix": "al",     "role": "quality",      "gloss": "of or relating to" },
+    { "suffix": "ed",     "role": "past",         "gloss": "completed action" },
+    { "suffix": "ing",    "role": "instance",     "gloss": "ongoing action or thing" },
+    { "suffix": "s",      "role": "plural",       "gloss": "more than one" }
+  ],
+
+  "prefixes": [
+    { "prefix": "un",     "role": "negate",   "gloss": "not, reverse of" },
+    { "prefix": "dis",    "role": "negate",   "gloss": "not, opposite of" },
+    { "prefix": "non",    "role": "negate",   "gloss": "not, without" },
+    { "prefix": "re",     "role": "repeat",   "gloss": "again, once more" },
+    { "prefix": "pre",    "role": "before",   "gloss": "before, prior to" },
+    { "prefix": "mis",    "role": "wrong",    "gloss": "wrongly, incorrectly" },
+    { "prefix": "over",   "role": "excess",   "gloss": "too much, excessively" },
+    { "prefix": "co",     "role": "mutual",   "gloss": "together, jointly" },
+    { "prefix": "out",    "role": "exceed",   "gloss": "surpass, do better than" }
+  ]
+}
