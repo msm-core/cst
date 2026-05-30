@@ -25,10 +25,10 @@ function loadJson<T>(relPath: string): T {
 
 // ── Cache ─────────────────────────────────────────────────────────────────────
 
-type StemsFile    = Record<string, StemEntry>;
+type StemsFile = Record<string, StemEntry>;
 type CompoundsFile = Record<string, CompoundEntry>;
-type FunctionFile  = Record<string, DirectEntry>;
-type MorphFile     = { suffixes: MorphRule[]; prefixes: MorphRule[] };
+type FunctionFile = Record<string, DirectEntry>;
+type MorphFile = { suffixes: MorphRule[]; prefixes: MorphRule[] };
 
 export interface MorphRule {
   suffix?: string;
@@ -50,12 +50,14 @@ export function getEnStems(): StemsFile {
 }
 
 export function getEnCompounds(): CompoundsFile {
-  if (!_enCompounds) _enCompounds = loadJson<CompoundsFile>("en/compounds.json");
+  if (!_enCompounds)
+    _enCompounds = loadJson<CompoundsFile>("en/compounds.json");
   return _enCompounds;
 }
 
 export function getEnFunctions(): FunctionFile {
-  if (!_enFunctions) _enFunctions = loadJson<FunctionFile>("en/function-words.json");
+  if (!_enFunctions)
+    _enFunctions = loadJson<FunctionFile>("en/function-words.json");
   return _enFunctions;
 }
 
@@ -75,10 +77,12 @@ export function lookupEnStem(word: string): StemEntry | null {
   const stems = getEnStems();
   const lower = word.toLowerCase();
 
-  return stems[lower]
-    ?? stems[lower + "e"]   // write → writ? → write
-    ?? stems[lower + "y"]   // study → studi? → study
-    ?? null;
+  return (
+    stems[lower] ??
+    stems[lower + "e"] ?? // write → writ? → write
+    stems[lower + "y"] ?? // study → studi? → study
+    null
+  );
 }
 
 /**
@@ -97,4 +101,54 @@ export function lookupEnCompound(bigram: string): CompoundEntry | null {
 export function lookupEnFunction(word: string): DirectEntry | null {
   const funcs = getEnFunctions();
   return funcs[word.toLowerCase()] ?? null;
+}
+
+// ── Arabic vocab cache ────────────────────────────────────────────────────────
+
+type ArRootsFile = Record<string, string>; // Arabic stem → field name
+type ArDirectFile = Record<string, string>; // Arabic word → field name
+type ArCompoundsFile = Record<string, string>; // Arabic phrase → field name
+type ArStructFile = Record<string, string>; // Arabic word → TokenType string
+type ArRelFile = Record<string, string>; // Arabic word → "REL:xxx"
+type ArFuncFile = string[]; // Arabic function word list
+
+let _arRoots: ArRootsFile | null = null;
+let _arDirect: ArDirectFile | null = null;
+let _arCompounds: ArCompoundsFile | null = null;
+let _arStruct: ArStructFile | null = null;
+let _arRel: ArRelFile | null = null;
+let _arFunc: Set<string> | null = null;
+
+export function getArRoots(): ArRootsFile {
+  if (!_arRoots) _arRoots = loadJson<ArRootsFile>("ar/roots.json");
+  return _arRoots;
+}
+
+export function getArDirect(): ArDirectFile {
+  if (!_arDirect) _arDirect = loadJson<ArDirectFile>("ar/direct.json");
+  return _arDirect;
+}
+
+export function getArCompounds(): ArCompoundsFile {
+  if (!_arCompounds)
+    _arCompounds = loadJson<ArCompoundsFile>("ar/compounds.json");
+  return _arCompounds;
+}
+
+export function getArStructural(): ArStructFile {
+  if (!_arStruct) _arStruct = loadJson<ArStructFile>("ar/structural.json");
+  return _arStruct;
+}
+
+export function getArRelations(): ArRelFile {
+  if (!_arRel) _arRel = loadJson<ArRelFile>("ar/relations.json");
+  return _arRel;
+}
+
+export function getArFunctionWords(): Set<string> {
+  if (!_arFunc) {
+    const arr = loadJson<string[]>("ar/function-words.json");
+    _arFunc = new Set(arr);
+  }
+  return _arFunc;
 }

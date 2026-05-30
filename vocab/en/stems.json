@@ -1,696 +1,2714 @@
 {
   "_comment": "English stem → semantic field mapping. Format: stem → { field, gloss }. Add level2 where the stem clearly belongs to a sub-field.",
-
-  "write":       { "field": "write",      "gloss": "write, record, inscribe" },
-  "record":      { "field": "write",      "gloss": "record, document, log" },
-  "document":    { "field": "write",      "gloss": "document, write down" },
-  "note":        { "field": "write",      "gloss": "note, jot down" },
-  "draft":       { "field": "write",      "gloss": "draft, compose" },
-  "compose":     { "field": "write",      "gloss": "compose, write" },
-  "author":      { "field": "write",      "gloss": "author, writer (person or act)" },
-  "publish":     { "field": "write",      "gloss": "publish, release" },
-  "print":       { "field": "write",      "gloss": "print, publish on paper" },
-  "transcribe":  { "field": "write",      "gloss": "transcribe, copy" },
-  "log":         { "field": "write",      "gloss": "log, track, record" },
-  "scribe":      { "field": "write",      "gloss": "scribe, copyist" },
-  "inscribe":    { "field": "write",      "gloss": "inscribe, engrave" },
-  "pen":         { "field": "write",      "gloss": "write with a pen" },
-
-  "send":        { "field": "send",       "gloss": "send, transmit" },
-  "transmit":    { "field": "send",       "gloss": "transmit, broadcast" },
-  "dispatch":    { "field": "send",       "gloss": "dispatch, send off" },
-  "forward":     { "field": "send",       "gloss": "forward, relay" },
-  "deliver":     { "field": "send",       "gloss": "deliver, drop off" },
-  "mail":        { "field": "send",       "gloss": "mail, post" },
-  "email":       { "field": "send",       "gloss": "email, electronic mail",    "level2": "tech.network" },
-  "broadcast":   { "field": "send",       "gloss": "broadcast, air, stream" },
-  "relay":       { "field": "send",       "gloss": "relay, pass on" },
-  "post":        { "field": "send",       "gloss": "post, upload" },
-  "ship":        { "field": "send",       "gloss": "ship, transport goods" },
-  "transfer":    { "field": "send",       "gloss": "transfer, move data/money" },
-  "notify":      { "field": "send",       "gloss": "notify, alert" },
-  "notification":{ "field": "send",       "gloss": "notification, alert" },
-  "alert":       { "field": "send",       "gloss": "alert, warning" },
-  "message":     { "field": "send",       "gloss": "message, text" },
-  "ping":        { "field": "send",       "gloss": "ping, signal" },
-  "text":        { "field": "send",       "gloss": "text message, SMS" },
-  "sms":         { "field": "send",       "gloss": "SMS, text message" },
-  "reply":       { "field": "send",       "gloss": "reply, respond" },
-  "inbox":       { "field": "send",       "gloss": "inbox, received messages" },
-
-  "know":        { "field": "know",       "gloss": "know, be aware of" },
-  "learn":       { "field": "know",       "gloss": "learn, acquire knowledge" },
-  "understand":  { "field": "know",       "gloss": "understand, comprehend" },
-  "study":       { "field": "know",       "gloss": "study, examine" },
-  "teach":       { "field": "know",       "gloss": "teach, instruct" },
-  "educate":     { "field": "know",       "gloss": "educate, train" },
-  "read":        { "field": "know",       "gloss": "read", "level2": "know.read" },
-  "discover":    { "field": "know",       "gloss": "discover, find out" },
-  "comprehend":  { "field": "know",       "gloss": "comprehend, grasp" },
-  "realize":     { "field": "know",       "gloss": "realize, become aware" },
-  "recognize":   { "field": "know",       "gloss": "recognize, identify" },
-  "perceive":    { "field": "know",       "gloss": "perceive, sense" },
-  "scholar":     { "field": "know",       "gloss": "scholar, learned person" },
-  "student":     { "field": "know",       "gloss": "student, learner" },
-  "capital":     { "field": "know",       "gloss": "capital city (general knowledge)" },
-  "history":     { "field": "know",       "gloss": "history" },
-  "fact":        { "field": "know",       "gloss": "fact, information" },
-  "definition":  { "field": "know",       "gloss": "definition, meaning" },
-  "encyclopedia":{ "field": "know",       "gloss": "encyclopedia" },
-  "search":      { "field": "know",       "gloss": "search, look up", "level2": "know.search" },
-  "lookup":      { "field": "know",       "gloss": "look up, find information", "level2": "know.search" },
-  "google":      { "field": "know",       "gloss": "Google search", "level2": "know.search" },
-  "news":        { "field": "know",       "gloss": "news, latest updates", "level2": "know.news" },
-  "headline":    { "field": "know",       "gloss": "headline, news story", "level2": "know.news" },
-  "article":     { "field": "know",       "gloss": "article, news piece", "level2": "know.news" },
-  "report":      { "field": "know",       "gloss": "report, findings" },
-  "trivia":      { "field": "know",       "gloss": "trivia, fun facts", "level2": "know.question" },
-  "quiz":        { "field": "know",       "gloss": "quiz, test of knowledge", "level2": "know.question" },
-
-  "gather":      { "field": "gather",     "gloss": "gather, collect, assemble" },
-  "meet":        { "field": "gather",     "gloss": "meet, encounter" },
-  "assemble":    { "field": "gather",     "gloss": "assemble, bring together" },
-  "collect":     { "field": "gather",     "gloss": "collect, accumulate" },
-  "join":        { "field": "gather",     "gloss": "join, unite with" },
-  "unite":       { "field": "gather",     "gloss": "unite, combine" },
-  "group":       { "field": "gather",     "gloss": "group, cluster" },
-  "combine":     { "field": "gather",     "gloss": "combine, merge" },
-  "merge":       { "field": "gather",     "gloss": "merge, fuse" },
-
-  "create":      { "field": "create",     "gloss": "create, make from scratch" },
-  "make":        { "field": "create",     "gloss": "make, build, produce" },
-  "build":       { "field": "create",     "gloss": "build, construct" },
-  "produce":     { "field": "create",     "gloss": "produce, generate" },
-  "generate":    { "field": "create",     "gloss": "generate, produce" },
-  "develop":     { "field": "create",     "gloss": "develop, build out" },
-  "design":      { "field": "create",     "gloss": "design, plan visually" },
-  "invent":      { "field": "create",     "gloss": "invent, originate" },
-  "manufacture": { "field": "create",     "gloss": "manufacture, mass-produce" },
-  "craft":       { "field": "create",     "gloss": "craft, make by hand" },
-  "establish":   { "field": "create",     "gloss": "establish, found, set up" },
-  "construct":   { "field": "create",     "gloss": "construct, build" },
-  "fabricate":   { "field": "create",     "gloss": "fabricate, manufacture" },
-
-  "work":        { "field": "work",       "gloss": "work, labor, operate" },
-  "labor":       { "field": "work",       "gloss": "labor, toil" },
-  "operate":     { "field": "work",       "gloss": "operate, run, use" },
-  "perform":     { "field": "work",       "gloss": "perform, carry out" },
-  "execute":     { "field": "work",       "gloss": "execute, run a task" },
-  "function":    { "field": "work",       "gloss": "function, work as intended" },
-
-  "move":        { "field": "move",       "gloss": "move, go, travel" },
-  "go":          { "field": "move",       "gloss": "go, head to" },
-  "travel":      { "field": "move",       "gloss": "travel, journey" },
-  "walk":        { "field": "move",       "gloss": "walk, go on foot" },
-  "transport":   { "field": "move",       "gloss": "transport, carry" },
-  "carry":       { "field": "move",       "gloss": "carry, bring along" },
-  "bring":       { "field": "move",       "gloss": "bring, fetch" },
-  "arrive":      { "field": "move",       "gloss": "arrive, reach" },
-  "depart":      { "field": "move",       "gloss": "depart, leave" },
-  "come":        { "field": "move",       "gloss": "come, approach" },
-  "leave":       { "field": "move",       "gloss": "leave, exit" },
-  "drive":       { "field": "move",       "gloss": "drive, operate a vehicle", "level2": "move.drive" },
-  "ride":        { "field": "move",       "gloss": "ride, take transport", "level2": "move.ride" },
-  "fly":         { "field": "move",       "gloss": "fly, travel by air", "level2": "move.fly" },
-  "navigate":    { "field": "move",       "gloss": "navigate, find route", "level2": "place.route" },
-  "directions":  { "field": "place",      "gloss": "directions, route", "level2": "place.route" },
-  "route":       { "field": "place",      "gloss": "route, path", "level2": "place.route" },
-
-  "govern":      { "field": "govern",     "gloss": "govern, rule, lead" },
-  "rule":        { "field": "govern",     "gloss": "rule, govern" },
-  "control":     { "field": "govern",     "gloss": "control, manage" },
-  "lead":        { "field": "govern",     "gloss": "lead, head up" },
-  "manage":      { "field": "govern",     "gloss": "manage, oversee" },
-  "direct":      { "field": "govern",     "gloss": "direct, guide" },
-  "command":     { "field": "govern",     "gloss": "command, order" },
-  "administer":  { "field": "govern",     "gloss": "administer, run officially" },
-  "regulate":    { "field": "govern",     "gloss": "regulate, control by rules" },
-  "policy":      { "field": "govern",     "gloss": "policy, official rule" },
-  "law":         { "field": "govern",     "gloss": "law, legislation" },
-  "legal":       { "field": "govern",     "gloss": "legal, lawful" },
-  "court":       { "field": "govern",     "gloss": "court, tribunal" },
-  "judge":       { "field": "think",      "gloss": "judge, evaluate" },
-  "president":   { "field": "govern",     "gloss": "president, head of state" },
-  "minister":    { "field": "govern",     "gloss": "minister, government official" },
-  "parliament":  { "field": "govern",     "gloss": "parliament, legislature" },
-  "election":    { "field": "govern",     "gloss": "election, vote" },
-  "vote":        { "field": "govern",     "gloss": "vote, cast a ballot" },
-
-  "speak":       { "field": "speak",      "gloss": "speak, talk" },
-  "say":         { "field": "speak",      "gloss": "say, utter" },
-  "tell":        { "field": "speak",      "gloss": "tell, inform" },
-  "talk":        { "field": "speak",      "gloss": "talk, converse" },
-  "explain":     { "field": "speak",      "gloss": "explain, clarify" },
-  "discuss":     { "field": "speak",      "gloss": "discuss, debate" },
-  "communicate": { "field": "speak",      "gloss": "communicate, convey" },
-  "announce":    { "field": "speak",      "gloss": "announce, declare publicly" },
-  "express":     { "field": "speak",      "gloss": "express, convey feeling" },
-
-  "think":       { "field": "think",      "gloss": "think, reason" },
-  "reason":      { "field": "think",      "gloss": "reason, logic" },
-  "analyze":     { "field": "think",      "gloss": "analyze, examine closely" },
-  "believe":     { "field": "think",      "gloss": "believe, hold as true" },
-  "consider":    { "field": "think",      "gloss": "consider, think about" },
-  "evaluate":    { "field": "think",      "gloss": "evaluate, assess" },
-  "assess":      { "field": "think",      "gloss": "assess, appraise" },
-  "decide":      { "field": "decide",     "gloss": "decide, determine" },
-  "choose":      { "field": "decide",     "gloss": "choose, select" },
-  "determine":   { "field": "decide",     "gloss": "determine, conclude" },
-  "resolve":     { "field": "decide",     "gloss": "resolve, settle" },
-  "select":      { "field": "decide",     "gloss": "select, pick" },
-  "confirm":     { "field": "decide",     "gloss": "confirm, approve" },
-
-  "see":         { "field": "see",        "gloss": "see, look at" },
-  "look":        { "field": "see",        "gloss": "look, observe" },
-  "watch":       { "field": "see",        "gloss": "watch, view" },
-  "observe":     { "field": "see",        "gloss": "observe, monitor" },
-  "notice":      { "field": "see",        "gloss": "notice, spot" },
-  "view":        { "field": "see",        "gloss": "view, see" },
-  "detect":      { "field": "see",        "gloss": "detect, find, spot" },
-  "find":        { "field": "see",        "gloss": "find, locate" },
-  "show":        { "field": "see",        "gloss": "show, display" },
-  "display":     { "field": "see",        "gloss": "display, show" },
-
-  "feel":        { "field": "feel",       "gloss": "feel, experience emotion" },
-  "love":        { "field": "feel",       "gloss": "love, adore" },
-  "hate":        { "field": "feel",       "gloss": "hate, dislike strongly" },
-  "fear":        { "field": "feel",       "gloss": "fear, be afraid" },
-  "hope":        { "field": "feel",       "gloss": "hope, wish for" },
-  "wish":        { "field": "feel",       "gloss": "wish, desire" },
-  "worry":       { "field": "feel",       "gloss": "worry, be anxious" },
-  "enjoy":       { "field": "feel",       "gloss": "enjoy, take pleasure in" },
-  "anger":       { "field": "feel",       "gloss": "anger, rage" },
-  "sad":         { "field": "feel",       "gloss": "sad, unhappy" },
-  "happy":       { "field": "feel",       "gloss": "happy, joyful" },
-  "emotion":     { "field": "feel",       "gloss": "emotion, feeling" },
-
-  "want":        { "field": "want",       "gloss": "want, desire, need" },
-  "desire":      { "field": "want",       "gloss": "desire, wish for" },
-  "need":        { "field": "want",       "gloss": "need, require" },
-  "require":     { "field": "want",       "gloss": "require, demand" },
-  "demand":      { "field": "want",       "gloss": "demand, insist on" },
-  "seek":        { "field": "want",       "gloss": "seek, look for" },
-  "request":     { "field": "want",       "gloss": "request, ask for" },
-
-  "exist":       { "field": "exist",      "gloss": "exist, be present" },
-  "live":        { "field": "exist",      "gloss": "live, be alive" },
-  "survive":     { "field": "exist",      "gloss": "survive, endure" },
-  "appear":      { "field": "exist",      "gloss": "appear, show up" },
-  "occur":       { "field": "exist",      "gloss": "occur, happen" },
-  "happen":      { "field": "exist",      "gloss": "happen, take place" },
-  "emerge":      { "field": "exist",      "gloss": "emerge, come out" },
-  "become":      { "field": "exist",      "gloss": "become, turn into" },
-
-  "rest":        { "field": "rest",       "gloss": "rest, relax" },
-  "sleep":       { "field": "rest",       "gloss": "sleep, slumber" },
-  "relax":       { "field": "rest",       "gloss": "relax, unwind" },
-  "pause":       { "field": "rest",       "gloss": "pause, stop temporarily" },
-
-  "give":        { "field": "give",       "gloss": "give, provide" },
-  "share":       { "field": "give",       "gloss": "share, distribute" },
-  "donate":      { "field": "give",       "gloss": "donate, contribute" },
-  "grant":       { "field": "give",       "gloss": "grant, award" },
-  "distribute":  { "field": "give",       "gloss": "distribute, hand out" },
-  "offer":       { "field": "give",       "gloss": "offer, present" },
-  "provide":     { "field": "give",       "gloss": "provide, supply" },
-
-  "take":        { "field": "take",       "gloss": "take, acquire" },
-  "capture":     { "field": "take",       "gloss": "capture, catch" },
-  "seize":       { "field": "take",       "gloss": "seize, grab" },
-  "steal":       { "field": "take",       "gloss": "steal, take without permission" },
-  "acquire":     { "field": "take",       "gloss": "acquire, obtain" },
-  "obtain":      { "field": "take",       "gloss": "obtain, get" },
-  "receive":     { "field": "take",       "gloss": "receive, get" },
-  "download":    { "field": "take",       "gloss": "download, retrieve data", "level2": "tech.network" },
-
-  "hold":        { "field": "hold",       "gloss": "hold, keep, maintain" },
-  "keep":        { "field": "hold",       "gloss": "keep, retain" },
-  "maintain":    { "field": "hold",       "gloss": "maintain, sustain" },
-  "preserve":    { "field": "hold",       "gloss": "preserve, conserve" },
-  "sustain":     { "field": "hold",       "gloss": "sustain, uphold" },
-  "retain":      { "field": "hold",       "gloss": "retain, hold onto" },
-  "store":       { "field": "hold",       "gloss": "store, save data/goods" },
-  "save":        { "field": "hold",       "gloss": "save, store" },
-
-  "open":        { "field": "open",       "gloss": "open, unlock" },
-  "close":       { "field": "open",       "gloss": "close, shut" },
-  "lock":        { "field": "open",       "gloss": "lock, secure" },
-  "unlock":      { "field": "open",       "gloss": "unlock, open" },
-  "start":       { "field": "open",       "gloss": "start, begin, launch" },
-  "stop":        { "field": "open",       "gloss": "stop, halt" },
-  "launch":      { "field": "open",       "gloss": "launch, start up" },
-  "enable":      { "field": "enable",     "gloss": "enable, allow, activate" },
-  "disable":     { "field": "enable",     "gloss": "disable, turn off" },
-  "allow":       { "field": "enable",     "gloss": "allow, permit" },
-  "support":     { "field": "enable",     "gloss": "support, assist" },
-  "help":        { "field": "enable",     "gloss": "help, assist" },
-  "assist":      { "field": "enable",     "gloss": "assist, aid" },
-
-  "hide":        { "field": "hide",       "gloss": "hide, conceal" },
-  "conceal":     { "field": "hide",       "gloss": "conceal, cover" },
-  "reveal":      { "field": "hide",       "gloss": "reveal, uncover" },
-  "expose":      { "field": "hide",       "gloss": "expose, bring to light" },
-
-  "connect":     { "field": "connect",    "gloss": "connect, link" },
-  "link":        { "field": "connect",    "gloss": "link, attach" },
-  "attach":      { "field": "connect",    "gloss": "attach, connect" },
-  "bind":        { "field": "connect",    "gloss": "bind, tie together" },
-  "integrate":   { "field": "connect",    "gloss": "integrate, merge systems" },
-  "sync":        { "field": "connect",    "gloss": "sync, synchronize" },
-  "pair":        { "field": "connect",    "gloss": "pair, couple together" },
-
-  "change":      { "field": "change",     "gloss": "change, modify" },
-  "modify":      { "field": "change",     "gloss": "modify, alter" },
-  "transform":   { "field": "change",     "gloss": "transform, convert" },
-  "alter":       { "field": "change",     "gloss": "alter, adjust" },
-  "adapt":       { "field": "change",     "gloss": "adapt, adjust to" },
-  "update":      { "field": "change",     "gloss": "update, refresh" },
-  "adjust":      { "field": "change",     "gloss": "adjust, fine-tune" },
-  "convert":     { "field": "change",     "gloss": "convert, change format" },
-  "shift":       { "field": "change",     "gloss": "shift, move over" },
-  "switch":      { "field": "change",     "gloss": "switch, toggle" },
-  "replace":     { "field": "change",     "gloss": "replace, swap out" },
-  "reform":      { "field": "change",     "gloss": "reform, improve by changing" },
-  "evolve":      { "field": "change",     "gloss": "evolve, develop over time" },
-
-  "fix":         { "field": "fix",        "gloss": "fix, repair" },
-  "repair":      { "field": "fix",        "gloss": "repair, restore" },
-  "restore":     { "field": "fix",        "gloss": "restore, bring back" },
-  "mend":        { "field": "fix",        "gloss": "mend, fix" },
-  "correct":     { "field": "fix",        "gloss": "correct, put right" },
-  "improve":     { "field": "fix",        "gloss": "improve, make better" },
-  "heal":        { "field": "fix",        "gloss": "heal, recover", "level2": "health.treatment" },
-
-  "destroy":     { "field": "destroy",    "gloss": "destroy, demolish" },
-  "break":       { "field": "destroy",    "gloss": "break, shatter" },
-  "damage":      { "field": "destroy",    "gloss": "damage, harm" },
-  "demolish":    { "field": "destroy",    "gloss": "demolish, tear down" },
-  "ruin":        { "field": "destroy",    "gloss": "ruin, wreck" },
-  "eliminate":   { "field": "destroy",    "gloss": "eliminate, remove entirely" },
-  "delete":      { "field": "destroy",    "gloss": "delete, remove (data)" },
-  "remove":      { "field": "destroy",    "gloss": "remove, take out" },
-
-  "fight":       { "field": "fight",      "gloss": "fight, battle" },
-  "battle":      { "field": "fight",      "gloss": "battle, combat" },
-  "attack":      { "field": "fight",      "gloss": "attack, assault" },
-  "defend":      { "field": "fight",      "gloss": "defend, protect" },
-  "war":         { "field": "fight",      "gloss": "war, armed conflict" },
-  "military":    { "field": "fight",      "gloss": "military, armed forces" },
-  "conflict":    { "field": "fight",      "gloss": "conflict, dispute" },
-  "protest":     { "field": "fight",      "gloss": "protest, demonstrate" },
-
-  "possess":     { "field": "possess",    "gloss": "possess, own" },
-  "own":         { "field": "possess",    "gloss": "own, have" },
-  "property":    { "field": "possess",    "gloss": "property, asset" },
-  "asset":       { "field": "possess",    "gloss": "asset, valuable item" },
-
-  "contain":     { "field": "contain",    "gloss": "contain, include" },
-  "include":     { "field": "contain",    "gloss": "include, consist of" },
-  "consist":     { "field": "contain",    "gloss": "consist of, be made of" },
-  "involve":     { "field": "contain",    "gloss": "involve, entail" },
-  "category":    { "field": "contain",    "gloss": "category, type, class" },
-  "type":        { "field": "contain",    "gloss": "type, kind" },
-  "kind":        { "field": "contain",    "gloss": "kind, sort" },
-
-  "force":       { "field": "force",      "gloss": "force, pressure" },
-  "push":        { "field": "force",      "gloss": "push, propel" },
-  "pull":        { "field": "force",      "gloss": "pull, drag" },
-  "pressure":    { "field": "force",      "gloss": "pressure, force applied" },
-  "impact":      { "field": "force",      "gloss": "impact, collision effect" },
-
-  "social":      { "field": "social",     "gloss": "social, community" },
-  "community":   { "field": "social",     "gloss": "community, group" },
-  "society":     { "field": "social",     "gloss": "society, civilization" },
-  "culture":     { "field": "social",     "gloss": "culture, customs" },
-  "people":      { "field": "social",     "gloss": "people, humans" },
-  "person":      { "field": "person",     "gloss": "person, individual" },
-  "human":       { "field": "person",     "gloss": "human, person" },
-  "individual":  { "field": "person",     "gloss": "individual, single person" },
-  "man":         { "field": "person",     "gloss": "man, male" },
-  "woman":       { "field": "person",     "gloss": "woman, female" },
-  "child":       { "field": "person",     "gloss": "child, kid", "level2": "social.family" },
-  "parent":      { "field": "person",     "gloss": "parent, mother or father", "level2": "social.family" },
-  "mother":      { "field": "person",     "gloss": "mother", "level2": "social.family" },
-  "father":      { "field": "person",     "gloss": "father", "level2": "social.family" },
-  "brother":     { "field": "person",     "gloss": "brother", "level2": "social.family" },
-  "sister":      { "field": "person",     "gloss": "sister", "level2": "social.family" },
-  "friend":      { "field": "person",     "gloss": "friend", "level2": "social.contact" },
-  "colleague":   { "field": "person",     "gloss": "colleague, coworker", "level2": "social.contact" },
-  "partner":     { "field": "person",     "gloss": "partner, associate", "level2": "social.contact" },
-  "doctor":      { "field": "person",     "gloss": "doctor, physician", "level2": "health.treatment" },
-  "nurse":       { "field": "person",     "gloss": "nurse", "level2": "health.treatment" },
-  "teacher":     { "field": "person",     "gloss": "teacher, educator" },
-  "student2":    { "field": "person",     "gloss": "student (person)" },
-
-  "trade":       { "field": "trade",      "gloss": "trade, commerce" },
-  "buy":         { "field": "trade",      "gloss": "buy, purchase", "level2": "trade.order" },
-  "purchase":    { "field": "trade",      "gloss": "purchase, buy", "level2": "trade.order" },
-  "sell":        { "field": "trade",      "gloss": "sell, offer for sale" },
-  "economy":     { "field": "trade",      "gloss": "economy, economic system" },
-  "business":    { "field": "trade",      "gloss": "business, company" },
-  "market":      { "field": "trade",      "gloss": "market, marketplace" },
-  "price":       { "field": "trade",      "gloss": "price, cost", "level2": "trade.price" },
-  "cost":        { "field": "trade",      "gloss": "cost, expense", "level2": "trade.price" },
-  "stock":       { "field": "trade",      "gloss": "stock, shares", "level2": "trade.stock" },
-  "exchange":    { "field": "trade",      "gloss": "exchange, swap" },
-  "currency":    { "field": "trade",      "gloss": "currency, money", "level2": "trade.currency" },
-  "bitcoin":     { "field": "trade",      "gloss": "Bitcoin", "level2": "trade.currency" },
-  "crypto":      { "field": "trade",      "gloss": "cryptocurrency", "level2": "trade.currency" },
-  "investment":  { "field": "trade",      "gloss": "investment, capital" },
-  "profit":      { "field": "trade",      "gloss": "profit, gain" },
-  "revenue":     { "field": "trade",      "gloss": "revenue, income" },
-  "tax":         { "field": "trade",      "gloss": "tax, levy" },
-  "budget":      { "field": "trade",      "gloss": "budget, financial plan" },
-  "loan":        { "field": "trade",      "gloss": "loan, borrowed money" },
-  "mortgage":    { "field": "trade",      "gloss": "mortgage, home loan" },
-  "inflation":   { "field": "trade",      "gloss": "inflation, rising prices" },
-
-  "science":     { "field": "science",    "gloss": "science, scientific knowledge" },
-  "experiment":  { "field": "science",    "gloss": "experiment, test" },
-  "theory":      { "field": "science",    "gloss": "theory, hypothesis" },
-  "research":    { "field": "science",    "gloss": "research, investigation" },
-  "biology":     { "field": "science",    "gloss": "biology, life science" },
-  "chemistry":   { "field": "science",    "gloss": "chemistry, chemical science" },
-  "physics":     { "field": "science",    "gloss": "physics, physical science" },
-  "atom":        { "field": "science",    "gloss": "atom, subatomic" },
-  "molecule":    { "field": "science",    "gloss": "molecule, chemical unit" },
-  "cell":        { "field": "science",    "gloss": "cell, biological unit" },
-  "evolution":   { "field": "science",    "gloss": "evolution, natural selection" },
-  "gravity":     { "field": "science",    "gloss": "gravity, gravitational force" },
-  "energy":      { "field": "science",    "gloss": "energy, power" },
-  "quantum":     { "field": "science",    "gloss": "quantum, quantum mechanics" },
-  "dna":         { "field": "science",    "gloss": "DNA, genetic code" },
-  "element":     { "field": "science",    "gloss": "chemical element" },
-
-  "tech":        { "field": "tech",       "gloss": "technology, digital" },
-  "computer":    { "field": "tech",       "gloss": "computer, PC" },
-  "software":    { "field": "tech",       "gloss": "software, application", "level2": "tech.code" },
-  "digital":     { "field": "tech",       "gloss": "digital, electronic" },
-  "code":        { "field": "tech",       "gloss": "code, program", "level2": "tech.code" },
-  "program":     { "field": "tech",       "gloss": "program, software", "level2": "tech.code" },
-  "system":      { "field": "tech",       "gloss": "system, platform" },
-  "data":        { "field": "tech",       "gloss": "data, information" },
-  "online":      { "field": "tech",       "gloss": "online, connected", "level2": "tech.network" },
-  "database":    { "field": "tech",       "gloss": "database, data store", "level2": "tech.code" },
-  "server":      { "field": "tech",       "gloss": "server, backend", "level2": "tech.network" },
-  "network":     { "field": "tech",       "gloss": "network, internet", "level2": "tech.network" },
-  "internet":    { "field": "tech",       "gloss": "internet, the web", "level2": "tech.network" },
-  "cloud":       { "field": "tech",       "gloss": "cloud computing", "level2": "tech.network" },
-  "algorithm":   { "field": "tech",       "gloss": "algorithm, procedure", "level2": "tech.code" },
-  "api":         { "field": "tech",       "gloss": "API, interface", "level2": "tech.code" },
-  "python":      { "field": "tech",       "gloss": "Python (language)", "level2": "tech.code" },
-  "javascript":  { "field": "tech",       "gloss": "JavaScript (language)", "level2": "tech.code" },
-  "typescript":  { "field": "tech",       "gloss": "TypeScript (language)", "level2": "tech.code" },
-  "java":        { "field": "tech",       "gloss": "Java (language)", "level2": "tech.code" },
-  "security":    { "field": "tech",       "gloss": "security, cybersecurity", "level2": "tech.security" },
-  "encryption":  { "field": "tech",       "gloss": "encryption, encode data", "level2": "tech.security" },
-  "hardware":    { "field": "tech",       "gloss": "hardware, physical device", "level2": "tech.hardware" },
-  "cpu":         { "field": "tech",       "gloss": "CPU, processor", "level2": "tech.hardware" },
-  "gpu":         { "field": "tech",       "gloss": "GPU, graphics processor", "level2": "tech.hardware" },
-  "ai":          { "field": "tech",       "gloss": "artificial intelligence", "level2": "tech.ai" },
-  "machine":     { "field": "tech",       "gloss": "machine, device" },
-  "robot":       { "field": "tech",       "gloss": "robot, automated machine" },
-  "app":         { "field": "tech",       "gloss": "app, application", "level2": "tech.code" },
-  "deploy":      { "field": "tech",       "gloss": "deploy, release software", "level2": "tech.code" },
-  "debug":       { "field": "tech",       "gloss": "debug, fix code bugs", "level2": "tech.code" },
-  "bug":         { "field": "tech",       "gloss": "bug, software error", "level2": "tech.code" },
-  "git":         { "field": "tech",       "gloss": "Git, version control", "level2": "tech.code" },
-  "wifi":        { "field": "tech",       "gloss": "WiFi, wireless network", "level2": "tech.network" },
-  "bluetooth":   { "field": "tech",       "gloss": "Bluetooth, wireless", "level2": "tech.iot" },
-  "smart":       { "field": "tech",       "gloss": "smart, IoT-enabled", "level2": "tech.iot" },
-  "iot":         { "field": "tech",       "gloss": "IoT, internet of things", "level2": "tech.iot" },
-
-  "health":      { "field": "health",     "gloss": "health, wellbeing" },
-  "medicine":    { "field": "health",     "gloss": "medicine, medical care" },
-  "symptom":     { "field": "health",     "gloss": "symptom, sign of illness", "level2": "health.symptom" },
-  "pain":        { "field": "health",     "gloss": "pain, ache", "level2": "health.symptom" },
-  "fever":       { "field": "health",     "gloss": "fever, high temperature", "level2": "health.symptom" },
-  "cough":       { "field": "health",     "gloss": "cough", "level2": "health.symptom" },
-  "headache":    { "field": "health",     "gloss": "headache", "level2": "health.symptom" },
-  "nausea":      { "field": "health",     "gloss": "nausea, feeling sick", "level2": "health.symptom" },
-  "disease":     { "field": "health",     "gloss": "disease, illness" },
-  "medication":  { "field": "health",     "gloss": "medication, drug", "level2": "health.drug" },
-  "drug":        { "field": "health",     "gloss": "drug, medicine", "level2": "health.drug" },
-  "antibiotic":  { "field": "health",     "gloss": "antibiotic", "level2": "health.drug" },
-  "vaccine":     { "field": "health",     "gloss": "vaccine, immunization", "level2": "health.drug" },
-  "prescription":{ "field": "health",     "gloss": "prescription", "level2": "health.drug" },
-  "vitamin":     { "field": "health",     "gloss": "vitamin, supplement", "level2": "health.drug" },
-  "therapy":     { "field": "health",     "gloss": "therapy, treatment", "level2": "health.treatment" },
-  "surgery":     { "field": "health",     "gloss": "surgery, operation", "level2": "health.treatment" },
-  "diagnosis":   { "field": "health",     "gloss": "diagnosis, medical assessment", "level2": "health.treatment" },
-  "hospital":    { "field": "health",     "gloss": "hospital, medical center" },
-  "clinic":      { "field": "health",     "gloss": "clinic, doctor's office" },
-  "exercise":    { "field": "health",     "gloss": "exercise, physical activity", "level2": "health.fitness" },
-  "gym":         { "field": "health",     "gloss": "gym, fitness center", "level2": "health.fitness" },
-  "diet":        { "field": "health",     "gloss": "diet, eating plan", "level2": "health.fitness" },
-  "nutrition":   { "field": "food",       "gloss": "nutrition, nutrients", "level2": "food.nutrition" },
-  "calorie":     { "field": "food",       "gloss": "calorie, energy unit", "level2": "food.nutrition" },
-
-  "art":         { "field": "art",        "gloss": "art, creative work" },
-  "music":       { "field": "art",        "gloss": "music, melody", "level2": "art.music" },
-  "song":        { "field": "art",        "gloss": "song, musical track", "level2": "art.music" },
-  "album":       { "field": "art",        "gloss": "album, music collection", "level2": "art.music" },
-  "musician":    { "field": "art",        "gloss": "musician, music artist", "level2": "art.music" },
-  "concert":     { "field": "art",        "gloss": "concert, live music", "level2": "art.music" },
-  "guitar":      { "field": "art",        "gloss": "guitar, instrument", "level2": "art.music" },
-  "piano":       { "field": "art",        "gloss": "piano, instrument", "level2": "art.music" },
-  "movie":       { "field": "art",        "gloss": "movie, film", "level2": "art.film" },
-  "film":        { "field": "art",        "gloss": "film, cinema", "level2": "art.film" },
-  "cinema":      { "field": "art",        "gloss": "cinema, movie theater", "level2": "art.film" },
-  "director":    { "field": "art",        "gloss": "director, filmmaker", "level2": "art.film" },
-  "painting":    { "field": "art",        "gloss": "painting, artwork", "level2": "art.visual" },
-  "drawing":     { "field": "art",        "gloss": "drawing, sketch", "level2": "art.visual" },
-  "photography": { "field": "art",        "gloss": "photography, photos", "level2": "art.visual" },
-  "novel":       { "field": "art",        "gloss": "novel, book of fiction", "level2": "art.book" },
-  "poem":        { "field": "art",        "gloss": "poem, poetry", "level2": "art.book" },
-  "book":        { "field": "art",        "gloss": "book, publication", "level2": "art.book" },
-  "play":        { "field": "art",        "gloss": "play media, theatrical play" },
-
-  "sport":       { "field": "sport",      "gloss": "sport, athletics" },
-  "game":        { "field": "sport",      "gloss": "game, match" },
-  "match":       { "field": "sport",      "gloss": "match, competition" },
-  "score":       { "field": "sport",      "gloss": "score, points" },
-  "goal":        { "field": "sport",      "gloss": "goal, scoring play" },
-  "team":        { "field": "sport",      "gloss": "team, club" },
-  "player":      { "field": "sport",      "gloss": "player, athlete" },
-  "champion":    { "field": "sport",      "gloss": "champion, winner" },
-  "football":    { "field": "sport",      "gloss": "football/soccer" },
-  "basketball":  { "field": "sport",      "gloss": "basketball" },
-  "tennis":      { "field": "sport",      "gloss": "tennis" },
-  "swimming":    { "field": "sport",      "gloss": "swimming" },
-
-  "time":        { "field": "time",       "gloss": "time, moment" },
-  "schedule":    { "field": "time",       "gloss": "schedule, timetable", "level2": "time.calendar" },
-  "reminder":    { "field": "time",       "gloss": "reminder, notification", "level2": "time.alarm" },
-  "alarm":       { "field": "time",       "gloss": "alarm, wake-up call", "level2": "time.alarm" },
-  "appointment": { "field": "time",       "gloss": "appointment, booking", "level2": "time.calendar" },
-  "calendar":    { "field": "time",       "gloss": "calendar", "level2": "time.calendar" },
-  "meeting":     { "field": "time",       "gloss": "meeting, gathering", "level2": "time.calendar" },
-  "deadline":    { "field": "time",       "gloss": "deadline, due date" },
-  "event":       { "field": "time",       "gloss": "event, occasion", "level2": "time.calendar" },
-  "today":       { "field": "time",       "gloss": "today, current day" },
-  "tomorrow":    { "field": "time",       "gloss": "tomorrow, next day" },
-  "yesterday":   { "field": "time",       "gloss": "yesterday, previous day" },
-  "week":        { "field": "time",       "gloss": "week, 7 days" },
-  "month":       { "field": "time",       "gloss": "month" },
-  "year":        { "field": "time",       "gloss": "year" },
-  "morning":     { "field": "time",       "gloss": "morning, a.m." },
-  "afternoon":   { "field": "time",       "gloss": "afternoon" },
-  "evening":     { "field": "time",       "gloss": "evening, dusk" },
-  "night":       { "field": "time",       "gloss": "night, nighttime" },
-  "monday":      { "field": "time",       "gloss": "Monday" },
-  "tuesday":     { "field": "time",       "gloss": "Tuesday" },
-  "wednesday":   { "field": "time",       "gloss": "Wednesday" },
-  "thursday":    { "field": "time",       "gloss": "Thursday" },
-  "friday":      { "field": "time",       "gloss": "Friday" },
-  "saturday":    { "field": "time",       "gloss": "Saturday" },
-  "sunday":      { "field": "time",       "gloss": "Sunday" },
-  "birthday":    { "field": "time",       "gloss": "birthday" },
-  "holiday":     { "field": "time",       "gloss": "holiday, day off" },
-  "anniversary": { "field": "time",       "gloss": "anniversary" },
-  "minute":      { "field": "time",       "gloss": "minute", "level2": "time.duration" },
-  "hour":        { "field": "time",       "gloss": "hour", "level2": "time.duration" },
-  "second":      { "field": "time",       "gloss": "second, unit of time", "level2": "time.duration" },
-
-  "place":       { "field": "place",      "gloss": "place, location" },
-  "location":    { "field": "place",      "gloss": "location, spot" },
-  "city":        { "field": "place",      "gloss": "city, town", "level2": "place.city" },
-  "country":     { "field": "place",      "gloss": "country, nation", "level2": "place.country" },
-  "region":      { "field": "place",      "gloss": "region, area" },
-  "street":      { "field": "place",      "gloss": "street, road" },
-  "airport":     { "field": "place",      "gloss": "airport", "level2": "move.fly" },
-  "hotel":       { "field": "place",      "gloss": "hotel, accommodation" },
-  "hospital2":   { "field": "place",      "gloss": "hospital (as place)" },
-  "school":      { "field": "place",      "gloss": "school, educational institution" },
-  "university":  { "field": "place",      "gloss": "university, college" },
-  "mall":        { "field": "place",      "gloss": "shopping mall", "level2": "trade.order" },
-  "supermarket": { "field": "place",      "gloss": "supermarket, grocery store", "level2": "trade.order" },
-  "restaurant":  { "field": "food",       "gloss": "restaurant, dining place", "level2": "food.restaurant" },
-  "cafe":        { "field": "food",       "gloss": "café, coffee shop", "level2": "food.restaurant" },
-  "map":         { "field": "place",      "gloss": "map, cartography", "level2": "place.route" },
-
-  "dwell":       { "field": "dwell",      "gloss": "dwell, live in" },
-  "house":       { "field": "dwell",      "gloss": "house, home", "level2": "place.home" },
-  "home":        { "field": "dwell",      "gloss": "home, residence", "level2": "place.home" },
-  "room":        { "field": "dwell",      "gloss": "room, chamber", "level2": "place.home" },
-  "apartment":   { "field": "dwell",      "gloss": "apartment, flat", "level2": "place.home" },
-  "building":    { "field": "dwell",      "gloss": "building, structure" },
-  "office":      { "field": "dwell",      "gloss": "office, workspace" },
-  "kitchen":     { "field": "dwell",      "gloss": "kitchen", "level2": "place.home" },
-  "bedroom":     { "field": "dwell",      "gloss": "bedroom", "level2": "place.home" },
-  "bathroom":    { "field": "dwell",      "gloss": "bathroom", "level2": "place.home" },
-
-  "structure":   { "field": "structure",  "gloss": "structure, infrastructure" },
-  "bridge":      { "field": "structure",  "gloss": "bridge" },
-  "road":        { "field": "structure",  "gloss": "road, highway" },
-  "tower":       { "field": "structure",  "gloss": "tower, tall building" },
-
-  "size":        { "field": "size",       "gloss": "size, scale" },
-  "number":      { "field": "size",       "gloss": "number, numeral" },
-  "amount":      { "field": "size",       "gloss": "amount, quantity" },
-  "quantity":    { "field": "size",       "gloss": "quantity, count" },
-  "large":       { "field": "size",       "gloss": "large, big" },
-  "small":       { "field": "size",       "gloss": "small, little" },
-
-  "measure":     { "field": "measure",    "gloss": "measure, measurement" },
-  "calculate":   { "field": "measure",    "gloss": "calculate, compute" },
-  "count":       { "field": "measure",    "gloss": "count, tally" },
-  "percent":     { "field": "measure",    "gloss": "percent, proportion" },
-  "kilometer":   { "field": "measure",    "gloss": "kilometer, distance" },
-  "mile":        { "field": "measure",    "gloss": "mile, distance" },
-  "meter":       { "field": "measure",    "gloss": "meter, distance" },
-  "kilogram":    { "field": "measure",    "gloss": "kilogram, weight" },
-  "celsius":     { "field": "measure",    "gloss": "Celsius, temperature" },
-  "fahrenheit":  { "field": "measure",    "gloss": "Fahrenheit, temperature" },
-  "convert":     { "field": "measure",    "gloss": "convert, unit conversion" },
-  "total":       { "field": "measure",    "gloss": "total, sum" },
-  "average":     { "field": "measure",    "gloss": "average, mean" },
-
-  "quality":     { "field": "quality",    "gloss": "quality, level of goodness" },
-  "good":        { "field": "quality",    "gloss": "good, positive quality" },
-  "bad":         { "field": "quality",    "gloss": "bad, negative quality" },
-  "strong":      { "field": "quality",    "gloss": "strong, powerful" },
-  "weak":        { "field": "quality",    "gloss": "weak, lacking strength" },
-  "fast":        { "field": "quality",    "gloss": "fast, quick" },
-  "slow":        { "field": "quality",    "gloss": "slow, not fast" },
-  "best":        { "field": "quality",    "gloss": "best, highest quality" },
-  "worst":       { "field": "quality",    "gloss": "worst, lowest quality" },
-  "easy":        { "field": "quality",    "gloss": "easy, simple" },
-  "hard":        { "field": "quality",    "gloss": "hard, difficult" },
-  "new":         { "field": "quality",    "gloss": "new, recent" },
-  "old":         { "field": "quality",    "gloss": "old, aged" },
-
-  "name":        { "field": "name",       "gloss": "name, label, title" },
-  "label":       { "field": "name",       "gloss": "label, tag" },
-  "term":        { "field": "name",       "gloss": "term, word used" },
-  "symbol":      { "field": "name",       "gloss": "symbol, sign" },
-  "title":       { "field": "name",       "gloss": "title, heading" },
-
-  "food":        { "field": "food",       "gloss": "food, meal" },
-  "eat":         { "field": "food",       "gloss": "eat, consume food" },
-  "cook":        { "field": "food",       "gloss": "cook, prepare food", "level2": "food.recipe" },
-  "recipe":      { "field": "food",       "gloss": "recipe, cooking instructions", "level2": "food.recipe" },
-  "meal":        { "field": "food",       "gloss": "meal, food serving" },
-  "drink":       { "field": "food",       "gloss": "drink, beverage" },
-  "pizza":       { "field": "food",       "gloss": "pizza" },
-  "chicken":     { "field": "food",       "gloss": "chicken (food)" },
-  "rice":        { "field": "food",       "gloss": "rice" },
-  "bread":       { "field": "food",       "gloss": "bread" },
-  "salad":       { "field": "food",       "gloss": "salad" },
-  "soup":        { "field": "food",       "gloss": "soup" },
-  "coffee":      { "field": "food",       "gloss": "coffee", "level2": "food.restaurant" },
-  "breakfast":   { "field": "food",       "gloss": "breakfast, morning meal" },
-  "lunch":       { "field": "food",       "gloss": "lunch, midday meal" },
-  "dinner":      { "field": "food",       "gloss": "dinner, evening meal" },
-  "ingredient":  { "field": "food",       "gloss": "ingredient", "level2": "food.recipe" },
-  "vegan":       { "field": "food",       "gloss": "vegan, plant-based" },
-  "vegetarian":  { "field": "food",       "gloss": "vegetarian" },
-
-  "weather":     { "field": "weather",    "gloss": "weather, atmospheric conditions" },
-  "rain":        { "field": "weather",    "gloss": "rain, precipitation", "level2": "weather.rain" },
-  "snow":        { "field": "weather",    "gloss": "snow, snowfall", "level2": "weather.rain" },
-  "storm":       { "field": "weather",    "gloss": "storm, severe weather" },
-  "wind":        { "field": "weather",    "gloss": "wind, breeze" },
-  "sunny":       { "field": "weather",    "gloss": "sunny, clear sky" },
-  "cloudy":      { "field": "weather",    "gloss": "cloudy, overcast" },
-  "temperature": { "field": "weather",    "gloss": "temperature", "level2": "weather.temp" },
-  "forecast":    { "field": "weather",    "gloss": "weather forecast", "level2": "weather.forecast" },
-  "humidity":    { "field": "weather",    "gloss": "humidity, moisture level" },
-  "thunder":     { "field": "weather",    "gloss": "thunder, thunderstorm" },
-  "fog":         { "field": "weather",    "gloss": "fog, mist" },
-
-  "nature":      { "field": "nature",     "gloss": "nature, natural world" },
-  "ocean":       { "field": "nature",     "gloss": "ocean, sea" },
-  "sea":         { "field": "nature",     "gloss": "sea, large body of water" },
-  "lake":        { "field": "nature",     "gloss": "lake" },
-  "river":       { "field": "nature",     "gloss": "river, stream" },
-  "mountain":    { "field": "nature",     "gloss": "mountain, peak" },
-  "desert":      { "field": "nature",     "gloss": "desert, arid land" },
-  "forest":      { "field": "nature",     "gloss": "forest, woodland" },
-  "island":      { "field": "nature",     "gloss": "island" },
-  "beach":       { "field": "nature",     "gloss": "beach, shoreline" },
-  "environment": { "field": "nature",     "gloss": "environment, surroundings" },
-  "ecosystem":   { "field": "nature",     "gloss": "ecosystem" },
-
-  "animal":      { "field": "animal",     "gloss": "animal, creature" },
-  "dog":         { "field": "animal",     "gloss": "dog" },
-  "cat":         { "field": "animal",     "gloss": "cat" },
-  "bird":        { "field": "animal",     "gloss": "bird" },
-  "fish":        { "field": "animal",     "gloss": "fish" },
-  "horse":       { "field": "animal",     "gloss": "horse" },
-  "lion":        { "field": "animal",     "gloss": "lion" },
-  "elephant":    { "field": "animal",     "gloss": "elephant" },
-  "whale":       { "field": "animal",     "gloss": "whale" },
-  "insect":      { "field": "animal",     "gloss": "insect, bug" },
-  "camel":       { "field": "animal",     "gloss": "camel" },
-
-  "plant":       { "field": "plant",      "gloss": "plant, vegetation" },
-  "tree":        { "field": "plant",      "gloss": "tree" },
-  "flower":      { "field": "plant",      "gloss": "flower" },
-  "grass":       { "field": "plant",      "gloss": "grass" },
-  "rose":        { "field": "plant",      "gloss": "rose" },
-  "seed":        { "field": "plant",      "gloss": "seed" },
-
-  "body":        { "field": "body",       "gloss": "body, physical form" },
-  "arm":         { "field": "body",       "gloss": "arm" },
-  "leg":         { "field": "body",       "gloss": "leg" },
-  "hand":        { "field": "body",       "gloss": "hand" },
-  "head":        { "field": "body",       "gloss": "head" },
-  "heart":       { "field": "body",       "gloss": "heart, cardiac" },
-  "brain":       { "field": "body",       "gloss": "brain, neural" },
-  "eye":         { "field": "body",       "gloss": "eye" },
-  "ear":         { "field": "body",       "gloss": "ear" },
-  "nose":        { "field": "body",       "gloss": "nose" },
-  "blood":       { "field": "body",       "gloss": "blood" },
-  "bone":        { "field": "body",       "gloss": "bone, skeleton" },
-  "muscle":      { "field": "body",       "gloss": "muscle" },
-  "skin":        { "field": "body",       "gloss": "skin" },
-
-  "color":       { "field": "color",      "gloss": "color, hue" },
-  "red":         { "field": "color",      "gloss": "red" },
-  "blue":        { "field": "color",      "gloss": "blue" },
-  "green":       { "field": "color",      "gloss": "green" },
-  "yellow":      { "field": "color",      "gloss": "yellow" },
-  "black":       { "field": "color",      "gloss": "black" },
-  "white":       { "field": "color",      "gloss": "white" },
-  "orange":      { "field": "color",      "gloss": "orange" },
-  "purple":      { "field": "color",      "gloss": "purple" },
-  "pink":        { "field": "color",      "gloss": "pink" },
-  "brown":       { "field": "color",      "gloss": "brown" },
-  "grey":        { "field": "color",      "gloss": "grey, gray" },
-  "gray":        { "field": "color",      "gloss": "gray, grey" },
-  "golden":      { "field": "color",      "gloss": "golden, gold color" },
-
-  "material":    { "field": "material",   "gloss": "material, substance" },
-  "wood":        { "field": "material",   "gloss": "wood, timber" },
-  "metal":       { "field": "material",   "gloss": "metal" },
-  "iron":        { "field": "material",   "gloss": "iron" },
-  "steel":       { "field": "material",   "gloss": "steel" },
-  "glass":       { "field": "material",   "gloss": "glass" },
-  "stone":       { "field": "material",   "gloss": "stone, rock" },
-  "plastic":     { "field": "material",   "gloss": "plastic" },
-  "fabric":      { "field": "material",   "gloss": "fabric, cloth" },
-  "cotton":      { "field": "material",   "gloss": "cotton" },
-  "gold":        { "field": "material",   "gloss": "gold (material)" },
-  "silver":      { "field": "material",   "gloss": "silver (material)" }
+  "write": {
+    "field": "write",
+    "gloss": "write, record, inscribe"
+  },
+  "record": {
+    "field": "write",
+    "gloss": "record, document, log"
+  },
+  "document": {
+    "field": "write",
+    "gloss": "document, write down"
+  },
+  "note": {
+    "field": "write",
+    "gloss": "note, jot down"
+  },
+  "draft": {
+    "field": "write",
+    "gloss": "draft, compose"
+  },
+  "compose": {
+    "field": "write",
+    "gloss": "compose, write"
+  },
+  "author": {
+    "field": "write",
+    "gloss": "author, writer (person or act)"
+  },
+  "publish": {
+    "field": "write",
+    "gloss": "publish, release"
+  },
+  "publication": {
+    "field": "write",
+    "gloss": "publication, published work"
+  },
+  "print": {
+    "field": "write",
+    "gloss": "print, publish on paper"
+  },
+  "transcribe": {
+    "field": "write",
+    "gloss": "transcribe, copy"
+  },
+  "log": {
+    "field": "write",
+    "gloss": "log, track, record"
+  },
+  "scribe": {
+    "field": "write",
+    "gloss": "scribe, copyist"
+  },
+  "inscribe": {
+    "field": "write",
+    "gloss": "inscribe, engrave"
+  },
+  "pen": {
+    "field": "write",
+    "gloss": "write with a pen"
+  },
+  "send": {
+    "field": "send",
+    "gloss": "send, transmit"
+  },
+  "transmit": {
+    "field": "send",
+    "gloss": "transmit, broadcast"
+  },
+  "dispatch": {
+    "field": "send",
+    "gloss": "dispatch, send off"
+  },
+  "forward": {
+    "field": "send",
+    "gloss": "forward, relay"
+  },
+  "deliver": {
+    "field": "send",
+    "gloss": "deliver, drop off"
+  },
+  "mail": {
+    "field": "send",
+    "gloss": "mail, post"
+  },
+  "email": {
+    "field": "send",
+    "gloss": "email, electronic mail",
+    "level2": "tech.network"
+  },
+  "broadcast": {
+    "field": "send",
+    "gloss": "broadcast, air, stream"
+  },
+  "relay": {
+    "field": "send",
+    "gloss": "relay, pass on"
+  },
+  "post": {
+    "field": "send",
+    "gloss": "post, upload"
+  },
+  "ship": {
+    "field": "send",
+    "gloss": "ship, transport goods"
+  },
+  "transfer": {
+    "field": "send",
+    "gloss": "transfer, move data/money"
+  },
+  "notify": {
+    "field": "send",
+    "gloss": "notify, alert"
+  },
+  "notification": {
+    "field": "send",
+    "gloss": "notification, alert"
+  },
+  "alert": {
+    "field": "send",
+    "gloss": "alert, warning"
+  },
+  "message": {
+    "field": "send",
+    "gloss": "message, text"
+  },
+  "ping": {
+    "field": "send",
+    "gloss": "ping, signal"
+  },
+  "text": {
+    "field": "send",
+    "gloss": "text message, SMS"
+  },
+  "sms": {
+    "field": "send",
+    "gloss": "SMS, text message"
+  },
+  "reply": {
+    "field": "send",
+    "gloss": "reply, respond"
+  },
+  "inbox": {
+    "field": "send",
+    "gloss": "inbox, received messages"
+  },
+  "know": {
+    "field": "know",
+    "gloss": "know, be aware of"
+  },
+  "learn": {
+    "field": "know",
+    "gloss": "learn, acquire knowledge"
+  },
+  "understand": {
+    "field": "know",
+    "gloss": "understand, comprehend"
+  },
+  "study": {
+    "field": "know",
+    "gloss": "study, examine"
+  },
+  "teach": {
+    "field": "know",
+    "gloss": "teach, instruct"
+  },
+  "educate": {
+    "field": "know",
+    "gloss": "educate, train"
+  },
+  "read": {
+    "field": "know",
+    "gloss": "read",
+    "level2": "know.read"
+  },
+  "discover": {
+    "field": "know",
+    "gloss": "discover, find out"
+  },
+  "comprehend": {
+    "field": "know",
+    "gloss": "comprehend, grasp"
+  },
+  "realize": {
+    "field": "know",
+    "gloss": "realize, become aware"
+  },
+  "recognize": {
+    "field": "know",
+    "gloss": "recognize, identify"
+  },
+  "perceive": {
+    "field": "know",
+    "gloss": "perceive, sense"
+  },
+  "scholar": {
+    "field": "know",
+    "gloss": "scholar, learned person"
+  },
+  "student": {
+    "field": "know",
+    "gloss": "student, learner"
+  },
+  "capital": {
+    "field": "know",
+    "gloss": "capital city (general knowledge)"
+  },
+  "history": {
+    "field": "know",
+    "gloss": "history"
+  },
+  "fact": {
+    "field": "know",
+    "gloss": "fact, information"
+  },
+  "definition": {
+    "field": "know",
+    "gloss": "definition, meaning"
+  },
+  "encyclopedia": {
+    "field": "know",
+    "gloss": "encyclopedia"
+  },
+  "search": {
+    "field": "know",
+    "gloss": "search, look up",
+    "level2": "know.search"
+  },
+  "lookup": {
+    "field": "know",
+    "gloss": "look up, find information",
+    "level2": "know.search"
+  },
+  "google": {
+    "field": "know",
+    "gloss": "Google search",
+    "level2": "know.search"
+  },
+  "news": {
+    "field": "know",
+    "gloss": "news, latest updates",
+    "level2": "know.news"
+  },
+  "headline": {
+    "field": "know",
+    "gloss": "headline, news story",
+    "level2": "know.news"
+  },
+  "article": {
+    "field": "know",
+    "gloss": "article, news piece",
+    "level2": "know.news"
+  },
+  "report": {
+    "field": "know",
+    "gloss": "report, findings"
+  },
+  "trivia": {
+    "field": "know",
+    "gloss": "trivia, fun facts",
+    "level2": "know.question"
+  },
+  "quiz": {
+    "field": "know",
+    "gloss": "quiz, test of knowledge",
+    "level2": "know.question"
+  },
+  "gather": {
+    "field": "gather",
+    "gloss": "gather, collect, assemble"
+  },
+  "meet": {
+    "field": "gather",
+    "gloss": "meet, encounter"
+  },
+  "assemble": {
+    "field": "gather",
+    "gloss": "assemble, bring together"
+  },
+  "collect": {
+    "field": "gather",
+    "gloss": "collect, accumulate"
+  },
+  "join": {
+    "field": "gather",
+    "gloss": "join, unite with"
+  },
+  "unite": {
+    "field": "gather",
+    "gloss": "unite, combine"
+  },
+  "group": {
+    "field": "gather",
+    "gloss": "group, cluster"
+  },
+  "combine": {
+    "field": "gather",
+    "gloss": "combine, merge"
+  },
+  "merge": {
+    "field": "gather",
+    "gloss": "merge, fuse"
+  },
+  "create": {
+    "field": "create",
+    "gloss": "create, make from scratch"
+  },
+  "make": {
+    "field": "create",
+    "gloss": "make, build, produce"
+  },
+  "build": {
+    "field": "create",
+    "gloss": "build, construct"
+  },
+  "produce": {
+    "field": "create",
+    "gloss": "produce, generate"
+  },
+  "generate": {
+    "field": "create",
+    "gloss": "generate, produce"
+  },
+  "develop": {
+    "field": "create",
+    "gloss": "develop, build out"
+  },
+  "design": {
+    "field": "create",
+    "gloss": "design, plan visually"
+  },
+  "invent": {
+    "field": "create",
+    "gloss": "invent, originate"
+  },
+  "manufacture": {
+    "field": "create",
+    "gloss": "manufacture, mass-produce"
+  },
+  "craft": {
+    "field": "create",
+    "gloss": "craft, make by hand"
+  },
+  "establish": {
+    "field": "create",
+    "gloss": "establish, found, set up"
+  },
+  "construct": {
+    "field": "create",
+    "gloss": "construct, build"
+  },
+  "fabricate": {
+    "field": "create",
+    "gloss": "fabricate, manufacture"
+  },
+  "work": {
+    "field": "work",
+    "gloss": "work, labor, operate"
+  },
+  "labor": {
+    "field": "work",
+    "gloss": "labor, toil"
+  },
+  "operate": {
+    "field": "work",
+    "gloss": "operate, run, use"
+  },
+  "perform": {
+    "field": "work",
+    "gloss": "perform, carry out"
+  },
+  "execute": {
+    "field": "work",
+    "gloss": "execute, run a task"
+  },
+  "function": {
+    "field": "work",
+    "gloss": "function, work as intended"
+  },
+  "move": {
+    "field": "move",
+    "gloss": "move, go, travel"
+  },
+  "go": {
+    "field": "move",
+    "gloss": "go, head to"
+  },
+  "travel": {
+    "field": "move",
+    "gloss": "travel, journey"
+  },
+  "walk": {
+    "field": "move",
+    "gloss": "walk, go on foot"
+  },
+  "transport": {
+    "field": "move",
+    "gloss": "transport, carry"
+  },
+  "carry": {
+    "field": "move",
+    "gloss": "carry, bring along"
+  },
+  "bring": {
+    "field": "move",
+    "gloss": "bring, fetch"
+  },
+  "arrive": {
+    "field": "move",
+    "gloss": "arrive, reach"
+  },
+  "depart": {
+    "field": "move",
+    "gloss": "depart, leave"
+  },
+  "come": {
+    "field": "move",
+    "gloss": "come, approach"
+  },
+  "leave": {
+    "field": "move",
+    "gloss": "leave, exit"
+  },
+  "drive": {
+    "field": "move",
+    "gloss": "drive, operate a vehicle",
+    "level2": "move.drive"
+  },
+  "ride": {
+    "field": "move",
+    "gloss": "ride, take transport",
+    "level2": "move.ride"
+  },
+  "fly": {
+    "field": "move",
+    "gloss": "fly, travel by air",
+    "level2": "move.fly"
+  },
+  "navigate": {
+    "field": "move",
+    "gloss": "navigate, find route",
+    "level2": "place.route"
+  },
+  "directions": {
+    "field": "place",
+    "gloss": "directions, route",
+    "level2": "place.route"
+  },
+  "route": {
+    "field": "place",
+    "gloss": "route, path",
+    "level2": "place.route"
+  },
+  "govern": {
+    "field": "govern",
+    "gloss": "govern, rule, lead"
+  },
+  "rule": {
+    "field": "govern",
+    "gloss": "rule, govern"
+  },
+  "control": {
+    "field": "govern",
+    "gloss": "control, manage"
+  },
+  "lead": {
+    "field": "govern",
+    "gloss": "lead, head up"
+  },
+  "manage": {
+    "field": "govern",
+    "gloss": "manage, oversee"
+  },
+  "direct": {
+    "field": "govern",
+    "gloss": "direct, guide"
+  },
+  "command": {
+    "field": "govern",
+    "gloss": "command, order"
+  },
+  "administer": {
+    "field": "govern",
+    "gloss": "administer, run officially"
+  },
+  "regulate": {
+    "field": "govern",
+    "gloss": "regulate, control by rules"
+  },
+  "policy": {
+    "field": "govern",
+    "gloss": "policy, official rule"
+  },
+  "law": {
+    "field": "govern",
+    "gloss": "law, legislation"
+  },
+  "legal": {
+    "field": "govern",
+    "gloss": "legal, lawful"
+  },
+  "court": {
+    "field": "govern",
+    "gloss": "court, tribunal"
+  },
+  "judge": {
+    "field": "think",
+    "gloss": "judge, evaluate"
+  },
+  "president": {
+    "field": "govern",
+    "gloss": "president, head of state"
+  },
+  "minister": {
+    "field": "govern",
+    "gloss": "minister, government official"
+  },
+  "parliament": {
+    "field": "govern",
+    "gloss": "parliament, legislature"
+  },
+  "election": {
+    "field": "govern",
+    "gloss": "election, vote"
+  },
+  "vote": {
+    "field": "govern",
+    "gloss": "vote, cast a ballot"
+  },
+  "speak": {
+    "field": "speak",
+    "gloss": "speak, talk"
+  },
+  "say": {
+    "field": "speak",
+    "gloss": "say, utter"
+  },
+  "tell": {
+    "field": "speak",
+    "gloss": "tell, inform"
+  },
+  "talk": {
+    "field": "speak",
+    "gloss": "talk, converse"
+  },
+  "explain": {
+    "field": "speak",
+    "gloss": "explain, clarify"
+  },
+  "discuss": {
+    "field": "speak",
+    "gloss": "discuss, debate"
+  },
+  "communicate": {
+    "field": "speak",
+    "gloss": "communicate, convey"
+  },
+  "announce": {
+    "field": "speak",
+    "gloss": "announce, declare publicly"
+  },
+  "express": {
+    "field": "speak",
+    "gloss": "express, convey feeling"
+  },
+  "think": {
+    "field": "think",
+    "gloss": "think, reason"
+  },
+  "reason": {
+    "field": "think",
+    "gloss": "reason, logic"
+  },
+  "analyze": {
+    "field": "think",
+    "gloss": "analyze, examine closely"
+  },
+  "believe": {
+    "field": "think",
+    "gloss": "believe, hold as true"
+  },
+  "consider": {
+    "field": "think",
+    "gloss": "consider, think about"
+  },
+  "evaluate": {
+    "field": "think",
+    "gloss": "evaluate, assess"
+  },
+  "assess": {
+    "field": "think",
+    "gloss": "assess, appraise"
+  },
+  "decide": {
+    "field": "decide",
+    "gloss": "decide, determine"
+  },
+  "choose": {
+    "field": "decide",
+    "gloss": "choose, select"
+  },
+  "determine": {
+    "field": "decide",
+    "gloss": "determine, conclude"
+  },
+  "resolve": {
+    "field": "decide",
+    "gloss": "resolve, settle"
+  },
+  "select": {
+    "field": "decide",
+    "gloss": "select, pick"
+  },
+  "confirm": {
+    "field": "decide",
+    "gloss": "confirm, approve"
+  },
+  "see": {
+    "field": "see",
+    "gloss": "see, look at"
+  },
+  "look": {
+    "field": "see",
+    "gloss": "look, observe"
+  },
+  "watch": {
+    "field": "art",
+    "gloss": "watch, view video or film",
+    "level2": "art.film"
+  },
+  "observe": {
+    "field": "see",
+    "gloss": "observe, monitor"
+  },
+  "notice": {
+    "field": "see",
+    "gloss": "notice, spot"
+  },
+  "view": {
+    "field": "see",
+    "gloss": "view, see"
+  },
+  "detect": {
+    "field": "see",
+    "gloss": "detect, find, spot"
+  },
+  "find": {
+    "field": "see",
+    "gloss": "find, locate"
+  },
+  "show": {
+    "field": "see",
+    "gloss": "show, display"
+  },
+  "display": {
+    "field": "see",
+    "gloss": "display, show"
+  },
+  "feel": {
+    "field": "feel",
+    "gloss": "feel, experience emotion"
+  },
+  "love": {
+    "field": "feel",
+    "gloss": "love, adore"
+  },
+  "hate": {
+    "field": "feel",
+    "gloss": "hate, dislike strongly"
+  },
+  "fear": {
+    "field": "feel",
+    "gloss": "fear, be afraid"
+  },
+  "hope": {
+    "field": "feel",
+    "gloss": "hope, wish for"
+  },
+  "wish": {
+    "field": "feel",
+    "gloss": "wish, desire"
+  },
+  "worry": {
+    "field": "feel",
+    "gloss": "worry, be anxious"
+  },
+  "enjoy": {
+    "field": "feel",
+    "gloss": "enjoy, take pleasure in"
+  },
+  "anger": {
+    "field": "feel",
+    "gloss": "anger, rage"
+  },
+  "sad": {
+    "field": "feel",
+    "gloss": "sad, unhappy"
+  },
+  "happy": {
+    "field": "feel",
+    "gloss": "happy, joyful"
+  },
+  "emotion": {
+    "field": "feel",
+    "gloss": "emotion, feeling"
+  },
+  "want": {
+    "field": "want",
+    "gloss": "want, desire, need"
+  },
+  "desire": {
+    "field": "want",
+    "gloss": "desire, wish for"
+  },
+  "need": {
+    "field": "want",
+    "gloss": "need, require"
+  },
+  "require": {
+    "field": "want",
+    "gloss": "require, demand"
+  },
+  "demand": {
+    "field": "want",
+    "gloss": "demand, insist on"
+  },
+  "seek": {
+    "field": "want",
+    "gloss": "seek, look for"
+  },
+  "request": {
+    "field": "want",
+    "gloss": "request, ask for"
+  },
+  "exist": {
+    "field": "exist",
+    "gloss": "exist, be present"
+  },
+  "live": {
+    "field": "exist",
+    "gloss": "live, be alive"
+  },
+  "survive": {
+    "field": "exist",
+    "gloss": "survive, endure"
+  },
+  "appear": {
+    "field": "exist",
+    "gloss": "appear, show up"
+  },
+  "occur": {
+    "field": "exist",
+    "gloss": "occur, happen"
+  },
+  "happen": {
+    "field": "exist",
+    "gloss": "happen, take place"
+  },
+  "emerge": {
+    "field": "exist",
+    "gloss": "emerge, come out"
+  },
+  "become": {
+    "field": "exist",
+    "gloss": "become, turn into"
+  },
+  "rest": {
+    "field": "rest",
+    "gloss": "rest, relax"
+  },
+  "sleep": {
+    "field": "rest",
+    "gloss": "sleep, slumber"
+  },
+  "relax": {
+    "field": "rest",
+    "gloss": "relax, unwind"
+  },
+  "pause": {
+    "field": "rest",
+    "gloss": "pause, stop temporarily"
+  },
+  "give": {
+    "field": "give",
+    "gloss": "give, provide"
+  },
+  "share": {
+    "field": "give",
+    "gloss": "share, distribute"
+  },
+  "donate": {
+    "field": "give",
+    "gloss": "donate, contribute"
+  },
+  "grant": {
+    "field": "give",
+    "gloss": "grant, award"
+  },
+  "distribute": {
+    "field": "give",
+    "gloss": "distribute, hand out"
+  },
+  "offer": {
+    "field": "give",
+    "gloss": "offer, present"
+  },
+  "provide": {
+    "field": "give",
+    "gloss": "provide, supply"
+  },
+  "take": {
+    "field": "take",
+    "gloss": "take, acquire"
+  },
+  "capture": {
+    "field": "take",
+    "gloss": "capture, catch"
+  },
+  "seize": {
+    "field": "take",
+    "gloss": "seize, grab"
+  },
+  "steal": {
+    "field": "take",
+    "gloss": "steal, take without permission"
+  },
+  "acquire": {
+    "field": "take",
+    "gloss": "acquire, obtain"
+  },
+  "obtain": {
+    "field": "take",
+    "gloss": "obtain, get"
+  },
+  "receive": {
+    "field": "take",
+    "gloss": "receive, get"
+  },
+  "download": {
+    "field": "take",
+    "gloss": "download, retrieve data",
+    "level2": "tech.network"
+  },
+  "hold": {
+    "field": "hold",
+    "gloss": "hold, keep, maintain"
+  },
+  "keep": {
+    "field": "hold",
+    "gloss": "keep, retain"
+  },
+  "maintain": {
+    "field": "hold",
+    "gloss": "maintain, sustain"
+  },
+  "preserve": {
+    "field": "hold",
+    "gloss": "preserve, conserve"
+  },
+  "sustain": {
+    "field": "hold",
+    "gloss": "sustain, uphold"
+  },
+  "retain": {
+    "field": "hold",
+    "gloss": "retain, hold onto"
+  },
+  "store": {
+    "field": "hold",
+    "gloss": "store, save data/goods"
+  },
+  "save": {
+    "field": "hold",
+    "gloss": "save, store"
+  },
+  "open": {
+    "field": "open",
+    "gloss": "open, unlock"
+  },
+  "close": {
+    "field": "open",
+    "gloss": "close, shut"
+  },
+  "lock": {
+    "field": "open",
+    "gloss": "lock, secure"
+  },
+  "unlock": {
+    "field": "open",
+    "gloss": "unlock, open"
+  },
+  "start": {
+    "field": "open",
+    "gloss": "start, begin, launch"
+  },
+  "stop": {
+    "field": "open",
+    "gloss": "stop, halt"
+  },
+  "launch": {
+    "field": "open",
+    "gloss": "launch, start up"
+  },
+  "enable": {
+    "field": "enable",
+    "gloss": "enable, allow, activate"
+  },
+  "disable": {
+    "field": "enable",
+    "gloss": "disable, turn off"
+  },
+  "allow": {
+    "field": "enable",
+    "gloss": "allow, permit"
+  },
+  "support": {
+    "field": "enable",
+    "gloss": "support, assist"
+  },
+  "help": {
+    "field": "enable",
+    "gloss": "help, assist"
+  },
+  "assist": {
+    "field": "enable",
+    "gloss": "assist, aid"
+  },
+  "hide": {
+    "field": "hide",
+    "gloss": "hide, conceal"
+  },
+  "conceal": {
+    "field": "hide",
+    "gloss": "conceal, cover"
+  },
+  "reveal": {
+    "field": "hide",
+    "gloss": "reveal, uncover"
+  },
+  "expose": {
+    "field": "hide",
+    "gloss": "expose, bring to light"
+  },
+  "connect": {
+    "field": "connect",
+    "gloss": "connect, link"
+  },
+  "link": {
+    "field": "connect",
+    "gloss": "link, attach"
+  },
+  "attach": {
+    "field": "connect",
+    "gloss": "attach, connect"
+  },
+  "bind": {
+    "field": "connect",
+    "gloss": "bind, tie together"
+  },
+  "integrate": {
+    "field": "connect",
+    "gloss": "integrate, merge systems"
+  },
+  "sync": {
+    "field": "connect",
+    "gloss": "sync, synchronize"
+  },
+  "pair": {
+    "field": "connect",
+    "gloss": "pair, couple together"
+  },
+  "change": {
+    "field": "change",
+    "gloss": "change, modify"
+  },
+  "modify": {
+    "field": "change",
+    "gloss": "modify, alter"
+  },
+  "transform": {
+    "field": "change",
+    "gloss": "transform, convert"
+  },
+  "alter": {
+    "field": "change",
+    "gloss": "alter, adjust"
+  },
+  "adapt": {
+    "field": "change",
+    "gloss": "adapt, adjust to"
+  },
+  "update": {
+    "field": "change",
+    "gloss": "update, refresh"
+  },
+  "adjust": {
+    "field": "change",
+    "gloss": "adjust, fine-tune"
+  },
+  "convert": {
+    "field": "trade",
+    "gloss": "convert currency or units",
+    "level2": "trade.currency"
+  },
+  "shift": {
+    "field": "change",
+    "gloss": "shift, move over"
+  },
+  "switch": {
+    "field": "change",
+    "gloss": "switch, toggle"
+  },
+  "replace": {
+    "field": "change",
+    "gloss": "replace, swap out"
+  },
+  "reform": {
+    "field": "change",
+    "gloss": "reform, improve by changing"
+  },
+  "evolve": {
+    "field": "change",
+    "gloss": "evolve, develop over time"
+  },
+  "fix": {
+    "field": "fix",
+    "gloss": "fix, repair"
+  },
+  "repair": {
+    "field": "fix",
+    "gloss": "repair, restore"
+  },
+  "restore": {
+    "field": "fix",
+    "gloss": "restore, bring back"
+  },
+  "mend": {
+    "field": "fix",
+    "gloss": "mend, fix"
+  },
+  "correct": {
+    "field": "fix",
+    "gloss": "correct, put right"
+  },
+  "improve": {
+    "field": "fix",
+    "gloss": "improve, make better"
+  },
+  "heal": {
+    "field": "fix",
+    "gloss": "heal, recover",
+    "level2": "health.treatment"
+  },
+  "destroy": {
+    "field": "destroy",
+    "gloss": "destroy, demolish"
+  },
+  "break": {
+    "field": "destroy",
+    "gloss": "break, shatter"
+  },
+  "damage": {
+    "field": "destroy",
+    "gloss": "damage, harm"
+  },
+  "demolish": {
+    "field": "destroy",
+    "gloss": "demolish, tear down"
+  },
+  "ruin": {
+    "field": "destroy",
+    "gloss": "ruin, wreck"
+  },
+  "eliminate": {
+    "field": "destroy",
+    "gloss": "eliminate, remove entirely"
+  },
+  "delete": {
+    "field": "destroy",
+    "gloss": "delete, remove (data)"
+  },
+  "remove": {
+    "field": "destroy",
+    "gloss": "remove, take out"
+  },
+  "fight": {
+    "field": "fight",
+    "gloss": "fight, battle"
+  },
+  "battle": {
+    "field": "fight",
+    "gloss": "battle, combat"
+  },
+  "attack": {
+    "field": "fight",
+    "gloss": "attack, assault"
+  },
+  "defend": {
+    "field": "fight",
+    "gloss": "defend, protect"
+  },
+  "war": {
+    "field": "fight",
+    "gloss": "war, armed conflict"
+  },
+  "military": {
+    "field": "fight",
+    "gloss": "military, armed forces"
+  },
+  "conflict": {
+    "field": "fight",
+    "gloss": "conflict, dispute"
+  },
+  "protest": {
+    "field": "fight",
+    "gloss": "protest, demonstrate"
+  },
+  "possess": {
+    "field": "possess",
+    "gloss": "possess, own"
+  },
+  "own": {
+    "field": "possess",
+    "gloss": "own, have"
+  },
+  "property": {
+    "field": "possess",
+    "gloss": "property, asset"
+  },
+  "asset": {
+    "field": "possess",
+    "gloss": "asset, valuable item"
+  },
+  "contain": {
+    "field": "contain",
+    "gloss": "contain, include"
+  },
+  "include": {
+    "field": "contain",
+    "gloss": "include, consist of"
+  },
+  "consist": {
+    "field": "contain",
+    "gloss": "consist of, be made of"
+  },
+  "involve": {
+    "field": "contain",
+    "gloss": "involve, entail"
+  },
+  "category": {
+    "field": "contain",
+    "gloss": "category, type, class"
+  },
+  "type": {
+    "field": "contain",
+    "gloss": "type, kind"
+  },
+  "kind": {
+    "field": "contain",
+    "gloss": "kind, sort"
+  },
+  "force": {
+    "field": "force",
+    "gloss": "force, pressure"
+  },
+  "push": {
+    "field": "force",
+    "gloss": "push, propel"
+  },
+  "pull": {
+    "field": "force",
+    "gloss": "pull, drag"
+  },
+  "pressure": {
+    "field": "force",
+    "gloss": "pressure, force applied"
+  },
+  "impact": {
+    "field": "force",
+    "gloss": "impact, collision effect"
+  },
+  "social": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "community": {
+    "field": "social",
+    "gloss": "community, group"
+  },
+  "society": {
+    "field": "social",
+    "gloss": "society, civilization"
+  },
+  "culture": {
+    "field": "social",
+    "gloss": "culture, customs"
+  },
+  "people": {
+    "field": "social",
+    "gloss": "people, humans"
+  },
+  "person": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "human": {
+    "field": "person",
+    "gloss": "human, person"
+  },
+  "individual": {
+    "field": "person",
+    "gloss": "individual, single person"
+  },
+  "man": {
+    "field": "person",
+    "gloss": "man, male"
+  },
+  "woman": {
+    "field": "person",
+    "gloss": "woman, female"
+  },
+  "child": {
+    "field": "person",
+    "gloss": "child, kid",
+    "level2": "social.family"
+  },
+  "parent": {
+    "field": "person",
+    "gloss": "parent, mother or father",
+    "level2": "social.family"
+  },
+  "mother": {
+    "field": "person",
+    "gloss": "mother",
+    "level2": "social.family"
+  },
+  "father": {
+    "field": "person",
+    "gloss": "father",
+    "level2": "social.family"
+  },
+  "brother": {
+    "field": "person",
+    "gloss": "brother",
+    "level2": "social.family"
+  },
+  "sister": {
+    "field": "person",
+    "gloss": "sister",
+    "level2": "social.family"
+  },
+  "friend": {
+    "field": "person",
+    "gloss": "friend",
+    "level2": "social.contact"
+  },
+  "colleague": {
+    "field": "person",
+    "gloss": "colleague, coworker",
+    "level2": "social.contact"
+  },
+  "partner": {
+    "field": "person",
+    "gloss": "partner, associate",
+    "level2": "social.contact"
+  },
+  "doctor": {
+    "field": "person",
+    "gloss": "doctor, physician",
+    "level2": "health.treatment"
+  },
+  "nurse": {
+    "field": "person",
+    "gloss": "nurse",
+    "level2": "health.treatment"
+  },
+  "teacher": {
+    "field": "person",
+    "gloss": "teacher, educator"
+  },
+  "student2": {
+    "field": "person",
+    "gloss": "student (person)"
+  },
+  "trade": {
+    "field": "trade",
+    "gloss": "trade, commerce"
+  },
+  "buy": {
+    "field": "trade",
+    "gloss": "buy, purchase",
+    "level2": "trade.order"
+  },
+  "purchase": {
+    "field": "trade",
+    "gloss": "purchase, buy",
+    "level2": "trade.order"
+  },
+  "sell": {
+    "field": "trade",
+    "gloss": "sell, offer for sale"
+  },
+  "economy": {
+    "field": "trade",
+    "gloss": "economy, economic system"
+  },
+  "business": {
+    "field": "trade",
+    "gloss": "business, company"
+  },
+  "market": {
+    "field": "trade",
+    "gloss": "market, marketplace"
+  },
+  "price": {
+    "field": "trade",
+    "gloss": "price, cost",
+    "level2": "trade.price"
+  },
+  "cost": {
+    "field": "trade",
+    "gloss": "cost, expense",
+    "level2": "trade.price"
+  },
+  "stock": {
+    "field": "trade",
+    "gloss": "stock, shares",
+    "level2": "trade.stock"
+  },
+  "exchange": {
+    "field": "trade",
+    "gloss": "exchange, swap"
+  },
+  "currency": {
+    "field": "trade",
+    "gloss": "currency, money",
+    "level2": "trade.currency"
+  },
+  "bitcoin": {
+    "field": "trade",
+    "gloss": "Bitcoin",
+    "level2": "trade.currency"
+  },
+  "crypto": {
+    "field": "trade",
+    "gloss": "cryptocurrency",
+    "level2": "trade.currency"
+  },
+  "investment": {
+    "field": "trade",
+    "gloss": "investment, capital"
+  },
+  "profit": {
+    "field": "trade",
+    "gloss": "profit, gain"
+  },
+  "revenue": {
+    "field": "trade",
+    "gloss": "revenue, income"
+  },
+  "tax": {
+    "field": "trade",
+    "gloss": "tax, levy"
+  },
+  "budget": {
+    "field": "trade",
+    "gloss": "budget, financial plan"
+  },
+  "loan": {
+    "field": "trade",
+    "gloss": "loan, borrowed money"
+  },
+  "mortgage": {
+    "field": "trade",
+    "gloss": "mortgage, home loan"
+  },
+  "inflation": {
+    "field": "trade",
+    "gloss": "inflation, rising prices"
+  },
+  "science": {
+    "field": "science",
+    "gloss": "science, scientific knowledge"
+  },
+  "experiment": {
+    "field": "science",
+    "gloss": "experiment, test"
+  },
+  "theory": {
+    "field": "science",
+    "gloss": "theory, hypothesis"
+  },
+  "research": {
+    "field": "science",
+    "gloss": "research, investigation"
+  },
+  "biology": {
+    "field": "science",
+    "gloss": "biology, life science"
+  },
+  "chemistry": {
+    "field": "science",
+    "gloss": "chemistry, chemical science"
+  },
+  "physics": {
+    "field": "science",
+    "gloss": "physics, physical science"
+  },
+  "atom": {
+    "field": "science",
+    "gloss": "atom, subatomic"
+  },
+  "molecule": {
+    "field": "science",
+    "gloss": "molecule, chemical unit"
+  },
+  "cell": {
+    "field": "science",
+    "gloss": "cell, biological unit"
+  },
+  "evolution": {
+    "field": "science",
+    "gloss": "evolution, natural selection"
+  },
+  "gravity": {
+    "field": "science",
+    "gloss": "gravity, gravitational force"
+  },
+  "energy": {
+    "field": "science",
+    "gloss": "energy, power"
+  },
+  "quantum": {
+    "field": "science",
+    "gloss": "quantum, quantum mechanics"
+  },
+  "dna": {
+    "field": "science",
+    "gloss": "DNA, genetic code"
+  },
+  "element": {
+    "field": "science",
+    "gloss": "chemical element"
+  },
+  "tech": {
+    "field": "tech",
+    "gloss": "technology, digital"
+  },
+  "computer": {
+    "field": "tech",
+    "gloss": "computer, PC"
+  },
+  "software": {
+    "field": "tech",
+    "gloss": "software, application",
+    "level2": "tech.code"
+  },
+  "digital": {
+    "field": "tech",
+    "gloss": "digital, electronic"
+  },
+  "code": {
+    "field": "tech",
+    "gloss": "code, program",
+    "level2": "tech.code"
+  },
+  "program": {
+    "field": "tech",
+    "gloss": "program, software",
+    "level2": "tech.code"
+  },
+  "system": {
+    "field": "tech",
+    "gloss": "system, platform"
+  },
+  "data": {
+    "field": "tech",
+    "gloss": "data, information"
+  },
+  "online": {
+    "field": "tech",
+    "gloss": "online, connected",
+    "level2": "tech.network"
+  },
+  "database": {
+    "field": "tech",
+    "gloss": "database, data store",
+    "level2": "tech.code"
+  },
+  "server": {
+    "field": "tech",
+    "gloss": "server, backend",
+    "level2": "tech.network"
+  },
+  "network": {
+    "field": "tech",
+    "gloss": "network, internet",
+    "level2": "tech.network"
+  },
+  "internet": {
+    "field": "tech",
+    "gloss": "internet, the web",
+    "level2": "tech.network"
+  },
+  "cloud": {
+    "field": "tech",
+    "gloss": "cloud computing",
+    "level2": "tech.network"
+  },
+  "algorithm": {
+    "field": "tech",
+    "gloss": "algorithm, procedure",
+    "level2": "tech.code"
+  },
+  "api": {
+    "field": "tech",
+    "gloss": "API, interface",
+    "level2": "tech.code"
+  },
+  "python": {
+    "field": "tech",
+    "gloss": "Python (language)",
+    "level2": "tech.code"
+  },
+  "javascript": {
+    "field": "tech",
+    "gloss": "JavaScript (language)",
+    "level2": "tech.code"
+  },
+  "typescript": {
+    "field": "tech",
+    "gloss": "TypeScript (language)",
+    "level2": "tech.code"
+  },
+  "java": {
+    "field": "tech",
+    "gloss": "Java (language)",
+    "level2": "tech.code"
+  },
+  "security": {
+    "field": "tech",
+    "gloss": "security, cybersecurity",
+    "level2": "tech.security"
+  },
+  "encryption": {
+    "field": "tech",
+    "gloss": "encryption, encode data",
+    "level2": "tech.security"
+  },
+  "hardware": {
+    "field": "tech",
+    "gloss": "hardware, physical device",
+    "level2": "tech.hardware"
+  },
+  "cpu": {
+    "field": "tech",
+    "gloss": "CPU, processor",
+    "level2": "tech.hardware"
+  },
+  "gpu": {
+    "field": "tech",
+    "gloss": "GPU, graphics processor",
+    "level2": "tech.hardware"
+  },
+  "ai": {
+    "field": "tech",
+    "gloss": "artificial intelligence",
+    "level2": "tech.ai"
+  },
+  "machine": {
+    "field": "tech",
+    "gloss": "machine, device"
+  },
+  "robot": {
+    "field": "tech",
+    "gloss": "robot, automated machine"
+  },
+  "app": {
+    "field": "tech",
+    "gloss": "app, application",
+    "level2": "tech.code"
+  },
+  "deploy": {
+    "field": "tech",
+    "gloss": "deploy, release to server/cloud",
+    "level2": "tech.network"
+  },
+  "debug": {
+    "field": "tech",
+    "gloss": "debug, fix code bugs",
+    "level2": "tech.code"
+  },
+  "bug": {
+    "field": "tech",
+    "gloss": "bug, software error",
+    "level2": "tech.code"
+  },
+  "git": {
+    "field": "tech",
+    "gloss": "Git, version control",
+    "level2": "tech.code"
+  },
+  "wifi": {
+    "field": "tech",
+    "gloss": "WiFi, wireless network",
+    "level2": "tech.network"
+  },
+  "bluetooth": {
+    "field": "tech",
+    "gloss": "Bluetooth, wireless",
+    "level2": "tech.iot"
+  },
+  "smart": {
+    "field": "tech",
+    "gloss": "smart, IoT-enabled",
+    "level2": "tech.iot"
+  },
+  "iot": {
+    "field": "tech",
+    "gloss": "IoT, internet of things",
+    "level2": "tech.iot"
+  },
+  "health": {
+    "field": "health",
+    "gloss": "health, wellbeing"
+  },
+  "medicine": {
+    "field": "health",
+    "gloss": "medicine, medical care"
+  },
+  "symptom": {
+    "field": "health",
+    "gloss": "symptom, sign of illness",
+    "level2": "health.symptom"
+  },
+  "pain": {
+    "field": "health",
+    "gloss": "pain, ache",
+    "level2": "health.symptom"
+  },
+  "fever": {
+    "field": "health",
+    "gloss": "fever, high temperature",
+    "level2": "health.symptom"
+  },
+  "cough": {
+    "field": "health",
+    "gloss": "cough",
+    "level2": "health.symptom"
+  },
+  "headache": {
+    "field": "health",
+    "gloss": "headache",
+    "level2": "health.symptom"
+  },
+  "nausea": {
+    "field": "health",
+    "gloss": "nausea, feeling sick",
+    "level2": "health.symptom"
+  },
+  "disease": {
+    "field": "health",
+    "gloss": "disease, illness"
+  },
+  "medication": {
+    "field": "health",
+    "gloss": "medication, drug",
+    "level2": "health.drug"
+  },
+  "drug": {
+    "field": "health",
+    "gloss": "drug, medicine",
+    "level2": "health.drug"
+  },
+  "antibiotic": {
+    "field": "health",
+    "gloss": "antibiotic",
+    "level2": "health.drug"
+  },
+  "vaccine": {
+    "field": "health",
+    "gloss": "vaccine, immunization",
+    "level2": "health.drug"
+  },
+  "prescription": {
+    "field": "health",
+    "gloss": "prescription",
+    "level2": "health.drug"
+  },
+  "vitamin": {
+    "field": "health",
+    "gloss": "vitamin, supplement",
+    "level2": "health.drug"
+  },
+  "therapy": {
+    "field": "health",
+    "gloss": "therapy, treatment",
+    "level2": "health.treatment"
+  },
+  "surgery": {
+    "field": "health",
+    "gloss": "surgery, operation",
+    "level2": "health.treatment"
+  },
+  "diagnosis": {
+    "field": "health",
+    "gloss": "diagnosis, medical assessment",
+    "level2": "health.treatment"
+  },
+  "hospital": {
+    "field": "health",
+    "gloss": "hospital, medical center"
+  },
+  "clinic": {
+    "field": "health",
+    "gloss": "clinic, doctor's office"
+  },
+  "exercise": {
+    "field": "health",
+    "gloss": "exercise, physical activity",
+    "level2": "health.fitness"
+  },
+  "gym": {
+    "field": "health",
+    "gloss": "gym, fitness center",
+    "level2": "health.fitness"
+  },
+  "diet": {
+    "field": "health",
+    "gloss": "diet, eating plan",
+    "level2": "health.fitness"
+  },
+  "nutrition": {
+    "field": "food",
+    "gloss": "nutrition, nutrients",
+    "level2": "food.nutrition"
+  },
+  "calorie": {
+    "field": "food",
+    "gloss": "calorie, energy unit",
+    "level2": "food.nutrition"
+  },
+  "art": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "music": {
+    "field": "art",
+    "gloss": "music, melody",
+    "level2": "art.music"
+  },
+  "song": {
+    "field": "art",
+    "gloss": "song, musical track",
+    "level2": "art.music"
+  },
+  "album": {
+    "field": "art",
+    "gloss": "album, music collection",
+    "level2": "art.music"
+  },
+  "musician": {
+    "field": "art",
+    "gloss": "musician, music artist",
+    "level2": "art.music"
+  },
+  "concert": {
+    "field": "art",
+    "gloss": "concert, live music",
+    "level2": "art.music"
+  },
+  "guitar": {
+    "field": "art",
+    "gloss": "guitar, instrument",
+    "level2": "art.music"
+  },
+  "piano": {
+    "field": "art",
+    "gloss": "piano, instrument",
+    "level2": "art.music"
+  },
+  "movie": {
+    "field": "art",
+    "gloss": "movie, film",
+    "level2": "art.film"
+  },
+  "film": {
+    "field": "art",
+    "gloss": "film, cinema",
+    "level2": "art.film"
+  },
+  "cinema": {
+    "field": "art",
+    "gloss": "cinema, movie theater",
+    "level2": "art.film"
+  },
+  "director": {
+    "field": "art",
+    "gloss": "director, filmmaker",
+    "level2": "art.film"
+  },
+  "painting": {
+    "field": "art",
+    "gloss": "painting, artwork",
+    "level2": "art.visual"
+  },
+  "drawing": {
+    "field": "art",
+    "gloss": "drawing, sketch",
+    "level2": "art.visual"
+  },
+  "photography": {
+    "field": "art",
+    "gloss": "photography, photos",
+    "level2": "art.visual"
+  },
+  "novel": {
+    "field": "art",
+    "gloss": "novel, book of fiction",
+    "level2": "art.book"
+  },
+  "poem": {
+    "field": "art",
+    "gloss": "poem, poetry",
+    "level2": "art.book"
+  },
+  "book": {
+    "field": "art",
+    "gloss": "book, publication",
+    "level2": "art.book"
+  },
+  "play": {
+    "field": "art",
+    "gloss": "play media, theatrical play"
+  },
+  "sport": {
+    "field": "sport",
+    "gloss": "sport, athletics"
+  },
+  "game": {
+    "field": "sport",
+    "gloss": "game, match"
+  },
+  "match": {
+    "field": "sport",
+    "gloss": "match, competition"
+  },
+  "score": {
+    "field": "sport",
+    "gloss": "score, points"
+  },
+  "goal": {
+    "field": "sport",
+    "gloss": "goal, scoring play"
+  },
+  "team": {
+    "field": "sport",
+    "gloss": "team, club"
+  },
+  "player": {
+    "field": "sport",
+    "gloss": "player, athlete"
+  },
+  "champion": {
+    "field": "sport",
+    "gloss": "champion, winner"
+  },
+  "football": {
+    "field": "sport",
+    "gloss": "football/soccer"
+  },
+  "basketball": {
+    "field": "sport",
+    "gloss": "basketball"
+  },
+  "tennis": {
+    "field": "sport",
+    "gloss": "tennis"
+  },
+  "swimming": {
+    "field": "sport",
+    "gloss": "swimming"
+  },
+  "time": {
+    "field": "time",
+    "gloss": "time, moment"
+  },
+  "schedule": {
+    "field": "time",
+    "gloss": "schedule, timetable",
+    "level2": "time.calendar"
+  },
+  "reminder": {
+    "field": "time",
+    "gloss": "reminder, notification",
+    "level2": "time.alarm"
+  },
+  "alarm": {
+    "field": "time",
+    "gloss": "alarm, wake-up call",
+    "level2": "time.alarm"
+  },
+  "appointment": {
+    "field": "time",
+    "gloss": "appointment, booking",
+    "level2": "time.calendar"
+  },
+  "calendar": {
+    "field": "time",
+    "gloss": "calendar",
+    "level2": "time.calendar"
+  },
+  "meeting": {
+    "field": "time",
+    "gloss": "meeting, gathering",
+    "level2": "time.calendar"
+  },
+  "deadline": {
+    "field": "time",
+    "gloss": "deadline, due date"
+  },
+  "event": {
+    "field": "time",
+    "gloss": "event, occasion",
+    "level2": "time.calendar"
+  },
+  "today": {
+    "field": "time",
+    "gloss": "today, current day"
+  },
+  "tomorrow": {
+    "field": "time",
+    "gloss": "tomorrow, next day"
+  },
+  "yesterday": {
+    "field": "time",
+    "gloss": "yesterday, previous day"
+  },
+  "week": {
+    "field": "time",
+    "gloss": "week, 7 days"
+  },
+  "month": {
+    "field": "time",
+    "gloss": "month"
+  },
+  "year": {
+    "field": "time",
+    "gloss": "year"
+  },
+  "morning": {
+    "field": "time",
+    "gloss": "morning, a.m."
+  },
+  "afternoon": {
+    "field": "time",
+    "gloss": "afternoon"
+  },
+  "evening": {
+    "field": "time",
+    "gloss": "evening, dusk"
+  },
+  "night": {
+    "field": "time",
+    "gloss": "night, nighttime"
+  },
+  "monday": {
+    "field": "time",
+    "gloss": "Monday"
+  },
+  "tuesday": {
+    "field": "time",
+    "gloss": "Tuesday"
+  },
+  "wednesday": {
+    "field": "time",
+    "gloss": "Wednesday"
+  },
+  "thursday": {
+    "field": "time",
+    "gloss": "Thursday"
+  },
+  "friday": {
+    "field": "time",
+    "gloss": "Friday"
+  },
+  "saturday": {
+    "field": "time",
+    "gloss": "Saturday"
+  },
+  "sunday": {
+    "field": "time",
+    "gloss": "Sunday"
+  },
+  "birthday": {
+    "field": "time",
+    "gloss": "birthday"
+  },
+  "holiday": {
+    "field": "time",
+    "gloss": "holiday, day off"
+  },
+  "anniversary": {
+    "field": "time",
+    "gloss": "anniversary"
+  },
+  "minute": {
+    "field": "time",
+    "gloss": "minute",
+    "level2": "time.duration"
+  },
+  "hour": {
+    "field": "time",
+    "gloss": "hour",
+    "level2": "time.duration"
+  },
+  "second": {
+    "field": "time",
+    "gloss": "second, unit of time",
+    "level2": "time.duration"
+  },
+  "place": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "location": {
+    "field": "place",
+    "gloss": "location, spot"
+  },
+  "city": {
+    "field": "place",
+    "gloss": "city, town",
+    "level2": "place.city"
+  },
+  "country": {
+    "field": "place",
+    "gloss": "country, nation",
+    "level2": "place.country"
+  },
+  "region": {
+    "field": "place",
+    "gloss": "region, area"
+  },
+  "street": {
+    "field": "place",
+    "gloss": "street, road"
+  },
+  "airport": {
+    "field": "place",
+    "gloss": "airport",
+    "level2": "move.fly"
+  },
+  "hotel": {
+    "field": "place",
+    "gloss": "hotel, accommodation"
+  },
+  "hospital2": {
+    "field": "place",
+    "gloss": "hospital (as place)"
+  },
+  "school": {
+    "field": "place",
+    "gloss": "school, educational institution"
+  },
+  "university": {
+    "field": "place",
+    "gloss": "university, college"
+  },
+  "mall": {
+    "field": "place",
+    "gloss": "shopping mall",
+    "level2": "trade.order"
+  },
+  "supermarket": {
+    "field": "place",
+    "gloss": "supermarket, grocery store",
+    "level2": "trade.order"
+  },
+  "restaurant": {
+    "field": "food",
+    "gloss": "restaurant, dining place",
+    "level2": "food.restaurant"
+  },
+  "cafe": {
+    "field": "food",
+    "gloss": "café, coffee shop",
+    "level2": "food.restaurant"
+  },
+  "map": {
+    "field": "place",
+    "gloss": "map, cartography",
+    "level2": "place.route"
+  },
+  "dwell": {
+    "field": "dwell",
+    "gloss": "dwell, live in"
+  },
+  "house": {
+    "field": "dwell",
+    "gloss": "house, home",
+    "level2": "place.home"
+  },
+  "home": {
+    "field": "dwell",
+    "gloss": "home, residence",
+    "level2": "place.home"
+  },
+  "room": {
+    "field": "dwell",
+    "gloss": "room, chamber",
+    "level2": "place.home"
+  },
+  "apartment": {
+    "field": "dwell",
+    "gloss": "apartment, flat",
+    "level2": "place.home"
+  },
+  "building": {
+    "field": "dwell",
+    "gloss": "building, structure"
+  },
+  "office": {
+    "field": "dwell",
+    "gloss": "office, workspace"
+  },
+  "kitchen": {
+    "field": "dwell",
+    "gloss": "kitchen",
+    "level2": "place.home"
+  },
+  "bedroom": {
+    "field": "dwell",
+    "gloss": "bedroom",
+    "level2": "place.home"
+  },
+  "bathroom": {
+    "field": "dwell",
+    "gloss": "bathroom",
+    "level2": "place.home"
+  },
+  "structure": {
+    "field": "structure",
+    "gloss": "structure, infrastructure"
+  },
+  "bridge": {
+    "field": "structure",
+    "gloss": "bridge"
+  },
+  "road": {
+    "field": "structure",
+    "gloss": "road, highway"
+  },
+  "tower": {
+    "field": "structure",
+    "gloss": "tower, tall building"
+  },
+  "size": {
+    "field": "size",
+    "gloss": "size, scale"
+  },
+  "number": {
+    "field": "size",
+    "gloss": "number, numeral"
+  },
+  "amount": {
+    "field": "size",
+    "gloss": "amount, quantity"
+  },
+  "quantity": {
+    "field": "size",
+    "gloss": "quantity, count"
+  },
+  "large": {
+    "field": "size",
+    "gloss": "large, big"
+  },
+  "small": {
+    "field": "size",
+    "gloss": "small, little"
+  },
+  "measure": {
+    "field": "measure",
+    "gloss": "measure, measurement"
+  },
+  "calculate": {
+    "field": "measure",
+    "gloss": "calculate, compute"
+  },
+  "count": {
+    "field": "measure",
+    "gloss": "count, tally"
+  },
+  "percent": {
+    "field": "measure",
+    "gloss": "percent, proportion"
+  },
+  "kilometer": {
+    "field": "measure",
+    "gloss": "kilometer, distance"
+  },
+  "mile": {
+    "field": "measure",
+    "gloss": "mile, distance"
+  },
+  "meter": {
+    "field": "measure",
+    "gloss": "meter, distance"
+  },
+  "kilogram": {
+    "field": "measure",
+    "gloss": "kilogram, weight"
+  },
+  "celsius": {
+    "field": "measure",
+    "gloss": "Celsius, temperature"
+  },
+  "fahrenheit": {
+    "field": "measure",
+    "gloss": "Fahrenheit, temperature"
+  },
+  "unit convert": {
+    "field": "measure",
+    "gloss": "unit conversion"
+  },
+  "total": {
+    "field": "measure",
+    "gloss": "total, sum"
+  },
+  "average": {
+    "field": "measure",
+    "gloss": "average, mean"
+  },
+  "quality": {
+    "field": "quality",
+    "gloss": "quality, level of goodness"
+  },
+  "good": {
+    "field": "quality",
+    "gloss": "good, positive quality"
+  },
+  "bad": {
+    "field": "quality",
+    "gloss": "bad, negative quality"
+  },
+  "strong": {
+    "field": "quality",
+    "gloss": "strong, powerful"
+  },
+  "weak": {
+    "field": "quality",
+    "gloss": "weak, lacking strength"
+  },
+  "fast": {
+    "field": "quality",
+    "gloss": "fast, quick"
+  },
+  "slow": {
+    "field": "quality",
+    "gloss": "slow, not fast"
+  },
+  "best": {
+    "field": "quality",
+    "gloss": "best, highest quality"
+  },
+  "worst": {
+    "field": "quality",
+    "gloss": "worst, lowest quality"
+  },
+  "easy": {
+    "field": "quality",
+    "gloss": "easy, simple"
+  },
+  "hard": {
+    "field": "quality",
+    "gloss": "hard, difficult"
+  },
+  "new": {
+    "field": "quality",
+    "gloss": "new, recent"
+  },
+  "old": {
+    "field": "quality",
+    "gloss": "old, aged"
+  },
+  "name": {
+    "field": "name",
+    "gloss": "name, label, title"
+  },
+  "label": {
+    "field": "name",
+    "gloss": "label, tag"
+  },
+  "term": {
+    "field": "name",
+    "gloss": "term, word used"
+  },
+  "symbol": {
+    "field": "name",
+    "gloss": "symbol, sign"
+  },
+  "title": {
+    "field": "name",
+    "gloss": "title, heading"
+  },
+  "food": {
+    "field": "food",
+    "gloss": "food, meal"
+  },
+  "eat": {
+    "field": "food",
+    "gloss": "eat, consume food"
+  },
+  "cook": {
+    "field": "food",
+    "gloss": "cook, prepare food",
+    "level2": "food.recipe"
+  },
+  "recipe": {
+    "field": "food",
+    "gloss": "recipe, cooking instructions",
+    "level2": "food.recipe"
+  },
+  "meal": {
+    "field": "food",
+    "gloss": "meal, food serving"
+  },
+  "drink": {
+    "field": "food",
+    "gloss": "drink, beverage"
+  },
+  "pizza": {
+    "field": "food",
+    "gloss": "pizza"
+  },
+  "chicken": {
+    "field": "food",
+    "gloss": "chicken (food)"
+  },
+  "rice": {
+    "field": "food",
+    "gloss": "rice"
+  },
+  "bread": {
+    "field": "food",
+    "gloss": "bread"
+  },
+  "salad": {
+    "field": "food",
+    "gloss": "salad"
+  },
+  "soup": {
+    "field": "food",
+    "gloss": "soup"
+  },
+  "coffee": {
+    "field": "food",
+    "gloss": "coffee",
+    "level2": "food.restaurant"
+  },
+  "breakfast": {
+    "field": "food",
+    "gloss": "breakfast, morning meal"
+  },
+  "lunch": {
+    "field": "food",
+    "gloss": "lunch, midday meal"
+  },
+  "dinner": {
+    "field": "food",
+    "gloss": "dinner, evening meal"
+  },
+  "ingredient": {
+    "field": "food",
+    "gloss": "ingredient",
+    "level2": "food.recipe"
+  },
+  "vegan": {
+    "field": "food",
+    "gloss": "vegan, plant-based"
+  },
+  "vegetarian": {
+    "field": "food",
+    "gloss": "vegetarian"
+  },
+  "weather": {
+    "field": "weather",
+    "gloss": "weather, atmospheric conditions"
+  },
+  "rain": {
+    "field": "weather",
+    "gloss": "rain, precipitation",
+    "level2": "weather.rain"
+  },
+  "snow": {
+    "field": "weather",
+    "gloss": "snow, snowfall",
+    "level2": "weather.rain"
+  },
+  "storm": {
+    "field": "weather",
+    "gloss": "storm, severe weather"
+  },
+  "wind": {
+    "field": "weather",
+    "gloss": "wind, breeze"
+  },
+  "sunny": {
+    "field": "weather",
+    "gloss": "sunny, clear sky"
+  },
+  "cloudy": {
+    "field": "weather",
+    "gloss": "cloudy, overcast"
+  },
+  "temperature": {
+    "field": "weather",
+    "gloss": "temperature",
+    "level2": "weather.temp"
+  },
+  "forecast": {
+    "field": "weather",
+    "gloss": "weather forecast",
+    "level2": "weather.forecast"
+  },
+  "humidity": {
+    "field": "weather",
+    "gloss": "humidity, moisture level"
+  },
+  "thunder": {
+    "field": "weather",
+    "gloss": "thunder, thunderstorm"
+  },
+  "fog": {
+    "field": "weather",
+    "gloss": "fog, mist"
+  },
+  "nature": {
+    "field": "nature",
+    "gloss": "nature, natural world"
+  },
+  "ocean": {
+    "field": "nature",
+    "gloss": "ocean, sea"
+  },
+  "sea": {
+    "field": "nature",
+    "gloss": "sea, large body of water"
+  },
+  "lake": {
+    "field": "nature",
+    "gloss": "lake"
+  },
+  "river": {
+    "field": "nature",
+    "gloss": "river, stream"
+  },
+  "mountain": {
+    "field": "nature",
+    "gloss": "mountain, peak"
+  },
+  "desert": {
+    "field": "nature",
+    "gloss": "desert, arid land"
+  },
+  "forest": {
+    "field": "nature",
+    "gloss": "forest, woodland"
+  },
+  "island": {
+    "field": "nature",
+    "gloss": "island"
+  },
+  "beach": {
+    "field": "nature",
+    "gloss": "beach, shoreline"
+  },
+  "environment": {
+    "field": "nature",
+    "gloss": "environment, surroundings"
+  },
+  "ecosystem": {
+    "field": "nature",
+    "gloss": "ecosystem"
+  },
+  "animal": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "dog": {
+    "field": "animal",
+    "gloss": "dog"
+  },
+  "cat": {
+    "field": "animal",
+    "gloss": "cat"
+  },
+  "bird": {
+    "field": "animal",
+    "gloss": "bird"
+  },
+  "fish": {
+    "field": "animal",
+    "gloss": "fish"
+  },
+  "horse": {
+    "field": "animal",
+    "gloss": "horse"
+  },
+  "lion": {
+    "field": "animal",
+    "gloss": "lion"
+  },
+  "elephant": {
+    "field": "animal",
+    "gloss": "elephant"
+  },
+  "whale": {
+    "field": "animal",
+    "gloss": "whale"
+  },
+  "insect": {
+    "field": "animal",
+    "gloss": "insect, bug"
+  },
+  "camel": {
+    "field": "animal",
+    "gloss": "camel"
+  },
+  "plant": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "tree": {
+    "field": "plant",
+    "gloss": "tree"
+  },
+  "flower": {
+    "field": "plant",
+    "gloss": "flower"
+  },
+  "grass": {
+    "field": "plant",
+    "gloss": "grass"
+  },
+  "rose": {
+    "field": "plant",
+    "gloss": "rose"
+  },
+  "seed": {
+    "field": "plant",
+    "gloss": "seed"
+  },
+  "body": {
+    "field": "body",
+    "gloss": "body, physical form"
+  },
+  "arm": {
+    "field": "body",
+    "gloss": "arm"
+  },
+  "leg": {
+    "field": "body",
+    "gloss": "leg"
+  },
+  "hand": {
+    "field": "body",
+    "gloss": "hand"
+  },
+  "head": {
+    "field": "body",
+    "gloss": "head"
+  },
+  "heart": {
+    "field": "body",
+    "gloss": "heart, cardiac"
+  },
+  "brain": {
+    "field": "body",
+    "gloss": "brain, neural"
+  },
+  "eye": {
+    "field": "body",
+    "gloss": "eye"
+  },
+  "ear": {
+    "field": "body",
+    "gloss": "ear"
+  },
+  "nose": {
+    "field": "body",
+    "gloss": "nose"
+  },
+  "blood": {
+    "field": "body",
+    "gloss": "blood"
+  },
+  "bone": {
+    "field": "body",
+    "gloss": "bone, skeleton"
+  },
+  "muscle": {
+    "field": "body",
+    "gloss": "muscle"
+  },
+  "skin": {
+    "field": "body",
+    "gloss": "skin"
+  },
+  "color": {
+    "field": "color",
+    "gloss": "color, hue"
+  },
+  "red": {
+    "field": "color",
+    "gloss": "red"
+  },
+  "blue": {
+    "field": "color",
+    "gloss": "blue"
+  },
+  "green": {
+    "field": "color",
+    "gloss": "green"
+  },
+  "yellow": {
+    "field": "color",
+    "gloss": "yellow"
+  },
+  "black": {
+    "field": "color",
+    "gloss": "black"
+  },
+  "white": {
+    "field": "color",
+    "gloss": "white"
+  },
+  "orange": {
+    "field": "color",
+    "gloss": "orange"
+  },
+  "purple": {
+    "field": "color",
+    "gloss": "purple"
+  },
+  "pink": {
+    "field": "color",
+    "gloss": "pink"
+  },
+  "brown": {
+    "field": "color",
+    "gloss": "brown"
+  },
+  "grey": {
+    "field": "color",
+    "gloss": "grey, gray"
+  },
+  "gray": {
+    "field": "color",
+    "gloss": "gray, grey"
+  },
+  "golden": {
+    "field": "color",
+    "gloss": "golden, gold color"
+  },
+  "material": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "wood": {
+    "field": "material",
+    "gloss": "wood, timber"
+  },
+  "metal": {
+    "field": "material",
+    "gloss": "metal"
+  },
+  "iron": {
+    "field": "material",
+    "gloss": "iron"
+  },
+  "steel": {
+    "field": "material",
+    "gloss": "steel"
+  },
+  "glass": {
+    "field": "material",
+    "gloss": "glass"
+  },
+  "stone": {
+    "field": "material",
+    "gloss": "stone, rock"
+  },
+  "plastic": {
+    "field": "material",
+    "gloss": "plastic"
+  },
+  "fabric": {
+    "field": "material",
+    "gloss": "fabric, cloth"
+  },
+  "cotton": {
+    "field": "material",
+    "gloss": "cotton"
+  },
+  "gold": {
+    "field": "material",
+    "gloss": "gold (material)"
+  },
+  "silver": {
+    "field": "material",
+    "gloss": "silver (material)"
+  }
 }

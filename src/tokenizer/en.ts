@@ -24,10 +24,10 @@ import {
 function normalize(text: string): string {
   return text
     .normalize("NFKC")
-    .replace(/[\u2018\u2019]/g, "'")  // smart quotes → straight
+    .replace(/[\u2018\u2019]/g, "'") // smart quotes → straight
     .replace(/[\u201C\u201D]/g, '"')
-    .replace(/n't/g, " not")          // can't → can not
-    .replace(/'s\b/g, "")             // John's → John
+    .replace(/n't/g, " not") // can't → can not
+    .replace(/'s\b/g, "") // John's → John
     .replace(/'re\b/g, " are")
     .replace(/'ve\b/g, " have")
     .replace(/'ll\b/g, " will")
@@ -39,15 +39,49 @@ function normalize(text: string): string {
 // ── 2. Tokenize words ─────────────────────────────────────────────────────────
 
 const SKIP_WORDS = new Set([
-  "a", "an", "the", "is", "are", "was", "were", "be", "been", "being",
-  "i", "you", "he", "she", "it", "we", "they", "me", "him", "her", "us", "them",
-  "my", "your", "his", "its", "our", "their",
-  "this", "that", "these", "those",
-  "have", "has", "do", "does", "am",
-  "get", "got", "got",
+  "a",
+  "an",
+  "the",
+  "is",
+  "are",
+  "be",
+  "been",
+  "being",
+  "i",
+  "you",
+  "he",
+  "she",
+  "it",
+  "we",
+  "they",
+  "me",
+  "him",
+  "her",
+  "us",
+  "them",
+  "my",
+  "your",
+  "his",
+  "its",
+  "our",
+  "their",
+  "this",
+  "that",
+  "these",
+  "those",
+  "have",
+  "has",
+  "do",
+  "does",
+  "am",
+  "get",
+  "got",
+  "got",
 ]);
 
-function splitWords(text: string): Array<{ word: string; offset: [number, number] }> {
+function splitWords(
+  text: string,
+): Array<{ word: string; offset: [number, number] }> {
   const results: Array<{ word: string; offset: [number, number] }> = [];
   // Split on whitespace and punctuation, preserving offsets
   const re = /[^\s.,!?;:()\[\]{}"'—–…]+/g;
@@ -105,7 +139,12 @@ function stripMorphology(lower: string): StripResult | null {
       const stem = lower.slice(0, lower.length - suf.length);
       // Try stem, stem+e (for silent-e drop: "writ" → "write")
       const entry = lookupEnStem(stem) ?? lookupEnStem(stem + "e");
-      if (entry) return { stem: entry ? stem : stem + "e", role: rule.role, gloss: rule.gloss };
+      if (entry)
+        return {
+          stem: entry ? stem : stem + "e",
+          role: rule.role,
+          gloss: rule.gloss,
+        };
     }
   }
 
@@ -125,7 +164,7 @@ function makeToken(
     structure?: string;
     gloss?: string;
     confidence?: number;
-  } = {}
+  } = {},
 ): CSTToken {
   const { field, role, relation, structure, gloss, confidence = 1.0 } = opts;
 
@@ -163,6 +202,17 @@ export function tokenizeEn(text: string): CSTOutput {
   const wordEntries = splitWords(normalized);
   const tokens: CSTToken[] = [];
 
+  // Detect question mark before word split strips it
+  if (text.includes("?")) {
+    const qIdx = text.indexOf("?");
+    tokens.push(
+      makeToken("STR", "?", [qIdx, qIdx + 1], {
+        structure: "question",
+        confidence: 1.0,
+      }),
+    );
+  }
+
   let i = 0;
   while (i < wordEntries.length) {
     const { word, offset } = wordEntries[i];
@@ -182,11 +232,13 @@ export function tokenizeEn(text: string): CSTOutput {
       if (compound && compound.field) {
         const spanOffset: [number, number] = [offset[0], next.offset[1]];
         const surface = word + " " + next.word;
-        tokens.push(makeToken("CONCEPT", surface, spanOffset, {
-          field: compound.field,
-          gloss: compound.gloss,
-          confidence: 0.95,
-        }));
+        tokens.push(
+          makeToken("CONCEPT", surface, spanOffset, {
+            field: compound.field,
+            gloss: compound.gloss,
+            confidence: 0.95,
+          }),
+        );
         i += 2;
         continue;
       }
@@ -195,12 +247,14 @@ export function tokenizeEn(text: string): CSTOutput {
     // ── Function word check (STR / REL) ───────────────────────────────────
     const funcEntry = lookupEnFunction(lower);
     if (funcEntry) {
-      tokens.push(makeToken(funcEntry.type, word, offset, {
-        structure: funcEntry.structure,
-        relation: funcEntry.relation,
-        gloss: funcEntry.gloss,
-        confidence: 1.0,
-      }));
+      tokens.push(
+        makeToken(funcEntry.type, word, offset, {
+          structure: funcEntry.structure,
+          relation: funcEntry.relation,
+          gloss: funcEntry.gloss,
+          confidence: 1.0,
+        }),
+      );
       i++;
       continue;
     }
@@ -208,11 +262,16 @@ export function tokenizeEn(text: string): CSTOutput {
     // ── Direct stem lookup ────────────────────────────────────────────────
     const stemEntry = lookupEnStem(lower);
     if (stemEntry) {
-      tokens.push(makeToken("CONCEPT", word, offset, {
-        field: stemEntry.level2 ?? stemEntry.field,
-        gloss: stemEntry.gloss,
-        confidence: 0.9,
-      }));
+      // Also check morphological role (e.g. -er → agent for "teacher")
+      const stripped = stripMorphology(lower);
+      tokens.push(
+        makeToken("CONCEPT", word, offset, {
+          field: stemEntry.level2 ?? stemEntry.field,
+          role: stripped?.role,
+          gloss: stemEntry.gloss,
+          confidence: 0.9,
+        }),
+      );
       i++;
       continue;
     }
@@ -222,12 +281,14 @@ export function tokenizeEn(text: string): CSTOutput {
     if (stripped) {
       const reEntry = lookupEnStem(stripped.stem);
       if (reEntry) {
-        tokens.push(makeToken("CONCEPT", word, offset, {
-          field: reEntry.level2 ?? reEntry.field,
-          role: stripped.role,
-          gloss: reEntry.gloss,
-          confidence: 0.8,
-        }));
+        tokens.push(
+          makeToken("CONCEPT", word, offset, {
+            field: reEntry.level2 ?? reEntry.field,
+            role: stripped.role,
+            gloss: reEntry.gloss,
+            confidence: 0.8,
+          }),
+        );
         i++;
         continue;
       }
@@ -245,10 +306,10 @@ export function tokenizeEn(text: string): CSTOutput {
 
 function computeCoverage(tokens: CSTToken[]) {
   const total = tokens.length;
-  const concept = tokens.filter(t => t.type === "CONCEPT").length;
-  const rel     = tokens.filter(t => t.type === "REL").length;
-  const str     = tokens.filter(t => t.type === "STR").length;
-  const lit     = tokens.filter(t => t.type === "LIT").length;
+  const concept = tokens.filter((t) => t.type === "CONCEPT").length;
+  const rel = tokens.filter((t) => t.type === "REL").length;
+  const str = tokens.filter((t) => t.type === "STR").length;
+  const lit = tokens.filter((t) => t.type === "LIT").length;
   return {
     total,
     concept,

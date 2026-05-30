@@ -31,14 +31,14 @@ export interface CSTToken {
   type: TokenType;
 
   // Semantic analysis (consumed by HDC / ML)
-  field?: string;      // "tech.code" | "tech" — level-2 or level-1
-  role?: string;       // morphological role: "agent" | "patient" | "instance" ...
-  relation?: string;   // REL category: "in" | "causes" | "before" ...
-  structure?: string;  // STR marker: "question" | "negation" | "modal" | "past" ...
+  field?: string; // "tech.code" | "tech" — level-2 or level-1
+  role?: string; // morphological role: "agent" | "patient" | "instance" ...
+  relation?: string; // REL category: "in" | "causes" | "before" ...
+  structure?: string; // STR marker: "question" | "negation" | "modal" | "past" ...
 
   // Surface preservation (NEVER dropped)
-  surface: string;     // exact original word from input
-  gloss?: string;      // human-readable meaning: "write, record" — from vocab file
+  surface: string; // exact original word from input
+  gloss?: string; // human-readable meaning: "write, record" — from vocab file
 
   // Serializable compact form for model consumption
   // Format: "TYPE:field" | "TYPE:field:role" | "STR:marker" | "LIT:surface"
@@ -52,7 +52,7 @@ export interface CSTToken {
   confidence: number;
 
   // Arabic-specific (undefined for English)
-  root?: string;    // trilateral root: "كتب"
+  root?: string; // trilateral root: "كتب"
   pattern?: string; // وزن form label: "agent" | "patient" | "instance" ...
 }
 
@@ -65,19 +65,19 @@ export interface CSTOutput {
 
 export interface CoverageSummary {
   total: number;
-  concept: number;  // CONCEPT tokens
-  rel: number;      // REL tokens
-  str: number;      // STR tokens
-  lit: number;      // LIT (unrecognized) tokens
+  concept: number; // CONCEPT tokens
+  rel: number; // REL tokens
+  str: number; // STR tokens
+  lit: number; // LIT (unrecognized) tokens
   litRatio: number; // lit / total — lower is better
 }
 
 // ── Vocab entry shape (mirrors JSON files) ───────────────────────────────────
 
 export interface StemEntry {
-  field: string;    // e.g. "write" or "tech.code"
-  gloss: string;    // e.g. "write, record, inscribe"
-  level2?: string;  // explicit level-2 override if field is level-1 only
+  field: string; // e.g. "write" or "tech.code"
+  gloss: string; // e.g. "write, record, inscribe"
+  level2?: string; // explicit level-2 override if field is level-1 only
 }
 
 export interface DirectEntry {

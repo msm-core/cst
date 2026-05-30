@@ -26,10 +26,28 @@ export {
   parentField,
   isValidField,
 } from "./spec.js";
-export type { Field, FieldL1, FieldL2, Role, StrMarker, RelationCat } from "./spec.js";
+export type {
+  Field,
+  FieldL1,
+  FieldL2,
+  Role,
+  StrMarker,
+  RelationCat,
+} from "./spec.js";
 
 // ── Tokenizers ────────────────────────────────────────────────────────────────
 export { tokenizeEn } from "./tokenizer/en.js";
+export { tokenizeAr } from "./tokenizer/ar.js";
+export { tokenize, detectLang } from "./tokenizer/pipeline.js";
+
+// ── Vocab helpers (for consumers that need raw lookup data) ───────────────────
+export { getArCompounds } from "./vocab/loader.js";
 
 // ── Detokenizer / Gloss / LLM context ────────────────────────────────────────
-export { detokenize, reconstruct, digest, gloss, toLLMContext } from "./detokenizer.js";
+export {
+  detokenize,
+  reconstruct,
+  digest,
+  gloss,
+  toLLMContext,
+} from "./detokenizer.js";

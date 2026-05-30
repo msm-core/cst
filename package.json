@@ -1,6 +1,6 @@
 {
   "name": "@msm-ai/cst",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Contextual Semantic Tokenizer — zero-dependency, multilingual, reversible",
   "type": "module",
   "main": "./dist/index.js",

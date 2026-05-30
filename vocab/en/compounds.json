@@ -1,47 +1,191 @@
 {
   "_comment": "English bigrams → semantic field. Keys are lowercase with single space. Matched before word-level tokenization.",
-
-  "machine learning":      { "field": "tech.ai",       "gloss": "machine learning, ML" },
-  "artificial intelligence":{ "field": "tech.ai",      "gloss": "artificial intelligence, AI" },
-  "neural network":        { "field": "tech.ai",        "gloss": "neural network, deep learning" },
-  "deep learning":         { "field": "tech.ai",        "gloss": "deep learning, neural AI" },
-  "natural language":      { "field": "tech.ai",        "gloss": "natural language processing" },
-  "large language":        { "field": "tech.ai",        "gloss": "large language model" },
-  "source code":           { "field": "tech.code",      "gloss": "source code, program text" },
-  "version control":       { "field": "tech.code",      "gloss": "version control, Git" },
-  "pull request":          { "field": "tech.code",      "gloss": "pull request, code review" },
-  "data base":             { "field": "tech.code",      "gloss": "database" },
-  "smart home":            { "field": "tech.iot",       "gloss": "smart home, IoT" },
-  "smart device":          { "field": "tech.iot",       "gloss": "smart device, connected" },
-  "internet of":           { "field": "tech.iot",       "gloss": "internet of things" },
-  "social media":          { "field": "social",         "gloss": "social media, online community" },
-  "blood pressure":        { "field": "health.symptom", "gloss": "blood pressure" },
-  "heart rate":            { "field": "health.symptom", "gloss": "heart rate, pulse" },
-  "side effect":           { "field": "health.drug",    "gloss": "side effect, drug reaction" },
-  "stock market":          { "field": "trade.stock",    "gloss": "stock market, equities" },
-  "real estate":           { "field": "trade",          "gloss": "real estate, property market" },
-  "credit card":           { "field": "trade.order",    "gloss": "credit card, payment" },
-  "wake up":               { "field": "time.alarm",     "gloss": "wake up alarm" },
-  "set alarm":             { "field": "time.alarm",     "gloss": "set an alarm" },
-  "remind me":             { "field": "time.alarm",     "gloss": "reminder, alert me" },
-  "next week":             { "field": "time",           "gloss": "next week" },
-  "last year":             { "field": "time",           "gloss": "last year, previous year" },
-  "this morning":          { "field": "time",           "gloss": "this morning" },
-  "climate change":        { "field": "nature",         "gloss": "climate change, global warming" },
-  "global warming":        { "field": "nature",         "gloss": "global warming, climate crisis" },
-  "play music":            { "field": "art.music",      "gloss": "play music" },
-  "play song":             { "field": "art.music",      "gloss": "play a song" },
-  "music player":          { "field": "art.music",      "gloss": "music player, audio app" },
-  "book flight":           { "field": "move.fly",       "gloss": "book a flight" },
-  "flight ticket":         { "field": "move.fly",       "gloss": "flight ticket, air travel" },
-  "public transport":      { "field": "move.ride",      "gloss": "public transport, transit" },
-  "get directions":        { "field": "place.route",    "gloss": "get directions, navigate" },
-  "nearest":               { "field": "place",          "gloss": "nearest, closest location" },
-  "how far":               { "field": "measure",        "gloss": "how far, distance question" },
-  "how much":              { "field": "trade.price",    "gloss": "how much, price question" },
-  "how long":              { "field": "time.duration",  "gloss": "how long, duration question" },
-  "good morning":          { "field": "speak",          "gloss": "good morning, greeting" },
-  "good evening":          { "field": "speak",          "gloss": "good evening, greeting" },
-  "good night":            { "field": "speak",          "gloss": "good night, farewell" },
-  "thank you":             { "field": "speak",          "gloss": "thank you, gratitude" }
+  "machine learning": {
+    "field": "tech.ai",
+    "gloss": "machine learning, ML"
+  },
+  "artificial intelligence": {
+    "field": "tech.ai",
+    "gloss": "artificial intelligence, AI"
+  },
+  "neural network": {
+    "field": "tech.ai",
+    "gloss": "neural network, deep learning"
+  },
+  "deep learning": {
+    "field": "tech.ai",
+    "gloss": "deep learning, neural AI"
+  },
+  "natural language": {
+    "field": "tech.ai",
+    "gloss": "natural language processing"
+  },
+  "large language": {
+    "field": "tech.ai",
+    "gloss": "large language model"
+  },
+  "source code": {
+    "field": "tech.code",
+    "gloss": "source code, program text"
+  },
+  "version control": {
+    "field": "tech.code",
+    "gloss": "version control, Git"
+  },
+  "pull request": {
+    "field": "tech.code",
+    "gloss": "pull request, code review"
+  },
+  "data base": {
+    "field": "tech.code",
+    "gloss": "database"
+  },
+  "smart home": {
+    "field": "tech.iot",
+    "gloss": "smart home, IoT"
+  },
+  "smart device": {
+    "field": "tech.iot",
+    "gloss": "smart device, connected"
+  },
+  "internet of": {
+    "field": "tech.iot",
+    "gloss": "internet of things"
+  },
+  "social media": {
+    "field": "social",
+    "gloss": "social media, online community"
+  },
+  "blood pressure": {
+    "field": "health.symptom",
+    "gloss": "blood pressure"
+  },
+  "heart rate": {
+    "field": "health.symptom",
+    "gloss": "heart rate, pulse"
+  },
+  "side effect": {
+    "field": "health.drug",
+    "gloss": "side effect, drug reaction"
+  },
+  "stock market": {
+    "field": "trade.stock",
+    "gloss": "stock market, equities"
+  },
+  "real estate": {
+    "field": "trade",
+    "gloss": "real estate, property market"
+  },
+  "credit card": {
+    "field": "trade.order",
+    "gloss": "credit card, payment"
+  },
+  "wake up": {
+    "field": "time.alarm",
+    "gloss": "wake up alarm"
+  },
+  "set alarm": {
+    "field": "time.alarm",
+    "gloss": "set an alarm"
+  },
+  "remind me": {
+    "field": "time.alarm",
+    "gloss": "reminder, alert me"
+  },
+  "next week": {
+    "field": "time",
+    "gloss": "next week"
+  },
+  "last year": {
+    "field": "time",
+    "gloss": "last year, previous year"
+  },
+  "this morning": {
+    "field": "time",
+    "gloss": "this morning"
+  },
+  "climate change": {
+    "field": "nature",
+    "gloss": "climate change, global warming"
+  },
+  "global warming": {
+    "field": "nature",
+    "gloss": "global warming, climate crisis"
+  },
+  "play music": {
+    "field": "art.music",
+    "gloss": "play music"
+  },
+  "play song": {
+    "field": "art.music",
+    "gloss": "play a song"
+  },
+  "music player": {
+    "field": "art.music",
+    "gloss": "music player, audio app"
+  },
+  "book flight": {
+    "field": "move.fly",
+    "gloss": "book a flight"
+  },
+  "flight ticket": {
+    "field": "move.fly",
+    "gloss": "flight ticket, air travel"
+  },
+  "public transport": {
+    "field": "move.ride",
+    "gloss": "public transport, transit"
+  },
+  "get directions": {
+    "field": "place.route",
+    "gloss": "get directions, navigate"
+  },
+  "nearest": {
+    "field": "place",
+    "gloss": "nearest, closest location"
+  },
+  "how far": {
+    "field": "measure",
+    "gloss": "how far, distance question"
+  },
+  "how much": {
+    "field": "trade.price",
+    "gloss": "how much, price question"
+  },
+  "how long": {
+    "field": "time.duration",
+    "gloss": "how long, duration question"
+  },
+  "good morning": {
+    "field": "speak",
+    "gloss": "good morning, greeting"
+  },
+  "good evening": {
+    "field": "speak",
+    "gloss": "good evening, greeting"
+  },
+  "good night": {
+    "field": "speak",
+    "gloss": "good night, farewell"
+  },
+  "thank you": {
+    "field": "speak",
+    "gloss": "thank you, gratitude"
+  },
+  "weather forecast": {
+    "field": "weather.forecast",
+    "gloss": "weather forecast, prediction"
+  },
+  "find restaurant": {
+    "field": "food.restaurant",
+    "gloss": "find a restaurant"
+  },
+  "count calories": {
+    "field": "food.nutrition",
+    "gloss": "calorie counting, nutrition tracking"
+  },
+  "take medication": {
+    "field": "health.drug",
+    "gloss": "take medicine or drug"
+  }
 }
