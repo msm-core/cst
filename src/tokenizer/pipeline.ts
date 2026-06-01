@@ -13,7 +13,7 @@
  *               concatenate token arrays (offsets are from original string)
  */
 
-import type { CSTOutput } from "../types.js";
+import type { CSTOutput, LangCode } from "../types.js";
 import { tokenizeEn } from "./en.js";
 import { tokenizeAr } from "./ar.js";
 
@@ -34,17 +34,22 @@ export function detectLang(text: string): "ar" | "en" | "mixed" {
 }
 
 /**
- * Tokenize `text` with automatic language detection.
+ * Tokenize `text`, optionally with an explicit language override.
  *
- * For "mixed" text the string is split into Arabic and non-Arabic runs.
- * Each run is tokenized with its own tokenizer. Token offsets remain
- * relative to the original string.
+ * @param text  - The input string.
+ * @param lang  - `"ar"` | `"en"` to force a language, or omit/`"auto"` to
+ *               detect automatically (default).
+ *
+ * For "mixed" (auto-detected) text the string is split into Arabic and
+ * non-Arabic runs; each run is tokenized with its own tokenizer and token
+ * offsets remain relative to the original string.
  */
-export function tokenize(text: string): CSTOutput {
-  const lang = detectLang(text);
+export function tokenize(text: string, lang?: LangCode | "auto"): CSTOutput {
+  const resolved: "ar" | "en" | "mixed" =
+    lang === "ar" ? "ar" : lang === "en" ? "en" : detectLang(text);
 
-  if (lang === "ar") return tokenizeAr(text);
-  if (lang === "en") return tokenizeEn(text);
+  if (resolved === "ar") return tokenizeAr(text);
+  if (resolved === "en") return tokenizeEn(text);
 
   // ── Mixed: split into runs by script ────────────────────────────────────
   // A run is a maximal sequence of either Arabic or Latin/other characters

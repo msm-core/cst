@@ -1,27 +1,28 @@
 /**
  * tokenizer/ar.ts — Arabic CST tokenizer.
  *
- * Pipeline:
- *   1. Normalize   — strip diacritics, unify hamza/alef forms, remove tatweel
+ * Pipeline (BIBLE §9, §8.2 lookup ladder):
+ *   1. Normalize   — strip diacritics, unify alef/hamza forms, remove tatweel
  *   2. Compound scan — check consecutive bigrams against ar/compounds.json
  *   3. Word split  — split on whitespace + punctuation
  *   4. Per-word:
- *      a. Function-word skip (set)
- *      b. Structural map → STR token (NEG, MODAL, QUERY etc.)
- *      c. Relation map   → REL token
- *      d. Direct vocab lookup (roots.json, then direct.json)
- *      e. Clitic segmentation → retry root/direct lookup
- *      f. Augmented-verb stripping → retry
- *      g. Morphological role detection on the matched stem
- *      h. LIT fallback
+ *      a. Structural map → STR token  (must precede function-word skip)
+ *      b. Relation map   → REL token  (must precede function-word skip)
+ *      c. Function-word skip
+ *      d. words.json lookup  (step 5 — surface forms, before segmentation)
+ *      e. stems.json lookup  (step 6 — root stems, before segmentation)
+ *      f. Clitic segmentation → retry steps 5–6
+ *      g. Augmented-verb stripping → retry steps 5–6
+ *      h. Morphological role detection on the matched stem
+ *      i. LIT fallback
  *
- * Shares the CSTToken interface with en.ts — same field names, same compact format.
+ * Shares the CSTToken interface with en.ts — same compact format.
  */
 
 import type { CSTToken, CSTOutput, TokenType } from "../types.js";
 import {
-  getArRoots,
-  getArDirect,
+  getArStems,
+  getArWords,
   getArCompounds,
   getArStructural,
   getArRelations,
@@ -114,62 +115,129 @@ function stripVerbAug(stem: string): string {
   return stem;
 }
 
-// ── 3. Arabic morphological role ──────────────────────────────────────────────
+// ── 3. Arabic morphological role ─────────────────────────────────────────────
+//
+// Full §5.1 tier system (Tier 1 → 4, most-specific first).
+// Input: normalized, clitic-stripped, aug-stripped stem (diacritics removed,
+//        ة→ه, ى→ي, alef variants→ا).
+// Patterns are tested in length order so longer (more specific) wins first.
+//
+// C = any Arabic letter [\u0621-\u064A] in the root consonant position.
+// Structural letters in fixed positions: ا و ي ه ت ن (from wazn).
 
-const ALEF = "\u0627";
-const MIM = "\u0645";
-const TA = "\u062A";
-const WAW = "\u0648";
-const YEH = "\u064A";
-const HAR = "\u0647";
+// Fixed wazn characters (after normalization)
+const ALEF = "\u0627"; // ا
+const WAW = "\u0648"; // و
+const YEH = "\u064A"; // ي
+// HA = "\u0647" already declared in §2 clitic section above
+const MIM = "\u0645"; // م
+const NUN = "\u0646"; // ن
+const TA2 = "\u062A"; // ت
+const IST = "\u0627\u0633\u062A"; // است (Form X prefix)
+
+// Any Arabic letter (C in wazn notation)
+const AR = /[\u0621-\u064A]/;
 
 function detectRoleAr(stem: string): string | undefined {
   const n = stem.length;
   if (n < 3) return undefined;
-  if (n === 4 && stem[1] === ALEF) return "agent";
-  if (n === 5 && stem[1] === ALEF && stem[4] === HAR) return "agent";
-  if (n === 5 && stem[0] === MIM && stem[3] === WAW) return "patient";
-  if (n === 6 && stem[0] === MIM && stem[3] === WAW && stem[5] === HAR)
-    return "patient";
-  if (n === 5 && stem[0] === TA && stem[3] === YEH) return "process";
-  if (
-    (n === 5 || n === 6) &&
-    stem[0] === MIM &&
-    stem[n - 1] === HAR &&
-    stem[3] !== WAW
-  )
-    return "place";
+
+  // ─── Tier 1: 7-char ─────────────────────────────────────────────────────
+  // استفعال: است + C₁C₂ + ا + C₃  (Form X masdar, 7 chars)
+  if (n === 7 && stem.startsWith(IST) && stem[5] === ALEF) return "seeker";
+
+  // ─── Tier 2: 6-char ─────────────────────────────────────────────────────
+  if (n === 6) {
+    // مفاعلة: م + C₁ + ا + C₂ + C₃ + ه  (Form III masdar → process)
+    if (stem[0] === MIM && stem[2] === ALEF && stem[5] === HA) return "process";
+    // تفعيل: ت + C₁ + C₂ + ي + C₃         (Form II masdar → intensifier)
+    if (stem[0] === TA2 && stem[3] === YEH) return "intensifier";
+    // مفعوله: م + C₁ + C₂ + و + C₃ + ه    (مفعول + fem suffix → patient)
+    if (stem[0] === MIM && stem[3] === WAW && stem[5] === HA) return "patient";
+    // استفعل: است + C₁ + C₂ + C₃            (Form X verb stem, 6 chars → seeker)
+    if (stem.startsWith(IST)) return "seeker";
+    // مفعلة: م + C₁ + C₂ + C₃ + ه, C₃ ≠ و  (اسم مكان/زمان → place)
+    if (stem[0] === MIM && stem[5] === HA && stem[3] !== WAW) return "place";
+  }
+
+  // ─── Tier 3: 5-char (reflexive BEFORE result to handle انتقل correctly) ─
+  if (n === 5) {
+    // افتعل: ا + C₁ + ت + C₂ + C₃          (Form VIII → reflexive)
+    if (stem[0] === ALEF && stem[2] === TA2) return "reflexive";
+    // انفعل: ا + ن + C₁ + C₂ + C₃          (Form VII → result)
+    if (stem[0] === ALEF && stem[1] === NUN) return "result";
+    // تفاعل: ت + C₁ + ا + C₂ + C₃          (Form VI → mutual)
+    if (stem[0] === TA2 && stem[2] === ALEF) return "mutual";
+    // مفعول: م + C₁ + C₂ + و + C₃          (اسم مفعول → patient)
+    if (stem[0] === MIM && stem[3] === WAW) return "patient";
+    // مفعال: م + C₁ + C₂ + ا + C₃          (اسم آلة → instrument)
+    if (stem[0] === MIM && stem[3] === ALEF) return "instrument";
+    // فاعول: C₁ + ا + C₂ + و + C₃          (اسم آلة, e.g. حاسوب → instrument)
+    if (stem[1] === ALEF && stem[3] === WAW) return "instrument";
+    // فاعله: C₁ + ا + C₂ + C₃ + ه          (fem. active participle → agent)
+    if (stem[1] === ALEF && stem[4] === HA) return "agent";
+    // مفعِل (5, no structural vowel after م): م + C{4}  → place
+    if (stem[0] === MIM) return "place";
+  }
+
+  // ─── State: فَعلان / فُعلان — ends با + ن, length ≥ 5 ─────────────────
+  if (n >= 5 && stem[n - 2] === ALEF && stem[n - 1] === NUN) return "state";
+
+  // ─── Tier 4: 4-char ─────────────────────────────────────────────────────
+  if (n === 4) {
+    // فاعل: C₁ + ا + C₂ + C₃  (active participle → agent)
+    if (stem[1] === ALEF) return "agent";
+    // فعيل: C₁ + C₂ + ي + C₃  (quality/passive adj → patient)
+    if (stem[2] === YEH) return "patient";
+    // فعال: C₁ + C₂ + ا + C₃  (verbal noun → instance)
+    if (stem[2] === ALEF) return "instance";
+    // مفعل: م + C₁ + C₂ + C₃  (اسم مكان, 4-char → place)
+    if (stem[0] === MIM) return "place";
+    // افعل: ا + C₁ + C₂ + C₃  (elative → comparative)
+    if (stem[0] === ALEF) return "comparative";
+  }
+
   return undefined;
 }
 
 // ── 4. Cached normalized lookups ─────────────────────────────────────────────
 
 // We normalize all vocab keys at load time so lookup is O(1)
-let _rootsNorm: Record<string, string> | null = null;
-let _directNorm: Record<string, string> | null = null;
+type ArVocabEntry = string | { field: string; gloss?: string };
+
+let _stemsNorm: Record<string, ArVocabEntry> | null = null;
+let _wordsNorm: Record<string, ArVocabEntry> | null = null;
 let _structNorm: Record<string, string> | null = null;
 let _relNorm: Record<string, string> | null = null;
 let _funcNorm: Set<string> | null = null;
 
-function getRootsNorm(): Record<string, string> {
-  if (!_rootsNorm) {
-    _rootsNorm = {};
-    for (const [k, v] of Object.entries(getArRoots())) {
-      const nk = normalizeAr(k);
-      if (!_rootsNorm[nk]) _rootsNorm[nk] = v; // first entry wins (prefer already-normalized keys)
+/**
+ * words.json (surface forms) — checked at step 5 (before segmentation).
+ * These are irregular forms, loanwords, broken plurals.
+ */
+function getWordsNorm(): Record<string, ArVocabEntry> {
+  if (!_wordsNorm) {
+    _wordsNorm = {} as Record<string, ArVocabEntry>;
+    for (const [k, v] of Object.entries(getArWords())) {
+      _wordsNorm[normalizeAr(k)] = v;
     }
   }
-  return _rootsNorm;
+  return _wordsNorm;
 }
 
-function getDirectNorm(): Record<string, string> {
-  if (!_directNorm) {
-    _directNorm = {};
-    for (const [k, v] of Object.entries(getArDirect())) {
-      _directNorm[normalizeAr(k)] = v;
+/**
+ * stems.json (root stems) — checked at step 6 (after segmentation).
+ * These are canonical Arabic trilateral root stems.
+ */
+function getStemsNorm(): Record<string, ArVocabEntry> {
+  if (!_stemsNorm) {
+    _stemsNorm = {} as Record<string, ArVocabEntry>;
+    for (const [k, v] of Object.entries(getArStems())) {
+      const nk = normalizeAr(k);
+      if (!_stemsNorm[nk]) _stemsNorm[nk] = v; // first entry wins
     }
   }
-  return _directNorm;
+  return _stemsNorm;
 }
 
 function getStructNorm(): Record<string, string> {
@@ -202,20 +270,31 @@ function getFuncNorm(): Set<string> {
   return _funcNorm;
 }
 
-// ── 5. Vocab lookup (root → direct → clitic strip → aug strip) ───────────────
+// ── 5. Vocab lookup (words → stems, per BIBLE §8.2 steps 5–6) ───────────────────
 
-function lookupField(normStem: string): string | null {
-  const roots = getRootsNorm();
-  const direct = getDirectNorm();
-  // Direct root match
-  if (roots[normStem]) return roots[normStem];
-  // Direct field match
-  if (direct[normStem]) return direct[normStem];
+/**
+ * Look up a normalized form against words.json first (step 5), then stems.json (step 6).
+ * Called both pre-segmentation (surface lookup) and post-segmentation (stem lookup).
+ */
+function resolveEntry(entry: ArVocabEntry): { field: string; gloss?: string } {
+  if (typeof entry === "string") return { field: entry };
+  return { field: entry.field, gloss: entry.gloss };
+}
+
+function lookupField(
+  normStem: string,
+): { field: string; gloss?: string } | null {
+  const words = getWordsNorm();
+  const stems = getStemsNorm();
+  // Step 5: surface/words lookup
+  if (words[normStem]) return resolveEntry(words[normStem]);
+  // Step 6: stem lookup
+  if (stems[normStem]) return resolveEntry(stems[normStem]);
   // Try without trailing ه (ة normalised to ه already)
   if (normStem.endsWith(HA)) {
     const base = normStem.slice(0, -1);
-    if (roots[base]) return roots[base];
-    if (direct[base]) return direct[base];
+    if (words[base]) return resolveEntry(words[base]);
+    if (stems[base]) return resolveEntry(stems[base]);
   }
   return null;
 }
@@ -264,7 +343,7 @@ function splitArWords(
   text: string,
 ): Array<{ word: string; offset: [number, number] }> {
   const results: Array<{ word: string; offset: [number, number] }> = [];
-  const re = /[^\s.,!?;:()\[\]{}"'،؟؛—–…]+/g;
+  const re = /[^\s.,!?;:()\[\]{}"'،؟؛—–…\-/]+/g;
   let match: RegExpExecArray | null;
   while ((match = re.exec(text)) !== null) {
     results.push({
@@ -307,6 +386,15 @@ export function tokenizeAr(text: string): CSTOutput {
     const { word, offset } = wordEntries[i];
     const normWord = normWordEntries[i]?.word ?? normalizeAr(word);
 
+    // Skip pure numbers, single Latin/Arabic letters (list markers, OCR artifacts)
+    if (
+      /^\d[\d,.]*(st|nd|rd|th)?$/.test(word) ||
+      (word.length === 1 && !/[\u0600-\u06FF]/.test(word))
+    ) {
+      i++;
+      continue;
+    }
+
     // ── Bigram compound check ─────────────────────────────────────────────
     if (i + 1 < wordEntries.length) {
       const next = wordEntries[i + 1];
@@ -328,31 +416,52 @@ export function tokenizeAr(text: string): CSTOutput {
 
     // ── Structural map (STR) ──────────────────────────────────────────────
     // Must come before function-word skip (some STR words are also in func set)
-    const structType = getStructNorm()[normWord];
-    if (structType) {
-      // Map nemo TokenType names to our structure strings
-      const structure = nemoTypeToStructure(structType);
-      if (structure) {
-        tokens.push(
-          makeArToken("STR", word, offset, { structure, confidence: 1.0 }),
-        );
-        i++;
-        continue;
-      }
-      // QUERY types without compound context → emit STR:question
-      if (structType.endsWith("_Q") || structType === "QUERY") {
-        tokens.push(
-          makeArToken("STR", word, offset, {
-            structure:
-              structType === "QUERY"
-                ? "question"
-                : structType.replace("_Q", "").toLowerCase() + "_question",
-            confidence: 1.0,
-          }),
-        );
-        i++;
-        continue;
-      }
+    //
+    // §9.5 special rule: لم emits STR:past + STR:negation (two tokens)
+    //                    لن emits STR:future + STR:negation (two tokens)
+    const LAM_M = "\u0644\u0645"; // لم
+    const LAM_N = "\u0644\u0646"; // لن
+    if (normWord === LAM_M) {
+      tokens.push(
+        makeArToken("STR", word, offset, {
+          structure: "past",
+          confidence: 1.0,
+        }),
+      );
+      tokens.push(
+        makeArToken("STR", word, offset, {
+          structure: "negation",
+          confidence: 1.0,
+        }),
+      );
+      i++;
+      continue;
+    }
+    if (normWord === LAM_N) {
+      tokens.push(
+        makeArToken("STR", word, offset, {
+          structure: "future",
+          confidence: 1.0,
+        }),
+      );
+      tokens.push(
+        makeArToken("STR", word, offset, {
+          structure: "negation",
+          confidence: 1.0,
+        }),
+      );
+      i++;
+      continue;
+    }
+
+    // ar/structural.json values are already CST marker names (migrated from nemo types)
+    const structure = getStructNorm()[normWord];
+    if (structure) {
+      tokens.push(
+        makeArToken("STR", word, offset, { structure, confidence: 1.0 }),
+      );
+      i++;
+      continue;
     }
 
     // ── Relation map (REL) ────────────────────────────────────────────────
@@ -392,7 +501,8 @@ export function tokenizeAr(text: string): CSTOutput {
         );
         tokens.push(
           makeArToken("ROOT", word, offset, {
-            field: futureField,
+            field: futureField.field,
+            gloss: futureField.gloss,
             confidence: 0.8,
           }),
         );
@@ -402,38 +512,83 @@ export function tokenizeAr(text: string): CSTOutput {
     }
 
     // ── Root / direct lookup ──────────────────────────────────────────────
-    let field = lookupField(normWord);
+    let lookup = lookupField(normWord);
     let matchStem = normWord;
     let confidence = 0.9;
 
-    // Try clitic segmentation
-    if (!field) {
+    // Light definite-article strip (ال only, before full segment).
+    // Full segment() strips object suffixes too, which incorrectly removes the
+    // normalised tā-marbūṭah (ة→ه) from feminine nouns like العاصمة→عاصم instead
+    // of العاصمة→عاصمه.  Try the bare ال-stripped form first.
+    if (
+      !lookup &&
+      normWord.startsWith(DEF_ARTICLE) &&
+      normWord.length > DEF_ARTICLE.length + 1
+    ) {
+      const noAl = normWord.slice(DEF_ARTICLE.length);
+      const lightLookup = lookupField(noAl);
+      if (lightLookup) {
+        lookup = lightLookup;
+        matchStem = noAl;
+        confidence = 0.85;
+      }
+    }
+
+    // Try full clitic segmentation
+    if (!lookup) {
       const seg = segment(normWord);
       if (seg !== normWord) {
-        field = lookupField(seg);
+        lookup = lookupField(seg);
         matchStem = seg;
         confidence = 0.8;
+        // After segment, also check structural + relation maps on the segmented stem.
+        // Handles conjunction-prefixed function words: وكانت → و + كانت (STR:past).
+        if (!lookup) {
+          const segStruct = getStructNorm()[seg];
+          if (segStruct) {
+            tokens.push(
+              makeArToken("STR", word, offset, {
+                structure: segStruct,
+                confidence: 0.8,
+              }),
+            );
+            i++;
+            continue;
+          }
+          const segRelEntry = getRelNorm()[seg];
+          if (segRelEntry) {
+            tokens.push(
+              makeArToken("REL", word, offset, {
+                relation: segRelEntry.replace("REL:", ""),
+                confidence: 0.8,
+              }),
+            );
+            i++;
+            continue;
+          }
+        }
       }
     }
 
     // Try augmented-verb stripping
-    if (!field) {
+    if (!lookup) {
       const aug = stripVerbAug(matchStem);
       if (aug !== matchStem) {
-        field = lookupField(aug);
+        lookup = lookupField(aug);
         matchStem = aug;
         confidence = 0.7;
       }
     }
 
-    if (field) {
+    if (lookup) {
+      const { field, gloss } = lookup;
       const role = detectRoleAr(matchStem);
       // Emit ROOT first, then a separate ROLE token if morphological pattern detected
       // This is the Arabic algebra: roots × patterns = coverage without enumerating all combos
       tokens.push(
         makeArToken("ROOT", word, offset, {
           field,
-          gloss: undefined,
+          gloss,
           confidence,
         }),
       );
@@ -443,26 +598,21 @@ export function tokenizeAr(text: string): CSTOutput {
       continue;
     }
 
-    // ── LIT fallback ──────────────────────────────────────────────────────
+    // ── LIT fallback ─────────────────────────────────────────────────────
+    // Even when the field is unknown, attempt to extract a ROLE from the
+    // word's وزن (morphological pattern).  This gives partial signal to
+    // downstream HDC encoding — the field is absent but the grammatical
+    // function (agent / patient / place / …) is still recoverable.
     tokens.push(makeArToken("LIT", word, offset, { confidence: 0.0 }));
+    const litRole = detectRoleAr(matchStem);
+    if (litRole)
+      tokens.push(
+        makeArToken("ROLE", word, offset, { role: litRole, confidence: 0.3 }),
+      );
     i++;
   }
 
   return { tokens, coverage: computeCoverageAr(tokens) };
-}
-
-// ── Structural type mapping ───────────────────────────────────────────────────
-
-function nemoTypeToStructure(nemoType: string): string | null {
-  const map: Record<string, string> = {
-    NEG: "negation",
-    MODAL: "modal",
-    COND: "conditional",
-    CAUSE: "cause",
-    FUTURE: "future",
-    PAST: "past",
-  };
-  return map[nemoType] ?? null;
 }
 
 // ── Coverage ──────────────────────────────────────────────────────────────────

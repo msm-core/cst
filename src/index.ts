@@ -1,5 +1,5 @@
 /**
- * index.ts — Public API for @msm-ai/cst
+ * index.ts — Public API for @msm-core/cst
  *
  * English tokenizer is Phase 1.
  * Arabic tokenizer will be added in Phase 5.
@@ -11,6 +11,7 @@ export type {
   CSTOutput,
   CoverageSummary,
   TokenType,
+  LangCode,
   StemEntry,
   DirectEntry,
   CompoundEntry,
@@ -51,3 +52,7 @@ export {
   gloss,
   toLLMContext,
 } from "./detokenizer.js";
+
+// ── Intent extraction ─────────────────────────────────────────────────────────
+export { extractIntent } from "./intent.js";
+export type { CSTIntent } from "./intent.js";

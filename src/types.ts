@@ -10,6 +10,10 @@
  *  - `field` uses dot notation for hierarchy: "tech.code", or just "tech"
  */
 
+// ── Language code ────────────────────────────────────────────────────────────
+
+export type LangCode = "ar" | "en";
+
 // ── Token Types ───────────────────────────────────────────────────────────────
 
 /**
@@ -81,6 +85,10 @@ export interface CoverageSummary {
   lit: number; // LIT (unrecognized) tokens
   litRatio: number; // lit / total — lower is better
 }
+
+// ── Intent (semantic meaning extracted from token stream) ──────────────────────
+// Imported from intent.ts — kept here for re-export convenience
+export type { CSTIntent } from "./intent.js";
 
 // ── Vocab entry shape (mirrors JSON files) ───────────────────────────────────
 

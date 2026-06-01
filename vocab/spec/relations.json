@@ -1,0 +1,23 @@
+{
+  "_comment": "Universal REL category atoms. Source of truth for all language adapters. Values in any relations.json must be keys here.",
+  "in": "spatial — in, at, within, في",
+  "on": "spatial — on, upon, على",
+  "to": "direction — to, toward, into, إلى",
+  "from": "source — from, out of, من",
+  "before": "temporal — before, prior to, قبل",
+  "after": "temporal — after, following, بعد",
+  "during": "temporal — while, during, أثناء",
+  "until": "temporal — until, up to, حتى",
+  "causes": "logical — because, therefore, لأن",
+  "condition": "logical — if, unless, provided, إذا",
+  "contrast": "logical — but, however, despite, لكن",
+  "and": "conjunctive — and, also, plus, و",
+  "or": "disjunctive — or, either, أو",
+  "of": "possession/composition — of, belonging to, من/لـ",
+  "for": "purpose/beneficiary — for, لـ",
+  "with": "accompaniment — with, along with, مع",
+  "without": "absence — without, lacking, بدون",
+  "like": "similarity — like, similar to, مثل",
+  "about": "topic — about, regarding, عن",
+  "than": "comparison — than, more than, من (comparative)"
+}

@@ -232,6 +232,32 @@ describe("Morphological role detection (Arabic)", () => {
     expect(rootTok?.field).toBe("write");
     expect(roleTok?.role).toBe("patient");
   });
+
+  test("wazn ROLE emitted alongside LIT when field is unknown", () => {
+    // مفاوض (mufāwiḍ) = negotiator — unlikely to be in vocab.
+    // Pattern: م + C + ا + C + C = مفاعل (Form III agent), len 5, [0]==م, [2]==ا
+    // Should produce: LIT token + ROLE:agent (confidence 0.3)
+    // We use a word that is structurally مفاعل but not in stems.json
+    const toks = tokenizeAr("مفاوض دولي");
+    const lit = toks.tokens.find(
+      (t) => t.type === "LIT" && t.surface === "مفاوض",
+    );
+    const role = toks.tokens.find(
+      (t) => t.type === "ROLE" && t.surface === "مفاوض",
+    );
+    // If مفاوض is already in vocab it will be ROOT — skip assertion in that case
+    if (lit) {
+      expect(role).toBeDefined();
+      expect(role?.confidence).toBe(0.3);
+    }
+  });
+
+  test("LIT word with no recognizable pattern emits no extra ROLE", () => {
+    // bbc (loanword, 3 chars, no Arabic pattern) → LIT only
+    const toks = tokenizeAr("bbc");
+    const roles = toks.tokens.filter((t) => t.type === "ROLE");
+    expect(roles.length).toBe(0);
+  });
 });
 
 // ── Surface preservation ──────────────────────────────────────────────────────

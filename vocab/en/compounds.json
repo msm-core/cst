@@ -187,5 +187,9 @@
   "take medication": {
     "field": "health.drug",
     "gloss": "take medicine or drug"
+  },
+  "unit convert": {
+    "field": "measure",
+    "gloss": "unit conversion"
   }
 }

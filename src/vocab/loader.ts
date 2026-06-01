@@ -38,15 +38,23 @@ export interface MorphRule {
 }
 
 let _enStems: StemsFile | null = null;
+let _enWords: Record<string, StemEntry> | null = null;
 let _enCompounds: CompoundsFile | null = null;
 let _enFunctions: FunctionFile | null = null;
 let _enMorph: MorphFile | null = null;
 
-// ── Public loaders ────────────────────────────────────────────────────────────
+// ── Public loaders ────────────────────────────────────────────────
 
 export function getEnStems(): StemsFile {
   if (!_enStems) _enStems = loadJson<StemsFile>("en/stems.json");
   return _enStems;
+}
+
+/** Irregular / direct surface-form words (pre-segmentation lookup, step 5). */
+export function getEnWords(): Record<string, StemEntry> {
+  if (!_enWords)
+    _enWords = loadJson<Record<string, StemEntry>>("en/words.json");
+  return _enWords;
 }
 
 export function getEnCompounds(): CompoundsFile {
@@ -105,28 +113,29 @@ export function lookupEnFunction(word: string): DirectEntry | null {
 
 // ── Arabic vocab cache ────────────────────────────────────────────────────────
 
-type ArRootsFile = Record<string, string>; // Arabic stem → field name
-type ArDirectFile = Record<string, string>; // Arabic word → field name
+type ArStemsFile = Record<string, string>; // Arabic root stem → field name (post-segmentation)
+type ArWordsFile = Record<string, string>; // Arabic surface word → field name (pre-segmentation)
 type ArCompoundsFile = Record<string, string>; // Arabic phrase → field name
-type ArStructFile = Record<string, string>; // Arabic word → TokenType string
-type ArRelFile = Record<string, string>; // Arabic word → "REL:xxx"
-type ArFuncFile = string[]; // Arabic function word list
+type ArStructFile = Record<string, string>; // Arabic word → STR marker
+type ArRelFile = Record<string, string>; // Arabic word → REL category
 
-let _arRoots: ArRootsFile | null = null;
-let _arDirect: ArDirectFile | null = null;
+let _arStems: ArStemsFile | null = null;
+let _arWords: ArWordsFile | null = null;
 let _arCompounds: ArCompoundsFile | null = null;
 let _arStruct: ArStructFile | null = null;
 let _arRel: ArRelFile | null = null;
 let _arFunc: Set<string> | null = null;
 
-export function getArRoots(): ArRootsFile {
-  if (!_arRoots) _arRoots = loadJson<ArRootsFile>("ar/roots.json");
-  return _arRoots;
+/** Root stems — consulted at lookup step 6 (after segmentation). */
+export function getArStems(): ArStemsFile {
+  if (!_arStems) _arStems = loadJson<ArStemsFile>("ar/stems.json");
+  return _arStems;
 }
 
-export function getArDirect(): ArDirectFile {
-  if (!_arDirect) _arDirect = loadJson<ArDirectFile>("ar/direct.json");
-  return _arDirect;
+/** Surface word forms — consulted at lookup step 5 (before segmentation). */
+export function getArWords(): ArWordsFile {
+  if (!_arWords) _arWords = loadJson<ArWordsFile>("ar/words.json");
+  return _arWords;
 }
 
 export function getArCompounds(): ArCompoundsFile {

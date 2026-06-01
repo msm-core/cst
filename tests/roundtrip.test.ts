@@ -271,3 +271,43 @@ describe("tokenize() — unified router", () => {
     }
   });
 });
+
+// ── tokenize() explicit lang param (Phase 5) ──────────────────────────────────
+
+describe("tokenize() — explicit lang override", () => {
+  test("lang='ar' forces Arabic tokenizer regardless of script", () => {
+    const { tokens } = tokenize("كتب التقرير", "ar");
+    expect(tokens.every((t) => t.lang === "ar")).toBe(true);
+  });
+
+  test("lang='en' forces English tokenizer regardless of script", () => {
+    const { tokens } = tokenize("write a report", "en");
+    expect(tokens.every((t) => t.lang === "en")).toBe(true);
+  });
+
+  test("lang='auto' behaves same as omitting lang", () => {
+    const auto = tokenize("write a report", "auto");
+    const omit = tokenize("write a report");
+    expect(auto.tokens.map((t) => t.compact)).toEqual(
+      omit.tokens.map((t) => t.compact),
+    );
+  });
+
+  test("lang='ar' produces same output as tokenizeAr()", () => {
+    const text = "اريد ان اكتب رسالة";
+    const explicit = tokenize(text, "ar");
+    const direct = tokenizeAr(text);
+    expect(explicit.tokens.map((t) => t.compact)).toEqual(
+      direct.tokens.map((t) => t.compact),
+    );
+  });
+
+  test("lang='en' produces same output as tokenizeEn()", () => {
+    const text = "deploy the server now";
+    const explicit = tokenize(text, "en");
+    const direct = tokenizeEn(text);
+    expect(explicit.tokens.map((t) => t.compact)).toEqual(
+      direct.tokens.map((t) => t.compact),
+    );
+  });
+});

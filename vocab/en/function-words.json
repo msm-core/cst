@@ -16,8 +16,8 @@
     "gloss": "no, negative"
   },
   "without": {
-    "type": "STR",
-    "structure": "negation",
+    "type": "REL",
+    "relation": "without",
     "gloss": "without, lacking"
   },
   "can": {
@@ -137,38 +137,38 @@
   },
   "what": {
     "type": "STR",
-    "structure": "what_question",
-    "gloss": "what, thing question"
+    "structure": "question",
+    "gloss": "what question word"
   },
   "who": {
     "type": "STR",
-    "structure": "who_question",
-    "gloss": "who, person question"
+    "structure": "question",
+    "gloss": "who question word"
   },
   "where": {
     "type": "STR",
-    "structure": "where_question",
-    "gloss": "where, location question"
+    "structure": "question",
+    "gloss": "where question word"
   },
   "when": {
     "type": "STR",
-    "structure": "when_question",
-    "gloss": "when, time question"
+    "structure": "question",
+    "gloss": "when question word"
   },
   "why": {
     "type": "STR",
-    "structure": "why_question",
-    "gloss": "why, reason question"
+    "structure": "question",
+    "gloss": "why question word"
   },
   "how": {
     "type": "STR",
-    "structure": "how_question",
-    "gloss": "how, manner question"
+    "structure": "question",
+    "gloss": "how question word"
   },
   "which": {
     "type": "STR",
-    "structure": "which_question",
-    "gloss": "which, selection question"
+    "structure": "question",
+    "gloss": "which question word"
   },
   "ok": {
     "type": "STR",
@@ -192,7 +192,7 @@
   },
   "on": {
     "type": "REL",
-    "relation": "in",
+    "relation": "on",
     "gloss": "on, on top of"
   },
   "to": {
@@ -223,7 +223,7 @@
   "before": {
     "type": "REL",
     "relation": "before",
-    "gloss": "before, prior to"
+    "gloss": "before, preceding"
   },
   "after": {
     "type": "REL",
@@ -331,9 +331,9 @@
     "gloss": "with, together with"
   },
   "like": {
-    "type": "REL",
-    "relation": "like",
-    "gloss": "like, similar to"
+    "type": "STR",
+    "structure": "modal",
+    "gloss": "like, prefer, enjoy"
   },
   "about": {
     "type": "REL",
@@ -351,78 +351,28 @@
     "gloss": "by, near, via"
   },
   "more": {
-    "type": "STR",
-    "structure": "quantifier",
-    "gloss": "more, greater amount"
-  },
-  "most": {
-    "type": "STR",
-    "structure": "quantifier",
-    "gloss": "most, maximum amount"
-  },
-  "many": {
-    "type": "STR",
-    "structure": "quantifier",
-    "gloss": "many, large number"
-  },
-  "all": {
-    "type": "STR",
-    "structure": "quantifier",
-    "gloss": "all, every"
-  },
-  "some": {
-    "type": "STR",
-    "structure": "quantifier",
-    "gloss": "some, part of"
-  },
-  "each": {
-    "type": "STR",
-    "structure": "quantifier",
-    "gloss": "each, every one"
-  },
-  "every": {
-    "type": "STR",
-    "structure": "quantifier",
-    "gloss": "every, each"
-  },
-  "few": {
-    "type": "STR",
-    "structure": "quantifier",
-    "gloss": "few, small number"
-  },
-  "much": {
-    "type": "STR",
-    "structure": "quantifier",
-    "gloss": "much, large amount"
+    "type": "REL",
+    "relation": "than",
+    "gloss": "more (comparative)"
   },
   "less": {
-    "type": "STR",
-    "structure": "quantifier",
-    "gloss": "less, smaller amount"
-  },
-  "one": {
-    "type": "STR",
-    "structure": "quantifier",
-    "gloss": "one, single"
-  },
-  "two": {
-    "type": "STR",
-    "structure": "quantifier",
-    "gloss": "two, a pair"
+    "type": "REL",
+    "relation": "than",
+    "gloss": "less (comparative)"
   },
   "over": {
     "type": "REL",
-    "relation": "above",
-    "gloss": "over, above, across"
+    "relation": "on",
+    "gloss": "over, above"
   },
   "through": {
     "type": "REL",
-    "relation": "through",
+    "relation": "in",
     "gloss": "through, via"
   },
   "between": {
     "type": "REL",
-    "relation": "between",
+    "relation": "in",
     "gloss": "between, in the middle of"
   },
   "within": {
@@ -432,18 +382,18 @@
   },
   "across": {
     "type": "REL",
-    "relation": "through",
+    "relation": "in",
     "gloss": "across, over, throughout"
   },
   "along": {
     "type": "REL",
-    "relation": "through",
+    "relation": "in",
     "gloss": "along, beside"
   },
   "upon": {
     "type": "REL",
-    "relation": "above",
-    "gloss": "upon, on top of"
+    "relation": "on",
+    "gloss": "upon, above/on top of"
   },
   "per": {
     "type": "REL",
@@ -452,158 +402,43 @@
   },
   "near": {
     "type": "REL",
-    "relation": "near",
+    "relation": "in",
     "gloss": "near, close to"
   },
   "around": {
     "type": "REL",
-    "relation": "near",
+    "relation": "in",
     "gloss": "around, approximately"
   },
   "behind": {
     "type": "REL",
-    "relation": "behind",
+    "relation": "from",
     "gloss": "behind, at the back"
   },
   "below": {
     "type": "REL",
-    "relation": "below",
+    "relation": "in",
     "gloss": "below, under"
   },
   "above": {
     "type": "REL",
-    "relation": "above",
-    "gloss": "above, higher than"
-  },
-  "before": {
-    "type": "REL",
-    "relation": "before",
-    "gloss": "before, preceding"
-  },
-  "after": {
-    "type": "REL",
-    "relation": "after",
-    "gloss": "after, following"
+    "relation": "on",
+    "gloss": "above, above/on top of"
   },
   "against": {
     "type": "REL",
-    "relation": "against",
-    "gloss": "against, opposed to"
-  },
-  "me": {
-    "type": "STR",
-    "structure": "pronoun",
-    "gloss": "me, first person object"
-  },
-  "my": {
-    "type": "STR",
-    "structure": "pronoun",
-    "gloss": "my, first person possessive"
-  },
-  "you": {
-    "type": "STR",
-    "structure": "pronoun",
-    "gloss": "you, second person"
-  },
-  "your": {
-    "type": "STR",
-    "structure": "pronoun",
-    "gloss": "your, second person possessive"
-  },
-  "he": {
-    "type": "STR",
-    "structure": "pronoun",
-    "gloss": "he, third person singular male"
-  },
-  "she": {
-    "type": "STR",
-    "structure": "pronoun",
-    "gloss": "she, third person singular female"
-  },
-  "they": {
-    "type": "STR",
-    "structure": "pronoun",
-    "gloss": "they, third person plural"
-  },
-  "we": {
-    "type": "STR",
-    "structure": "pronoun",
-    "gloss": "we, first person plural"
-  },
-  "it": {
-    "type": "STR",
-    "structure": "pronoun",
-    "gloss": "it, third person neutral"
-  },
-  "this": {
-    "type": "STR",
-    "structure": "demonstrative",
-    "gloss": "this, proximal demonstrative"
-  },
-  "that": {
-    "type": "STR",
-    "structure": "demonstrative",
-    "gloss": "that, distal demonstrative"
-  },
-  "these": {
-    "type": "STR",
-    "structure": "demonstrative",
-    "gloss": "these, proximal plural demonstrative"
-  },
-  "those": {
-    "type": "STR",
-    "structure": "demonstrative",
-    "gloss": "those, distal plural demonstrative"
-  },
-  "there": {
-    "type": "STR",
-    "structure": "demonstrative",
-    "gloss": "there, at that place"
-  },
-  "here": {
-    "type": "STR",
-    "structure": "demonstrative",
-    "gloss": "here, at this place"
-  },
-  "now": {
-    "type": "STR",
-    "structure": "temporal",
-    "gloss": "now, at this time"
-  },
-  "today": {
-    "type": "STR",
-    "structure": "temporal",
-    "gloss": "today, this day"
+    "relation": "on",
+    "gloss": "against, in opposition to"
   },
   "soon": {
     "type": "STR",
-    "structure": "temporal",
-    "gloss": "soon, in the near future"
+    "structure": "future",
+    "gloss": "soon, in the future"
   },
   "then": {
-    "type": "STR",
-    "structure": "temporal",
-    "gloss": "then, at that time"
-  },
-  "do": {
-    "type": "STR",
-    "structure": "imperative",
-    "gloss": "do, perform"
-  },
-  "does": {
-    "type": "STR",
-    "structure": "imperative",
-    "gloss": "does, performs"
-  },
-  "get": {
-    "type": "STR",
-    "structure": "imperative",
-    "gloss": "get, obtain"
-  },
-  "make": {
-    "type": "STR",
-    "structure": "imperative",
-    "gloss": "make, create"
+    "type": "REL",
+    "relation": "and",
+    "gloss": "then, subsequently"
   },
   "need": {
     "type": "STR",
@@ -615,94 +450,14 @@
     "structure": "modal",
     "gloss": "want, desire"
   },
-  "like": {
-    "type": "STR",
-    "structure": "modal",
-    "gloss": "like, prefer, enjoy"
-  },
-  "know": {
-    "type": "STR",
-    "structure": "cognitive",
-    "gloss": "know, be aware of"
-  },
-  "think": {
-    "type": "STR",
-    "structure": "cognitive",
-    "gloss": "think, believe"
-  },
-  "tell": {
-    "type": "STR",
-    "structure": "imperative",
-    "gloss": "tell, inform"
-  },
-  "show": {
-    "type": "STR",
-    "structure": "imperative",
-    "gloss": "show, display"
-  },
-  "give": {
-    "type": "STR",
-    "structure": "imperative",
-    "gloss": "give, provide"
-  },
-  "find": {
-    "type": "STR",
-    "structure": "imperative",
-    "gloss": "find, search for"
-  },
   "check": {
     "type": "STR",
     "structure": "imperative",
-    "gloss": "check, verify"
+    "gloss": "check, verify (command marker)"
   },
-  "help": {
+  "just": {
     "type": "STR",
-    "structure": "imperative",
-    "gloss": "help, assist"
-  },
-  "look": {
-    "type": "STR",
-    "structure": "imperative",
-    "gloss": "look, search, view"
-  },
-  "let": {
-    "type": "STR",
-    "structure": "imperative",
-    "gloss": "let, allow"
-  },
-  "try": {
-    "type": "STR",
-    "structure": "imperative",
-    "gloss": "try, attempt"
-  },
-  "turn": {
-    "type": "STR",
-    "structure": "imperative",
-    "gloss": "turn, rotate, toggle"
-  },
-  "put": {
-    "type": "STR",
-    "structure": "imperative",
-    "gloss": "put, place"
-  },
-  "keep": {
-    "type": "STR",
-    "structure": "imperative",
-    "gloss": "keep, maintain"
-  },
-  "start": {
-    "type": "STR",
-    "structure": "imperative",
-    "gloss": "start, begin"
-  },
-  "stop": {
-    "type": "STR",
-    "structure": "imperative",
-    "gloss": "stop, end, halt"
-  },
-  "see": {
-    "type": "STR",
-    "structure": "cognitive",
-    "gloss": "see, view, understand"
+    "structure": "emphasis",
+    "gloss": "just, emphasis marker"
   }
 }

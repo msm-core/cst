@@ -15,6 +15,7 @@ import {
   lookupEnFunction,
   lookupEnCompound,
   lookupEnStem,
+  getEnWords,
   getEnMorph,
   type MorphRule,
 } from "../vocab/loader.js";
@@ -39,6 +40,7 @@ function normalize(text: string): string {
 // ── 2. Tokenize words ─────────────────────────────────────────────────────────
 
 const SKIP_WORDS = new Set([
+  // Articles, pronouns, auxiliaries
   "a",
   "an",
   "the",
@@ -47,6 +49,8 @@ const SKIP_WORDS = new Set([
   "be",
   "been",
   "being",
+  "was",
+  "were",
   "i",
   "you",
   "he",
@@ -71,12 +75,92 @@ const SKIP_WORDS = new Set([
   "those",
   "have",
   "has",
+  "had",
   "do",
   "does",
+  "did",
   "am",
   "get",
   "got",
-  "got",
+  // Common filler / connectors
+  "another",
+  "there",
+  "up",
+  "just",
+  "still",
+  "also",
+  "very",
+  "so",
+  "too",
+  "even",
+  "both",
+  "such",
+  "same",
+  "some",
+  "any",
+  "all",
+  "each",
+  "every",
+  "other",
+  "own",
+  "about",
+  "between",
+  "within",
+  "into",
+  "onto",
+  // Number words (no semantic content in most contexts)
+  "one",
+  "two",
+  "three",
+  "four",
+  "five",
+  "six",
+  "seven",
+  "eight",
+  "nine",
+  "ten",
+  "eleven",
+  "twelve",
+  "hundred",
+  "thousand",
+  "million",
+  "first",
+  "second",
+  "third",
+  "fourth",
+  "fifth",
+  // Conjunctions, adverbs, fillers that carry no semantic content
+  "as",
+  "here",
+  "yet",
+  "down",
+  "whats",
+  "ca",
+  "now",
+  "well",
+  "back",
+  "off",
+  "out",
+  "over",
+  "along",
+  "indeed",
+  "like",
+  "really",
+  "quite",
+  "rather",
+  "anyway",
+  "though",
+  "although",
+  "whereas",
+  "unless",
+  "meanwhile",
+  "therefore",
+  "hence",
+  "thus",
+  "already",
+  "else",
+  "thus",
+  "hence",
 ]);
 
 function splitWords(
@@ -88,11 +172,8 @@ function splitWords(
   let match: RegExpExecArray | null;
   while ((match = re.exec(text)) !== null) {
     const word = match[0];
-    // Skip pure numbers (for now, surface preserved as LIT anyway)
-    if (/^\d+$/.test(word)) {
-      results.push({ word, offset: [match.index, match.index + word.length] });
-      continue;
-    }
+    // Skip pure numbers, dollar/currency amounts, and single chars
+    if (/^\$?\d[\d,._]*%?$/.test(word) || word.length === 1) continue;
     results.push({ word, offset: [match.index, match.index + word.length] });
   }
   return results;
@@ -220,7 +301,22 @@ export function tokenizeEn(text: string): CSTOutput {
     const { word, offset } = wordEntries[i];
     const lower = word.toLowerCase();
 
-    // Skip very short noise and stop-list words (but keep surface as LIT if needed)
+    // ── Function word check (STR / REL) — before skip, so was/were/so etc. emit tokens ──
+    const funcEntry = lookupEnFunction(lower);
+    if (funcEntry) {
+      tokens.push(
+        makeToken(funcEntry.type, word, offset, {
+          structure: funcEntry.structure,
+          relation: funcEntry.relation,
+          gloss: funcEntry.gloss,
+          confidence: 1.0,
+        }),
+      );
+      i++;
+      continue;
+    }
+
+    // Skip very short noise and stop-list words
     if (word.length <= 1 || SKIP_WORDS.has(lower)) {
       i++;
       continue;
@@ -246,15 +342,15 @@ export function tokenizeEn(text: string): CSTOutput {
       }
     }
 
-    // ── Function word check (STR / REL) ───────────────────────────────────
-    const funcEntry = lookupEnFunction(lower);
-    if (funcEntry) {
+    // ── words.json lookup (surface forms — step 5 before morphology) ─────
+    const wordEntry = getEnWords()[lower];
+    if (wordEntry) {
+      const field = wordEntry.level2 ?? wordEntry.field;
       tokens.push(
-        makeToken(funcEntry.type, word, offset, {
-          structure: funcEntry.structure,
-          relation: funcEntry.relation,
-          gloss: funcEntry.gloss,
-          confidence: 1.0,
+        makeToken("ROOT", word, offset, {
+          field,
+          gloss: wordEntry.gloss,
+          confidence: 0.95,
         }),
       );
       i++;

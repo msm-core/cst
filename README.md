@@ -1,4 +1,4 @@
-# @msm-ai/cst
+# @msm-core/cst
 
 **Contextual Semantic Tokenizer** — zero-dependency, multilingual, reversible.
 
@@ -19,7 +19,7 @@ CST converts raw text into structured semantic tokens: each word is mapped to a 
 ## Install
 
 ```bash
-npm install @msm-ai/cst
+npm install @msm-core/cst
 ```
 
 No runtime dependencies. Node 18+.
@@ -35,7 +35,7 @@ import {
   tokenizeAr,
   digest,
   toLLMContext,
-} from "@msm-ai/cst";
+} from "@msm-core/cst";
 
 // Auto-detect language
 const { tokens } = tokenize("Can you help me write a report?");
@@ -90,7 +90,7 @@ interface CSTToken {
 
 ## Semantic Fields
 
-CST uses a two-level field taxonomy. All 42 level-1 fields are stable and backwards-compatible with [nemo-ai](https://github.com/msm-core/nemo).
+CST uses a two-level field taxonomy. All 42 level-1 fields are stable and backwards-compatible with [@msm-core/nemo](https://github.com/msm-core/nemo).
 
 ### Level-1 (42 fields)
 
@@ -292,12 +292,12 @@ getArCompounds(): Record<string, string>  // Arabic compound bigrams → field
 
 ---
 
-## Integration with nemo-ai
+## Integration with @msm-core/nemo
 
-CST is the tokenizer backend for [nemo-ai](https://www.npmjs.com/package/nemo-ai) (HDC semantic memory). The `CSTToken` type from CST maps to nemo's internal token format via a thin adapter in `nemo-ai`'s `src/tokenizer.ts`. If you use nemo-ai, CST is already included — you do not need to import it separately.
+CST is the tokenizer backend for [@msm-core/nemo](https://www.npmjs.com/package/@msm-core/nemo) (HDC semantic memory). The `CSTToken` type from CST maps to nemo's internal `NemoToken` format via a thin adapter in nemo's `src/tokenizer.ts`. If you use `@msm-core/nemo`, CST is already included — you do not need to import it separately.
 
 ```typescript
-import { tokenize } from "nemo-ai"; // backed by @msm-ai/cst
+import { tokenize } from "@msm-core/nemo"; // backed by @msm-core/cst
 ```
 
 ---
@@ -330,7 +330,7 @@ Edit `vocab/en/function-words.json`:
 
 ### Arabic — words with trilateral root
 
-Edit `vocab/ar/roots.json` — add the normalized stem (no diacritics, ة→ه, ى→ي):
+Edit `vocab/ar/stems.json` — add the normalized stem (no diacritics, ة→ه, ى→ي):
 
 ```json
 "علم": "know",
@@ -340,7 +340,7 @@ Edit `vocab/ar/roots.json` — add the normalized stem (no diacritics, ة→ه, 
 
 ### Arabic — proper nouns, loanwords, no clear root
 
-Edit `vocab/ar/direct.json`:
+Edit `vocab/ar/words.json`:
 
 ```json
 "برمجه": "tech.code"
@@ -376,3 +376,5 @@ Edit `vocab/ar/compounds.json`:
 ## Repository
 
 [github.com/msm-core/cst](https://github.com/msm-core/cst) — MIT License
+
+**npm:** [@msm-core/cst](https://www.npmjs.com/package/@msm-core/cst) · **Companion:** [@msm-core/nemo](https://www.npmjs.com/package/@msm-core/nemo)

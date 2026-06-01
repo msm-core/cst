@@ -1,6 +1,6 @@
 {
-  "name": "@msm-ai/cst",
-  "version": "0.2.0",
+  "name": "@msm-core/cst",
+  "version": "0.3.0",
   "description": "Contextual Semantic Tokenizer — zero-dependency, multilingual, reversible",
   "type": "module",
   "main": "./dist/index.js",
@@ -16,6 +16,10 @@
     "vocab"
   ],
   "scripts": {
+    "vocab": "node scripts/build-vocab.mjs",
+    "profile": "node scripts/lit-profiler.mjs",
+    "profile:en": "node scripts/lit-profiler.mjs --dataset en",
+    "profile:ar": "node scripts/lit-profiler.mjs --dataset ar",
     "build": "tsc",
     "clean": "rm -rf dist",
     "test": "node --experimental-vm-modules node_modules/.bin/jest",

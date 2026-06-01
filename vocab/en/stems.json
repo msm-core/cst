@@ -1,149 +1,44 @@
 {
-  "_comment": "English stem → semantic field mapping. Format: stem → { field, gloss }. Add level2 where the stem clearly belongs to a sub-field.",
-  "write": {
-    "field": "write",
-    "gloss": "write, record, inscribe"
+  "_comment": "AUTO-GENERATED from vocab/concepts.json — do not edit manually. Run: node scripts/build-vocab.mjs",
+  "capital": {
+    "field": "know",
+    "gloss": "capital city (general knowledge)"
   },
-  "record": {
-    "field": "write",
-    "gloss": "record, document, log"
+  "check": {
+    "field": "know",
+    "gloss": "check, verify, inspect"
   },
-  "document": {
-    "field": "write",
-    "gloss": "document, write down"
+  "classify": {
+    "field": "know",
+    "gloss": "classify, categorize"
   },
-  "note": {
-    "field": "write",
-    "gloss": "note, jot down"
+  "comprehend": {
+    "field": "know",
+    "gloss": "comprehend, grasp"
   },
-  "draft": {
-    "field": "write",
-    "gloss": "draft, compose"
+  "definition": {
+    "field": "know",
+    "gloss": "definition, meaning"
   },
-  "compose": {
-    "field": "write",
-    "gloss": "compose, write"
+  "discover": {
+    "field": "know",
+    "gloss": "discover, find out"
   },
-  "author": {
-    "field": "write",
-    "gloss": "author, writer (person or act)"
+  "educate": {
+    "field": "know",
+    "gloss": "educate, train"
   },
-  "publish": {
-    "field": "write",
-    "gloss": "publish, release"
+  "encyclopedia": {
+    "field": "know",
+    "gloss": "encyclopedia"
   },
-  "publication": {
-    "field": "write",
-    "gloss": "publication, published work"
+  "fact": {
+    "field": "know",
+    "gloss": "fact, information"
   },
-  "print": {
-    "field": "write",
-    "gloss": "print, publish on paper"
-  },
-  "transcribe": {
-    "field": "write",
-    "gloss": "transcribe, copy"
-  },
-  "log": {
-    "field": "write",
-    "gloss": "log, track, record"
-  },
-  "scribe": {
-    "field": "write",
-    "gloss": "scribe, copyist"
-  },
-  "inscribe": {
-    "field": "write",
-    "gloss": "inscribe, engrave"
-  },
-  "pen": {
-    "field": "write",
-    "gloss": "write with a pen"
-  },
-  "send": {
-    "field": "send",
-    "gloss": "send, transmit"
-  },
-  "transmit": {
-    "field": "send",
-    "gloss": "transmit, broadcast"
-  },
-  "dispatch": {
-    "field": "send",
-    "gloss": "dispatch, send off"
-  },
-  "forward": {
-    "field": "send",
-    "gloss": "forward, relay"
-  },
-  "deliver": {
-    "field": "send",
-    "gloss": "deliver, drop off"
-  },
-  "mail": {
-    "field": "send",
-    "gloss": "mail, post"
-  },
-  "email": {
-    "field": "send",
-    "gloss": "email, electronic mail",
-    "level2": "tech.network"
-  },
-  "broadcast": {
-    "field": "send",
-    "gloss": "broadcast, air, stream"
-  },
-  "relay": {
-    "field": "send",
-    "gloss": "relay, pass on"
-  },
-  "post": {
-    "field": "send",
-    "gloss": "post, upload"
-  },
-  "ship": {
-    "field": "send",
-    "gloss": "ship, transport goods"
-  },
-  "transfer": {
-    "field": "send",
-    "gloss": "transfer, move data/money"
-  },
-  "notify": {
-    "field": "send",
-    "gloss": "notify, alert"
-  },
-  "notification": {
-    "field": "send",
-    "gloss": "notification, alert"
-  },
-  "alert": {
-    "field": "send",
-    "gloss": "alert, warning"
-  },
-  "message": {
-    "field": "send",
-    "gloss": "message, text"
-  },
-  "ping": {
-    "field": "send",
-    "gloss": "ping, signal"
-  },
-  "text": {
-    "field": "send",
-    "gloss": "text message, SMS"
-  },
-  "sms": {
-    "field": "send",
-    "gloss": "SMS, text message"
-  },
-  "reply": {
-    "field": "send",
-    "gloss": "reply, respond"
-  },
-  "inbox": {
-    "field": "send",
-    "gloss": "inbox, received messages"
+  "history": {
+    "field": "science",
+    "gloss": "history, study of past events"
   },
   "know": {
     "field": "know",
@@ -153,34 +48,21 @@
     "field": "know",
     "gloss": "learn, acquire knowledge"
   },
-  "understand": {
+  "lesson": {
     "field": "know",
-    "gloss": "understand, comprehend"
+    "gloss": "lesson, class, instruction"
   },
-  "study": {
-    "field": "know",
-    "gloss": "study, examine"
+  "monitoring": {
+    "field": "tech",
+    "gloss": "monitoring, tracking system performance"
   },
-  "teach": {
+  "outcome": {
     "field": "know",
-    "gloss": "teach, instruct"
+    "gloss": "outcome, result"
   },
-  "educate": {
+  "perceive": {
     "field": "know",
-    "gloss": "educate, train"
-  },
-  "read": {
-    "field": "know",
-    "gloss": "read",
-    "level2": "know.read"
-  },
-  "discover": {
-    "field": "know",
-    "gloss": "discover, find out"
-  },
-  "comprehend": {
-    "field": "know",
-    "gloss": "comprehend, grasp"
+    "gloss": "perceive, sense"
   },
   "realize": {
     "field": "know",
@@ -190,9 +72,9 @@
     "field": "know",
     "gloss": "recognize, identify"
   },
-  "perceive": {
-    "field": "know",
-    "gloss": "perceive, sense"
+  "review": {
+    "field": "social",
+    "gloss": "review, evaluation of a product or service"
   },
   "scholar": {
     "field": "know",
@@ -202,379 +84,145 @@
     "field": "know",
     "gloss": "student, learner"
   },
-  "capital": {
+  "study": {
     "field": "know",
-    "gloss": "capital city (general knowledge)"
+    "gloss": "study, examine"
   },
-  "history": {
+  "teach": {
     "field": "know",
-    "gloss": "history"
+    "gloss": "teach, instruct"
   },
-  "fact": {
+  "test": {
     "field": "know",
-    "gloss": "fact, information"
+    "gloss": "test, verify"
   },
-  "definition": {
+  "training": {
     "field": "know",
-    "gloss": "definition, meaning"
+    "gloss": "training data or professional training"
   },
-  "encyclopedia": {
+  "understand": {
     "field": "know",
-    "gloss": "encyclopedia"
+    "gloss": "understand, comprehend"
   },
-  "search": {
+  "meaning": {
     "field": "know",
-    "gloss": "search, look up",
-    "level2": "know.search"
+    "gloss": "meaning, what a word or phrase signifies"
   },
-  "lookup": {
+  "mean": {
     "field": "know",
-    "gloss": "look up, find information",
-    "level2": "know.search"
+    "gloss": "mean, signify, denote"
   },
-  "google": {
+  "purpose": {
     "field": "know",
-    "gloss": "Google search",
-    "level2": "know.search"
+    "gloss": "purpose, the reason something exists"
   },
-  "news": {
+  "point": {
     "field": "know",
-    "gloss": "news, latest updates",
-    "level2": "know.news"
+    "gloss": "point, meaning or purpose of something"
   },
-  "headline": {
+  "define": {
     "field": "know",
-    "gloss": "headline, news story",
-    "level2": "know.news"
+    "gloss": "define, state the meaning of"
   },
-  "article": {
+  "word": {
     "field": "know",
-    "gloss": "article, news piece",
-    "level2": "know.news"
+    "gloss": "word, unit of language with meaning"
   },
-  "report": {
-    "field": "write",
-    "gloss": "report, document, write up"
-  },
-  "trivia": {
+  "phrase": {
     "field": "know",
-    "gloss": "trivia, fun facts",
-    "level2": "know.question"
+    "gloss": "phrase, group of words as a unit"
   },
-  "quiz": {
+  "altruism": {
     "field": "know",
-    "gloss": "quiz, test of knowledge",
-    "level2": "know.question"
-  },
-  "gather": {
-    "field": "gather",
-    "gloss": "gather, collect, assemble"
-  },
-  "meet": {
-    "field": "gather",
-    "gloss": "meet, encounter"
-  },
-  "assemble": {
-    "field": "gather",
-    "gloss": "assemble, bring together"
-  },
-  "collect": {
-    "field": "gather",
-    "gloss": "collect, accumulate"
-  },
-  "join": {
-    "field": "gather",
-    "gloss": "join, unite with"
-  },
-  "unite": {
-    "field": "gather",
-    "gloss": "unite, combine"
-  },
-  "group": {
-    "field": "gather",
-    "gloss": "group, cluster"
-  },
-  "combine": {
-    "field": "gather",
-    "gloss": "combine, merge"
-  },
-  "merge": {
-    "field": "gather",
-    "gloss": "merge, fuse"
-  },
-  "create": {
-    "field": "create",
-    "gloss": "create, make from scratch"
-  },
-  "make": {
-    "field": "create",
-    "gloss": "make, build, produce"
-  },
-  "build": {
-    "field": "create",
-    "gloss": "build, construct"
-  },
-  "produce": {
-    "field": "create",
-    "gloss": "produce, generate"
-  },
-  "generate": {
-    "field": "create",
-    "gloss": "generate, produce"
-  },
-  "develop": {
-    "field": "create",
-    "gloss": "develop, build out"
-  },
-  "design": {
-    "field": "create",
-    "gloss": "design, plan visually"
-  },
-  "invent": {
-    "field": "create",
-    "gloss": "invent, originate"
-  },
-  "manufacture": {
-    "field": "create",
-    "gloss": "manufacture, mass-produce"
-  },
-  "craft": {
-    "field": "create",
-    "gloss": "craft, make by hand"
-  },
-  "establish": {
-    "field": "create",
-    "gloss": "establish, found, set up"
-  },
-  "construct": {
-    "field": "create",
-    "gloss": "construct, build"
-  },
-  "fabricate": {
-    "field": "create",
-    "gloss": "fabricate, manufacture"
-  },
-  "work": {
-    "field": "work",
-    "gloss": "work, labor, operate"
-  },
-  "labor": {
-    "field": "work",
-    "gloss": "labor, toil"
-  },
-  "operate": {
-    "field": "work",
-    "gloss": "operate, run, use"
-  },
-  "perform": {
-    "field": "work",
-    "gloss": "perform, carry out"
-  },
-  "execute": {
-    "field": "work",
-    "gloss": "execute, run a task"
-  },
-  "function": {
-    "field": "work",
-    "gloss": "function, work as intended"
-  },
-  "move": {
-    "field": "move",
-    "gloss": "move, go, travel"
-  },
-  "go": {
-    "field": "move",
-    "gloss": "go, head to"
-  },
-  "travel": {
-    "field": "move",
-    "gloss": "travel, journey"
-  },
-  "walk": {
-    "field": "move",
-    "gloss": "walk, go on foot"
-  },
-  "transport": {
-    "field": "move",
-    "gloss": "transport, carry"
-  },
-  "carry": {
-    "field": "move",
-    "gloss": "carry, bring along"
-  },
-  "bring": {
-    "field": "move",
-    "gloss": "bring, fetch"
-  },
-  "arrive": {
-    "field": "move",
-    "gloss": "arrive, reach"
-  },
-  "depart": {
-    "field": "move",
-    "gloss": "depart, leave"
-  },
-  "come": {
-    "field": "move",
-    "gloss": "come, approach"
-  },
-  "leave": {
-    "field": "move",
-    "gloss": "leave, exit"
-  },
-  "drive": {
-    "field": "move",
-    "gloss": "drive, operate a vehicle",
-    "level2": "move.drive"
-  },
-  "ride": {
-    "field": "move",
-    "gloss": "ride, take transport",
-    "level2": "move.ride"
-  },
-  "fly": {
-    "field": "move",
-    "gloss": "fly, travel by air",
-    "level2": "move.fly"
-  },
-  "navigate": {
-    "field": "move",
-    "gloss": "navigate, find route",
-    "level2": "place.route"
-  },
-  "directions": {
-    "field": "place",
-    "gloss": "directions, route",
-    "level2": "place.route"
-  },
-  "route": {
-    "field": "place",
-    "gloss": "route, path",
-    "level2": "place.route"
-  },
-  "govern": {
-    "field": "govern",
-    "gloss": "govern, rule, lead"
-  },
-  "rule": {
-    "field": "govern",
-    "gloss": "rule, govern"
-  },
-  "control": {
-    "field": "govern",
-    "gloss": "control, manage"
-  },
-  "lead": {
-    "field": "govern",
-    "gloss": "lead, head up"
-  },
-  "manage": {
-    "field": "govern",
-    "gloss": "manage, oversee"
-  },
-  "direct": {
-    "field": "govern",
-    "gloss": "direct, guide"
-  },
-  "command": {
-    "field": "govern",
-    "gloss": "command, order"
-  },
-  "administer": {
-    "field": "govern",
-    "gloss": "administer, run officially"
-  },
-  "regulate": {
-    "field": "govern",
-    "gloss": "regulate, control by rules"
-  },
-  "policy": {
-    "field": "govern",
-    "gloss": "policy, official rule"
-  },
-  "law": {
-    "field": "govern",
-    "gloss": "law, legislation"
-  },
-  "legal": {
-    "field": "govern",
-    "gloss": "legal, lawful"
-  },
-  "court": {
-    "field": "govern",
-    "gloss": "court, tribunal"
-  },
-  "judge": {
-    "field": "think",
-    "gloss": "judge, evaluate"
-  },
-  "president": {
-    "field": "govern",
-    "gloss": "president, head of state"
-  },
-  "minister": {
-    "field": "govern",
-    "gloss": "minister, government official"
-  },
-  "parliament": {
-    "field": "govern",
-    "gloss": "parliament, legislature"
-  },
-  "election": {
-    "field": "govern",
-    "gloss": "election, vote"
-  },
-  "vote": {
-    "field": "govern",
-    "gloss": "vote, cast a ballot"
-  },
-  "speak": {
-    "field": "speak",
-    "gloss": "speak, talk"
-  },
-  "say": {
-    "field": "speak",
-    "gloss": "say, utter"
-  },
-  "tell": {
-    "field": "speak",
-    "gloss": "tell, inform"
-  },
-  "talk": {
-    "field": "speak",
-    "gloss": "talk, converse"
-  },
-  "explain": {
-    "field": "speak",
-    "gloss": "explain, clarify"
-  },
-  "discuss": {
-    "field": "speak",
-    "gloss": "discuss, debate"
-  },
-  "communicate": {
-    "field": "speak",
-    "gloss": "communicate, convey"
-  },
-  "announce": {
-    "field": "speak",
-    "gloss": "announce, declare publicly"
-  },
-  "express": {
-    "field": "speak",
-    "gloss": "express, convey feeling"
-  },
-  "think": {
-    "field": "think",
-    "gloss": "think, reason"
-  },
-  "reason": {
-    "field": "think",
-    "gloss": "reason, logic"
+    "gloss": "altruism, selfless concern for others"
+  },
+  "affiliate": {
+    "field": "trade",
+    "gloss": "affiliate, partner who earns commission"
+  },
+  "ataraxy": {
+    "field": "know",
+    "gloss": "ataraxy, state of serene calm"
+  },
+  "realism": {
+    "field": "know",
+    "gloss": "realism, fidelity to reality"
+  },
+  "sentience": {
+    "field": "know",
+    "gloss": "sentience, capacity for conscious feeling"
+  },
+  "existence": {
+    "field": "know",
+    "gloss": "existence, the state of existing"
+  },
+  "equivalent": {
+    "field": "know",
+    "gloss": "equivalent, having the same value or meaning"
+  },
+  "answer": {
+    "field": "know",
+    "gloss": "answer, a response or solution"
+  },
+  "way": {
+    "field": "know",
+    "gloss": "way, method or manner of doing something"
+  },
+  "concept": {
+    "field": "know",
+    "gloss": "concept, abstract idea or notion"
+  },
+  "theory": {
+    "field": "science",
+    "gloss": "theory, hypothesis"
+  },
+  "idea": {
+    "field": "know",
+    "gloss": "idea, thought or notion"
+  },
+  "explanation": {
+    "field": "know",
+    "gloss": "explanation, making something clear"
+  },
+  "description": {
+    "field": "know",
+    "gloss": "description, account of something"
+  },
+  "example": {
+    "field": "know",
+    "gloss": "example, instance illustrating a point"
+  },
+  "origin": {
+    "field": "know",
+    "gloss": "origin, source or beginning"
+  },
+  "context": {
+    "field": "tech.ai",
+    "gloss": "context, surrounding information for AI"
+  },
+  "detail": {
+    "field": "know",
+    "gloss": "detail, individual fact or feature"
+  },
+  "info": {
+    "field": "know",
+    "gloss": "info, information"
+  },
+  "truth": {
+    "field": "know",
+    "gloss": "truth, what is true or real"
+  },
+  "regard": {
+    "field": "know",
+    "gloss": "regard, consideration or attention"
   },
   "analyze": {
     "field": "think",
     "gloss": "analyze, examine closely"
+  },
+  "assess": {
+    "field": "think",
+    "gloss": "assess, appraise"
   },
   "believe": {
     "field": "think",
@@ -585,97 +233,464 @@
     "gloss": "consider, think about"
   },
   "evaluate": {
+    "field": "tech.ai",
+    "gloss": "evaluate, assess AI system performance"
+  },
+  "judge": {
+    "field": "govern",
+    "gloss": "judge, official who decides legal cases"
+  },
+  "reason": {
     "field": "think",
-    "gloss": "evaluate, assess"
+    "gloss": "reason, logic"
   },
-  "assess": {
+  "think": {
     "field": "think",
-    "gloss": "assess, appraise"
+    "gloss": "think, reason"
   },
-  "decide": {
-    "field": "decide",
-    "gloss": "decide, determine"
+  "announce": {
+    "field": "speak",
+    "gloss": "announce, declare publicly"
   },
-  "choose": {
-    "field": "decide",
-    "gloss": "choose, select"
+  "communicate": {
+    "field": "speak",
+    "gloss": "communicate, convey"
   },
-  "determine": {
-    "field": "decide",
-    "gloss": "determine, conclude"
+  "discuss": {
+    "field": "speak",
+    "gloss": "discuss, debate"
   },
-  "resolve": {
-    "field": "decide",
-    "gloss": "resolve, settle"
+  "explain": {
+    "field": "speak",
+    "gloss": "explain, clarify"
   },
-  "select": {
-    "field": "decide",
-    "gloss": "select, pick"
+  "express": {
+    "field": "speak",
+    "gloss": "express, convey feeling"
   },
-  "confirm": {
-    "field": "decide",
-    "gloss": "confirm, approve"
+  "negotiate": {
+    "field": "speak",
+    "gloss": "negotiate, discuss terms"
   },
-  "see": {
-    "field": "see",
-    "gloss": "see, look at"
+  "proposal": {
+    "field": "work",
+    "gloss": "proposal, plan suggested for approval"
   },
-  "look": {
-    "field": "see",
-    "gloss": "look, observe"
+  "said": {
+    "field": "speak",
+    "gloss": "said, past of say"
   },
-  "watch": {
-    "field": "art",
-    "gloss": "watch, view video or film",
-    "level2": "art.film"
+  "say": {
+    "field": "speak",
+    "gloss": "say, utter"
   },
-  "observe": {
-    "field": "see",
-    "gloss": "observe, monitor"
+  "speak": {
+    "field": "speak",
+    "gloss": "speak, talk"
   },
-  "notice": {
-    "field": "see",
-    "gloss": "notice, spot"
+  "talk": {
+    "field": "speak",
+    "gloss": "talk, converse"
   },
-  "view": {
-    "field": "see",
-    "gloss": "view, see"
+  "tell": {
+    "field": "speak",
+    "gloss": "tell, inform"
+  },
+  "call": {
+    "field": "speak",
+    "gloss": "call, telephone call"
+  },
+  "contact": {
+    "field": "speak",
+    "gloss": "contact, reach someone"
+  },
+  "message": {
+    "field": "send",
+    "gloss": "message, text"
+  },
+  "text": {
+    "field": "send",
+    "gloss": "text message, SMS"
+  },
+  "dial": {
+    "field": "speak",
+    "gloss": "dial, dial a phone number"
+  },
+  "number": {
+    "field": "size",
+    "gloss": "number, numeral"
+  },
+  "voicemail": {
+    "field": "speak",
+    "gloss": "voicemail, recorded voice message"
+  },
+  "french": {
+    "field": "speak",
+    "gloss": "French language"
+  },
+  "spanish": {
+    "field": "speak",
+    "gloss": "Spanish language"
+  },
+  "english": {
+    "field": "speak",
+    "gloss": "English language"
+  },
+  "russian": {
+    "field": "speak",
+    "gloss": "Russian language"
+  },
+  "japanese": {
+    "field": "speak",
+    "gloss": "Japanese language"
+  },
+  "portuguese": {
+    "field": "speak",
+    "gloss": "Portuguese language"
+  },
+  "italian": {
+    "field": "speak",
+    "gloss": "Italian language"
+  },
+  "german": {
+    "field": "speak",
+    "gloss": "German language"
+  },
+  "chinese": {
+    "field": "speak",
+    "gloss": "Chinese language"
+  },
+  "arabic": {
+    "field": "speak",
+    "gloss": "Arabic language"
+  },
+  "hindi": {
+    "field": "speak",
+    "gloss": "Hindi language"
+  },
+  "korean": {
+    "field": "speak",
+    "gloss": "Korean language"
+  },
+  "turkish": {
+    "field": "speak",
+    "gloss": "Turkish language"
+  },
+  "dutch": {
+    "field": "speak",
+    "gloss": "Dutch language"
+  },
+  "greek": {
+    "field": "speak",
+    "gloss": "Greek language"
+  },
+  "polish": {
+    "field": "speak",
+    "gloss": "Polish language"
+  },
+  "swedish": {
+    "field": "speak",
+    "gloss": "Swedish language"
+  },
+  "norwegian": {
+    "field": "speak",
+    "gloss": "Norwegian language"
+  },
+  "danish": {
+    "field": "speak",
+    "gloss": "Danish language"
+  },
+  "finnish": {
+    "field": "speak",
+    "gloss": "Finnish language"
+  },
+  "hebrew": {
+    "field": "speak",
+    "gloss": "Hebrew language"
+  },
+  "persian": {
+    "field": "speak",
+    "gloss": "Persian language"
+  },
+  "swahili": {
+    "field": "speak",
+    "gloss": "Swahili language"
+  },
+  "translate": {
+    "field": "speak",
+    "gloss": "translate, convert from one language to another"
+  },
+  "translation": {
+    "field": "speak",
+    "gloss": "translation, text converted to another language"
+  },
+  "language": {
+    "field": "speak",
+    "gloss": "language, system of communication"
+  },
+  "pronunciation": {
+    "field": "speak",
+    "gloss": "pronunciation, how a word is spoken"
+  },
+  "accent": {
+    "field": "speak",
+    "gloss": "accent, distinctive way of speaking"
+  },
+  "dialect": {
+    "field": "speak",
+    "gloss": "dialect, regional variety of language"
+  },
+  "tongue": {
+    "field": "speak",
+    "gloss": "tongue, a language"
+  },
+  "sentence": {
+    "field": "speak",
+    "gloss": "sentence, a grammatical unit of language"
+  },
+  "grammar": {
+    "field": "speak",
+    "gloss": "grammar, rules of a language"
+  },
+  "vocabulary": {
+    "field": "speak",
+    "gloss": "vocabulary, words in a language"
+  },
+  "expression": {
+    "field": "speak",
+    "gloss": "expression, a word or phrase"
+  },
+  "voice": {
+    "field": "speak",
+    "gloss": "voice, speech"
+  },
+  "hear": {
+    "field": "speak",
+    "gloss": "hear, listen"
+  },
+  "loud": {
+    "field": "quality",
+    "gloss": "loud, producing much sound"
+  },
+  "mute": {
+    "field": "speak",
+    "gloss": "mute, silence"
+  },
+  "repeat": {
+    "field": "speak",
+    "gloss": "repeat something said"
+  },
+  "yes": {
+    "field": "speak",
+    "gloss": "affirmative answer"
+  },
+  "okay": {
+    "field": "speak",
+    "gloss": "acknowledgment, agreement"
+  },
+  "wanna": {
+    "field": "speak",
+    "gloss": "want to (colloquial)"
+  },
+  "sure": {
+    "field": "speak",
+    "gloss": "expression of certainty or agreement"
+  },
+  "author": {
+    "field": "write",
+    "gloss": "author, writer (person or act)"
+  },
+  "compose": {
+    "field": "write",
+    "gloss": "compose, write"
+  },
+  "document": {
+    "field": "write",
+    "gloss": "document, write down"
+  },
+  "draft": {
+    "field": "write",
+    "gloss": "draft, compose"
+  },
+  "inscribe": {
+    "field": "write",
+    "gloss": "inscribe, engrave"
+  },
+  "library": {
+    "field": "tech",
+    "gloss": "library, collection of reusable code"
+  },
+  "log": {
+    "field": "tech",
+    "gloss": "log, record of system events"
+  },
+  "note": {
+    "field": "work",
+    "gloss": "note, written reminder"
+  },
+  "pen": {
+    "field": "write",
+    "gloss": "write with a pen"
+  },
+  "print": {
+    "field": "write",
+    "gloss": "print, publish on paper"
+  },
+  "publication": {
+    "field": "write",
+    "gloss": "publication, published work"
+  },
+  "publish": {
+    "field": "write",
+    "gloss": "publish, release"
+  },
+  "record": {
+    "field": "tech",
+    "gloss": "record, single entry in a database"
+  },
+  "report": {
+    "field": "work",
+    "gloss": "report, account of information"
+  },
+  "scribe": {
+    "field": "write",
+    "gloss": "scribe, copyist"
+  },
+  "transcribe": {
+    "field": "write",
+    "gloss": "transcribe, copy"
+  },
+  "write": {
+    "field": "write",
+    "gloss": "write, record, inscribe"
+  },
+  "blog": {
+    "field": "write",
+    "gloss": "blog, online journal or informational site"
+  },
+  "article": {
+    "field": "know.news",
+    "gloss": "article, news piece"
+  },
+  "headline": {
+    "field": "know.news",
+    "gloss": "headline, news story"
+  },
+  "caption": {
+    "field": "write",
+    "gloss": "caption, text accompanying an image"
+  },
+  "summary": {
+    "field": "write",
+    "gloss": "summary, brief statement of main points"
+  },
+  "outline": {
+    "field": "write",
+    "gloss": "outline, structured plan for writing"
+  },
+  "revision": {
+    "field": "write",
+    "gloss": "revision, corrected version of a document"
+  },
+  "proofreading": {
+    "field": "write",
+    "gloss": "proofreading, checking text for errors"
+  },
+  "copywriting": {
+    "field": "write",
+    "gloss": "copywriting, writing for marketing"
+  },
+  "ghostwriting": {
+    "field": "write",
+    "gloss": "ghostwriting, writing for another person"
+  },
+  "documentation": {
+    "field": "write",
+    "gloss": "documentation, written technical reference"
+  },
+  "transcript": {
+    "field": "write",
+    "gloss": "transcript, written record of spoken words"
+  },
+  "subtitle": {
+    "field": "write",
+    "gloss": "subtitle, text overlay in video"
   },
   "detect": {
     "field": "see",
     "gloss": "detect, find, spot"
   },
-  "find": {
-    "field": "see",
-    "gloss": "find, locate"
-  },
-  "show": {
-    "field": "see",
-    "gloss": "show, display"
-  },
   "display": {
     "field": "see",
     "gloss": "display, show"
   },
-  "feel": {
-    "field": "feel",
-    "gloss": "feel, experience emotion"
+  "find": {
+    "field": "know.search",
+    "gloss": "find, locate or discover"
   },
-  "love": {
-    "field": "feel",
-    "gloss": "love, adore"
+  "look": {
+    "field": "see",
+    "gloss": "look, observe"
   },
-  "hate": {
+  "notice": {
+    "field": "see",
+    "gloss": "notice, spot"
+  },
+  "observe": {
+    "field": "see",
+    "gloss": "observe, monitor"
+  },
+  "see": {
+    "field": "see",
+    "gloss": "see, look at"
+  },
+  "show": {
+    "field": "art",
+    "gloss": "show, entertainment performance"
+  },
+  "view": {
+    "field": "see",
+    "gloss": "view, see"
+  },
+  "anger": {
     "field": "feel",
-    "gloss": "hate, dislike strongly"
+    "gloss": "anger, rage"
+  },
+  "emotion": {
+    "field": "feel",
+    "gloss": "emotion, feeling"
+  },
+  "enjoy": {
+    "field": "feel",
+    "gloss": "enjoy, take pleasure in"
   },
   "fear": {
     "field": "feel",
     "gloss": "fear, be afraid"
   },
+  "feel": {
+    "field": "feel",
+    "gloss": "feel, experience emotion"
+  },
+  "happy": {
+    "field": "feel",
+    "gloss": "happy, joyful"
+  },
+  "hate": {
+    "field": "feel",
+    "gloss": "hate, dislike strongly"
+  },
   "hope": {
     "field": "feel",
     "gloss": "hope, wish for"
+  },
+  "love": {
+    "field": "feel",
+    "gloss": "love, adore"
+  },
+  "sad": {
+    "field": "feel",
+    "gloss": "sad, unhappy"
   },
   "wish": {
     "field": "feel",
@@ -685,121 +700,849 @@
     "field": "feel",
     "gloss": "worry, be anxious"
   },
-  "enjoy": {
-    "field": "feel",
-    "gloss": "enjoy, take pleasure in"
+  "choose": {
+    "field": "decide",
+    "gloss": "choose, select"
   },
-  "anger": {
-    "field": "feel",
-    "gloss": "anger, rage"
+  "confirm": {
+    "field": "decide",
+    "gloss": "confirm, approve"
   },
-  "sad": {
-    "field": "feel",
-    "gloss": "sad, unhappy"
+  "decide": {
+    "field": "decide",
+    "gloss": "decide, determine"
   },
-  "happy": {
-    "field": "feel",
-    "gloss": "happy, joyful"
+  "determine": {
+    "field": "decide",
+    "gloss": "determine, conclude"
   },
-  "emotion": {
-    "field": "feel",
-    "gloss": "emotion, feeling"
+  "resolve": {
+    "field": "fix",
+    "gloss": "resolve, find a solution to"
   },
-  "want": {
-    "field": "want",
-    "gloss": "want, desire, need"
+  "select": {
+    "field": "decide",
+    "gloss": "select, pick"
   },
-  "desire": {
-    "field": "want",
-    "gloss": "desire, wish for"
+  "flip": {
+    "field": "decide",
+    "gloss": "flip (coin), decide randomly"
   },
-  "need": {
-    "field": "want",
-    "gloss": "need, require"
+  "random": {
+    "field": "decide",
+    "gloss": "random, randomly"
   },
-  "require": {
-    "field": "want",
-    "gloss": "require, demand"
+  "build": {
+    "field": "create",
+    "gloss": "build, construct"
   },
-  "demand": {
-    "field": "want",
-    "gloss": "demand, insist on"
+  "create": {
+    "field": "create",
+    "gloss": "create, make from scratch"
   },
-  "seek": {
-    "field": "want",
-    "gloss": "seek, look for"
+  "construct": {
+    "field": "create",
+    "gloss": "construct, build"
   },
-  "request": {
-    "field": "want",
-    "gloss": "request, ask for"
+  "craft": {
+    "field": "create",
+    "gloss": "craft, make by hand"
   },
-  "exist": {
-    "field": "exist",
-    "gloss": "exist, be present"
+  "design": {
+    "field": "create",
+    "gloss": "design, plan visually"
   },
-  "live": {
-    "field": "exist",
-    "gloss": "live, be alive"
+  "develop": {
+    "field": "create",
+    "gloss": "develop, build out"
   },
-  "survive": {
-    "field": "exist",
-    "gloss": "survive, endure"
+  "establish": {
+    "field": "create",
+    "gloss": "establish, found, set up"
   },
-  "appear": {
-    "field": "exist",
-    "gloss": "appear, show up"
+  "fabricate": {
+    "field": "create",
+    "gloss": "fabricate, manufacture"
   },
-  "occur": {
-    "field": "exist",
-    "gloss": "occur, happen"
+  "generate": {
+    "field": "create",
+    "gloss": "generate, produce"
   },
-  "happen": {
-    "field": "exist",
-    "gloss": "happen, take place"
+  "invent": {
+    "field": "create",
+    "gloss": "invent, originate"
   },
-  "emerge": {
-    "field": "exist",
-    "gloss": "emerge, come out"
+  "make": {
+    "field": "create",
+    "gloss": "make, build, produce"
   },
-  "become": {
-    "field": "exist",
-    "gloss": "become, turn into"
+  "manufacture": {
+    "field": "create",
+    "gloss": "manufacture, mass-produce"
   },
-  "rest": {
+  "produce": {
+    "field": "create",
+    "gloss": "produce, generate"
+  },
+  "made": {
+    "field": "create",
+    "gloss": "past tense of make, created"
+  },
+  "break": {
     "field": "rest",
-    "gloss": "rest, relax"
+    "gloss": "break, pause from work"
   },
-  "sleep": {
-    "field": "rest",
-    "gloss": "sleep, slumber"
+  "damage": {
+    "field": "destroy",
+    "gloss": "damage, harm"
   },
-  "relax": {
-    "field": "rest",
-    "gloss": "relax, unwind"
+  "delete": {
+    "field": "destroy",
+    "gloss": "delete, remove (data)"
   },
-  "pause": {
-    "field": "rest",
-    "gloss": "pause, stop temporarily"
+  "demolish": {
+    "field": "destroy",
+    "gloss": "demolish, tear down"
   },
-  "give": {
+  "destroy": {
+    "field": "destroy",
+    "gloss": "destroy, demolish"
+  },
+  "eliminate": {
+    "field": "destroy",
+    "gloss": "eliminate, remove entirely"
+  },
+  "remove": {
+    "field": "destroy",
+    "gloss": "remove, take out"
+  },
+  "ruin": {
+    "field": "destroy",
+    "gloss": "ruin, wreck"
+  },
+  "adapt": {
+    "field": "change",
+    "gloss": "adapt, adjust to"
+  },
+  "adjust": {
+    "field": "fix",
+    "gloss": "adjust, alter or modify"
+  },
+  "alter": {
+    "field": "change",
+    "gloss": "alter, adjust"
+  },
+  "change": {
+    "field": "change",
+    "gloss": "change, modify"
+  },
+  "evolve": {
+    "field": "change",
+    "gloss": "evolve, develop over time"
+  },
+  "expand": {
+    "field": "change",
+    "gloss": "expand, grow into new areas"
+  },
+  "improve": {
+    "field": "fix",
+    "gloss": "improve, make better"
+  },
+  "increase": {
+    "field": "change",
+    "gloss": "increase, make larger"
+  },
+  "modify": {
+    "field": "change",
+    "gloss": "modify, alter"
+  },
+  "reduce": {
+    "field": "change",
+    "gloss": "reduce, make smaller"
+  },
+  "reform": {
+    "field": "change",
+    "gloss": "reform, improve by changing"
+  },
+  "replace": {
+    "field": "change",
+    "gloss": "replace, swap out"
+  },
+  "reset": {
+    "field": "fix",
+    "gloss": "reset, set back to initial state"
+  },
+  "shift": {
+    "field": "change",
+    "gloss": "shift, move over"
+  },
+  "switch": {
+    "field": "change",
+    "gloss": "switch, toggle"
+  },
+  "transform": {
+    "field": "change",
+    "gloss": "transform, convert"
+  },
+  "turn": {
+    "field": "change",
+    "gloss": "turn, rotate, change"
+  },
+  "update": {
+    "field": "fix",
+    "gloss": "update, bring up to date"
+  },
+  "correct": {
+    "field": "quality",
+    "gloss": "correct, free from error, right"
+  },
+  "fix": {
+    "field": "fix",
+    "gloss": "fix, repair"
+  },
+  "mend": {
+    "field": "fix",
+    "gloss": "mend, fix"
+  },
+  "repair": {
+    "field": "fix",
+    "gloss": "repair, restore"
+  },
+  "restore": {
+    "field": "fix",
+    "gloss": "restore, bring back"
+  },
+  "setup": {
+    "field": "fix",
+    "gloss": "setup, configure"
+  },
+  "config": {
+    "field": "fix",
+    "gloss": "config, configuration settings"
+  },
+  "enhance": {
+    "field": "fix",
+    "gloss": "enhance, increase quality of"
+  },
+  "optimize": {
+    "field": "fix",
+    "gloss": "optimize, make as effective as possible"
+  },
+  "company": {
+    "field": "work",
+    "gloss": "company, business organization"
+  },
+  "execute": {
+    "field": "work",
+    "gloss": "execute, run a task"
+  },
+  "function": {
+    "field": "tech",
+    "gloss": "function, task something is designed to do"
+  },
+  "hire": {
+    "field": "work",
+    "gloss": "hire, recruit staff"
+  },
+  "job": {
+    "field": "work",
+    "gloss": "job, occupation, position"
+  },
+  "labor": {
+    "field": "work",
+    "gloss": "labor, toil"
+  },
+  "laundry": {
+    "field": "work",
+    "gloss": "laundry, washing clothes"
+  },
+  "operate": {
+    "field": "work",
+    "gloss": "operate, run, use"
+  },
+  "operational": {
+    "field": "work",
+    "gloss": "operational, related to operations"
+  },
+  "perform": {
+    "field": "work",
+    "gloss": "perform, carry out"
+  },
+  "project": {
+    "field": "work",
+    "gloss": "project, planned work"
+  },
+  "staff": {
+    "field": "work",
+    "gloss": "staff, employees"
+  },
+  "team": {
+    "field": "work",
+    "gloss": "team, group working together"
+  },
+  "use": {
+    "field": "work",
+    "gloss": "use, utilize"
+  },
+  "work": {
+    "field": "work",
+    "gloss": "work, labor, operate"
+  },
+  "list": {
+    "field": "work",
+    "gloss": "list, itemised collection of tasks"
+  },
+  "task": {
+    "field": "work",
+    "gloss": "task, work item or to-do"
+  },
+  "todo": {
+    "field": "work",
+    "gloss": "todo, task to be completed"
+  },
+  "remind": {
+    "field": "time.alarm",
+    "gloss": "remind, reminder"
+  },
+  "pto": {
+    "field": "work",
+    "gloss": "PTO, paid time off"
+  },
+  "career": {
+    "field": "work",
+    "gloss": "career, profession followed over a lifetime"
+  },
+  "profession": {
+    "field": "work",
+    "gloss": "profession, paid occupation requiring training"
+  },
+  "skill": {
+    "field": "work",
+    "gloss": "skill, ability from practice"
+  },
+  "talent": {
+    "field": "work",
+    "gloss": "talent, natural aptitude"
+  },
+  "plan": {
+    "field": "work",
+    "gloss": "plan, detailed proposal for doing something"
+  },
+  "goal": {
+    "field": "sport",
+    "gloss": "goal, scoring play"
+  },
+  "effort": {
+    "field": "work",
+    "gloss": "effort, use of energy to do work"
+  },
+  "result": {
+    "field": "science",
+    "gloss": "result, outcome of experiment"
+  },
+  "progress": {
+    "field": "work",
+    "gloss": "progress, forward movement toward a goal"
+  },
+  "success": {
+    "field": "work",
+    "gloss": "success, achievement of desired aim"
+  },
+  "failure": {
+    "field": "work",
+    "gloss": "failure, lack of success"
+  },
+  "problem": {
+    "field": "work",
+    "gloss": "problem, matter difficult to deal with"
+  },
+  "issue": {
+    "field": "work",
+    "gloss": "issue, important topic or problem"
+  },
+  "challenge": {
+    "field": "work",
+    "gloss": "challenge, difficult task"
+  },
+  "opportunity": {
+    "field": "work",
+    "gloss": "opportunity, favorable circumstance"
+  },
+  "office": {
+    "field": "dwell",
+    "gloss": "office, workspace"
+  },
+  "business": {
+    "field": "trade",
+    "gloss": "business, company"
+  },
+  "industry": {
+    "field": "work",
+    "gloss": "industry, branch of economic activity"
+  },
+  "role": {
+    "field": "work",
+    "gloss": "role, function or position"
+  },
+  "duty": {
+    "field": "work",
+    "gloss": "duty, moral or legal obligation"
+  },
+  "startup": {
+    "field": "work",
+    "gloss": "startup, new entrepreneurial company"
+  },
+  "entrepreneur": {
+    "field": "work",
+    "gloss": "entrepreneur, person who starts businesses"
+  },
+  "founder": {
+    "field": "work",
+    "gloss": "founder, person who establishes a company"
+  },
+  "ceo": {
+    "field": "work",
+    "gloss": "CEO, chief executive officer"
+  },
+  "cto": {
+    "field": "work",
+    "gloss": "CTO, chief technology officer"
+  },
+  "cfo": {
+    "field": "work",
+    "gloss": "CFO, chief financial officer"
+  },
+  "stakeholder": {
+    "field": "work",
+    "gloss": "stakeholder, person with interest in project"
+  },
+  "vendor": {
+    "field": "work",
+    "gloss": "vendor, supplier of goods or services"
+  },
+  "partnership": {
+    "field": "trade",
+    "gloss": "partnership, formal business collaboration"
+  },
+  "outsource": {
+    "field": "work",
+    "gloss": "outsource, hire external party for work"
+  },
+  "deadline": {
+    "field": "time",
+    "gloss": "deadline, due date"
+  },
+  "milestone": {
+    "field": "work",
+    "gloss": "milestone, significant point in project"
+  },
+  "deliverable": {
+    "field": "work",
+    "gloss": "deliverable, output item of a project"
+  },
+  "sprint": {
+    "field": "work",
+    "gloss": "sprint, short agile development cycle"
+  },
+  "agile": {
+    "field": "work",
+    "gloss": "agile, iterative software development method"
+  },
+  "scrum": {
+    "field": "work",
+    "gloss": "scrum, agile framework for project management"
+  },
+  "kanban": {
+    "field": "work",
+    "gloss": "kanban, visual workflow management system"
+  },
+  "roadmap": {
+    "field": "work",
+    "gloss": "roadmap, plan of future product development"
+  },
+  "backlog": {
+    "field": "work",
+    "gloss": "backlog, list of pending work items"
+  },
+  "feedback": {
+    "field": "social",
+    "gloss": "feedback, response or opinion given"
+  },
+  "onboarding": {
+    "field": "work",
+    "gloss": "onboarding, process of integrating new users"
+  },
+  "offboarding": {
+    "field": "work",
+    "gloss": "offboarding, process of departing employees"
+  },
+  "workflow": {
+    "field": "tech.ai",
+    "gloss": "workflow, sequence of automated steps"
+  },
+  "approval": {
+    "field": "work",
+    "gloss": "approval, formal acceptance of something"
+  },
+  "compliance": {
+    "field": "govern",
+    "gloss": "compliance, adhering to rules"
+  },
+  "audit": {
+    "field": "work",
+    "gloss": "audit, official inspection of records"
+  },
+  "kpi": {
+    "field": "work",
+    "gloss": "KPI, key performance indicator"
+  },
+  "okr": {
+    "field": "work",
+    "gloss": "OKR, objectives and key results"
+  },
+  "roi": {
+    "field": "work",
+    "gloss": "ROI, return on investment"
+  },
+  "sla": {
+    "field": "work",
+    "gloss": "SLA, service level agreement"
+  },
+  "contract": {
+    "field": "work",
+    "gloss": "contract, legally binding agreement"
+  },
+  "invoice": {
+    "field": "trade",
+    "gloss": "invoice, bill"
+  },
+  "quote": {
+    "field": "work",
+    "gloss": "quote, estimated price for a job"
+  },
+  "pitch": {
+    "field": "work",
+    "gloss": "pitch, presentation to potential investors"
+  },
+  "valuation": {
+    "field": "work",
+    "gloss": "valuation, estimated worth of a company"
+  },
+  "equity": {
+    "field": "work",
+    "gloss": "equity, ownership share in a company"
+  },
+  "venture": {
+    "field": "work",
+    "gloss": "venture, risky business enterprise"
+  },
+  "acquisition": {
+    "field": "trade",
+    "gloss": "customer acquisition, gaining new customers"
+  },
+  "merger": {
+    "field": "trade",
+    "gloss": "merger, business combination"
+  },
+  "subsidiary": {
+    "field": "work",
+    "gloss": "subsidiary, company owned by another"
+  },
+  "franchise": {
+    "field": "work",
+    "gloss": "franchise, licensed business model"
+  },
+  "freelance": {
+    "field": "work",
+    "gloss": "freelance, self-employed independent work"
+  },
+  "remote": {
+    "field": "work",
+    "gloss": "remote, working from a non-office location"
+  },
+  "hybrid": {
+    "field": "work",
+    "gloss": "hybrid, mix of remote and in-office work"
+  },
+  "productivity": {
+    "field": "work",
+    "gloss": "productivity, efficiency of output"
+  },
+  "performance": {
+    "field": "work",
+    "gloss": "performance, how well something functions"
+  },
+  "evaluation": {
+    "field": "tech.ai",
+    "gloss": "evaluation, assessment of AI performance"
+  },
+  "certification": {
+    "field": "work",
+    "gloss": "certification, official qualification"
+  },
+  "accreditation": {
+    "field": "work",
+    "gloss": "accreditation, formal recognition of quality"
+  },
+  "regulation": {
+    "field": "govern",
+    "gloss": "regulation, official rule"
+  },
+  "policy": {
+    "field": "govern",
+    "gloss": "policy, official rule"
+  },
+  "used": {
+    "field": "work",
+    "gloss": "past tense/adj: previously used, employed"
+  },
+  "using": {
+    "field": "work",
+    "gloss": "making use of, employing"
+  },
+  "form": {
+    "field": "work",
+    "gloss": "document form to fill out"
+  },
+  "forms": {
+    "field": "work",
+    "gloss": "document forms"
+  },
+  "allow": {
+    "field": "enable",
+    "gloss": "allow, permit"
+  },
+  "assist": {
+    "field": "enable",
+    "gloss": "assist, aid"
+  },
+  "disable": {
+    "field": "enable",
+    "gloss": "disable, turn off"
+  },
+  "enable": {
+    "field": "enable",
+    "gloss": "enable, allow, activate"
+  },
+  "help": {
+    "field": "enable",
+    "gloss": "help, assist"
+  },
+  "support": {
+    "field": "enable",
+    "gloss": "support, assist"
+  },
+  "arrive": {
+    "field": "move",
+    "gloss": "arrive, reach"
+  },
+  "bring": {
+    "field": "move",
+    "gloss": "bring, fetch"
+  },
+  "bus": {
+    "field": "move",
+    "gloss": "bus, public transport"
+  },
+  "carry": {
+    "field": "move",
+    "gloss": "carry, bring along"
+  },
+  "come": {
+    "field": "move",
+    "gloss": "come, approach"
+  },
+  "depart": {
+    "field": "move",
+    "gloss": "depart, leave"
+  },
+  "go": {
+    "field": "move",
+    "gloss": "go, head to"
+  },
+  "leave": {
+    "field": "move",
+    "gloss": "leave, exit"
+  },
+  "move": {
+    "field": "move",
+    "gloss": "move, go, travel"
+  },
+  "transport": {
+    "field": "move",
+    "gloss": "transport, carry"
+  },
+  "travel": {
+    "field": "move",
+    "gloss": "travel, journey"
+  },
+  "trip": {
+    "field": "move",
+    "gloss": "trip, journey"
+  },
+  "walk": {
+    "field": "move",
+    "gloss": "walk, go on foot"
+  },
+  "luggage": {
+    "field": "move",
+    "gloss": "luggage, baggage for travel"
+  },
+  "bag": {
+    "field": "move",
+    "gloss": "bag, travel or personal bag"
+  },
+  "boarding": {
+    "field": "move",
+    "gloss": "boarding, getting onto a plane or bus"
+  },
+  "airport": {
+    "field": "move.fly",
+    "gloss": "airport"
+  },
+  "journey": {
+    "field": "social",
+    "gloss": "customer journey, path through product"
+  },
+  "flight": {
+    "field": "move.fly",
+    "gloss": "flight, air travel"
+  },
+  "ticket": {
+    "field": "social",
+    "gloss": "ticket, record of a support request"
+  },
+  "passport": {
+    "field": "move",
+    "gloss": "passport, official travel document"
+  },
+  "traffic": {
+    "field": "move",
+    "gloss": "traffic, vehicles on road"
+  },
+  "direction": {
+    "field": "move",
+    "gloss": "direction, course taken to reach destination"
+  },
+  "distance": {
+    "field": "move",
+    "gloss": "distance, amount of space between"
+  },
+  "speed": {
+    "field": "move",
+    "gloss": "speed, rate of movement"
+  },
+  "run": {
+    "field": "sport",
+    "gloss": "run, jog"
+  },
+  "jump": {
+    "field": "move",
+    "gloss": "jump, leap into the air"
+  },
+  "swim": {
+    "field": "move",
+    "gloss": "swim, move through water"
+  },
+  "fly": {
+    "field": "move.fly",
+    "gloss": "fly, travel by air"
+  },
+  "ride": {
+    "field": "move.ride",
+    "gloss": "ride, take transport"
+  },
+  "drive": {
+    "field": "move.drive",
+    "gloss": "drive, operate a vehicle"
+  },
+  "alert": {
+    "field": "send",
+    "gloss": "alert, warning"
+  },
+  "broadcast": {
+    "field": "social",
+    "gloss": "broadcast, transmit content widely"
+  },
+  "deliver": {
+    "field": "send",
+    "gloss": "deliver, drop off"
+  },
+  "dispatch": {
+    "field": "send",
+    "gloss": "dispatch, send off"
+  },
+  "forward": {
+    "field": "send",
+    "gloss": "forward, relay"
+  },
+  "inbox": {
+    "field": "send",
+    "gloss": "inbox, received messages"
+  },
+  "mail": {
+    "field": "send",
+    "gloss": "mail, post"
+  },
+  "notification": {
+    "field": "tech",
+    "gloss": "notification, alert to user"
+  },
+  "notify": {
+    "field": "send",
+    "gloss": "notify, alert"
+  },
+  "ping": {
+    "field": "send",
+    "gloss": "ping, signal"
+  },
+  "post": {
+    "field": "social",
+    "gloss": "post, message published on social media"
+  },
+  "relay": {
+    "field": "send",
+    "gloss": "relay, pass on"
+  },
+  "reply": {
+    "field": "send",
+    "gloss": "reply, respond"
+  },
+  "send": {
+    "field": "send",
+    "gloss": "send, transmit"
+  },
+  "ship": {
+    "field": "trade.order",
+    "gloss": "ship, dispatch an order"
+  },
+  "sms": {
+    "field": "send",
+    "gloss": "SMS, text message"
+  },
+  "transfer": {
+    "field": "trade",
+    "gloss": "transfer, move money between accounts"
+  },
+  "transmit": {
+    "field": "send",
+    "gloss": "transmit, broadcast"
+  },
+  "distribute": {
     "field": "give",
-    "gloss": "give, provide"
-  },
-  "share": {
-    "field": "give",
-    "gloss": "share, distribute"
+    "gloss": "distribute, hand out"
   },
   "donate": {
     "field": "give",
     "gloss": "donate, contribute"
   },
+  "give": {
+    "field": "give",
+    "gloss": "give, provide"
+  },
   "grant": {
     "field": "give",
     "gloss": "grant, award"
-  },
-  "distribute": {
-    "field": "give",
-    "gloss": "distribute, hand out"
   },
   "offer": {
     "field": "give",
@@ -809,25 +1552,17 @@
     "field": "give",
     "gloss": "provide, supply"
   },
-  "take": {
-    "field": "take",
-    "gloss": "take, acquire"
-  },
-  "capture": {
-    "field": "take",
-    "gloss": "capture, catch"
-  },
-  "seize": {
-    "field": "take",
-    "gloss": "seize, grab"
-  },
-  "steal": {
-    "field": "take",
-    "gloss": "steal, take without permission"
+  "share": {
+    "field": "give",
+    "gloss": "share, distribute"
   },
   "acquire": {
     "field": "take",
     "gloss": "acquire, obtain"
+  },
+  "capture": {
+    "field": "take",
+    "gloss": "capture, catch"
   },
   "obtain": {
     "field": "take",
@@ -837,10 +1572,57 @@
     "field": "take",
     "gloss": "receive, get"
   },
-  "download": {
+  "seize": {
     "field": "take",
-    "gloss": "download, retrieve data",
-    "level2": "tech.network"
+    "gloss": "seize, grab"
+  },
+  "steal": {
+    "field": "take",
+    "gloss": "steal, take without permission"
+  },
+  "take": {
+    "field": "take",
+    "gloss": "take, acquire"
+  },
+  "stolen": {
+    "field": "take",
+    "gloss": "past participle of steal, taken illegally"
+  },
+  "assemble": {
+    "field": "gather",
+    "gloss": "assemble, bring together"
+  },
+  "collect": {
+    "field": "gather",
+    "gloss": "collect, accumulate"
+  },
+  "combine": {
+    "field": "gather",
+    "gloss": "combine, merge"
+  },
+  "gather": {
+    "field": "gather",
+    "gloss": "gather, collect, assemble"
+  },
+  "group": {
+    "field": "social",
+    "gloss": "group, number of people together"
+  },
+  "join": {
+    "field": "gather",
+    "gloss": "join, unite with"
+  },
+  "meet": {
+    "field": "gather",
+    "gloss": "meet, encounter"
+  },
+  "merge": {
+    "field": "gather",
+    "gloss": "merge, fuse"
+  },
+  "unite": {
+    "field": "gather",
+    "gloss": "unite, combine"
   },
   "hold": {
     "field": "hold",
@@ -858,37 +1640,41 @@
     "field": "hold",
     "gloss": "preserve, conserve"
   },
-  "sustain": {
+  "put": {
     "field": "hold",
-    "gloss": "sustain, uphold"
+    "gloss": "put, place, set"
   },
   "retain": {
     "field": "hold",
     "gloss": "retain, hold onto"
   },
-  "store": {
-    "field": "hold",
-    "gloss": "store, save data/goods"
-  },
   "save": {
     "field": "hold",
     "gloss": "save, store"
   },
-  "open": {
-    "field": "open",
-    "gloss": "open, unlock"
+  "store": {
+    "field": "trade",
+    "gloss": "store, retail establishment"
+  },
+  "sustain": {
+    "field": "hold",
+    "gloss": "sustain, uphold"
   },
   "close": {
     "field": "open",
     "gloss": "close, shut"
   },
+  "launch": {
+    "field": "open",
+    "gloss": "launch, start up"
+  },
   "lock": {
     "field": "open",
     "gloss": "lock, secure"
   },
-  "unlock": {
+  "open": {
     "field": "open",
-    "gloss": "unlock, open"
+    "gloss": "open, unlock"
   },
   "start": {
     "field": "open",
@@ -898,57 +1684,25 @@
     "field": "open",
     "gloss": "stop, halt"
   },
-  "launch": {
+  "unlock": {
     "field": "open",
-    "gloss": "launch, start up"
-  },
-  "enable": {
-    "field": "enable",
-    "gloss": "enable, allow, activate"
-  },
-  "disable": {
-    "field": "enable",
-    "gloss": "disable, turn off"
-  },
-  "allow": {
-    "field": "enable",
-    "gloss": "allow, permit"
-  },
-  "support": {
-    "field": "enable",
-    "gloss": "support, assist"
-  },
-  "help": {
-    "field": "enable",
-    "gloss": "help, assist"
-  },
-  "assist": {
-    "field": "enable",
-    "gloss": "assist, aid"
-  },
-  "hide": {
-    "field": "hide",
-    "gloss": "hide, conceal"
+    "gloss": "unlock, open"
   },
   "conceal": {
     "field": "hide",
     "gloss": "conceal, cover"
   },
-  "reveal": {
-    "field": "hide",
-    "gloss": "reveal, uncover"
-  },
   "expose": {
     "field": "hide",
     "gloss": "expose, bring to light"
   },
-  "connect": {
-    "field": "connect",
-    "gloss": "connect, link"
+  "hide": {
+    "field": "hide",
+    "gloss": "hide, conceal"
   },
-  "link": {
-    "field": "connect",
-    "gloss": "link, attach"
+  "reveal": {
+    "field": "hide",
+    "gloss": "reveal, uncover"
   },
   "attach": {
     "field": "connect",
@@ -958,482 +1712,973 @@
     "field": "connect",
     "gloss": "bind, tie together"
   },
+  "connect": {
+    "field": "connect",
+    "gloss": "connect, link"
+  },
   "integrate": {
     "field": "connect",
     "gloss": "integrate, merge systems"
   },
-  "sync": {
+  "link": {
     "field": "connect",
-    "gloss": "sync, synchronize"
+    "gloss": "link, attach"
   },
   "pair": {
     "field": "connect",
     "gloss": "pair, couple together"
   },
-  "change": {
-    "field": "change",
-    "gloss": "change, modify"
+  "sync": {
+    "field": "connect",
+    "gloss": "sync, synchronize"
   },
-  "modify": {
-    "field": "change",
-    "gloss": "modify, alter"
+  "appear": {
+    "field": "exist",
+    "gloss": "appear, show up"
   },
-  "transform": {
-    "field": "change",
-    "gloss": "transform, convert"
+  "become": {
+    "field": "exist",
+    "gloss": "become, turn into"
   },
-  "alter": {
-    "field": "change",
-    "gloss": "alter, adjust"
+  "emerge": {
+    "field": "exist",
+    "gloss": "emerge, come out"
   },
-  "adapt": {
-    "field": "change",
-    "gloss": "adapt, adjust to"
+  "exist": {
+    "field": "exist",
+    "gloss": "exist, be present"
   },
-  "update": {
-    "field": "change",
-    "gloss": "update, refresh"
+  "happen": {
+    "field": "exist",
+    "gloss": "happen, take place"
   },
-  "adjust": {
-    "field": "change",
-    "gloss": "adjust, fine-tune"
+  "live": {
+    "field": "exist",
+    "gloss": "live, be alive"
   },
-  "convert": {
+  "occur": {
+    "field": "exist",
+    "gloss": "occur, happen"
+  },
+  "survive": {
+    "field": "exist",
+    "gloss": "survive, endure"
+  },
+  "life": {
+    "field": "exist",
+    "gloss": "life, the condition of being alive"
+  },
+  "world": {
+    "field": "place",
+    "gloss": "world, globe"
+  },
+  "universe": {
+    "field": "exist",
+    "gloss": "universe, all of space and matter"
+  },
+  "nature": {
+    "field": "nature",
+    "gloss": "nature, natural world"
+  },
+  "reality": {
+    "field": "exist",
+    "gloss": "reality, the state of things as they are"
+  },
+  "pause": {
+    "field": "rest",
+    "gloss": "pause, stop temporarily"
+  },
+  "relax": {
+    "field": "rest",
+    "gloss": "relax, unwind"
+  },
+  "rest": {
+    "field": "rest",
+    "gloss": "rest, relax"
+  },
+  "sleep": {
+    "field": "rest",
+    "gloss": "sleep, slumber"
+  },
+  "vacation": {
+    "field": "rest",
+    "gloss": "vacation, holiday time off"
+  },
+  "demand": {
     "field": "trade",
-    "gloss": "convert currency or units",
-    "level2": "trade.currency"
+    "gloss": "demand, consumer desire for a product"
   },
-  "shift": {
-    "field": "change",
-    "gloss": "shift, move over"
+  "desire": {
+    "field": "want",
+    "gloss": "desire, wish for"
   },
-  "switch": {
-    "field": "change",
-    "gloss": "switch, toggle"
+  "need": {
+    "field": "want",
+    "gloss": "need, require"
   },
-  "replace": {
-    "field": "change",
-    "gloss": "replace, swap out"
+  "request": {
+    "field": "want",
+    "gloss": "request, ask for"
   },
-  "reform": {
-    "field": "change",
-    "gloss": "reform, improve by changing"
+  "require": {
+    "field": "want",
+    "gloss": "require, demand"
   },
-  "evolve": {
-    "field": "change",
-    "gloss": "evolve, develop over time"
+  "seek": {
+    "field": "want",
+    "gloss": "seek, look for"
   },
-  "fix": {
-    "field": "fix",
-    "gloss": "fix, repair"
+  "target": {
+    "field": "want",
+    "gloss": "target, goal"
   },
-  "repair": {
-    "field": "fix",
-    "gloss": "repair, restore"
+  "try": {
+    "field": "want",
+    "gloss": "try, attempt, endeavor"
   },
-  "restore": {
-    "field": "fix",
-    "gloss": "restore, bring back"
+  "want": {
+    "field": "want",
+    "gloss": "want, desire, need"
   },
-  "mend": {
-    "field": "fix",
-    "gloss": "mend, fix"
+  "administer": {
+    "field": "govern",
+    "gloss": "administer, run officially"
   },
-  "correct": {
-    "field": "fix",
-    "gloss": "correct, put right"
+  "command": {
+    "field": "govern",
+    "gloss": "command, order"
   },
-  "improve": {
-    "field": "fix",
-    "gloss": "improve, make better"
+  "control": {
+    "field": "govern",
+    "gloss": "control, manage"
   },
-  "heal": {
-    "field": "fix",
-    "gloss": "heal, recover",
-    "level2": "health.treatment"
+  "court": {
+    "field": "govern",
+    "gloss": "court, tribunal"
   },
-  "destroy": {
-    "field": "destroy",
-    "gloss": "destroy, demolish"
+  "direct": {
+    "field": "govern",
+    "gloss": "direct, guide"
   },
-  "break": {
-    "field": "destroy",
-    "gloss": "break, shatter"
+  "election": {
+    "field": "govern",
+    "gloss": "election, vote"
   },
-  "damage": {
-    "field": "destroy",
-    "gloss": "damage, harm"
+  "govern": {
+    "field": "govern",
+    "gloss": "govern, rule, lead"
   },
-  "demolish": {
-    "field": "destroy",
-    "gloss": "demolish, tear down"
+  "law": {
+    "field": "govern",
+    "gloss": "law, legislation"
   },
-  "ruin": {
-    "field": "destroy",
-    "gloss": "ruin, wreck"
+  "lead": {
+    "field": "trade",
+    "gloss": "lead, potential customer"
   },
-  "eliminate": {
-    "field": "destroy",
-    "gloss": "eliminate, remove entirely"
+  "legal": {
+    "field": "govern",
+    "gloss": "legal, lawful"
   },
-  "delete": {
-    "field": "destroy",
-    "gloss": "delete, remove (data)"
+  "let": {
+    "field": "govern",
+    "gloss": "let, allow, permit"
   },
-  "remove": {
-    "field": "destroy",
-    "gloss": "remove, take out"
+  "manage": {
+    "field": "govern",
+    "gloss": "manage, oversee"
   },
-  "fight": {
-    "field": "fight",
-    "gloss": "fight, battle"
+  "minister": {
+    "field": "govern",
+    "gloss": "minister, government official"
   },
-  "battle": {
-    "field": "fight",
-    "gloss": "battle, combat"
+  "parliament": {
+    "field": "govern",
+    "gloss": "parliament, legislature"
   },
-  "attack": {
-    "field": "fight",
-    "gloss": "attack, assault"
+  "president": {
+    "field": "govern",
+    "gloss": "president, head of state"
   },
-  "defend": {
-    "field": "fight",
-    "gloss": "defend, protect"
+  "regulate": {
+    "field": "govern",
+    "gloss": "regulate, control by rules"
+  },
+  "rule": {
+    "field": "govern",
+    "gloss": "rule, govern"
+  },
+  "vote": {
+    "field": "govern",
+    "gloss": "vote, cast a ballot"
+  },
+  "authority": {
+    "field": "govern",
+    "gloss": "authority, power to enforce rules"
+  },
+  "official": {
+    "field": "govern",
+    "gloss": "official, person in authority"
+  },
+  "citizen": {
+    "field": "govern",
+    "gloss": "citizen, member of a state"
+  },
+  "nation": {
+    "field": "govern",
+    "gloss": "nation, political community"
+  },
+  "state": {
+    "field": "govern",
+    "gloss": "state, political community with government"
+  },
+  "justice": {
+    "field": "govern",
+    "gloss": "justice, fair treatment"
+  },
+  "crime": {
+    "field": "govern",
+    "gloss": "crime, illegal act"
+  },
+  "criminal": {
+    "field": "govern",
+    "gloss": "criminal, person who commits crime"
+  },
+  "arrest": {
+    "field": "govern",
+    "gloss": "arrest, seize by legal authority"
+  },
+  "prison": {
+    "field": "govern",
+    "gloss": "prison, place of confinement"
   },
   "war": {
     "field": "fight",
     "gloss": "war, armed conflict"
   },
-  "military": {
+  "army": {
+    "field": "govern",
+    "gloss": "army, military land force"
+  },
+  "soldier": {
+    "field": "govern",
+    "gloss": "soldier, person in the army"
+  },
+  "gdpr": {
+    "field": "govern",
+    "gloss": "GDPR, EU data protection regulation"
+  },
+  "jurisdiction": {
+    "field": "govern",
+    "gloss": "jurisdiction, legal authority of a court"
+  },
+  "trademark": {
+    "field": "govern",
+    "gloss": "trademark, protected brand identifier"
+  },
+  "patent": {
+    "field": "govern",
+    "gloss": "patent, exclusive right to an invention"
+  },
+  "copyright": {
+    "field": "govern",
+    "gloss": "copyright, legal right over creative work"
+  },
+  "liability": {
+    "field": "govern",
+    "gloss": "liability, legal responsibility"
+  },
+  "litigation": {
+    "field": "govern",
+    "gloss": "litigation, legal dispute process"
+  },
+  "arbitration": {
+    "field": "govern",
+    "gloss": "arbitration, alternative dispute resolution"
+  },
+  "sanction": {
+    "field": "govern",
+    "gloss": "sanction, penalty or trade restriction"
+  },
+  "attack": {
     "field": "fight",
-    "gloss": "military, armed forces"
+    "gloss": "attack, assault"
+  },
+  "battle": {
+    "field": "fight",
+    "gloss": "battle, combat"
   },
   "conflict": {
     "field": "fight",
     "gloss": "conflict, dispute"
   },
+  "defend": {
+    "field": "fight",
+    "gloss": "defend, protect"
+  },
+  "fight": {
+    "field": "fight",
+    "gloss": "fight, battle"
+  },
+  "military": {
+    "field": "fight",
+    "gloss": "military, armed forces"
+  },
   "protest": {
     "field": "fight",
     "gloss": "protest, demonstrate"
   },
-  "possess": {
-    "field": "possess",
-    "gloss": "possess, own"
-  },
-  "own": {
-    "field": "possess",
-    "gloss": "own, have"
-  },
-  "property": {
-    "field": "possess",
-    "gloss": "property, asset"
-  },
-  "asset": {
-    "field": "possess",
-    "gloss": "asset, valuable item"
-  },
-  "contain": {
-    "field": "contain",
-    "gloss": "contain, include"
-  },
-  "include": {
-    "field": "contain",
-    "gloss": "include, consist of"
-  },
-  "consist": {
-    "field": "contain",
-    "gloss": "consist of, be made of"
-  },
-  "involve": {
-    "field": "contain",
-    "gloss": "involve, entail"
-  },
-  "category": {
-    "field": "contain",
-    "gloss": "category, type, class"
-  },
-  "type": {
-    "field": "contain",
-    "gloss": "type, kind"
-  },
-  "kind": {
-    "field": "contain",
-    "gloss": "kind, sort"
-  },
-  "force": {
-    "field": "force",
-    "gloss": "force, pressure"
-  },
-  "push": {
-    "field": "force",
-    "gloss": "push, propel"
-  },
-  "pull": {
-    "field": "force",
-    "gloss": "pull, drag"
-  },
-  "pressure": {
-    "field": "force",
-    "gloss": "pressure, force applied"
-  },
-  "impact": {
-    "field": "force",
-    "gloss": "impact, collision effect"
-  },
-  "social": {
-    "field": "social",
-    "gloss": "social, community"
-  },
-  "community": {
-    "field": "social",
-    "gloss": "community, group"
-  },
-  "society": {
-    "field": "social",
-    "gloss": "society, civilization"
-  },
-  "culture": {
-    "field": "social",
-    "gloss": "culture, customs"
-  },
-  "people": {
-    "field": "social",
-    "gloss": "people, humans"
-  },
-  "person": {
-    "field": "person",
-    "gloss": "person, individual"
-  },
-  "human": {
-    "field": "person",
-    "gloss": "human, person"
-  },
-  "individual": {
-    "field": "person",
-    "gloss": "individual, single person"
-  },
-  "man": {
-    "field": "person",
-    "gloss": "man, male"
-  },
-  "woman": {
-    "field": "person",
-    "gloss": "woman, female"
-  },
-  "child": {
-    "field": "person",
-    "gloss": "child, kid",
-    "level2": "social.family"
-  },
-  "parent": {
-    "field": "person",
-    "gloss": "parent, mother or father",
-    "level2": "social.family"
-  },
-  "mother": {
-    "field": "person",
-    "gloss": "mother",
-    "level2": "social.family"
-  },
-  "father": {
-    "field": "person",
-    "gloss": "father",
-    "level2": "social.family"
-  },
-  "brother": {
-    "field": "person",
-    "gloss": "brother",
-    "level2": "social.family"
-  },
-  "sister": {
-    "field": "person",
-    "gloss": "sister",
-    "level2": "social.family"
-  },
-  "friend": {
-    "field": "person",
-    "gloss": "friend",
-    "level2": "social.contact"
-  },
-  "colleague": {
-    "field": "person",
-    "gloss": "colleague, coworker",
-    "level2": "social.contact"
-  },
-  "partner": {
-    "field": "person",
-    "gloss": "partner, associate",
-    "level2": "social.contact"
-  },
-  "doctor": {
-    "field": "person",
-    "gloss": "doctor, physician",
-    "level2": "health.treatment"
-  },
-  "nurse": {
-    "field": "person",
-    "gloss": "nurse",
-    "level2": "health.treatment"
-  },
-  "teacher": {
-    "field": "person",
-    "gloss": "teacher, educator"
-  },
-  "student2": {
-    "field": "person",
-    "gloss": "student (person)"
-  },
-  "trade": {
+  "account": {
     "field": "trade",
-    "gloss": "trade, commerce"
+    "gloss": "account, bank account"
   },
-  "buy": {
+  "balance": {
     "field": "trade",
-    "gloss": "buy, purchase",
-    "level2": "trade.order"
+    "gloss": "balance, account balance"
   },
-  "purchase": {
+  "bill": {
     "field": "trade",
-    "gloss": "purchase, buy",
-    "level2": "trade.order"
-  },
-  "sell": {
-    "field": "trade",
-    "gloss": "sell, offer for sale"
-  },
-  "economy": {
-    "field": "trade",
-    "gloss": "economy, economic system"
-  },
-  "business": {
-    "field": "trade",
-    "gloss": "business, company"
-  },
-  "market": {
-    "field": "trade",
-    "gloss": "market, marketplace"
-  },
-  "price": {
-    "field": "trade",
-    "gloss": "price, cost",
-    "level2": "trade.price"
-  },
-  "cost": {
-    "field": "trade",
-    "gloss": "cost, expense",
-    "level2": "trade.price"
-  },
-  "stock": {
-    "field": "trade",
-    "gloss": "stock, shares",
-    "level2": "trade.stock"
-  },
-  "exchange": {
-    "field": "trade",
-    "gloss": "exchange, swap"
-  },
-  "currency": {
-    "field": "trade",
-    "gloss": "currency, money",
-    "level2": "trade.currency"
-  },
-  "bitcoin": {
-    "field": "trade",
-    "gloss": "Bitcoin",
-    "level2": "trade.currency"
-  },
-  "crypto": {
-    "field": "trade",
-    "gloss": "cryptocurrency",
-    "level2": "trade.currency"
-  },
-  "investment": {
-    "field": "trade",
-    "gloss": "investment, capital"
-  },
-  "profit": {
-    "field": "trade",
-    "gloss": "profit, gain"
-  },
-  "revenue": {
-    "field": "trade",
-    "gloss": "revenue, income"
-  },
-  "tax": {
-    "field": "trade",
-    "gloss": "tax, levy"
+    "gloss": "bill, invoice, payment"
   },
   "budget": {
     "field": "trade",
     "gloss": "budget, financial plan"
   },
-  "loan": {
+  "card": {
     "field": "trade",
-    "gloss": "loan, borrowed money"
+    "gloss": "payment card"
   },
-  "mortgage": {
+  "competitor": {
     "field": "trade",
-    "gloss": "mortgage, home loan"
+    "gloss": "competitor, rival business"
+  },
+  "credit": {
+    "field": "trade",
+    "gloss": "credit, credit card"
+  },
+  "debit": {
+    "field": "trade",
+    "gloss": "debit, debit card"
+  },
+  "deposit": {
+    "field": "trade",
+    "gloss": "deposit, put in money"
+  },
+  "economy": {
+    "field": "trade",
+    "gloss": "economy, economic system"
+  },
+  "exchange": {
+    "field": "trade.currency",
+    "gloss": "exchange, platform for trading currencies"
+  },
+  "fee": {
+    "field": "trade",
+    "gloss": "fee, charge, cost"
   },
   "inflation": {
     "field": "trade",
     "gloss": "inflation, rising prices"
   },
-  "science": {
-    "field": "science",
-    "gloss": "science, scientific knowledge"
+  "investment": {
+    "field": "trade",
+    "gloss": "investment, capital"
   },
-  "experiment": {
-    "field": "science",
-    "gloss": "experiment, test"
+  "license": {
+    "field": "trade",
+    "gloss": "license, permission to use"
   },
-  "theory": {
-    "field": "science",
-    "gloss": "theory, hypothesis"
+  "loan": {
+    "field": "trade",
+    "gloss": "loan, borrowed money"
   },
-  "research": {
-    "field": "science",
-    "gloss": "research, investigation"
+  "market": {
+    "field": "trade",
+    "gloss": "market, marketplace"
   },
-  "biology": {
-    "field": "science",
-    "gloss": "biology, life science"
+  "mortgage": {
+    "field": "trade",
+    "gloss": "mortgage, home loan"
   },
-  "chemistry": {
-    "field": "science",
-    "gloss": "chemistry, chemical science"
+  "order": {
+    "field": "trade",
+    "gloss": "order, purchase order"
   },
-  "physics": {
-    "field": "science",
-    "gloss": "physics, physical science"
+  "pay": {
+    "field": "trade",
+    "gloss": "pay, make a payment"
+  },
+  "payment": {
+    "field": "trade",
+    "gloss": "payment, pay"
+  },
+  "profit": {
+    "field": "trade",
+    "gloss": "profit, gain"
+  },
+  "refund": {
+    "field": "trade",
+    "gloss": "refund, money back"
+  },
+  "rent": {
+    "field": "trade",
+    "gloss": "rent, pay for temporary use"
+  },
+  "revenue": {
+    "field": "trade",
+    "gloss": "revenue, income"
+  },
+  "sell": {
+    "field": "trade",
+    "gloss": "sell, offer for sale"
+  },
+  "supplier": {
+    "field": "trade",
+    "gloss": "supplier, vendor"
+  },
+  "tax": {
+    "field": "trade",
+    "gloss": "tax, levy"
+  },
+  "trade": {
+    "field": "trade",
+    "gloss": "trade, commerce"
+  },
+  "transaction": {
+    "field": "trade",
+    "gloss": "transaction, financial operation"
+  },
+  "withdraw": {
+    "field": "trade",
+    "gloss": "withdraw, take out money"
+  },
+  "withdrawal": {
+    "field": "trade",
+    "gloss": "withdrawal, cash out"
+  },
+  "bank": {
+    "field": "trade",
+    "gloss": "bank, financial institution"
+  },
+  "reservation": {
+    "field": "trade",
+    "gloss": "reservation, advance booking"
+  },
+  "pin": {
+    "field": "trade",
+    "gloss": "PIN, personal identification number"
+  },
+  "limit": {
+    "field": "trade",
+    "gloss": "limit, maximum allowed amount"
+  },
+  "shopping": {
+    "field": "trade",
+    "gloss": "shopping, buying goods"
+  },
+  "visa": {
+    "field": "trade",
+    "gloss": "visa, credit card or travel permit"
+  },
+  "status": {
+    "field": "trade",
+    "gloss": "status, current state of account/order"
+  },
+  "insurance": {
+    "field": "health",
+    "gloss": "insurance, coverage"
+  },
+  "reward": {
+    "field": "trade",
+    "gloss": "reward, loyalty points or prize"
+  },
+  "routing": {
+    "field": "trade",
+    "gloss": "routing, bank routing number"
+  },
+  "money": {
+    "field": "trade",
+    "gloss": "money, currency for exchange"
+  },
+  "savings": {
+    "field": "trade",
+    "gloss": "savings, money saved for future use"
+  },
+  "saving": {
+    "field": "trade",
+    "gloss": "saving, act of putting money aside"
+  },
+  "checking": {
+    "field": "trade",
+    "gloss": "checking account, bank account for daily use"
+  },
+  "portfolio": {
+    "field": "trade",
+    "gloss": "portfolio, collection of investments"
+  },
+  "fund": {
+    "field": "trade",
+    "gloss": "fund, pool of money for investment"
+  },
+  "asset": {
+    "field": "possess",
+    "gloss": "asset, valuable item"
+  },
+  "debt": {
+    "field": "trade",
+    "gloss": "debt, money owed"
+  },
+  "loss": {
+    "field": "trade",
+    "gloss": "loss, financial deficit"
+  },
+  "expense": {
+    "field": "trade",
+    "gloss": "expense, cost incurred"
+  },
+  "charge": {
+    "field": "trade",
+    "gloss": "charge, fee or cost"
+  },
+  "income": {
+    "field": "trade",
+    "gloss": "income, money received regularly"
+  },
+  "salary": {
+    "field": "trade",
+    "gloss": "salary, regular payment for work"
+  },
+  "wage": {
+    "field": "trade",
+    "gloss": "wage, payment for work done"
+  },
+  "price": {
+    "field": "trade.price",
+    "gloss": "price, cost"
+  },
+  "cost": {
+    "field": "trade.price",
+    "gloss": "cost, expense"
+  },
+  "value": {
+    "field": "trade",
+    "gloss": "value, worth or monetary equivalent"
+  },
+  "rate": {
+    "field": "trade.currency",
+    "gloss": "rate, interest or exchange rate"
+  },
+  "shop": {
+    "field": "trade",
+    "gloss": "shop, retail store"
+  },
+  "product": {
+    "field": "trade",
+    "gloss": "product, item for sale"
+  },
+  "item": {
+    "field": "trade",
+    "gloss": "item, individual thing for sale"
+  },
+  "purchase": {
+    "field": "trade.order",
+    "gloss": "purchase, buy"
+  },
+  "buy": {
+    "field": "trade.order",
+    "gloss": "buy, purchase"
+  },
+  "ecommerce": {
+    "field": "trade",
+    "gloss": "e-commerce, buying and selling online"
+  },
+  "marketplace": {
+    "field": "trade",
+    "gloss": "marketplace, platform for buying/selling"
+  },
+  "checkout": {
+    "field": "trade",
+    "gloss": "checkout, process of completing a purchase"
+  },
+  "cart": {
+    "field": "trade",
+    "gloss": "cart, virtual shopping basket"
+  },
+  "wishlist": {
+    "field": "trade",
+    "gloss": "wishlist, saved items for future purchase"
+  },
+  "chargeback": {
+    "field": "trade",
+    "gloss": "chargeback, disputed transaction reversal"
+  },
+  "subscription": {
+    "field": "trade",
+    "gloss": "subscription, recurring payment for access"
+  },
+  "tier": {
+    "field": "trade",
+    "gloss": "tier, level of service or pricing"
+  },
+  "upsell": {
+    "field": "trade",
+    "gloss": "upsell, selling higher-value option"
+  },
+  "conversion": {
+    "field": "trade",
+    "gloss": "conversion, turning prospect into buyer"
+  },
+  "retention": {
+    "field": "trade",
+    "gloss": "retention, keeping existing customers"
+  },
+  "churn": {
+    "field": "trade",
+    "gloss": "churn, rate customers stop using service"
+  },
+  "funnel": {
+    "field": "trade",
+    "gloss": "funnel, stages of customer journey"
+  },
+  "prospect": {
+    "field": "trade",
+    "gloss": "prospect, potential future customer"
+  },
+  "crm": {
+    "field": "trade",
+    "gloss": "CRM, customer relationship management"
+  },
+  "erp": {
+    "field": "trade",
+    "gloss": "ERP, enterprise resource planning"
+  },
+  "inventory": {
+    "field": "trade",
+    "gloss": "inventory, stock of goods"
+  },
+  "fulfillment": {
+    "field": "trade",
+    "gloss": "fulfillment, completing an order"
+  },
+  "logistics": {
+    "field": "trade",
+    "gloss": "logistics, managing movement of goods"
+  },
+  "supply": {
+    "field": "trade",
+    "gloss": "supply, providing goods or services"
+  },
+  "wholesale": {
+    "field": "trade",
+    "gloss": "wholesale, selling in bulk at lower prices"
+  },
+  "retail": {
+    "field": "trade",
+    "gloss": "retail, selling directly to consumers"
+  },
+  "brand": {
+    "field": "trade",
+    "gloss": "brand, identity of a product or company"
+  },
+  "branding": {
+    "field": "trade",
+    "gloss": "branding, creating a brand identity"
+  },
+  "campaign": {
+    "field": "trade",
+    "gloss": "campaign, organized marketing effort"
+  },
+  "advertising": {
+    "field": "trade",
+    "gloss": "advertising, promoting products publicly"
+  },
+  "sponsorship": {
+    "field": "trade",
+    "gloss": "sponsorship, supporting event financially"
+  },
+  "commission": {
+    "field": "trade",
+    "gloss": "commission, fee for selling on behalf"
+  },
+  "pricing": {
+    "field": "trade",
+    "gloss": "pricing, setting prices for products"
+  },
+  "discount": {
+    "field": "trade",
+    "gloss": "discount, reduction in price"
+  },
+  "coupon": {
+    "field": "trade",
+    "gloss": "coupon, voucher for price reduction"
+  },
+  "promo": {
+    "field": "trade",
+    "gloss": "promo, promotional offer"
+  },
+  "promotion": {
+    "field": "trade",
+    "gloss": "promotion, special offer to boost sales"
+  },
+  "warranty": {
+    "field": "trade",
+    "gloss": "warranty, guarantee of product quality"
+  },
+  "return": {
+    "field": "trade",
+    "gloss": "return, sending product back for refund"
+  },
+  "paycheck": {
+    "field": "trade",
+    "gloss": "payment check from employer"
+  },
+  "paid": {
+    "field": "trade",
+    "gloss": "past tense of pay, settled"
+  },
+  "spent": {
+    "field": "trade",
+    "gloss": "past tense of spend, expended money"
+  },
+  "w2": {
+    "field": "trade",
+    "gloss": "W-2 tax form, wages statement"
+  },
+  "mastercard": {
+    "field": "trade",
+    "gloss": "Mastercard credit/debit card"
+  },
+  "amex": {
+    "field": "trade",
+    "gloss": "American Express card"
+  },
+  "chase": {
+    "field": "trade",
+    "gloss": "Chase bank or financial service"
+  },
+  "approved": {
+    "field": "trade",
+    "gloss": "past tense of approve, confirmed"
+  },
+  "celebrate": {
+    "field": "social",
+    "gloss": "celebrate, mark an occasion"
+  },
+  "chat": {
+    "field": "social",
+    "gloss": "chat, conversation"
+  },
+  "community": {
+    "field": "social",
+    "gloss": "community, group"
+  },
+  "culture": {
+    "field": "social",
+    "gloss": "culture, customs"
+  },
+  "fun": {
+    "field": "social",
+    "gloss": "fun, entertainment"
+  },
+  "joke": {
+    "field": "social",
+    "gloss": "joke, humor"
+  },
+  "party": {
+    "field": "social",
+    "gloss": "party, celebration"
+  },
+  "people": {
+    "field": "social",
+    "gloss": "people, humans"
+  },
+  "social": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "society": {
+    "field": "social",
+    "gloss": "society, civilization"
+  },
+  "visit": {
+    "field": "social",
+    "gloss": "visit, go to see someone"
+  },
+  "uber": {
+    "field": "social",
+    "gloss": "Uber, ride-hailing service"
+  },
+  "tip": {
+    "field": "trade.currency",
+    "gloss": "tip, gratuity"
+  },
+  "tradition": {
+    "field": "social",
+    "gloss": "tradition, long-established custom"
+  },
+  "activity": {
+    "field": "social",
+    "gloss": "activity, thing done for enjoyment"
+  },
+  "member": {
+    "field": "social",
+    "gloss": "member, part of a group"
+  },
+  "club": {
+    "field": "social",
+    "gloss": "club, organization for shared activity"
+  },
+  "network": {
+    "field": "tech.network",
+    "gloss": "network, internet"
+  },
+  "relationship": {
+    "field": "social",
+    "gloss": "relationship, connection between people"
+  },
+  "wedding": {
+    "field": "social",
+    "gloss": "wedding, marriage ceremony"
+  },
+  "festival": {
+    "field": "social",
+    "gloss": "festival, celebration or event"
+  },
+  "ceremony": {
+    "field": "social",
+    "gloss": "ceremony, formal occasion"
+  },
+  "gift": {
+    "field": "social",
+    "gloss": "gift, thing given willingly"
+  },
+  "donation": {
+    "field": "social",
+    "gloss": "donation, thing given to charity"
+  },
+  "engagement": {
+    "field": "social",
+    "gloss": "engagement, interaction with audience"
+  },
+  "follower": {
+    "field": "social",
+    "gloss": "follower, person who follows an account"
+  },
+  "influencer": {
+    "field": "social",
+    "gloss": "influencer, person with large social following"
+  },
+  "content": {
+    "field": "social",
+    "gloss": "content, information or media produced"
+  },
+  "like": {
+    "field": "social",
+    "gloss": "like, approve or endorse a post"
+  },
+  "comment": {
+    "field": "social",
+    "gloss": "comment, textual response to a post"
+  },
+  "mention": {
+    "field": "social",
+    "gloss": "mention, referencing someone in a post"
+  },
+  "hashtag": {
+    "field": "social",
+    "gloss": "hashtag, keyword tag for social media"
+  },
+  "trending": {
+    "field": "social",
+    "gloss": "trending, currently popular topic"
+  },
+  "viral": {
+    "field": "social",
+    "gloss": "viral, spreading rapidly online"
+  },
+  "algorithm": {
+    "field": "tech.code",
+    "gloss": "algorithm, procedure"
+  },
+  "platform": {
+    "field": "tech",
+    "gloss": "platform, environment for software"
+  },
+  "creator": {
+    "field": "social",
+    "gloss": "creator, person who makes digital content"
+  },
+  "stream": {
+    "field": "social",
+    "gloss": "stream, live video or audio content"
+  },
+  "podcast": {
+    "field": "social",
+    "gloss": "podcast, audio show for listening"
+  },
+  "newsletter": {
+    "field": "social",
+    "gloss": "newsletter, regular email update"
+  },
+  "survey": {
+    "field": "social",
+    "gloss": "survey, gathering opinions from people"
+  },
+  "rating": {
+    "field": "social",
+    "gloss": "rating, score given to something"
+  },
+  "complaint": {
+    "field": "social",
+    "gloss": "complaint, expression of dissatisfaction"
+  },
+  "inquiry": {
+    "field": "social",
+    "gloss": "inquiry, request for information"
+  },
+  "escalation": {
+    "field": "social",
+    "gloss": "escalation, raising issue to higher support"
+  },
+  "resolution": {
+    "field": "social",
+    "gloss": "resolution, solving a problem or issue"
+  },
+  "satisfaction": {
+    "field": "social",
+    "gloss": "satisfaction, fulfillment of expectations"
+  },
+  "experience": {
+    "field": "social",
+    "gloss": "experience, how something feels to user"
+  },
+  "own": {
+    "field": "possess",
+    "gloss": "own, have"
+  },
+  "possess": {
+    "field": "possess",
+    "gloss": "possess, own"
+  },
+  "property": {
+    "field": "possess",
+    "gloss": "property, asset"
   },
   "atom": {
     "field": "science",
     "gloss": "atom, subatomic"
   },
-  "molecule": {
+  "biology": {
     "field": "science",
-    "gloss": "molecule, chemical unit"
+    "gloss": "biology, life science"
   },
   "cell": {
     "field": "science",
     "gloss": "cell, biological unit"
   },
-  "evolution": {
+  "chemistry": {
     "field": "science",
-    "gloss": "evolution, natural selection"
-  },
-  "gravity": {
-    "field": "science",
-    "gloss": "gravity, gravitational force"
-  },
-  "energy": {
-    "field": "science",
-    "gloss": "energy, power"
-  },
-  "quantum": {
-    "field": "science",
-    "gloss": "quantum, quantum mechanics"
+    "gloss": "chemistry, chemical science"
   },
   "dna": {
     "field": "science",
@@ -1443,424 +2688,777 @@
     "field": "science",
     "gloss": "chemical element"
   },
-  "tech": {
-    "field": "tech",
-    "gloss": "technology, digital"
+  "energy": {
+    "field": "science",
+    "gloss": "energy, power"
   },
-  "computer": {
-    "field": "tech",
-    "gloss": "computer, PC"
+  "evolution": {
+    "field": "science",
+    "gloss": "evolution, natural selection"
   },
-  "software": {
-    "field": "tech",
-    "gloss": "software, application",
-    "level2": "tech.code"
+  "experiment": {
+    "field": "science",
+    "gloss": "experiment, test"
   },
-  "digital": {
-    "field": "tech",
-    "gloss": "digital, electronic"
+  "gravity": {
+    "field": "science",
+    "gloss": "gravity, gravitational force"
   },
-  "code": {
-    "field": "tech",
-    "gloss": "code, program",
-    "level2": "tech.code"
+  "molecule": {
+    "field": "science",
+    "gloss": "molecule, chemical unit"
   },
-  "program": {
-    "field": "tech",
-    "gloss": "program, software",
-    "level2": "tech.code"
+  "physics": {
+    "field": "science",
+    "gloss": "physics, physical science"
   },
-  "system": {
-    "field": "tech",
-    "gloss": "system, platform"
+  "quantum": {
+    "field": "science",
+    "gloss": "quantum, quantum mechanics"
   },
-  "data": {
-    "field": "tech",
-    "gloss": "data, information"
+  "research": {
+    "field": "science",
+    "gloss": "research, investigation"
   },
-  "online": {
-    "field": "tech",
-    "gloss": "online, connected",
-    "level2": "tech.network"
+  "science": {
+    "field": "science",
+    "gloss": "science, scientific knowledge"
   },
-  "database": {
-    "field": "tech",
-    "gloss": "database, data store",
-    "level2": "tech.code"
+  "math": {
+    "field": "measure",
+    "gloss": "math, arithmetic"
   },
-  "server": {
-    "field": "tech",
-    "gloss": "server, backend",
-    "level2": "tech.network"
+  "mathematics": {
+    "field": "science",
+    "gloss": "mathematics, study of numbers"
   },
-  "network": {
-    "field": "tech",
-    "gloss": "network, internet",
-    "level2": "tech.network"
+  "geometry": {
+    "field": "science",
+    "gloss": "geometry, study of shapes"
   },
-  "internet": {
-    "field": "tech",
-    "gloss": "internet, the web",
-    "level2": "tech.network"
+  "algebra": {
+    "field": "science",
+    "gloss": "algebra, math with symbols"
   },
-  "cloud": {
-    "field": "tech",
-    "gloss": "cloud computing",
-    "level2": "tech.network"
+  "geography": {
+    "field": "science",
+    "gloss": "geography, study of Earth's features"
   },
-  "algorithm": {
-    "field": "tech",
-    "gloss": "algorithm, procedure",
-    "level2": "tech.code"
+  "philosophy": {
+    "field": "science",
+    "gloss": "philosophy, study of fundamental questions"
   },
-  "api": {
-    "field": "tech",
-    "gloss": "API, interface",
-    "level2": "tech.code"
+  "psychology": {
+    "field": "science",
+    "gloss": "psychology, study of the mind"
   },
-  "python": {
-    "field": "tech",
-    "gloss": "Python (language)",
-    "level2": "tech.code"
+  "sociology": {
+    "field": "science",
+    "gloss": "sociology, study of society"
   },
-  "javascript": {
-    "field": "tech",
-    "gloss": "JavaScript (language)",
-    "level2": "tech.code"
-  },
-  "typescript": {
-    "field": "tech",
-    "gloss": "TypeScript (language)",
-    "level2": "tech.code"
-  },
-  "java": {
-    "field": "tech",
-    "gloss": "Java (language)",
-    "level2": "tech.code"
-  },
-  "security": {
-    "field": "tech",
-    "gloss": "security, cybersecurity",
-    "level2": "tech.security"
-  },
-  "encryption": {
-    "field": "tech",
-    "gloss": "encryption, encode data",
-    "level2": "tech.security"
-  },
-  "hardware": {
-    "field": "tech",
-    "gloss": "hardware, physical device",
-    "level2": "tech.hardware"
-  },
-  "cpu": {
-    "field": "tech",
-    "gloss": "CPU, processor",
-    "level2": "tech.hardware"
-  },
-  "gpu": {
-    "field": "tech",
-    "gloss": "GPU, graphics processor",
-    "level2": "tech.hardware"
-  },
-  "ai": {
-    "field": "tech",
-    "gloss": "artificial intelligence",
-    "level2": "tech.ai"
-  },
-  "machine": {
-    "field": "tech",
-    "gloss": "machine, device"
-  },
-  "robot": {
-    "field": "tech",
-    "gloss": "robot, automated machine"
-  },
-  "app": {
-    "field": "tech",
-    "gloss": "app, application",
-    "level2": "tech.code"
-  },
-  "deploy": {
-    "field": "tech",
-    "gloss": "deploy, release to server/cloud",
-    "level2": "tech.network"
-  },
-  "debug": {
-    "field": "tech",
-    "gloss": "debug, fix code bugs",
-    "level2": "tech.code"
-  },
-  "bug": {
-    "field": "tech",
-    "gloss": "bug, software error",
-    "level2": "tech.code"
-  },
-  "git": {
-    "field": "tech",
-    "gloss": "Git, version control",
-    "level2": "tech.code"
-  },
-  "wifi": {
-    "field": "tech",
-    "gloss": "WiFi, wireless network",
-    "level2": "tech.network"
-  },
-  "bluetooth": {
-    "field": "tech",
-    "gloss": "Bluetooth, wireless",
-    "level2": "tech.iot"
-  },
-  "smart": {
-    "field": "tech",
-    "gloss": "smart, IoT-enabled",
-    "level2": "tech.iot"
-  },
-  "iot": {
-    "field": "tech",
-    "gloss": "IoT, internet of things",
-    "level2": "tech.iot"
-  },
-  "health": {
-    "field": "health",
-    "gloss": "health, wellbeing"
+  "economics": {
+    "field": "science",
+    "gloss": "economics, study of production and trade"
   },
   "medicine": {
     "field": "health",
     "gloss": "medicine, medical care"
   },
-  "symptom": {
-    "field": "health",
-    "gloss": "symptom, sign of illness",
-    "level2": "health.symptom"
+  "data": {
+    "field": "tech",
+    "gloss": "data, information"
   },
-  "pain": {
-    "field": "health",
-    "gloss": "pain, ache",
-    "level2": "health.symptom"
+  "evidence": {
+    "field": "science",
+    "gloss": "evidence, available facts"
   },
-  "fever": {
-    "field": "health",
-    "gloss": "fever, high temperature",
-    "level2": "health.symptom"
+  "proof": {
+    "field": "science",
+    "gloss": "proof, evidence establishing truth"
   },
-  "cough": {
-    "field": "health",
-    "gloss": "cough",
-    "level2": "health.symptom"
+  "analysis": {
+    "field": "science",
+    "gloss": "analysis, examination of data"
   },
-  "headache": {
-    "field": "health",
-    "gloss": "headache",
-    "level2": "health.symptom"
+  "discovery": {
+    "field": "science",
+    "gloss": "discovery, finding something unknown"
   },
-  "nausea": {
+  "breathing": {
     "field": "health",
-    "gloss": "nausea, feeling sick",
-    "level2": "health.symptom"
-  },
-  "disease": {
-    "field": "health",
-    "gloss": "disease, illness"
-  },
-  "medication": {
-    "field": "health",
-    "gloss": "medication, drug",
-    "level2": "health.drug"
-  },
-  "drug": {
-    "field": "health",
-    "gloss": "drug, medicine",
-    "level2": "health.drug"
-  },
-  "antibiotic": {
-    "field": "health",
-    "gloss": "antibiotic",
-    "level2": "health.drug"
-  },
-  "vaccine": {
-    "field": "health",
-    "gloss": "vaccine, immunization",
-    "level2": "health.drug"
-  },
-  "prescription": {
-    "field": "health",
-    "gloss": "prescription",
-    "level2": "health.drug"
-  },
-  "vitamin": {
-    "field": "health",
-    "gloss": "vitamin, supplement",
-    "level2": "health.drug"
-  },
-  "therapy": {
-    "field": "health",
-    "gloss": "therapy, treatment",
-    "level2": "health.treatment"
-  },
-  "surgery": {
-    "field": "health",
-    "gloss": "surgery, operation",
-    "level2": "health.treatment"
-  },
-  "diagnosis": {
-    "field": "health",
-    "gloss": "diagnosis, medical assessment",
-    "level2": "health.treatment"
-  },
-  "hospital": {
-    "field": "health",
-    "gloss": "hospital, medical center"
+    "gloss": "breathing, respiration"
   },
   "clinic": {
     "field": "health",
     "gloss": "clinic, doctor's office"
   },
-  "exercise": {
+  "disease": {
     "field": "health",
-    "gloss": "exercise, physical activity",
-    "level2": "health.fitness"
+    "gloss": "disease, illness"
   },
-  "gym": {
+  "health": {
     "field": "health",
-    "gloss": "gym, fitness center",
-    "level2": "health.fitness"
+    "gloss": "health, wellbeing"
   },
-  "diet": {
+  "healthy": {
     "field": "health",
-    "gloss": "diet, eating plan",
-    "level2": "health.fitness"
+    "gloss": "healthy, in good health"
   },
-  "nutrition": {
-    "field": "food",
-    "gloss": "nutrition, nutrients",
-    "level2": "food.nutrition"
+  "hospital": {
+    "field": "health",
+    "gloss": "hospital, medical center"
   },
-  "calorie": {
-    "field": "food",
-    "gloss": "calorie, energy unit",
-    "level2": "food.nutrition"
+  "mental": {
+    "field": "health",
+    "gloss": "mental, relating to the mind"
+  },
+  "pharmacy": {
+    "field": "health",
+    "gloss": "pharmacy, drugstore"
+  },
+  "physical": {
+    "field": "health",
+    "gloss": "physical, relating to the body"
+  },
+  "sick": {
+    "field": "health",
+    "gloss": "sick, affected by illness"
+  },
+  "ill": {
+    "field": "health",
+    "gloss": "ill, not in good health"
+  },
+  "pain": {
+    "field": "health.symptom",
+    "gloss": "pain, ache"
+  },
+  "ache": {
+    "field": "health",
+    "gloss": "ache, continuous dull pain"
+  },
+  "injury": {
+    "field": "health",
+    "gloss": "injury, harm done to the body"
+  },
+  "wound": {
+    "field": "health.symptom",
+    "gloss": "wound, injury"
+  },
+  "condition": {
+    "field": "health",
+    "gloss": "condition, state of health"
+  },
+  "treatment": {
+    "field": "health",
+    "gloss": "treatment, medical care for illness"
+  },
+  "therapy": {
+    "field": "health.treatment",
+    "gloss": "therapy, treatment"
+  },
+  "recovery": {
+    "field": "health",
+    "gloss": "recovery, return to health"
+  },
+  "surgery": {
+    "field": "health.treatment",
+    "gloss": "surgery, operation"
+  },
+  "diagnosis": {
+    "field": "health.treatment",
+    "gloss": "diagnosis, medical assessment"
+  },
+  "dose": {
+    "field": "health",
+    "gloss": "dose, measured quantity of medicine"
+  },
+  "patient": {
+    "field": "health",
+    "gloss": "patient, person receiving medical care"
+  },
+  "doctor": {
+    "field": "health.treatment",
+    "gloss": "doctor, physician"
+  },
+  "nurse": {
+    "field": "health.treatment",
+    "gloss": "nurse"
+  },
+  "vitamin": {
+    "field": "health.drug",
+    "gloss": "vitamin, supplement"
+  },
+  "telemedicine": {
+    "field": "health",
+    "gloss": "telemedicine, healthcare via remote technology"
+  },
+  "telehealth": {
+    "field": "health",
+    "gloss": "telehealth, remote health services"
+  },
+  "wearable": {
+    "field": "health",
+    "gloss": "wearable, device worn to track health"
+  },
+  "biometric": {
+    "field": "health",
+    "gloss": "biometric, biological measurement for ID"
+  },
+  "genomics": {
+    "field": "health",
+    "gloss": "genomics, study of genomes"
+  },
+  "biotech": {
+    "field": "health",
+    "gloss": "biotech, biology and technology industry"
+  },
+  "clinical": {
+    "field": "health",
+    "gloss": "clinical, relating to medical care"
+  },
+  "trial": {
+    "field": "health",
+    "gloss": "clinical trial, test of new treatment"
+  },
+  "protocol": {
+    "field": "tech",
+    "gloss": "protocol, rules for data exchange"
+  },
+  "referral": {
+    "field": "health",
+    "gloss": "referral, directing patient to specialist"
+  },
+  "preventive": {
+    "field": "health",
+    "gloss": "preventive, stopping illness before it occurs"
+  },
+  "wellness": {
+    "field": "health",
+    "gloss": "wellness, state of being healthy"
+  },
+  "anxiety": {
+    "field": "health",
+    "gloss": "anxiety, feeling of worry or nervousness"
+  },
+  "depression": {
+    "field": "health",
+    "gloss": "depression, mental health condition"
+  },
+  "burnout": {
+    "field": "health",
+    "gloss": "burnout, exhaustion from chronic stress"
+  },
+  "benefit": {
+    "field": "health",
+    "gloss": "benefit, health benefit"
+  },
+  "coverage": {
+    "field": "health",
+    "gloss": "health coverage, insurance"
+  },
+  "insur": {
+    "field": "health",
+    "gloss": "insurance, health plan"
+  },
+  "premium": {
+    "field": "health",
+    "gloss": "premium, insurance cost"
+  },
+  "deduct": {
+    "field": "health",
+    "gloss": "deductible, deduction"
+  },
+  "application": {
+    "field": "tech",
+    "gloss": "application, app"
+  },
+  "automate": {
+    "field": "tech",
+    "gloss": "automate a process"
+  },
+  "backup": {
+    "field": "tech",
+    "gloss": "backup, data copy"
+  },
+  "coding": {
+    "field": "tech",
+    "gloss": "coding, programming"
+  },
+  "computer": {
+    "field": "tech",
+    "gloss": "computer, PC"
+  },
+  "digital": {
+    "field": "tech",
+    "gloss": "digital, electronic"
+  },
+  "electricity": {
+    "field": "tech",
+    "gloss": "electricity, electric power"
+  },
+  "install": {
+    "field": "tech",
+    "gloss": "install software"
+  },
+  "machine": {
+    "field": "tech",
+    "gloss": "machine, device"
+  },
+  "programming": {
+    "field": "tech",
+    "gloss": "programming, coding"
+  },
+  "robot": {
+    "field": "tech",
+    "gloss": "robot, automated machine"
+  },
+  "storage": {
+    "field": "tech",
+    "gloss": "data storage"
+  },
+  "system": {
+    "field": "tech",
+    "gloss": "system, platform"
+  },
+  "tech": {
+    "field": "tech",
+    "gloss": "technology, digital"
+  },
+  "process": {
+    "field": "tech",
+    "gloss": "process, series of actions"
+  },
+  "service": {
+    "field": "tech",
+    "gloss": "service, system providing a function"
+  },
+  "solution": {
+    "field": "tech",
+    "gloss": "solution, means of solving a problem"
+  },
+  "feature": {
+    "field": "tech",
+    "gloss": "feature, notable aspect of a product"
+  },
+  "version": {
+    "field": "tech",
+    "gloss": "version, form of something at a point in time"
+  },
+  "module": {
+    "field": "tech",
+    "gloss": "module, self-contained component"
+  },
+  "component": {
+    "field": "tech",
+    "gloss": "component, part of a larger system"
+  },
+  "interface": {
+    "field": "tech",
+    "gloss": "interface, connection between systems"
+  },
+  "format": {
+    "field": "tech",
+    "gloss": "format, arrangement of data"
+  },
+  "mode": {
+    "field": "tech",
+    "gloss": "mode, method or way of operating"
+  },
+  "option": {
+    "field": "tech",
+    "gloss": "option, choice or setting available"
+  },
+  "setting": {
+    "field": "tech",
+    "gloss": "setting, configuration parameter"
+  },
+  "profile": {
+    "field": "tech",
+    "gloss": "profile, set of characteristics or settings"
+  },
+  "model": {
+    "field": "tech.ai",
+    "gloss": "AI/ML model"
+  },
+  "api": {
+    "field": "tech.code",
+    "gloss": "API, interface"
+  },
+  "sdk": {
+    "field": "tech",
+    "gloss": "SDK, software development kit"
+  },
+  "saas": {
+    "field": "tech",
+    "gloss": "SaaS, software as a service"
+  },
+  "paas": {
+    "field": "tech",
+    "gloss": "PaaS, platform as a service"
+  },
+  "iaas": {
+    "field": "tech",
+    "gloss": "IaaS, infrastructure as a service"
+  },
+  "devops": {
+    "field": "tech",
+    "gloss": "DevOps, development and operations"
+  },
+  "cicd": {
+    "field": "tech",
+    "gloss": "CI/CD, continuous integration and deployment"
+  },
+  "microservice": {
+    "field": "tech",
+    "gloss": "microservice, small independent service"
+  },
+  "serverless": {
+    "field": "tech",
+    "gloss": "serverless, cloud compute without server mgmt"
+  },
+  "container": {
+    "field": "tech",
+    "gloss": "container, isolated software environment"
+  },
+  "docker": {
+    "field": "tech",
+    "gloss": "Docker, containerization platform"
+  },
+  "kubernetes": {
+    "field": "tech",
+    "gloss": "Kubernetes, container orchestration"
+  },
+  "deployment": {
+    "field": "tech.code",
+    "gloss": "deployment, software release"
+  },
+  "repository": {
+    "field": "tech",
+    "gloss": "repository, storage for code versions"
+  },
+  "webhook": {
+    "field": "tech",
+    "gloss": "webhook, HTTP callback trigger"
+  },
+  "middleware": {
+    "field": "tech",
+    "gloss": "middleware, software connecting components"
+  },
+  "runtime": {
+    "field": "tech",
+    "gloss": "runtime, environment where code executes"
+  },
+  "endpoint": {
+    "field": "tech",
+    "gloss": "endpoint, URL for an API request"
+  },
+  "payload": {
+    "field": "tech",
+    "gloss": "payload, data sent in a request"
+  },
+  "authentication": {
+    "field": "tech",
+    "gloss": "authentication, verifying user identity"
+  },
+  "authorization": {
+    "field": "tech",
+    "gloss": "authorization, granting access permissions"
+  },
+  "encryption": {
+    "field": "tech.security",
+    "gloss": "encryption, encode data"
+  },
+  "latency": {
+    "field": "tech",
+    "gloss": "latency, delay in data transmission"
+  },
+  "throughput": {
+    "field": "tech",
+    "gloss": "throughput, amount processed per unit time"
+  },
+  "scalability": {
+    "field": "tech",
+    "gloss": "scalability, ability to handle growth"
+  },
+  "reliability": {
+    "field": "tech",
+    "gloss": "reliability, consistent correct functioning"
+  },
+  "uptime": {
+    "field": "tech",
+    "gloss": "uptime, time system is operational"
+  },
+  "downtime": {
+    "field": "tech",
+    "gloss": "downtime, time system is unavailable"
+  },
+  "dashboard": {
+    "field": "tech",
+    "gloss": "dashboard, visual data overview"
+  },
+  "widget": {
+    "field": "tech",
+    "gloss": "widget, UI component element"
+  },
+  "template": {
+    "field": "tech",
+    "gloss": "template, reusable design pattern"
+  },
+  "schema": {
+    "field": "tech",
+    "gloss": "schema, structure definition for data"
+  },
+  "migration": {
+    "field": "tech",
+    "gloss": "migration, moving data or code to new system"
+  },
+  "cache": {
+    "field": "tech",
+    "gloss": "cache, temporary fast-access storage"
+  },
+  "queue": {
+    "field": "tech",
+    "gloss": "queue, ordered list for processing"
+  },
+  "batch": {
+    "field": "tech",
+    "gloss": "batch, group of items processed together"
+  },
+  "automation": {
+    "field": "tech",
+    "gloss": "automation, performing tasks automatically"
+  },
+  "integration": {
+    "field": "tech",
+    "gloss": "integration, connecting systems together"
+  },
+  "compatibility": {
+    "field": "tech",
+    "gloss": "compatibility, ability to work together"
+  },
+  "plugin": {
+    "field": "tech",
+    "gloss": "plugin, software extension"
+  },
+  "extension": {
+    "field": "tech",
+    "gloss": "extension, add-on to software"
+  },
+  "framework": {
+    "field": "tech",
+    "gloss": "framework, reusable software structure"
+  },
+  "package": {
+    "field": "trade.order",
+    "gloss": "package, parcel being shipped"
+  },
+  "dependency": {
+    "field": "tech",
+    "gloss": "dependency, required software component"
+  },
+  "open-source": {
+    "field": "tech",
+    "gloss": "open-source, freely available source code"
+  },
+  "cloud": {
+    "field": "tech.network",
+    "gloss": "cloud computing, cloud storage"
+  },
+  "aws": {
+    "field": "tech",
+    "gloss": "AWS, Amazon Web Services"
+  },
+  "azure": {
+    "field": "tech",
+    "gloss": "Azure, Microsoft cloud platform"
+  },
+  "gcp": {
+    "field": "tech",
+    "gloss": "GCP, Google Cloud Platform"
+  },
+  "hosting": {
+    "field": "tech",
+    "gloss": "hosting, providing server space for apps"
+  },
+  "compute": {
+    "field": "tech",
+    "gloss": "compute, processing power in the cloud"
+  },
+  "instance": {
+    "field": "tech",
+    "gloss": "instance, single running cloud server"
+  },
+  "region": {
+    "field": "place",
+    "gloss": "region, area"
+  },
+  "cluster": {
+    "field": "tech",
+    "gloss": "cluster, group of servers working together"
+  },
+  "replica": {
+    "field": "tech",
+    "gloss": "replica, copy for redundancy"
+  },
+  "cdn": {
+    "field": "tech",
+    "gloss": "CDN, content delivery network"
+  },
+  "bandwidth": {
+    "field": "tech",
+    "gloss": "bandwidth, data transfer capacity"
+  },
+  "dataset": {
+    "field": "tech",
+    "gloss": "dataset, collection of structured data"
+  },
+  "database": {
+    "field": "tech.code",
+    "gloss": "database, data store"
+  },
+  "sql": {
+    "field": "tech",
+    "gloss": "SQL, structured query language"
+  },
+  "nosql": {
+    "field": "tech",
+    "gloss": "NoSQL, non-relational database"
+  },
+  "query": {
+    "field": "tech",
+    "gloss": "query, request for specific data"
+  },
+  "pipeline": {
+    "field": "tech.ai",
+    "gloss": "pipeline, sequence of processing steps"
+  },
+  "etl": {
+    "field": "tech",
+    "gloss": "ETL, extract transform load data process"
+  },
+  "analytics": {
+    "field": "tech",
+    "gloss": "analytics, analysis of data for insight"
+  },
+  "metric": {
+    "field": "tech",
+    "gloss": "metric, measurable indicator of performance"
+  },
+  "insight": {
+    "field": "tech",
+    "gloss": "insight, understanding derived from data"
+  },
+  "visualization": {
+    "field": "tech",
+    "gloss": "visualization, graphical display of data"
+  },
+  "spreadsheet": {
+    "field": "tech",
+    "gloss": "spreadsheet, grid for data organization"
+  },
+  "csv": {
+    "field": "tech",
+    "gloss": "CSV, comma-separated values file format"
+  },
+  "json": {
+    "field": "tech",
+    "gloss": "JSON, data interchange format"
+  },
+  "xml": {
+    "field": "tech",
+    "gloss": "XML, markup data format"
+  },
+  "annotation": {
+    "field": "tech",
+    "gloss": "annotation, labeling data for training"
+  },
+  "labeling": {
+    "field": "tech",
+    "gloss": "labeling, marking data with categories"
+  },
+  "volume": {
+    "field": "tech",
+    "gloss": "volume, sound level"
   },
   "art": {
     "field": "art",
     "gloss": "art, creative work"
   },
-  "music": {
-    "field": "art",
-    "gloss": "music, melody",
-    "level2": "art.music"
-  },
-  "song": {
-    "field": "art",
-    "gloss": "song, musical track",
-    "level2": "art.music"
-  },
-  "album": {
-    "field": "art",
-    "gloss": "album, music collection",
-    "level2": "art.music"
-  },
-  "musician": {
-    "field": "art",
-    "gloss": "musician, music artist",
-    "level2": "art.music"
-  },
-  "concert": {
-    "field": "art",
-    "gloss": "concert, live music",
-    "level2": "art.music"
-  },
-  "guitar": {
-    "field": "art",
-    "gloss": "guitar, instrument",
-    "level2": "art.music"
-  },
-  "piano": {
-    "field": "art",
-    "gloss": "piano, instrument",
-    "level2": "art.music"
-  },
-  "movie": {
-    "field": "art",
-    "gloss": "movie, film",
-    "level2": "art.film"
-  },
-  "film": {
-    "field": "art",
-    "gloss": "film, cinema",
-    "level2": "art.film"
-  },
-  "cinema": {
-    "field": "art",
-    "gloss": "cinema, movie theater",
-    "level2": "art.film"
-  },
-  "director": {
-    "field": "art",
-    "gloss": "director, filmmaker",
-    "level2": "art.film"
-  },
-  "painting": {
-    "field": "art",
-    "gloss": "painting, artwork",
-    "level2": "art.visual"
-  },
-  "drawing": {
-    "field": "art",
-    "gloss": "drawing, sketch",
-    "level2": "art.visual"
-  },
-  "photography": {
-    "field": "art",
-    "gloss": "photography, photos",
-    "level2": "art.visual"
-  },
-  "novel": {
-    "field": "art",
-    "gloss": "novel, book of fiction",
-    "level2": "art.book"
-  },
-  "poem": {
-    "field": "art",
-    "gloss": "poem, poetry",
-    "level2": "art.book"
-  },
-  "book": {
-    "field": "art",
-    "gloss": "book, publication",
-    "level2": "art.book"
-  },
   "play": {
     "field": "art",
     "gloss": "play media, theatrical play"
   },
-  "sport": {
-    "field": "sport",
-    "gloss": "sport, athletics"
+  "painting": {
+    "field": "art.visual",
+    "gloss": "painting, artwork"
   },
-  "game": {
-    "field": "sport",
-    "gloss": "game, match"
+  "drawing": {
+    "field": "art.visual",
+    "gloss": "drawing, sketch"
   },
-  "match": {
-    "field": "sport",
-    "gloss": "match, competition"
+  "sculpture": {
+    "field": "art",
+    "gloss": "sculpture, carved figure"
   },
-  "score": {
-    "field": "sport",
-    "gloss": "score, points"
+  "photo": {
+    "field": "art",
+    "gloss": "photo, photographic picture"
   },
-  "goal": {
-    "field": "sport",
-    "gloss": "goal, scoring play"
+  "image": {
+    "field": "art.visual",
+    "gloss": "image, picture, photo"
   },
-  "team": {
-    "field": "sport",
-    "gloss": "team, club"
+  "picture": {
+    "field": "art",
+    "gloss": "picture, visual representation"
   },
-  "player": {
+  "film": {
+    "field": "art.film",
+    "gloss": "film, cinema"
+  },
+  "movie": {
+    "field": "art.film",
+    "gloss": "movie, film"
+  },
+  "theater": {
+    "field": "art",
+    "gloss": "theater, place for performances"
+  },
+  "museum": {
+    "field": "art",
+    "gloss": "museum, place exhibiting art or history"
+  },
+  "gallery": {
+    "field": "art",
+    "gloss": "gallery, place for exhibiting art"
+  },
+  "poetry": {
+    "field": "art",
+    "gloss": "poetry, literary art in verse"
+  },
+  "novel": {
+    "field": "art.book",
+    "gloss": "novel, book of fiction"
+  },
+  "story": {
+    "field": "art",
+    "gloss": "story, narrative account"
+  },
+  "book": {
+    "field": "art.book",
+    "gloss": "book, publication"
+  },
+  "character": {
+    "field": "art",
+    "gloss": "character, person in a story"
+  },
+  "plot": {
+    "field": "art",
+    "gloss": "plot, main events of a story"
+  },
+  "basketball": {
     "field": "sport",
-    "gloss": "player, athlete"
+    "gloss": "basketball"
   },
   "champion": {
     "field": "sport",
@@ -1870,598 +3468,89 @@
     "field": "sport",
     "gloss": "football/soccer"
   },
-  "basketball": {
+  "game": {
     "field": "sport",
-    "gloss": "basketball"
+    "gloss": "game, match"
   },
-  "tennis": {
+  "match": {
     "field": "sport",
-    "gloss": "tennis"
+    "gloss": "match, competition"
+  },
+  "player": {
+    "field": "sport",
+    "gloss": "player, athlete"
+  },
+  "score": {
+    "field": "sport",
+    "gloss": "score, points"
+  },
+  "sport": {
+    "field": "sport",
+    "gloss": "sport, athletics"
   },
   "swimming": {
     "field": "sport",
     "gloss": "swimming"
   },
-  "time": {
-    "field": "time",
-    "gloss": "time, moment"
-  },
-  "schedule": {
-    "field": "time",
-    "gloss": "schedule, timetable",
-    "level2": "time.calendar"
-  },
-  "reminder": {
-    "field": "time",
-    "gloss": "reminder, notification",
-    "level2": "time.alarm"
-  },
-  "alarm": {
-    "field": "time",
-    "gloss": "alarm, wake-up call",
-    "level2": "time.alarm"
-  },
-  "appointment": {
-    "field": "time",
-    "gloss": "appointment, booking",
-    "level2": "time.calendar"
-  },
-  "calendar": {
-    "field": "time",
-    "gloss": "calendar",
-    "level2": "time.calendar"
-  },
-  "meeting": {
-    "field": "time",
-    "gloss": "meeting, gathering",
-    "level2": "time.calendar"
-  },
-  "deadline": {
-    "field": "time",
-    "gloss": "deadline, due date"
-  },
-  "event": {
-    "field": "time",
-    "gloss": "event, occasion",
-    "level2": "time.calendar"
-  },
-  "today": {
-    "field": "time",
-    "gloss": "today, current day"
-  },
-  "tomorrow": {
-    "field": "time",
-    "gloss": "tomorrow, next day"
-  },
-  "yesterday": {
-    "field": "time",
-    "gloss": "yesterday, previous day"
-  },
-  "week": {
-    "field": "time",
-    "gloss": "week, 7 days"
-  },
-  "month": {
-    "field": "time",
-    "gloss": "month"
-  },
-  "year": {
-    "field": "time",
-    "gloss": "year"
-  },
-  "morning": {
-    "field": "time",
-    "gloss": "morning, a.m."
-  },
-  "afternoon": {
-    "field": "time",
-    "gloss": "afternoon"
-  },
-  "evening": {
-    "field": "time",
-    "gloss": "evening, dusk"
-  },
-  "night": {
-    "field": "time",
-    "gloss": "night, nighttime"
-  },
-  "monday": {
-    "field": "time",
-    "gloss": "Monday"
-  },
-  "tuesday": {
-    "field": "time",
-    "gloss": "Tuesday"
-  },
-  "wednesday": {
-    "field": "time",
-    "gloss": "Wednesday"
-  },
-  "thursday": {
-    "field": "time",
-    "gloss": "Thursday"
-  },
-  "friday": {
-    "field": "time",
-    "gloss": "Friday"
-  },
-  "saturday": {
-    "field": "time",
-    "gloss": "Saturday"
-  },
-  "sunday": {
-    "field": "time",
-    "gloss": "Sunday"
-  },
-  "birthday": {
-    "field": "time",
-    "gloss": "birthday"
-  },
-  "holiday": {
-    "field": "time",
-    "gloss": "holiday, day off"
-  },
-  "anniversary": {
-    "field": "time",
-    "gloss": "anniversary"
-  },
-  "minute": {
-    "field": "time",
-    "gloss": "minute",
-    "level2": "time.duration"
-  },
-  "hour": {
-    "field": "time",
-    "gloss": "hour",
-    "level2": "time.duration"
-  },
-  "second": {
-    "field": "time",
-    "gloss": "second, unit of time",
-    "level2": "time.duration"
-  },
-  "place": {
-    "field": "place",
-    "gloss": "place, location"
-  },
-  "location": {
-    "field": "place",
-    "gloss": "location, spot"
-  },
-  "city": {
-    "field": "place",
-    "gloss": "city, town",
-    "level2": "place.city"
-  },
-  "country": {
-    "field": "place",
-    "gloss": "country, nation",
-    "level2": "place.country"
-  },
-  "region": {
-    "field": "place",
-    "gloss": "region, area"
-  },
-  "street": {
-    "field": "place",
-    "gloss": "street, road"
-  },
-  "airport": {
-    "field": "place",
-    "gloss": "airport",
-    "level2": "move.fly"
-  },
-  "hotel": {
-    "field": "place",
-    "gloss": "hotel, accommodation"
-  },
-  "hospital2": {
-    "field": "place",
-    "gloss": "hospital (as place)"
-  },
-  "school": {
-    "field": "place",
-    "gloss": "school, educational institution"
-  },
-  "university": {
-    "field": "place",
-    "gloss": "university, college"
-  },
-  "mall": {
-    "field": "place",
-    "gloss": "shopping mall",
-    "level2": "trade.order"
-  },
-  "supermarket": {
-    "field": "place",
-    "gloss": "supermarket, grocery store",
-    "level2": "trade.order"
-  },
-  "restaurant": {
-    "field": "food",
-    "gloss": "restaurant, dining place",
-    "level2": "food.restaurant"
-  },
-  "cafe": {
-    "field": "food",
-    "gloss": "café, coffee shop",
-    "level2": "food.restaurant"
-  },
-  "map": {
-    "field": "place",
-    "gloss": "map, cartography",
-    "level2": "place.route"
-  },
-  "dwell": {
-    "field": "dwell",
-    "gloss": "dwell, live in"
-  },
-  "house": {
-    "field": "dwell",
-    "gloss": "house, home",
-    "level2": "place.home"
-  },
-  "home": {
-    "field": "dwell",
-    "gloss": "home, residence",
-    "level2": "place.home"
-  },
-  "room": {
-    "field": "dwell",
-    "gloss": "room, chamber",
-    "level2": "place.home"
-  },
-  "apartment": {
-    "field": "dwell",
-    "gloss": "apartment, flat",
-    "level2": "place.home"
-  },
-  "building": {
-    "field": "dwell",
-    "gloss": "building, structure"
-  },
-  "office": {
-    "field": "dwell",
-    "gloss": "office, workspace"
-  },
-  "kitchen": {
-    "field": "dwell",
-    "gloss": "kitchen",
-    "level2": "place.home"
-  },
-  "bedroom": {
-    "field": "dwell",
-    "gloss": "bedroom",
-    "level2": "place.home"
-  },
-  "bathroom": {
-    "field": "dwell",
-    "gloss": "bathroom",
-    "level2": "place.home"
-  },
-  "structure": {
-    "field": "structure",
-    "gloss": "structure, infrastructure"
-  },
-  "bridge": {
-    "field": "structure",
-    "gloss": "bridge"
-  },
-  "road": {
-    "field": "structure",
-    "gloss": "road, highway"
-  },
-  "tower": {
-    "field": "structure",
-    "gloss": "tower, tall building"
-  },
-  "size": {
-    "field": "size",
-    "gloss": "size, scale"
-  },
-  "number": {
-    "field": "size",
-    "gloss": "number, numeral"
-  },
-  "amount": {
-    "field": "size",
-    "gloss": "amount, quantity"
-  },
-  "quantity": {
-    "field": "size",
-    "gloss": "quantity, count"
-  },
-  "large": {
-    "field": "size",
-    "gloss": "large, big"
-  },
-  "small": {
-    "field": "size",
-    "gloss": "small, little"
-  },
-  "measure": {
-    "field": "measure",
-    "gloss": "measure, measurement"
-  },
-  "calculate": {
-    "field": "measure",
-    "gloss": "calculate, compute"
-  },
-  "count": {
-    "field": "measure",
-    "gloss": "count, tally"
-  },
-  "percent": {
-    "field": "measure",
-    "gloss": "percent, proportion"
-  },
-  "kilometer": {
-    "field": "measure",
-    "gloss": "kilometer, distance"
-  },
-  "mile": {
-    "field": "measure",
-    "gloss": "mile, distance"
-  },
-  "meter": {
-    "field": "measure",
-    "gloss": "meter, distance"
-  },
-  "kilogram": {
-    "field": "measure",
-    "gloss": "kilogram, weight"
-  },
-  "celsius": {
-    "field": "measure",
-    "gloss": "Celsius, temperature"
-  },
-  "fahrenheit": {
-    "field": "measure",
-    "gloss": "Fahrenheit, temperature"
-  },
-  "unit convert": {
-    "field": "measure",
-    "gloss": "unit conversion"
-  },
-  "total": {
-    "field": "measure",
-    "gloss": "total, sum"
-  },
-  "average": {
-    "field": "measure",
-    "gloss": "average, mean"
-  },
-  "quality": {
-    "field": "quality",
-    "gloss": "quality, level of goodness"
-  },
-  "good": {
-    "field": "quality",
-    "gloss": "good, positive quality"
-  },
-  "bad": {
-    "field": "quality",
-    "gloss": "bad, negative quality"
-  },
-  "strong": {
-    "field": "quality",
-    "gloss": "strong, powerful"
-  },
-  "weak": {
-    "field": "quality",
-    "gloss": "weak, lacking strength"
-  },
-  "fast": {
-    "field": "quality",
-    "gloss": "fast, quick"
-  },
-  "slow": {
-    "field": "quality",
-    "gloss": "slow, not fast"
-  },
-  "best": {
-    "field": "quality",
-    "gloss": "best, highest quality"
-  },
-  "worst": {
-    "field": "quality",
-    "gloss": "worst, lowest quality"
-  },
-  "easy": {
-    "field": "quality",
-    "gloss": "easy, simple"
-  },
-  "hard": {
-    "field": "quality",
-    "gloss": "hard, difficult"
-  },
-  "new": {
-    "field": "quality",
-    "gloss": "new, recent"
-  },
-  "old": {
-    "field": "quality",
-    "gloss": "old, aged"
-  },
-  "name": {
-    "field": "name",
-    "gloss": "name, label, title"
-  },
-  "label": {
-    "field": "name",
-    "gloss": "label, tag"
-  },
-  "term": {
-    "field": "name",
-    "gloss": "term, word used"
-  },
-  "symbol": {
-    "field": "name",
-    "gloss": "symbol, sign"
-  },
-  "title": {
-    "field": "name",
-    "gloss": "title, heading"
-  },
-  "food": {
-    "field": "food",
-    "gloss": "food, meal"
-  },
-  "eat": {
-    "field": "food",
-    "gloss": "eat, consume food"
-  },
-  "cook": {
-    "field": "food",
-    "gloss": "cook, prepare food",
-    "level2": "food.recipe"
-  },
-  "recipe": {
-    "field": "food",
-    "gloss": "recipe, cooking instructions",
-    "level2": "food.recipe"
-  },
-  "meal": {
-    "field": "food",
-    "gloss": "meal, food serving"
-  },
-  "drink": {
-    "field": "food",
-    "gloss": "drink, beverage"
-  },
-  "pizza": {
-    "field": "food",
-    "gloss": "pizza"
-  },
-  "chicken": {
-    "field": "food",
-    "gloss": "chicken (food)"
-  },
-  "rice": {
-    "field": "food",
-    "gloss": "rice"
-  },
-  "bread": {
-    "field": "food",
-    "gloss": "bread"
-  },
-  "salad": {
-    "field": "food",
-    "gloss": "salad"
-  },
-  "soup": {
-    "field": "food",
-    "gloss": "soup"
-  },
-  "coffee": {
-    "field": "food",
-    "gloss": "coffee",
-    "level2": "food.restaurant"
-  },
-  "breakfast": {
-    "field": "food",
-    "gloss": "breakfast, morning meal"
-  },
-  "lunch": {
-    "field": "food",
-    "gloss": "lunch, midday meal"
-  },
-  "dinner": {
-    "field": "food",
-    "gloss": "dinner, evening meal"
-  },
-  "ingredient": {
-    "field": "food",
-    "gloss": "ingredient",
-    "level2": "food.recipe"
-  },
-  "vegan": {
-    "field": "food",
-    "gloss": "vegan, plant-based"
-  },
-  "vegetarian": {
-    "field": "food",
-    "gloss": "vegetarian"
-  },
-  "weather": {
-    "field": "weather",
-    "gloss": "weather, atmospheric conditions"
-  },
-  "rain": {
-    "field": "weather",
-    "gloss": "rain, precipitation",
-    "level2": "weather.rain"
-  },
-  "snow": {
-    "field": "weather",
-    "gloss": "snow, snowfall",
-    "level2": "weather.rain"
-  },
-  "storm": {
-    "field": "weather",
-    "gloss": "storm, severe weather"
-  },
-  "wind": {
-    "field": "weather",
-    "gloss": "wind, breeze"
-  },
-  "sunny": {
-    "field": "weather",
-    "gloss": "sunny, clear sky"
-  },
-  "cloudy": {
-    "field": "weather",
-    "gloss": "cloudy, overcast"
-  },
-  "temperature": {
-    "field": "weather",
-    "gloss": "temperature",
-    "level2": "weather.temp"
-  },
-  "forecast": {
-    "field": "weather",
-    "gloss": "weather forecast",
-    "level2": "weather.forecast"
-  },
-  "humidity": {
-    "field": "weather",
-    "gloss": "humidity, moisture level"
-  },
-  "thunder": {
-    "field": "weather",
-    "gloss": "thunder, thunderstorm"
-  },
-  "fog": {
-    "field": "weather",
-    "gloss": "fog, mist"
-  },
-  "nature": {
+  "tennis": {
+    "field": "sport",
+    "gloss": "tennis"
+  },
+  "workout": {
+    "field": "sport",
+    "gloss": "workout, training session"
+  },
+  "race": {
+    "field": "sport",
+    "gloss": "race, competition of speed"
+  },
+  "coach": {
+    "field": "sport",
+    "gloss": "coach, person who trains athletes"
+  },
+  "athlete": {
+    "field": "sport",
+    "gloss": "athlete, person trained in sports"
+  },
+  "tournament": {
+    "field": "sport",
+    "gloss": "tournament, series of contests"
+  },
+  "league": {
+    "field": "sport",
+    "gloss": "league, group of sports clubs"
+  },
+  "stadium": {
+    "field": "sport",
+    "gloss": "stadium, sports venue"
+  },
+  "dice": {
+    "field": "sport",
+    "gloss": "dice, die (game)"
+  },
+  "roll": {
+    "field": "sport",
+    "gloss": "roll dice"
+  },
+  "sided": {
+    "field": "sport",
+    "gloss": "sided (dice: 6-sided)"
+  },
+  "beach": {
     "field": "nature",
-    "gloss": "nature, natural world"
-  },
-  "ocean": {
-    "field": "nature",
-    "gloss": "ocean, sea"
-  },
-  "sea": {
-    "field": "nature",
-    "gloss": "sea, large body of water"
-  },
-  "lake": {
-    "field": "nature",
-    "gloss": "lake"
-  },
-  "river": {
-    "field": "nature",
-    "gloss": "river, stream"
-  },
-  "mountain": {
-    "field": "nature",
-    "gloss": "mountain, peak"
+    "gloss": "beach, shoreline"
   },
   "desert": {
     "field": "nature",
     "gloss": "desert, arid land"
+  },
+  "ecosystem": {
+    "field": "nature",
+    "gloss": "ecosystem"
+  },
+  "environment": {
+    "field": "nature",
+    "gloss": "environment, surroundings"
   },
   "forest": {
     "field": "nature",
@@ -2471,65 +3560,41 @@
     "field": "nature",
     "gloss": "island"
   },
-  "beach": {
+  "lake": {
     "field": "nature",
-    "gloss": "beach, shoreline"
+    "gloss": "lake"
   },
-  "environment": {
+  "mountain": {
     "field": "nature",
-    "gloss": "environment, surroundings"
+    "gloss": "mountain, peak"
   },
-  "ecosystem": {
+  "ocean": {
     "field": "nature",
-    "gloss": "ecosystem"
+    "gloss": "ocean, sea"
   },
-  "animal": {
-    "field": "animal",
-    "gloss": "animal, creature"
+  "river": {
+    "field": "nature",
+    "gloss": "river, stream"
   },
-  "dog": {
-    "field": "animal",
-    "gloss": "dog"
+  "sea": {
+    "field": "nature",
+    "gloss": "sea, large body of water"
   },
-  "cat": {
-    "field": "animal",
-    "gloss": "cat"
+  "water": {
+    "field": "food",
+    "gloss": "water, clear liquid for drinking"
   },
-  "bird": {
-    "field": "animal",
-    "gloss": "bird"
+  "valley": {
+    "field": "nature",
+    "gloss": "valley, low land between hills"
   },
-  "fish": {
-    "field": "animal",
-    "gloss": "fish"
+  "jungle": {
+    "field": "nature",
+    "gloss": "jungle, tropical forest"
   },
-  "horse": {
-    "field": "animal",
-    "gloss": "horse"
-  },
-  "lion": {
-    "field": "animal",
-    "gloss": "lion"
-  },
-  "elephant": {
-    "field": "animal",
-    "gloss": "elephant"
-  },
-  "whale": {
-    "field": "animal",
-    "gloss": "whale"
-  },
-  "insect": {
-    "field": "animal",
-    "gloss": "insect, bug"
-  },
-  "camel": {
-    "field": "animal",
-    "gloss": "camel"
-  },
-  "plant": {
-    "field": "plant",
-    "gloss": "plant, vegetation"
+  "field": {
+    "field": "nature",
+    "gloss": "field, open area of land"
   },
   "tree": {
     "field": "plant",
@@ -2543,25 +3608,177 @@
     "field": "plant",
     "gloss": "grass"
   },
-  "rose": {
+  "earth": {
+    "field": "nature",
+    "gloss": "earth, the ground or soil"
+  },
+  "sky": {
+    "field": "nature",
+    "gloss": "sky, atmosphere above"
+  },
+  "star": {
+    "field": "nature",
+    "gloss": "star, luminous celestial body"
+  },
+  "moon": {
+    "field": "nature",
+    "gloss": "moon, natural satellite of Earth"
+  },
+  "sun": {
+    "field": "nature",
+    "gloss": "sun, central star of solar system"
+  },
+  "air": {
+    "field": "nature",
+    "gloss": "air, mixture of gases"
+  },
+  "fire": {
+    "field": "nature",
+    "gloss": "fire, combustion with flame"
+  },
+  "rain": {
+    "field": "weather.rain",
+    "gloss": "rain, precipitation"
+  },
+  "snow": {
+    "field": "weather.rain",
+    "gloss": "snow, snowfall"
+  },
+  "wind": {
+    "field": "weather",
+    "gloss": "wind, breeze"
+  },
+  "storm": {
+    "field": "weather",
+    "gloss": "storm, severe weather"
+  },
+  "plant": {
     "field": "plant",
-    "gloss": "rose"
+    "gloss": "plant, vegetation"
   },
   "seed": {
     "field": "plant",
     "gloss": "seed"
   },
-  "body": {
-    "field": "body",
-    "gloss": "body, physical form"
+  "leaf": {
+    "field": "nature",
+    "gloss": "leaf, flat structure of a plant"
+  },
+  "root": {
+    "field": "nature",
+    "gloss": "root, underground plant part"
+  },
+  "climate": {
+    "field": "weather",
+    "gloss": "climate, long-term weather"
+  },
+  "cloudy": {
+    "field": "weather",
+    "gloss": "cloudy, overcast"
+  },
+  "cold": {
+    "field": "quality",
+    "gloss": "cold, having low temperature"
+  },
+  "fog": {
+    "field": "weather",
+    "gloss": "fog, mist"
+  },
+  "humidity": {
+    "field": "weather",
+    "gloss": "humidity, moisture level"
+  },
+  "sunny": {
+    "field": "weather",
+    "gloss": "sunny, clear sky"
+  },
+  "thunder": {
+    "field": "weather",
+    "gloss": "thunder, thunderstorm"
+  },
+  "weather": {
+    "field": "weather",
+    "gloss": "weather, atmospheric conditions"
+  },
+  "animal": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "bird": {
+    "field": "animal",
+    "gloss": "bird"
+  },
+  "camel": {
+    "field": "animal",
+    "gloss": "camel"
+  },
+  "cat": {
+    "field": "animal",
+    "gloss": "cat"
+  },
+  "dog": {
+    "field": "animal",
+    "gloss": "dog"
+  },
+  "elephant": {
+    "field": "animal",
+    "gloss": "elephant"
+  },
+  "fish": {
+    "field": "food",
+    "gloss": "fish, seafood"
+  },
+  "horse": {
+    "field": "animal",
+    "gloss": "horse"
+  },
+  "insect": {
+    "field": "animal",
+    "gloss": "insect, bug"
+  },
+  "lion": {
+    "field": "animal",
+    "gloss": "lion"
+  },
+  "whale": {
+    "field": "animal",
+    "gloss": "whale"
+  },
+  "pet": {
+    "field": "animal",
+    "gloss": "pet, domestic animal"
+  },
+  "rose": {
+    "field": "plant",
+    "gloss": "rose"
   },
   "arm": {
     "field": "body",
     "gloss": "arm"
   },
-  "leg": {
+  "body": {
     "field": "body",
-    "gloss": "leg"
+    "gloss": "body, physical form"
+  },
+  "bone": {
+    "field": "body",
+    "gloss": "bone, skeleton"
+  },
+  "brain": {
+    "field": "body",
+    "gloss": "brain, neural"
+  },
+  "chest": {
+    "field": "body",
+    "gloss": "chest, torso area"
+  },
+  "ear": {
+    "field": "body",
+    "gloss": "ear"
+  },
+  "eye": {
+    "field": "body",
+    "gloss": "eye"
   },
   "hand": {
     "field": "body",
@@ -2575,265 +3792,2172 @@
     "field": "body",
     "gloss": "heart, cardiac"
   },
-  "brain": {
+  "leg": {
     "field": "body",
-    "gloss": "brain, neural"
-  },
-  "eye": {
-    "field": "body",
-    "gloss": "eye"
-  },
-  "ear": {
-    "field": "body",
-    "gloss": "ear"
-  },
-  "nose": {
-    "field": "body",
-    "gloss": "nose"
-  },
-  "blood": {
-    "field": "body",
-    "gloss": "blood"
-  },
-  "bone": {
-    "field": "body",
-    "gloss": "bone, skeleton"
+    "gloss": "leg"
   },
   "muscle": {
     "field": "body",
     "gloss": "muscle"
   },
+  "nose": {
+    "field": "body",
+    "gloss": "nose"
+  },
   "skin": {
     "field": "body",
     "gloss": "skin"
   },
-  "color": {
-    "field": "color",
-    "gloss": "color, hue"
+  "face": {
+    "field": "body",
+    "gloss": "face, front part of the head"
   },
-  "red": {
-    "field": "color",
-    "gloss": "red"
+  "mouth": {
+    "field": "body",
+    "gloss": "mouth, opening for eating and speaking"
   },
-  "blue": {
-    "field": "color",
-    "gloss": "blue"
+  "finger": {
+    "field": "body",
+    "gloss": "finger, digit of the hand"
   },
-  "green": {
-    "field": "color",
-    "gloss": "green"
+  "foot": {
+    "field": "body",
+    "gloss": "foot, lower part of the leg"
   },
-  "yellow": {
-    "field": "color",
-    "gloss": "yellow"
+  "back": {
+    "field": "body",
+    "gloss": "back, rear part of the body"
   },
-  "black": {
-    "field": "color",
-    "gloss": "black"
+  "stomach": {
+    "field": "body",
+    "gloss": "stomach, digestive organ"
   },
-  "white": {
-    "field": "color",
-    "gloss": "white"
+  "lung": {
+    "field": "body",
+    "gloss": "lung, organ for breathing"
   },
-  "orange": {
-    "field": "color",
-    "gloss": "orange"
+  "blood": {
+    "field": "health.symptom",
+    "gloss": "blood"
   },
-  "purple": {
-    "field": "color",
-    "gloss": "purple"
+  "hair": {
+    "field": "body",
+    "gloss": "hair, filaments growing from the skin"
   },
-  "pink": {
-    "field": "color",
-    "gloss": "pink"
+  "tooth": {
+    "field": "body",
+    "gloss": "tooth, hard structure in the mouth"
   },
-  "brown": {
-    "field": "color",
-    "gloss": "brown"
+  "throat": {
+    "field": "body",
+    "gloss": "throat, passage for food and air"
   },
-  "grey": {
-    "field": "color",
-    "gloss": "grey, gray"
+  "bread": {
+    "field": "food",
+    "gloss": "bread"
   },
-  "gray": {
-    "field": "color",
-    "gloss": "gray, grey"
+  "breakfast": {
+    "field": "food",
+    "gloss": "breakfast, morning meal"
   },
-  "golden": {
-    "field": "color",
-    "gloss": "golden, gold color"
+  "chicken": {
+    "field": "food",
+    "gloss": "chicken (food)"
   },
-  "material": {
-    "field": "material",
-    "gloss": "material, substance"
+  "dinner": {
+    "field": "food",
+    "gloss": "dinner, evening meal"
   },
-  "wood": {
-    "field": "material",
-    "gloss": "wood, timber"
+  "drink": {
+    "field": "food",
+    "gloss": "drink, beverage"
   },
-  "metal": {
-    "field": "material",
-    "gloss": "metal"
+  "eat": {
+    "field": "food",
+    "gloss": "eat, consume food"
   },
-  "iron": {
-    "field": "material",
-    "gloss": "iron"
+  "food": {
+    "field": "food",
+    "gloss": "food, meal"
   },
-  "steel": {
-    "field": "material",
-    "gloss": "steel"
+  "lunch": {
+    "field": "food",
+    "gloss": "lunch, midday meal"
   },
-  "glass": {
-    "field": "material",
-    "gloss": "glass"
+  "meal": {
+    "field": "food",
+    "gloss": "meal, food serving"
   },
-  "stone": {
-    "field": "material",
-    "gloss": "stone, rock"
+  "pizza": {
+    "field": "food",
+    "gloss": "pizza"
   },
-  "plastic": {
-    "field": "material",
-    "gloss": "plastic"
+  "rice": {
+    "field": "food",
+    "gloss": "rice"
   },
-  "fabric": {
-    "field": "material",
-    "gloss": "fabric, cloth"
+  "salad": {
+    "field": "food",
+    "gloss": "salad"
+  },
+  "soup": {
+    "field": "food",
+    "gloss": "soup"
+  },
+  "vegan": {
+    "field": "food",
+    "gloss": "vegan, plant-based"
+  },
+  "vegetarian": {
+    "field": "food",
+    "gloss": "vegetarian"
+  },
+  "ingredient": {
+    "field": "food.recipe",
+    "gloss": "ingredient"
+  },
+  "recipe": {
+    "field": "food.recipe",
+    "gloss": "recipe, cooking instructions"
+  },
+  "cook": {
+    "field": "food.recipe",
+    "gloss": "cook, prepare food"
+  },
+  "bake": {
+    "field": "food",
+    "gloss": "bake, cook in oven"
+  },
+  "dish": {
+    "field": "food",
+    "gloss": "dish, food prepared as a meal"
+  },
+  "diet": {
+    "field": "food.nutrition",
+    "gloss": "diet, eating plan"
+  },
+  "snack": {
+    "field": "food",
+    "gloss": "snack, small amount of food"
+  },
+  "fruit": {
+    "field": "food",
+    "gloss": "fruit, sweet food from a plant"
+  },
+  "vegetable": {
+    "field": "food",
+    "gloss": "vegetable, plant food"
+  },
+  "meat": {
+    "field": "food",
+    "gloss": "meat, flesh of an animal as food"
+  },
+  "pasta": {
+    "field": "food",
+    "gloss": "pasta, Italian noodle food"
+  },
+  "dessert": {
+    "field": "food",
+    "gloss": "dessert, sweet course at end of meal"
+  },
+  "beverage": {
+    "field": "food",
+    "gloss": "beverage, a drink"
+  },
+  "coffee": {
+    "field": "food.restaurant",
+    "gloss": "coffee"
+  },
+  "tea": {
+    "field": "food",
+    "gloss": "tea, brewed hot beverage"
+  },
+  "juice": {
+    "field": "food",
+    "gloss": "juice, liquid from fruit"
+  },
+  "milk": {
+    "field": "food",
+    "gloss": "milk, dairy beverage"
+  },
+  "qat": {
+    "field": "food",
+    "gloss": "qat, plant with stimulant leaves"
+  },
+  "fridge": {
+    "field": "food",
+    "gloss": "fridge, refrigerator"
+  },
+  "freezer": {
+    "field": "food",
+    "gloss": "freezer"
+  },
+  "microwave": {
+    "field": "food",
+    "gloss": "microwave"
+  },
+  "oven": {
+    "field": "food",
+    "gloss": "oven, bake"
   },
   "cotton": {
     "field": "material",
     "gloss": "cotton"
   },
+  "fabric": {
+    "field": "material",
+    "gloss": "fabric, cloth"
+  },
+  "glass": {
+    "field": "material",
+    "gloss": "glass"
+  },
   "gold": {
     "field": "material",
     "gloss": "gold (material)"
+  },
+  "iron": {
+    "field": "material",
+    "gloss": "iron"
+  },
+  "material": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "metal": {
+    "field": "material",
+    "gloss": "metal"
+  },
+  "plastic": {
+    "field": "material",
+    "gloss": "plastic"
   },
   "silver": {
     "field": "material",
     "gloss": "silver (material)"
   },
-  "setup": {
-    "field": "fix",
-    "gloss": "setup, configure"
+  "steel": {
+    "field": "material",
+    "gloss": "steel"
   },
-  "use": {
-    "field": "work",
-    "gloss": "use, utilize"
+  "stone": {
+    "field": "material",
+    "gloss": "stone, rock"
   },
-  "world": {
+  "wood": {
+    "field": "material",
+    "gloss": "wood, timber"
+  },
+  "flange": {
+    "field": "material",
+    "gloss": "flange, projecting flat rim for strength"
+  },
+  "copper": {
+    "field": "material",
+    "gloss": "copper, reddish-brown metal"
+  },
+  "aluminum": {
+    "field": "material",
+    "gloss": "aluminum, lightweight metal"
+  },
+  "rubber": {
+    "field": "material",
+    "gloss": "rubber, elastic material"
+  },
+  "ceramic": {
+    "field": "material",
+    "gloss": "ceramic, material made from clay"
+  },
+  "paper": {
+    "field": "material",
+    "gloss": "paper, thin flat material for writing"
+  },
+  "rock": {
+    "field": "material",
+    "gloss": "rock, hard natural mineral material"
+  },
+  "sand": {
+    "field": "material",
+    "gloss": "sand, fine granular material"
+  },
+  "soil": {
+    "field": "material",
+    "gloss": "soil, upper layer of earth"
+  },
+  "clay": {
+    "field": "material",
+    "gloss": "clay, soft moldable earth"
+  },
+  "black": {
+    "field": "color",
+    "gloss": "black"
+  },
+  "blue": {
+    "field": "color",
+    "gloss": "blue"
+  },
+  "brown": {
+    "field": "color",
+    "gloss": "brown"
+  },
+  "color": {
+    "field": "color",
+    "gloss": "color, hue"
+  },
+  "golden": {
+    "field": "color",
+    "gloss": "golden, gold color"
+  },
+  "gray": {
+    "field": "color",
+    "gloss": "gray, grey"
+  },
+  "green": {
+    "field": "color",
+    "gloss": "green"
+  },
+  "grey": {
+    "field": "color",
+    "gloss": "grey, gray"
+  },
+  "orange": {
+    "field": "color",
+    "gloss": "orange"
+  },
+  "pink": {
+    "field": "color",
+    "gloss": "pink"
+  },
+  "purple": {
+    "field": "color",
+    "gloss": "purple"
+  },
+  "red": {
+    "field": "color",
+    "gloss": "red"
+  },
+  "white": {
+    "field": "color",
+    "gloss": "white"
+  },
+  "yellow": {
+    "field": "color",
+    "gloss": "yellow"
+  },
+  "afternoon": {
+    "field": "time",
+    "gloss": "afternoon"
+  },
+  "anniversary": {
+    "field": "time",
+    "gloss": "anniversary"
+  },
+  "birthday": {
+    "field": "time",
+    "gloss": "birthday"
+  },
+  "day": {
+    "field": "time",
+    "gloss": "day, daytime, 24 hours"
+  },
+  "evening": {
+    "field": "time",
+    "gloss": "evening, dusk"
+  },
+  "friday": {
+    "field": "time",
+    "gloss": "Friday"
+  },
+  "holiday": {
+    "field": "time",
+    "gloss": "holiday, day off"
+  },
+  "monday": {
+    "field": "time",
+    "gloss": "Monday"
+  },
+  "month": {
+    "field": "time",
+    "gloss": "month"
+  },
+  "morning": {
+    "field": "time",
+    "gloss": "morning, a.m."
+  },
+  "night": {
+    "field": "time",
+    "gloss": "night, nighttime"
+  },
+  "saturday": {
+    "field": "time",
+    "gloss": "Saturday"
+  },
+  "sunday": {
+    "field": "time",
+    "gloss": "Sunday"
+  },
+  "thursday": {
+    "field": "time",
+    "gloss": "Thursday"
+  },
+  "time": {
+    "field": "time",
+    "gloss": "time, moment"
+  },
+  "today": {
+    "field": "time",
+    "gloss": "today, current day"
+  },
+  "tomorrow": {
+    "field": "time",
+    "gloss": "tomorrow, next day"
+  },
+  "tuesday": {
+    "field": "time",
+    "gloss": "Tuesday"
+  },
+  "wednesday": {
+    "field": "time",
+    "gloss": "Wednesday"
+  },
+  "week": {
+    "field": "time",
+    "gloss": "week, 7 days"
+  },
+  "weekend": {
+    "field": "time",
+    "gloss": "weekend"
+  },
+  "year": {
+    "field": "time",
+    "gloss": "year"
+  },
+  "yesterday": {
+    "field": "time",
+    "gloss": "yesterday, previous day"
+  },
+  "now": {
+    "field": "time",
+    "gloss": "now, at this moment"
+  },
+  "last": {
+    "field": "time",
+    "gloss": "last, most recent previous"
+  },
+  "next": {
+    "field": "time",
+    "gloss": "next, immediately following"
+  },
+  "current": {
+    "field": "time",
+    "gloss": "current, existing at this time"
+  },
+  "pm": {
+    "field": "time",
+    "gloss": "PM, afternoon time designation"
+  },
+  "am": {
+    "field": "time",
+    "gloss": "AM, morning time designation"
+  },
+  "timezone": {
+    "field": "time",
+    "gloss": "timezone, regional time zone"
+  },
+  "date": {
+    "field": "time",
+    "gloss": "date, calendar date"
+  },
+  "clock": {
+    "field": "time",
+    "gloss": "clock, timekeeping device"
+  },
+  "timer": {
+    "field": "time",
+    "gloss": "timer, countdown device"
+  },
+  "payday": {
+    "field": "time",
+    "gloss": "payday, day of salary payment"
+  },
+  "hour": {
+    "field": "time.duration",
+    "gloss": "hour"
+  },
+  "minute": {
+    "field": "time.duration",
+    "gloss": "minute"
+  },
+  "second": {
+    "field": "time.duration",
+    "gloss": "second, unit of time"
+  },
+  "midnight": {
+    "field": "time",
+    "gloss": "midnight, twelve o'clock at night"
+  },
+  "noon": {
+    "field": "time",
+    "gloss": "noon, midday"
+  },
+  "period": {
+    "field": "time",
+    "gloss": "period, length of time"
+  },
+  "season": {
+    "field": "time",
+    "gloss": "season, division of the year"
+  },
+  "spring": {
+    "field": "time",
+    "gloss": "spring, season after winter"
+  },
+  "summer": {
+    "field": "time",
+    "gloss": "summer, warmest season"
+  },
+  "autumn": {
+    "field": "time",
+    "gloss": "autumn, season before winter"
+  },
+  "winter": {
+    "field": "time",
+    "gloss": "winter, coldest season"
+  },
+  "century": {
+    "field": "time",
+    "gloss": "century, period of 100 years"
+  },
+  "decade": {
+    "field": "time",
+    "gloss": "decade, period of 10 years"
+  },
+  "era": {
+    "field": "time",
+    "gloss": "era, long and distinct period of history"
+  },
+  "age": {
+    "field": "time",
+    "gloss": "age, period of time in history"
+  },
+  "march": {
+    "field": "time",
+    "gloss": "March (month)"
+  },
+  "february": {
+    "field": "time",
+    "gloss": "February (month)"
+  },
+  "january": {
+    "field": "time",
+    "gloss": "January (month)"
+  },
+  "april": {
+    "field": "time",
+    "gloss": "April (month)"
+  },
+  "may": {
+    "field": "time",
+    "gloss": "May (month)"
+  },
+  "june": {
+    "field": "time",
+    "gloss": "June (month)"
+  },
+  "july": {
+    "field": "time",
+    "gloss": "July (month)"
+  },
+  "august": {
+    "field": "time",
+    "gloss": "August (month)"
+  },
+  "september": {
+    "field": "time",
+    "gloss": "September (month)"
+  },
+  "october": {
+    "field": "time",
+    "gloss": "October (month)"
+  },
+  "november": {
+    "field": "time",
+    "gloss": "November (month)"
+  },
+  "december": {
+    "field": "time",
+    "gloss": "December (month)"
+  },
+  "wait": {
+    "field": "time",
+    "gloss": "remain until something happens"
+  },
+  "waiting": {
+    "field": "time",
+    "gloss": "remaining until something happens"
+  },
+  "waited": {
+    "field": "time",
+    "gloss": "past tense of wait"
+  },
+  "faucet": {
     "field": "place",
-    "gloss": "world, globe"
+    "gloss": "faucet, water tap"
   },
-  "water": {
-    "field": "nature",
-    "gloss": "water, liquid"
+  "hospital2": {
+    "field": "place",
+    "gloss": "hospital (as place)"
   },
-  "programming": {
-    "field": "tech",
-    "gloss": "programming, coding"
+  "hotel": {
+    "field": "place",
+    "gloss": "hotel, accommodation"
   },
-  "coding": {
-    "field": "tech",
-    "gloss": "coding, programming"
+  "location": {
+    "field": "place",
+    "gloss": "location, spot"
   },
-  "balance": {
-    "field": "trade",
-    "gloss": "balance, account balance"
+  "park": {
+    "field": "place",
+    "gloss": "park, public green space"
   },
-  "bill": {
-    "field": "trade",
-    "gloss": "bill, invoice, payment"
+  "parking": {
+    "field": "place",
+    "gloss": "parking, car park"
   },
-  "payment": {
-    "field": "trade",
-    "gloss": "payment, pay"
+  "place": {
+    "field": "place",
+    "gloss": "place, location"
   },
-  "account": {
-    "field": "trade",
-    "gloss": "account, bank account"
+  "school": {
+    "field": "place",
+    "gloss": "school, educational institution"
   },
-  "withdraw": {
-    "field": "trade",
-    "gloss": "withdraw, take out money"
+  "street": {
+    "field": "place",
+    "gloss": "street, road"
   },
-  "withdrawal": {
-    "field": "trade",
-    "gloss": "withdrawal, cash out"
+  "university": {
+    "field": "place",
+    "gloss": "university, college"
   },
-  "deposit": {
-    "field": "trade",
-    "gloss": "deposit, put in money"
+  "hawaii": {
+    "field": "place",
+    "gloss": "Hawaii, US state in Pacific"
   },
-  "credit": {
-    "field": "trade",
-    "gloss": "credit, credit card"
+  "alaska": {
+    "field": "place",
+    "gloss": "Alaska, US state"
   },
-  "debit": {
-    "field": "trade",
-    "gloss": "debit, debit card"
+  "subway": {
+    "field": "place",
+    "gloss": "subway, underground railway or passageway"
   },
-  "fee": {
-    "field": "trade",
-    "gloss": "fee, charge, cost"
+  "area": {
+    "field": "measure",
+    "gloss": "area, region, space, size"
   },
-  "insurance": {
-    "field": "health",
-    "gloss": "insurance, coverage"
+  "spot": {
+    "field": "place",
+    "gloss": "spot, a specific place"
   },
-  "workout": {
-    "field": "sport",
-    "gloss": "workout, training session"
+  "site": {
+    "field": "place",
+    "gloss": "site, place where something is situated"
   },
-  "run": {
-    "field": "sport",
-    "gloss": "run, jog"
+  "address": {
+    "field": "place",
+    "gloss": "address, location of a building"
   },
-  "climate": {
-    "field": "weather",
-    "gloss": "climate, long-term weather"
+  "avenue": {
+    "field": "place",
+    "gloss": "avenue, broad road or street"
   },
-  "joke": {
-    "field": "social",
-    "gloss": "joke, humor"
+  "road": {
+    "field": "structure",
+    "gloss": "road, highway"
   },
-  "fun": {
-    "field": "social",
-    "gloss": "fun, entertainment"
+  "path": {
+    "field": "place",
+    "gloss": "path, trail or route"
   },
-  "party": {
-    "field": "social",
-    "gloss": "party, celebration"
+  "route": {
+    "field": "place.route",
+    "gloss": "route, path"
   },
-  "chat": {
-    "field": "social",
-    "gloss": "chat, conversation"
+  "bridge": {
+    "field": "structure",
+    "gloss": "bridge"
+  },
+  "mall": {
+    "field": "trade.order",
+    "gloss": "shopping mall"
+  },
+  "station": {
+    "field": "place",
+    "gloss": "station, place for trains or buses"
+  },
+  "restaurant": {
+    "field": "food.restaurant",
+    "gloss": "restaurant, dining place"
+  },
+  "bar": {
+    "field": "place",
+    "gloss": "bar, establishment serving drinks"
+  },
+  "building": {
+    "field": "dwell",
+    "gloss": "building, structure"
+  },
+  "dwell": {
+    "field": "dwell",
+    "gloss": "dwell, live in"
+  },
+  "structure": {
+    "field": "structure",
+    "gloss": "structure, infrastructure"
+  },
+  "tower": {
+    "field": "structure",
+    "gloss": "tower, tall building"
+  },
+  "amount": {
+    "field": "size",
+    "gloss": "amount, quantity"
+  },
+  "large": {
+    "field": "size",
+    "gloss": "large, big"
+  },
+  "quantity": {
+    "field": "size",
+    "gloss": "quantity, count"
+  },
+  "size": {
+    "field": "size",
+    "gloss": "size, scale"
+  },
+  "small": {
+    "field": "size",
+    "gloss": "small, little"
+  },
+  "average": {
+    "field": "measure",
+    "gloss": "average, mean"
   },
   "calc": {
-    "field": "math",
+    "field": "measure",
     "gloss": "calc, calculator"
   },
-  "math": {
-    "field": "math",
-    "gloss": "math, arithmetic"
+  "calculate": {
+    "field": "measure",
+    "gloss": "calculate, compute"
+  },
+  "celsius": {
+    "field": "measure",
+    "gloss": "Celsius, temperature"
+  },
+  "count": {
+    "field": "measure",
+    "gloss": "count, tally"
+  },
+  "fahrenheit": {
+    "field": "measure",
+    "gloss": "Fahrenheit, temperature"
+  },
+  "kilogram": {
+    "field": "measure",
+    "gloss": "kilogram, weight"
+  },
+  "kilometer": {
+    "field": "measure",
+    "gloss": "kilometer, distance"
+  },
+  "measure": {
+    "field": "measure",
+    "gloss": "measure, measurement"
+  },
+  "meter": {
+    "field": "measure",
+    "gloss": "meter, distance"
+  },
+  "mile": {
+    "field": "measure",
+    "gloss": "mile, distance"
+  },
+  "percent": {
+    "field": "measure",
+    "gloss": "percent, proportion"
   },
   "solve": {
-    "field": "math",
+    "field": "measure",
     "gloss": "solve, work out"
   },
-  "remind": {
-    "field": "time",
-    "level2": "time.alarm",
-    "gloss": "remind, reminder"
+  "total": {
+    "field": "measure",
+    "gloss": "total, sum"
   },
-  "order": {
-    "field": "trade",
-    "gloss": "order, purchase order"
+  "triangle": {
+    "field": "measure",
+    "gloss": "triangle, geometric shape"
   },
-  "refund": {
-    "field": "trade",
-    "gloss": "refund, money back"
+  "twice": {
+    "field": "measure",
+    "gloss": "twice, two times"
   },
-  "transaction": {
-    "field": "trade",
-    "gloss": "transaction, financial operation"
+  "many": {
+    "field": "measure",
+    "gloss": "many, how many, quantity"
+  },
+  "much": {
+    "field": "measure",
+    "gloss": "much, how much, amount"
+  },
+  "few": {
+    "field": "measure",
+    "gloss": "few, small quantity"
+  },
+  "enough": {
+    "field": "measure",
+    "gloss": "enough, sufficient"
+  },
+  "accuracy": {
+    "field": "quality",
+    "gloss": "accuracy, precision"
+  },
+  "bad": {
+    "field": "quality",
+    "gloss": "bad, negative quality"
+  },
+  "best": {
+    "field": "quality",
+    "gloss": "best, highest quality"
+  },
+  "broken": {
+    "field": "quality",
+    "gloss": "broken, not working"
+  },
+  "easy": {
+    "field": "quality",
+    "gloss": "easy, simple"
+  },
+  "fast": {
+    "field": "quality",
+    "gloss": "fast, quick"
+  },
+  "good": {
+    "field": "quality",
+    "gloss": "good, positive quality"
+  },
+  "hard": {
+    "field": "quality",
+    "gloss": "hard, difficult"
+  },
+  "new": {
+    "field": "quality",
+    "gloss": "new, recent"
+  },
+  "noise": {
+    "field": "quality",
+    "gloss": "noise, unwanted sound, disturbance"
+  },
+  "old": {
+    "field": "quality",
+    "gloss": "old, aged"
+  },
+  "quality": {
+    "field": "quality",
+    "gloss": "quality, level of goodness"
+  },
+  "quiet": {
+    "field": "quality",
+    "gloss": "quiet, low noise"
+  },
+  "severe": {
+    "field": "quality",
+    "gloss": "severe, extreme in degree"
+  },
+  "slow": {
+    "field": "quality",
+    "gloss": "slow, not fast"
+  },
+  "strong": {
+    "field": "quality",
+    "gloss": "strong, powerful"
+  },
+  "weak": {
+    "field": "quality",
+    "gloss": "weak, lacking strength"
+  },
+  "worst": {
+    "field": "quality",
+    "gloss": "worst, lowest quality"
+  },
+  "zesty": {
+    "field": "quality",
+    "gloss": "zesty, having strong pleasant flavor"
+  },
+  "quick": {
+    "field": "quality",
+    "gloss": "quick, fast or rapid"
+  },
+  "simple": {
+    "field": "quality",
+    "gloss": "simple, not complex"
+  },
+  "complex": {
+    "field": "quality",
+    "gloss": "complex, consisting of many parts"
+  },
+  "clear": {
+    "field": "quality",
+    "gloss": "clear, easy to perceive or understand"
+  },
+  "safe": {
+    "field": "quality",
+    "gloss": "safe, not dangerous"
+  },
+  "secure": {
+    "field": "quality",
+    "gloss": "secure, free from risk"
+  },
+  "smart": {
+    "field": "tech.iot",
+    "gloss": "smart, IoT-enabled"
+  },
+  "bright": {
+    "field": "quality",
+    "gloss": "bright, emitting or reflecting light"
+  },
+  "dark": {
+    "field": "quality",
+    "gloss": "dark, absence of light"
+  },
+  "hot": {
+    "field": "quality",
+    "gloss": "hot, having high temperature"
+  },
+  "warm": {
+    "field": "quality",
+    "gloss": "warm, moderately hot"
+  },
+  "cool": {
+    "field": "quality",
+    "gloss": "cool, pleasantly cold"
+  },
+  "fresh": {
+    "field": "quality",
+    "gloss": "fresh, new and not stale"
+  },
+  "clean": {
+    "field": "quality",
+    "gloss": "clean, free from dirt"
+  },
+  "dirty": {
+    "field": "quality",
+    "gloss": "dirty, covered in dirt"
+  },
+  "heavy": {
+    "field": "quality",
+    "gloss": "heavy, of great weight"
+  },
+  "light": {
+    "field": "quality",
+    "gloss": "light, of little weight"
+  },
+  "thin": {
+    "field": "quality",
+    "gloss": "thin, of little thickness"
+  },
+  "thick": {
+    "field": "quality",
+    "gloss": "thick, of great extent"
+  },
+  "wide": {
+    "field": "quality",
+    "gloss": "wide, measuring much across"
+  },
+  "narrow": {
+    "field": "quality",
+    "gloss": "narrow, of little width"
+  },
+  "deep": {
+    "field": "quality",
+    "gloss": "deep, extending far down"
+  },
+  "shallow": {
+    "field": "quality",
+    "gloss": "shallow, of little depth"
+  },
+  "rough": {
+    "field": "quality",
+    "gloss": "rough, having an uneven surface"
+  },
+  "smooth": {
+    "field": "quality",
+    "gloss": "smooth, having an even surface"
+  },
+  "soft": {
+    "field": "quality",
+    "gloss": "soft, yielding easily to touch"
+  },
+  "round": {
+    "field": "quality",
+    "gloss": "round, shaped like a circle"
+  },
+  "flat": {
+    "field": "quality",
+    "gloss": "flat, having a level surface"
+  },
+  "sharp": {
+    "field": "quality",
+    "gloss": "sharp, having a cutting edge"
+  },
+  "dull": {
+    "field": "quality",
+    "gloss": "dull, lacking sharpness or interest"
+  },
+  "wet": {
+    "field": "quality",
+    "gloss": "wet, covered with liquid"
+  },
+  "dry": {
+    "field": "quality",
+    "gloss": "dry, free from moisture"
+  },
+  "sweet": {
+    "field": "quality",
+    "gloss": "sweet, having a sugary taste"
+  },
+  "bitter": {
+    "field": "quality",
+    "gloss": "bitter, having sharp unpleasant taste"
+  },
+  "sour": {
+    "field": "quality",
+    "gloss": "sour, having acid taste"
+  },
+  "salty": {
+    "field": "quality",
+    "gloss": "salty, tasting of salt"
+  },
+  "spicy": {
+    "field": "quality",
+    "gloss": "spicy, having strong flavor from spices"
+  },
+  "beautiful": {
+    "field": "quality",
+    "gloss": "beautiful, pleasing to the senses"
+  },
+  "ugly": {
+    "field": "quality",
+    "gloss": "ugly, unpleasant to look at"
+  },
+  "pretty": {
+    "field": "quality",
+    "gloss": "pretty, attractive in a delicate way"
+  },
+  "strange": {
+    "field": "quality",
+    "gloss": "strange, unusual or unfamiliar"
+  },
+  "weird": {
+    "field": "quality",
+    "gloss": "weird, suggesting the supernatural"
+  },
+  "normal": {
+    "field": "quality",
+    "gloss": "normal, conforming to a standard"
+  },
+  "special": {
+    "field": "quality",
+    "gloss": "special, better than ordinary"
+  },
+  "important": {
+    "field": "quality",
+    "gloss": "important, having great significance"
+  },
+  "interesting": {
+    "field": "quality",
+    "gloss": "interesting, arousing curiosity"
+  },
+  "boring": {
+    "field": "quality",
+    "gloss": "boring, not interesting"
+  },
+  "funny": {
+    "field": "quality",
+    "gloss": "funny, causing amusement"
+  },
+  "serious": {
+    "field": "quality",
+    "gloss": "serious, requiring careful thought"
+  },
+  "nice": {
+    "field": "quality",
+    "gloss": "nice, pleasant or agreeable"
+  },
+  "right": {
+    "field": "quality",
+    "gloss": "correct, accurate"
+  },
+  "busy": {
+    "field": "quality",
+    "gloss": "occupied, not free"
+  },
+  "whole": {
+    "field": "quality",
+    "gloss": "entire, complete"
+  },
+  "entire": {
+    "field": "quality",
+    "gloss": "whole, complete"
+  },
+  "human": {
+    "field": "person",
+    "gloss": "human, person"
+  },
+  "individual": {
+    "field": "person",
+    "gloss": "individual, single person"
+  },
+  "man": {
+    "field": "person",
+    "gloss": "man, male"
+  },
+  "person": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "student2": {
+    "field": "person",
+    "gloss": "student (person)"
+  },
+  "teacher": {
+    "field": "person",
+    "gloss": "teacher, educator"
+  },
+  "woman": {
+    "field": "person",
+    "gloss": "woman, female"
+  },
+  "friend": {
+    "field": "social.contact",
+    "gloss": "friend"
+  },
+  "family": {
+    "field": "social.family",
+    "gloss": "family"
+  },
+  "parent": {
+    "field": "social.family",
+    "gloss": "parent, mother or father"
+  },
+  "child": {
+    "field": "social.family",
+    "gloss": "child, kid"
+  },
+  "brother": {
+    "field": "social.family",
+    "gloss": "brother"
+  },
+  "sister": {
+    "field": "social.family",
+    "gloss": "sister"
+  },
+  "husband": {
+    "field": "person",
+    "gloss": "husband, male spouse"
+  },
+  "wife": {
+    "field": "person",
+    "gloss": "wife, female spouse"
+  },
+  "partner": {
+    "field": "social.contact",
+    "gloss": "partner, associate"
+  },
+  "neighbor": {
+    "field": "person",
+    "gloss": "neighbor, person living nearby"
+  },
+  "customer": {
+    "field": "person",
+    "gloss": "customer, person who buys goods"
+  },
+  "client": {
+    "field": "social.contact",
+    "gloss": "client, customer"
+  },
+  "user": {
+    "field": "person",
+    "gloss": "user, person who uses something"
+  },
+  "expert": {
+    "field": "person",
+    "gloss": "expert, person with special knowledge"
+  },
+  "visitor": {
+    "field": "person",
+    "gloss": "visitor, person who visits"
+  },
+  "stranger": {
+    "field": "person",
+    "gloss": "stranger, person not known"
+  },
+  "male": {
+    "field": "person",
+    "gloss": "male, man, masculine"
+  },
+  "female": {
+    "field": "person",
+    "gloss": "female, woman, feminine"
+  },
+  "gender": {
+    "field": "person",
+    "gloss": "gender, sex"
+  },
+  "label": {
+    "field": "name",
+    "gloss": "label, tag"
+  },
+  "name": {
+    "field": "name",
+    "gloss": "name, label, title"
+  },
+  "symbol": {
+    "field": "name",
+    "gloss": "symbol, sign"
+  },
+  "term": {
+    "field": "name",
+    "gloss": "term, word used"
+  },
+  "title": {
+    "field": "name",
+    "gloss": "title, heading"
+  },
+  "category": {
+    "field": "contain",
+    "gloss": "category, type, class"
+  },
+  "consist": {
+    "field": "contain",
+    "gloss": "consist of, be made of"
+  },
+  "contain": {
+    "field": "contain",
+    "gloss": "contain, include"
+  },
+  "full": {
+    "field": "contain",
+    "gloss": "full, filled, complete"
+  },
+  "include": {
+    "field": "contain",
+    "gloss": "include, consist of"
+  },
+  "involve": {
+    "field": "contain",
+    "gloss": "involve, entail"
+  },
+  "kind": {
+    "field": "contain",
+    "gloss": "kind, sort"
+  },
+  "type": {
+    "field": "contain",
+    "gloss": "type, kind"
+  },
+  "force": {
+    "field": "force",
+    "gloss": "force, pressure"
+  },
+  "impact": {
+    "field": "force",
+    "gloss": "impact, collision effect"
+  },
+  "pull": {
+    "field": "force",
+    "gloss": "pull, drag"
+  },
+  "push": {
+    "field": "force",
+    "gloss": "push, propel"
+  },
+  "app": {
+    "field": "tech.code",
+    "gloss": "app, application"
+  },
+  "bug": {
+    "field": "tech.code",
+    "gloss": "bug, software error"
+  },
+  "code": {
+    "field": "tech.code",
+    "gloss": "code, program"
+  },
+  "debug": {
+    "field": "tech.code",
+    "gloss": "debug, fix code bugs"
+  },
+  "git": {
+    "field": "tech.code",
+    "gloss": "Git, version control"
+  },
+  "java": {
+    "field": "tech.code",
+    "gloss": "Java (language)"
+  },
+  "javascript": {
+    "field": "tech.code",
+    "gloss": "JavaScript (language)"
+  },
+  "program": {
+    "field": "tech.code",
+    "gloss": "program, software"
+  },
+  "python": {
+    "field": "tech.code",
+    "gloss": "Python (language)"
+  },
+  "script": {
+    "field": "tech.code",
+    "gloss": "script, automation code"
+  },
+  "software": {
+    "field": "tech.code",
+    "gloss": "software, application"
+  },
+  "typescript": {
+    "field": "tech.code",
+    "gloss": "TypeScript (language)"
+  },
+  "ai": {
+    "field": "tech.ai",
+    "gloss": "artificial intelligence"
+  },
+  "neural": {
+    "field": "tech.ai",
+    "gloss": "neural, neural network"
+  },
+  "llm": {
+    "field": "tech.ai",
+    "gloss": "LLM, large language model"
+  },
+  "gpt": {
+    "field": "tech.ai",
+    "gloss": "GPT, generative pre-trained transformer"
+  },
+  "chatgpt": {
+    "field": "tech.ai",
+    "gloss": "ChatGPT, OpenAI language model"
+  },
+  "gemini": {
+    "field": "tech.ai",
+    "gloss": "Gemini, Google AI model"
+  },
+  "claude": {
+    "field": "tech.ai",
+    "gloss": "Claude, Anthropic AI model"
+  },
+  "copilot": {
+    "field": "tech.ai",
+    "gloss": "copilot, AI assistant tool"
+  },
+  "prompt": {
+    "field": "tech.ai",
+    "gloss": "prompt, instruction given to an AI"
+  },
+  "inference": {
+    "field": "tech.ai",
+    "gloss": "inference, AI model output generation"
+  },
+  "embedding": {
+    "field": "tech.ai",
+    "gloss": "embedding, vector representation of text"
+  },
+  "rag": {
+    "field": "tech.ai",
+    "gloss": "RAG, retrieval-augmented generation"
+  },
+  "retrieval": {
+    "field": "tech.ai",
+    "gloss": "retrieval, fetching relevant information"
+  },
+  "finetuning": {
+    "field": "tech.ai",
+    "gloss": "fine-tuning, adapting a model on data"
+  },
+  "finetune": {
+    "field": "tech.ai",
+    "gloss": "fine-tune, adapt AI model on specific data"
+  },
+  "hallucination": {
+    "field": "tech.ai",
+    "gloss": "hallucination, AI generating false info"
+  },
+  "tokenize": {
+    "field": "tech.ai",
+    "gloss": "tokenize, split text into tokens"
+  },
+  "tokenizer": {
+    "field": "tech.ai",
+    "gloss": "tokenizer, tool that splits text into tokens"
+  },
+  "token": {
+    "field": "trade.currency",
+    "gloss": "token, unit of cryptocurrency"
+  },
+  "vector": {
+    "field": "tech.ai",
+    "gloss": "vector, mathematical array of numbers"
+  },
+  "semantic": {
+    "field": "tech.ai",
+    "gloss": "semantic, relating to meaning"
+  },
+  "transformer": {
+    "field": "tech.ai",
+    "gloss": "transformer, neural network architecture"
+  },
+  "attention": {
+    "field": "tech.ai",
+    "gloss": "attention, mechanism in transformer models"
+  },
+  "diffusion": {
+    "field": "tech.ai",
+    "gloss": "diffusion, generative AI technique"
+  },
+  "generative": {
+    "field": "tech.ai",
+    "gloss": "generative, AI that creates new content"
+  },
+  "multimodal": {
+    "field": "tech.ai",
+    "gloss": "multimodal, handling text, image, audio"
+  },
+  "benchmark": {
+    "field": "tech.ai",
+    "gloss": "benchmark, standard test for AI systems"
+  },
+  "bias": {
+    "field": "tech.ai",
+    "gloss": "bias, systematic error in AI"
+  },
+  "fairness": {
+    "field": "tech.ai",
+    "gloss": "fairness, equitable AI treatment"
+  },
+  "alignment": {
+    "field": "tech.ai",
+    "gloss": "alignment, ensuring AI follows human values"
+  },
+  "safety": {
+    "field": "tech.ai",
+    "gloss": "safety, preventing AI harm"
+  },
+  "explainability": {
+    "field": "tech.ai",
+    "gloss": "explainability, ability to interpret AI"
+  },
+  "agent": {
+    "field": "tech.ai",
+    "gloss": "agent, AI that acts autonomously"
+  },
+  "orchestration": {
+    "field": "tech.ai",
+    "gloss": "orchestration, coordinating AI components"
+  },
+  "agentic": {
+    "field": "tech.ai",
+    "gloss": "agentic, relating to autonomous AI agents"
+  },
+  "cpu": {
+    "field": "tech.hardware",
+    "gloss": "CPU, processor"
+  },
+  "gpu": {
+    "field": "tech.hardware",
+    "gloss": "GPU, graphics processor"
+  },
+  "hardware": {
+    "field": "tech.hardware",
+    "gloss": "hardware, physical device"
+  },
+  "laptop": {
+    "field": "tech.hardware",
+    "gloss": "laptop, portable computer"
+  },
+  "mobile": {
+    "field": "tech.hardware",
+    "gloss": "mobile device"
+  },
+  "phone": {
+    "field": "tech.hardware",
+    "gloss": "phone, mobile device"
+  },
+  "device": {
+    "field": "tech.hardware",
+    "gloss": "device, electronic hardware"
+  },
+  "screen": {
+    "field": "tech.hardware",
+    "gloss": "screen, display surface"
+  },
+  "charger": {
+    "field": "tech.hardware",
+    "gloss": "charger, power adapter"
+  },
+  "battery": {
+    "field": "tech.hardware",
+    "gloss": "battery, power source"
+  },
+  "plug": {
+    "field": "tech.hardware",
+    "gloss": "plug, power plug, adapter"
+  },
+  "outlet": {
+    "field": "tech.hardware",
+    "gloss": "outlet, power outlet"
+  },
+  "cable": {
+    "field": "tech.hardware",
+    "gloss": "cable, cord"
+  },
+  "adapter": {
+    "field": "tech.hardware",
+    "gloss": "adapter, converter"
+  },
+  "deploy": {
+    "field": "tech.network",
+    "gloss": "deploy, release to server/cloud"
+  },
+  "download": {
+    "field": "tech.network",
+    "gloss": "download, retrieve data"
+  },
+  "email": {
+    "field": "tech.network",
+    "gloss": "email, electronic mail"
+  },
+  "internet": {
+    "field": "tech.network",
+    "gloss": "internet, the web"
+  },
+  "online": {
+    "field": "tech.network",
+    "gloss": "online, connected"
+  },
+  "server": {
+    "field": "tech.network",
+    "gloss": "server, backend"
+  },
+  "website": {
+    "field": "tech.network",
+    "gloss": "website, web page"
+  },
+  "wifi": {
+    "field": "tech.network",
+    "gloss": "WiFi, wireless network"
+  },
+  "configure": {
+    "field": "tech.network",
+    "gloss": "configure, set up for a particular purpose"
+  },
+  "bluetooth": {
+    "field": "tech.iot",
+    "gloss": "Bluetooth, wireless"
+  },
+  "iot": {
+    "field": "tech.iot",
+    "gloss": "IoT, internet of things"
+  },
+  "certificate": {
+    "field": "tech.security",
+    "gloss": "SSL certificate, security cert"
+  },
+  "encrypt": {
+    "field": "tech.security",
+    "gloss": "encrypt, secure data"
+  },
+  "password": {
+    "field": "tech.security",
+    "gloss": "password, credentials"
+  },
+  "security": {
+    "field": "tech.security",
+    "gloss": "security, cybersecurity"
+  },
+  "cough": {
+    "field": "health.symptom",
+    "gloss": "cough"
+  },
+  "diabetes": {
+    "field": "health.symptom",
+    "gloss": "diabetes, chronic disease"
+  },
+  "dizzy": {
+    "field": "health.symptom",
+    "gloss": "dizzy, feeling of vertigo"
+  },
+  "fever": {
+    "field": "health.symptom",
+    "gloss": "fever, high temperature"
+  },
+  "headache": {
+    "field": "health.symptom",
+    "gloss": "headache"
+  },
+  "immune": {
+    "field": "health.symptom",
+    "gloss": "immune system"
+  },
+  "nausea": {
+    "field": "health.symptom",
+    "gloss": "nausea, feeling sick"
+  },
+  "nauseous": {
+    "field": "health.symptom",
+    "gloss": "nauseous, feeling sick"
+  },
+  "pressure": {
+    "field": "health.symptom",
+    "gloss": "pressure (medical/vital)"
+  },
+  "symptom": {
+    "field": "health.symptom",
+    "gloss": "symptom, sign of illness"
+  },
+  "antibiotic": {
+    "field": "health.drug",
+    "gloss": "antibiotic"
+  },
+  "drug": {
+    "field": "health.drug",
+    "gloss": "drug, medicine"
+  },
+  "medication": {
+    "field": "health.drug",
+    "gloss": "medication, drug"
+  },
+  "prescription": {
+    "field": "health.drug",
+    "gloss": "prescription"
+  },
+  "vaccine": {
+    "field": "health.drug",
+    "gloss": "vaccine, immunization"
+  },
+  "bandage": {
+    "field": "health.treatment",
+    "gloss": "bandage, wound dressing"
+  },
+  "heal": {
+    "field": "health.treatment",
+    "gloss": "heal, recover"
+  },
+  "pregnant": {
+    "field": "health.treatment",
+    "gloss": "pregnant"
+  },
+  "exercise": {
+    "field": "health.fitness",
+    "gloss": "exercise, physical activity"
+  },
+  "gym": {
+    "field": "health.fitness",
+    "gloss": "gym, fitness center"
+  },
+  "father": {
+    "field": "social.family",
+    "gloss": "father"
+  },
+  "kids": {
+    "field": "social.family",
+    "gloss": "kids, children"
+  },
+  "mother": {
+    "field": "social.family",
+    "gloss": "mother"
+  },
+  "colleague": {
+    "field": "social.contact",
+    "gloss": "colleague, coworker"
+  },
+  "alarm": {
+    "field": "time.alarm",
+    "gloss": "alarm, wake-up call"
+  },
+  "reminder": {
+    "field": "time.alarm",
+    "gloss": "reminder, notification"
+  },
+  "set": {
+    "field": "time.alarm",
+    "gloss": "set (timer/alarm)"
+  },
+  "off": {
+    "field": "time.alarm",
+    "gloss": "go off (alarm/timer)"
+  },
+  "snooze": {
+    "field": "time.alarm",
+    "gloss": "snooze alarm"
+  },
+  "appointment": {
+    "field": "time.calendar",
+    "gloss": "appointment, booking"
+  },
+  "calendar": {
+    "field": "time.calendar",
+    "gloss": "calendar"
+  },
+  "event": {
+    "field": "time.calendar",
+    "gloss": "event, occasion"
+  },
+  "meeting": {
+    "field": "time.calendar",
+    "gloss": "meeting, gathering"
+  },
+  "schedule": {
+    "field": "time.calendar",
+    "gloss": "schedule, timetable"
+  },
+  "long": {
+    "field": "time.duration",
+    "gloss": "long, duration, how long"
+  },
+  "due": {
+    "field": "time.duration",
+    "gloss": "due, scheduled, upcoming"
+  },
+  "until": {
+    "field": "time.duration",
+    "gloss": "until, up to"
+  },
+  "again": {
+    "field": "time.duration",
+    "gloss": "again, once more"
+  },
+  "sales": {
+    "field": "trade.order",
+    "gloss": "sales, selling activity"
+  },
+  "supermarket": {
+    "field": "trade.order",
+    "gloss": "supermarket, grocery store"
+  },
+  "track": {
+    "field": "trade.order",
+    "gloss": "track, follow status of shipment"
+  },
+  "delivery": {
+    "field": "trade.order",
+    "gloss": "delivery, receiving shipped goods"
+  },
+  "stock": {
+    "field": "trade.stock",
+    "gloss": "stock, shares"
+  },
+  "401k": {
+    "field": "trade.stock",
+    "gloss": "401k retirement account"
+  },
+  "rollover": {
+    "field": "trade.stock",
+    "gloss": "rollover, roll over (financial)"
+  },
+  "ira": {
+    "field": "trade.stock",
+    "gloss": "IRA retirement account"
+  },
+  "invest": {
+    "field": "trade.stock",
+    "gloss": "invest, investment"
+  },
+  "bitcoin": {
+    "field": "trade.currency",
+    "gloss": "Bitcoin"
+  },
+  "convert": {
+    "field": "trade.currency",
+    "gloss": "convert currency or units"
+  },
+  "crypto": {
+    "field": "trade.currency",
+    "gloss": "cryptocurrency"
+  },
+  "currency": {
+    "field": "trade.currency",
+    "gloss": "currency, money"
+  },
+  "dollar": {
+    "field": "trade.currency",
+    "gloss": "dollar, US currency unit"
+  },
+  "apr": {
+    "field": "trade.currency",
+    "gloss": "APR, annual percentage rate"
+  },
+  "blockchain": {
+    "field": "trade.currency",
+    "gloss": "blockchain, distributed ledger technology"
+  },
+  "defi": {
+    "field": "trade.currency",
+    "gloss": "DeFi, decentralized finance"
+  },
+  "nft": {
+    "field": "trade.currency",
+    "gloss": "NFT, non-fungible token"
+  },
+  "wallet": {
+    "field": "trade.currency",
+    "gloss": "wallet, storage for cryptocurrency"
+  },
+  "stablecoin": {
+    "field": "trade.currency",
+    "gloss": "stablecoin, price-stable cryptocurrency"
+  },
+  "fintech": {
+    "field": "trade.currency",
+    "gloss": "fintech, financial technology"
+  },
+  "neobank": {
+    "field": "trade.currency",
+    "gloss": "neobank, digital-only bank"
+  },
+  "paywall": {
+    "field": "trade.currency",
+    "gloss": "paywall, content requiring payment to access"
+  },
+  "coin": {
+    "field": "trade.currency",
+    "gloss": "coin, currency"
+  },
+  "google": {
+    "field": "know.search",
+    "gloss": "Google search"
+  },
+  "lookup": {
+    "field": "know.search",
+    "gloss": "look up, find information"
+  },
+  "search": {
+    "field": "know.search",
+    "gloss": "search, look up"
+  },
+  "locate": {
+    "field": "know.search",
+    "gloss": "locate, determine location of"
+  },
+  "lost": {
+    "field": "know.search",
+    "gloss": "lost, unable to find"
+  },
+  "missing": {
+    "field": "know.search",
+    "gloss": "missing, not where expected"
+  },
+  "read": {
+    "field": "know.read",
+    "gloss": "read"
+  },
+  "news": {
+    "field": "know.news",
+    "gloss": "news, latest updates"
+  },
+  "quiz": {
+    "field": "know.question",
+    "gloss": "quiz, test of knowledge"
+  },
+  "trivia": {
+    "field": "know.question",
+    "gloss": "trivia, fun facts"
+  },
+  "car": {
+    "field": "move.drive",
+    "gloss": "car, automobile"
+  },
+  "tire": {
+    "field": "move.drive",
+    "gloss": "tire, wheel rubber"
+  },
+  "gas": {
+    "field": "move.drive",
+    "gloss": "gas, fuel for vehicle"
+  },
+  "oil": {
+    "field": "move.drive",
+    "gloss": "oil, engine lubricant"
+  },
+  "vehicle": {
+    "field": "move.drive",
+    "gloss": "vehicle, motor transport"
+  },
+  "fuel": {
+    "field": "move.drive",
+    "gloss": "fuel, energy source for engine"
+  },
+  "auto": {
+    "field": "move.drive",
+    "gloss": "auto, automobile"
+  },
+  "mpg": {
+    "field": "move.drive",
+    "gloss": "MPG, miles per gallon, fuel efficiency"
+  },
+  "mileage": {
+    "field": "move.drive",
+    "gloss": "mileage, distance traveled or fuel economy"
+  },
+  "airlines": {
+    "field": "move.fly",
+    "gloss": "airlines company"
+  },
+  "airline": {
+    "field": "move.fly",
+    "gloss": "airline carrier"
+  },
+  "delta": {
+    "field": "move.fly",
+    "gloss": "Delta Airlines"
+  },
+  "flights": {
+    "field": "move.fly",
+    "gloss": "airplane flights"
+  },
+  "terminal": {
+    "field": "move.fly",
+    "gloss": "airport terminal"
+  },
+  "city": {
+    "field": "place.city",
+    "gloss": "city, town"
+  },
+  "country": {
+    "field": "place.country",
+    "gloss": "country, nation"
+  },
+  "america": {
+    "field": "place.country",
+    "gloss": "America, the United States"
+  },
+  "american": {
+    "field": "place.country",
+    "gloss": "American, relating to the United States"
+  },
+  "india": {
+    "field": "place.country",
+    "gloss": "India, country in South Asia"
+  },
+  "indian": {
+    "field": "place.country",
+    "gloss": "Indian, relating to India"
+  },
+  "china": {
+    "field": "place.country",
+    "gloss": "China, country in East Asia"
+  },
+  "japan": {
+    "field": "place.country",
+    "gloss": "Japan, island country in East Asia"
+  },
+  "brazil": {
+    "field": "place.country",
+    "gloss": "Brazil, largest country in South America"
+  },
+  "mexico": {
+    "field": "place.country",
+    "gloss": "Mexico, country in North America"
+  },
+  "canada": {
+    "field": "place.country",
+    "gloss": "Canada, country in North America"
+  },
+  "australia": {
+    "field": "place.country",
+    "gloss": "Australia, country in Oceania"
+  },
+  "europe": {
+    "field": "place.country",
+    "gloss": "Europe, continent"
+  },
+  "european": {
+    "field": "place.country",
+    "gloss": "European, relating to Europe"
+  },
+  "africa": {
+    "field": "place.country",
+    "gloss": "Africa, continent"
+  },
+  "asian": {
+    "field": "place.country",
+    "gloss": "Asian, relating to Asia"
+  },
+  "britain": {
+    "field": "place.country",
+    "gloss": "Britain, Great Britain"
+  },
+  "british": {
+    "field": "place.country",
+    "gloss": "British, relating to Britain"
+  },
+  "france": {
+    "field": "place.country",
+    "gloss": "France, country in Western Europe"
+  },
+  "spain": {
+    "field": "place.country",
+    "gloss": "Spain, country in Southern Europe"
+  },
+  "germany": {
+    "field": "place.country",
+    "gloss": "Germany, country in Central Europe"
+  },
+  "italy": {
+    "field": "place.country",
+    "gloss": "Italy, country in Southern Europe"
+  },
+  "russia": {
+    "field": "place.country",
+    "gloss": "Russia, largest country in the world"
+  },
+  "kenya": {
+    "field": "place.country",
+    "gloss": "Kenya (country)"
+  },
+  "england": {
+    "field": "place.country",
+    "gloss": "England, UK"
+  },
+  "apartment": {
+    "field": "place.home",
+    "gloss": "apartment, flat"
+  },
+  "bathroom": {
+    "field": "place.home",
+    "gloss": "bathroom"
+  },
+  "bedroom": {
+    "field": "place.home",
+    "gloss": "bedroom"
+  },
+  "home": {
+    "field": "place.home",
+    "gloss": "home, residence"
+  },
+  "house": {
+    "field": "place.home",
+    "gloss": "house, home"
+  },
+  "kitchen": {
+    "field": "place.home",
+    "gloss": "kitchen"
+  },
+  "room": {
+    "field": "place.home",
+    "gloss": "room, chamber"
+  },
+  "directions": {
+    "field": "place.route",
+    "gloss": "directions, route"
+  },
+  "map": {
+    "field": "place.route",
+    "gloss": "map, cartography"
+  },
+  "navigate": {
+    "field": "place.route",
+    "gloss": "navigate, find route"
+  },
+  "temperature": {
+    "field": "weather.temp",
+    "gloss": "temperature"
+  },
+  "forecast": {
+    "field": "weather.forecast",
+    "gloss": "weather forecast"
+  },
+  "album": {
+    "field": "art.music",
+    "gloss": "album, music collection"
+  },
+  "concert": {
+    "field": "art.music",
+    "gloss": "concert, live music"
+  },
+  "guitar": {
+    "field": "art.music",
+    "gloss": "guitar, instrument"
+  },
+  "music": {
+    "field": "art.music",
+    "gloss": "music, melody"
+  },
+  "musician": {
+    "field": "art.music",
+    "gloss": "musician, music artist"
+  },
+  "piano": {
+    "field": "art.music",
+    "gloss": "piano, instrument"
+  },
+  "song": {
+    "field": "art.music",
+    "gloss": "song, musical track"
+  },
+  "cinema": {
+    "field": "art.film",
+    "gloss": "cinema, movie theater"
+  },
+  "director": {
+    "field": "art.film",
+    "gloss": "director, filmmaker"
+  },
+  "watch": {
+    "field": "art.film",
+    "gloss": "watch, view video or film"
+  },
+  "images": {
+    "field": "art.visual",
+    "gloss": "images, pictures, photos"
+  },
+  "photography": {
+    "field": "art.visual",
+    "gloss": "photography, photos"
+  },
+  "poem": {
+    "field": "art.book",
+    "gloss": "poem, poetry"
+  },
+  "cafe": {
+    "field": "food.restaurant",
+    "gloss": "café, coffee shop"
+  },
+  "table": {
+    "field": "food.restaurant",
+    "gloss": "table, reservation"
+  },
+  "reserv": {
+    "field": "food.restaurant",
+    "gloss": "reservation, reserve"
+  },
+  "seat": {
+    "field": "food.restaurant",
+    "gloss": "seat, seating"
+  },
+  "menu": {
+    "field": "food.restaurant",
+    "gloss": "menu, dish"
+  },
+  "calorie": {
+    "field": "food.nutrition",
+    "gloss": "calorie, energy unit"
+  },
+  "nutrition": {
+    "field": "food.nutrition",
+    "gloss": "nutrition, nutrients"
   }
 }

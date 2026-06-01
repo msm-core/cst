@@ -1,0 +1,14 @@
+{
+  "_comment": "Universal STR marker atoms. Source of truth for all language adapters. Values in any structural.json must be keys here.",
+  "question": "interrogative — ?, هل, ما, من",
+  "negation": "negation — not, no, لا, لم, لن, ليس",
+  "modal": "modal — can, could, should, want, ابغي, يمكن",
+  "past": "past tense — was, did, كان, فعل",
+  "future": "future tense — will, going to, سـ, سوف",
+  "imperative": "command — do this!, افعل",
+  "conditional": "conditional — if, unless, لو, إذا",
+  "cause": "causation — because, so, لأن, بسبب",
+  "emphasis": "truth assertion — indeed, إنّ, قد, لَـ",
+  "greeting": "greeting — hello, hi, مرحبا, أهلا",
+  "farewell": "farewell — bye, goodbye, مع السلامة"
+}

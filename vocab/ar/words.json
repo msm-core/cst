@@ -1,0 +1,6059 @@
+{
+  "_comment": "AUTO-GENERATED from vocab/concepts.json — do not edit manually. Run: node scripts/build-vocab.mjs",
+  "اشوف": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "اقرا": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "اقرالي": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "الاحداث": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "الاطلاع": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "الحدث": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "الرئاسيه": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "الرجاء": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "المدرسه": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "انتخاب": {
+    "field": "govern",
+    "gloss": "election"
+  },
+  "انتخابات": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "انطيني": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "بخصوص": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "تعلمت": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "تعلمه": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "تفاصيل": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "تقارير": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "تقرير": {
+    "field": "work",
+    "gloss": "report"
+  },
+  "تنصحني": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "خبرني": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "رئاسية": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "رئاسيه": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "شيء": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "طريقة": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "علمني": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "فائز": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "فاز": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "فرق": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "فعاليات": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "فعالية": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "فعاليه": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "قائمة": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "قوائم": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "لمن": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "مجال": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "مجالات": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "مذكرات": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "مذكره": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "مقالات": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "ناقص": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "نتائج": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "نتيجة": {
+    "field": "work",
+    "gloss": "result, outcome"
+  },
+  "نوع": {
+    "field": "quality",
+    "gloss": "type, kind"
+  },
+  "هذي": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "ورني": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "وريني": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "يعني": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "اللغة": {
+    "field": "speak",
+    "gloss": "the language"
+  },
+  "الحقيقة": {
+    "field": "know",
+    "gloss": "the truth"
+  },
+  "حقيقة": {
+    "field": "know",
+    "gloss": "truth, reality"
+  },
+  "معلومة": {
+    "field": "know",
+    "gloss": "piece of information"
+  },
+  "معلومات": {
+    "field": "know",
+    "gloss": "information"
+  },
+  "بيانات": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "معنى": {
+    "field": "know",
+    "gloss": "meaning"
+  },
+  "المعنى": {
+    "field": "know",
+    "gloss": "the meaning"
+  },
+  "فكرة": {
+    "field": "know",
+    "gloss": "idea"
+  },
+  "تعريف": {
+    "field": "know",
+    "gloss": "definition"
+  },
+  "شرح": {
+    "field": "know",
+    "gloss": "explanation"
+  },
+  "تفسير": {
+    "field": "know",
+    "gloss": "interpretation, explanation"
+  },
+  "ذكاء": {
+    "field": "know",
+    "gloss": "intelligence"
+  },
+  "دراسة": {
+    "field": "know",
+    "gloss": "study"
+  },
+  "اكتشاف": {
+    "field": "know",
+    "gloss": "discovery"
+  },
+  "إجابة": {
+    "field": "know",
+    "gloss": "answer, response"
+  },
+  "سؤال": {
+    "field": "know",
+    "gloss": "question"
+  },
+  "موضوع": {
+    "field": "know",
+    "gloss": "topic, subject"
+  },
+  "أصل": {
+    "field": "know",
+    "gloss": "origin, root, basis"
+  },
+  "أصول": {
+    "field": "know",
+    "gloss": "origins, roots"
+  },
+  "أساس": {
+    "field": "know",
+    "gloss": "foundation, basis"
+  },
+  "مصدر": {
+    "field": "know",
+    "gloss": "source, origin"
+  },
+  "اختار": {
+    "field": "think",
+    "gloss": "think, reason, consider"
+  },
+  "تذكير": {
+    "field": "think",
+    "gloss": "think, reason, consider"
+  },
+  "يختار": {
+    "field": "think",
+    "gloss": "think, reason, consider"
+  },
+  "اخبرني": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "ادب": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "اعلام": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "الاخبار": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "الاعلام": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "الجزيرة": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "الجزيره": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "الخبر": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "الميديا": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "حكاية": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "صحيفة": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "صحيفه": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "عاجل": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "عاجله": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "قصة": {
+    "field": "art",
+    "gloss": "story"
+  },
+  "قصص": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "لغات": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "لغة": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "لغه": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "مستجدات": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "مقالة": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "مقاله": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "نص": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "نصوص": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "عربي": {
+    "field": "speak",
+    "gloss": "Arabic"
+  },
+  "عربية": {
+    "field": "speak",
+    "gloss": "Arabic (f)"
+  },
+  "إنجليزي": {
+    "field": "speak",
+    "gloss": "English"
+  },
+  "إنجليزية": {
+    "field": "speak",
+    "gloss": "English (f)"
+  },
+  "فرنسي": {
+    "field": "speak",
+    "gloss": "French"
+  },
+  "فرنسية": {
+    "field": "speak",
+    "gloss": "French (f)"
+  },
+  "ألماني": {
+    "field": "speak",
+    "gloss": "German"
+  },
+  "ألمانية": {
+    "field": "speak",
+    "gloss": "German (f)"
+  },
+  "إسباني": {
+    "field": "speak",
+    "gloss": "Spanish"
+  },
+  "إسبانية": {
+    "field": "speak",
+    "gloss": "Spanish (f)"
+  },
+  "صينية": {
+    "field": "speak",
+    "gloss": "Chinese"
+  },
+  "يابانية": {
+    "field": "speak",
+    "gloss": "Japanese"
+  },
+  "روسي": {
+    "field": "speak",
+    "gloss": "Russian"
+  },
+  "روسية": {
+    "field": "speak",
+    "gloss": "Russian (f)"
+  },
+  "تركي": {
+    "field": "speak",
+    "gloss": "Turkish"
+  },
+  "تركية": {
+    "field": "speak",
+    "gloss": "Turkish (f)"
+  },
+  "فارسي": {
+    "field": "speak",
+    "gloss": "Persian"
+  },
+  "فارسية": {
+    "field": "speak",
+    "gloss": "Persian (f)"
+  },
+  "ترجمة": {
+    "field": "speak",
+    "gloss": "translation"
+  },
+  "تواصل": {
+    "field": "speak",
+    "gloss": "communication"
+  },
+  "رسالة": {
+    "field": "send",
+    "gloss": "send, transmit, deliver"
+  },
+  "جملة": {
+    "field": "speak",
+    "gloss": "sentence"
+  },
+  "محادثة": {
+    "field": "tech.ai",
+    "gloss": "conversation, chat"
+  },
+  "الكتاب": {
+    "field": "write",
+    "gloss": "write, compose, record"
+  },
+  "الكتابه": {
+    "field": "write",
+    "gloss": "write, compose, record"
+  },
+  "الكتب": {
+    "field": "write",
+    "gloss": "write, compose, record"
+  },
+  "احتياج": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "احلام": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "اعجب": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "اعجبني": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "افضل": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "المفضلة": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "المفضله": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "بفضل": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "تحب": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "تعجب": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "تعجبك": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "تعجبني": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "تفضل": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "حاجة": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "حلم": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "رأيك": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "رأيي": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "راي": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "رايك": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "رغبة": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "رومانسي": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "رومانسية": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "معجب": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "مفضل": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "مفضلاتي": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "مفضله": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "نجوم": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "يحتاج": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "يعجب": {
+    "field": "feel",
+    "gloss": "feel, emotion"
+  },
+  "ابدا": {
+    "field": "create",
+    "gloss": "create, produce"
+  },
+  "اسوي": {
+    "field": "create",
+    "gloss": "create, produce"
+  },
+  "اصنع": {
+    "field": "create",
+    "gloss": "create, produce"
+  },
+  "اضف": {
+    "field": "create",
+    "gloss": "create, produce"
+  },
+  "اعمل": {
+    "field": "create",
+    "gloss": "create, produce"
+  },
+  "ظيف": {
+    "field": "create",
+    "gloss": "create, produce"
+  },
+  "احذف": {
+    "field": "destroy",
+    "gloss": "destroy, break"
+  },
+  "احذفي": {
+    "field": "destroy",
+    "gloss": "destroy, break"
+  },
+  "ازل": {
+    "field": "destroy",
+    "gloss": "destroy, break"
+  },
+  "امسح": {
+    "field": "destroy",
+    "gloss": "destroy, break"
+  },
+  "امسحي": {
+    "field": "destroy",
+    "gloss": "destroy, break"
+  },
+  "شيل": {
+    "field": "destroy",
+    "gloss": "destroy, break"
+  },
+  "أصبح": {
+    "field": "change",
+    "gloss": "became"
+  },
+  "أصبحت": {
+    "field": "change",
+    "gloss": "became (fem)"
+  },
+  "أصبحوا": {
+    "field": "change",
+    "gloss": "became (plural)"
+  },
+  "تحول": {
+    "field": "change",
+    "gloss": "transformed, turned into"
+  },
+  "تحولت": {
+    "field": "change",
+    "gloss": "transformed (fem)"
+  },
+  "أعطال": {
+    "field": "fix",
+    "gloss": "fix, repair, set"
+  },
+  "الغ": {
+    "field": "fix",
+    "gloss": "fix, repair, set"
+  },
+  "الغي": {
+    "field": "fix",
+    "gloss": "fix, repair, set"
+  },
+  "تحقق": {
+    "field": "fix",
+    "gloss": "fix, repair, set"
+  },
+  "تسوي": {
+    "field": "fix",
+    "gloss": "fix, repair, set"
+  },
+  "تصير": {
+    "field": "fix",
+    "gloss": "fix, repair, set"
+  },
+  "توقف": {
+    "field": "fix",
+    "gloss": "fix, repair, set"
+  },
+  "خفض": {
+    "field": "fix",
+    "gloss": "fix, repair, set"
+  },
+  "خلل": {
+    "field": "fix",
+    "gloss": "fix, repair, set"
+  },
+  "شكوى": {
+    "field": "fix",
+    "gloss": "fix, repair, set"
+  },
+  "شكوي": {
+    "field": "fix",
+    "gloss": "fix, repair, set"
+  },
+  "ضبط": {
+    "field": "tech.ai",
+    "gloss": "fine-tuning"
+  },
+  "محظور": {
+    "field": "fix",
+    "gloss": "fix, repair, set"
+  },
+  "مسألة": {
+    "field": "fix",
+    "gloss": "fix, repair, set"
+  },
+  "مسائل": {
+    "field": "fix",
+    "gloss": "fix, repair, set"
+  },
+  "مشاكل": {
+    "field": "fix",
+    "gloss": "fix, repair, set"
+  },
+  "مشكلة": {
+    "field": "quality",
+    "gloss": "problem"
+  },
+  "معطل": {
+    "field": "fix",
+    "gloss": "fix, repair, set"
+  },
+  "وقف": {
+    "field": "fix",
+    "gloss": "fix, repair, set"
+  },
+  "حل": {
+    "field": "fix",
+    "gloss": "solution, solve"
+  },
+  "حلول": {
+    "field": "fix",
+    "gloss": "solutions"
+  },
+  "إصلاح": {
+    "field": "fix",
+    "gloss": "repair, reform"
+  },
+  "معالجة": {
+    "field": "tech.ai",
+    "gloss": "processing"
+  },
+  "استعادة": {
+    "field": "fix",
+    "gloss": "restoration, recovery"
+  },
+  "اجتماع": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "اجتماعات": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "استخدام": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "الخدمه": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "الخطه": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "تتم": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "خدمات": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "خدمة": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "خدمه": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "عمليات": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "عملية": {
+    "field": "health",
+    "gloss": "surgery, operation"
+  },
+  "مقابلات": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "مقابلة": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "مهام": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "مهمة": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "يتم": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "يستخدم": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "العمل": {
+    "field": "work",
+    "gloss": "work, job"
+  },
+  "مهنة": {
+    "field": "work",
+    "gloss": "profession"
+  },
+  "وظيفة": {
+    "field": "work",
+    "gloss": "job, position"
+  },
+  "مشروع": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "خطة": {
+    "field": "work",
+    "gloss": "plan"
+  },
+  "هدف": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "نجاح": {
+    "field": "work",
+    "gloss": "success"
+  },
+  "فشل": {
+    "field": "work",
+    "gloss": "failure"
+  },
+  "تحسين": {
+    "field": "tech.ai",
+    "gloss": "optimization"
+  },
+  "تطوير": {
+    "field": "work",
+    "gloss": "development"
+  },
+  "تحديث": {
+    "field": "work",
+    "gloss": "update, modernization"
+  },
+  "استراتيجية": {
+    "field": "work",
+    "gloss": "strategy"
+  },
+  "إدارة": {
+    "field": "govern",
+    "gloss": "administration"
+  },
+  "تنظيم": {
+    "field": "work",
+    "gloss": "organization"
+  },
+  "فريق": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "شركة": {
+    "field": "work",
+    "gloss": "company"
+  },
+  "مؤسسة": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "منظمة": {
+    "field": "work",
+    "gloss": "organization"
+  },
+  "مكتب": {
+    "field": "work",
+    "gloss": "office"
+  },
+  "دور": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "مسؤولية": {
+    "field": "work",
+    "gloss": "responsibility"
+  },
+  "دعم": {
+    "field": "work",
+    "gloss": "support"
+  },
+  "مساعدة": {
+    "field": "work",
+    "gloss": "help, assistance"
+  },
+  "قام": {
+    "field": "work",
+    "gloss": "performed, undertook, did"
+  },
+  "قامت": {
+    "field": "work",
+    "gloss": "performed (fem)"
+  },
+  "قاموا": {
+    "field": "work",
+    "gloss": "performed (plural)"
+  },
+  "اضطلع": {
+    "field": "work",
+    "gloss": "undertook, took on"
+  },
+  "الحافله": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "السياره": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "اوبر": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "رحله": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "سيارات": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "سيارة": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "سيارتي": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "سياره": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "طائره": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "طيار": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "طيران": {
+    "field": "move.fly",
+    "gloss": "flight, aviation"
+  },
+  "حافلة": {
+    "field": "move",
+    "gloss": "bus"
+  },
+  "تاكسي": {
+    "field": "move",
+    "gloss": "taxi"
+  },
+  "مطار": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "سفارة": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "جواز": {
+    "field": "move",
+    "gloss": "passport"
+  },
+  "تأشيرة": {
+    "field": "move",
+    "gloss": "visa"
+  },
+  "حجز": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "وجهة": {
+    "field": "move",
+    "gloss": "destination"
+  },
+  "مسافة": {
+    "field": "move",
+    "gloss": "distance"
+  },
+  "إشعار": {
+    "field": "send",
+    "gloss": "send, transmit, deliver"
+  },
+  "إعلان": {
+    "field": "trade",
+    "gloss": "advertisement"
+  },
+  "إيميل": {
+    "field": "send",
+    "gloss": "send, transmit, deliver"
+  },
+  "ايميل": {
+    "field": "send",
+    "gloss": "send, transmit, deliver"
+  },
+  "ايميلات": {
+    "field": "send",
+    "gloss": "send, transmit, deliver"
+  },
+  "بريد": {
+    "field": "send",
+    "gloss": "send, transmit, deliver"
+  },
+  "استلام": {
+    "field": "take",
+    "gloss": "take, get, receive"
+  },
+  "بدأ": {
+    "field": "open",
+    "gloss": "began, started"
+  },
+  "بدأت": {
+    "field": "open",
+    "gloss": "began (fem)"
+  },
+  "بداية": {
+    "field": "time",
+    "gloss": "beginning"
+  },
+  "ابتداء": {
+    "field": "open",
+    "gloss": "beginning, commencement"
+  },
+  "العالم": {
+    "field": "exist",
+    "gloss": "the world"
+  },
+  "عالم": {
+    "field": "exist",
+    "gloss": "world, universe"
+  },
+  "الواقع": {
+    "field": "exist",
+    "gloss": "reality, the real world"
+  },
+  "واقع": {
+    "field": "exist",
+    "gloss": "reality"
+  },
+  "الحياة": {
+    "field": "exist",
+    "gloss": "life"
+  },
+  "حياة": {
+    "field": "exist",
+    "gloss": "life, existence"
+  },
+  "الوجود": {
+    "field": "exist",
+    "gloss": "existence, being"
+  },
+  "الطبيعة": {
+    "field": "exist",
+    "gloss": "nature"
+  },
+  "احتاج": {
+    "field": "want",
+    "gloss": "want, desire, need"
+  },
+  "احتاجه": {
+    "field": "want",
+    "gloss": "want, desire, need"
+  },
+  "اريد": {
+    "field": "want",
+    "gloss": "want, desire, need"
+  },
+  "اريده": {
+    "field": "want",
+    "gloss": "want, desire, need"
+  },
+  "اودر": {
+    "field": "want",
+    "gloss": "want, desire, need"
+  },
+  "ريد": {
+    "field": "want",
+    "gloss": "want, desire, need"
+  },
+  "محتاج": {
+    "field": "want",
+    "gloss": "want, desire, need"
+  },
+  "نريد": {
+    "field": "want",
+    "gloss": "want, desire, need"
+  },
+  "احتلال": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "استقلال": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "انظمة": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "برلمان": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "جمهورية": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "حكومة": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "دستور": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "دولة": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "ديمقراطية": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "سيادة": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "سياسة": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "شروط": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "عدالة": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "قرار": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "لائحة": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "لوائح": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "محكمة": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "مرسوم": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "مستقل": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "معاهدة": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "ملكية": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "وزارة": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "الحكومة": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "مجلس": {
+    "field": "social",
+    "gloss": "council"
+  },
+  "الملك": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "الوطني": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "الوزراء": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "وزراء": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "وزير": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "الرئيس": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "الإمارة": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "الأمير": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "قاضي": {
+    "field": "govern",
+    "gloss": "judge"
+  },
+  "مواطن": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "حقوق": {
+    "field": "govern",
+    "gloss": "rights"
+  },
+  "جيش": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "شرطة": {
+    "field": "govern",
+    "gloss": "police"
+  },
+  "أمن": {
+    "field": "govern",
+    "gloss": "security, safety"
+  },
+  "مملكة": {
+    "field": "govern",
+    "gloss": "kingdom"
+  },
+  "إمبراطورية": {
+    "field": "govern",
+    "gloss": "empire"
+  },
+  "سلطة": {
+    "field": "govern",
+    "gloss": "authority, power"
+  },
+  "الدفاع": {
+    "field": "govern",
+    "gloss": "defense (ministry)"
+  },
+  "الأمن": {
+    "field": "govern",
+    "gloss": "security (ministry)"
+  },
+  "الخارجية": {
+    "field": "govern",
+    "gloss": "foreign affairs"
+  },
+  "الداخلية": {
+    "field": "govern",
+    "gloss": "interior (ministry)"
+  },
+  "اتفاقية": {
+    "field": "govern",
+    "gloss": "agreement, convention"
+  },
+  "ميثاق": {
+    "field": "govern",
+    "gloss": "charter"
+  },
+  "لجنة": {
+    "field": "govern",
+    "gloss": "committee"
+  },
+  "هيئة": {
+    "field": "govern",
+    "gloss": "authority, body"
+  },
+  "رخصة": {
+    "field": "govern",
+    "gloss": "license"
+  },
+  "ترخيص": {
+    "field": "govern",
+    "gloss": "licensing"
+  },
+  "اسلحة": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "اسلحه": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "جندي": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "جنود": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "جيوش": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "سلاح": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "عسكري": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "عسكرية": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "عسكريه": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "قوات": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "معركة": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "معركه": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "أسهم": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "إرجاع": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "إلغاء": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "إيصال": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "ارباح": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "استئجار": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "استثمار": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "استرداد": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "اسهم": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "اشتراك": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "اشتراكات": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "اشترك": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "اقتراض": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "اكتسب": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "الاسهم": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "البضاعه": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "البنك": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "التامين": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "التجاري": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "التجاريه": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "التسوق": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "الحساب": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "الدفع": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "الرصيد": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "الفاتوره": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "المبيعات": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "المصرفي": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "امازون": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "ايداع": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "باقات": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "باقة": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "بطاقه": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "بنك": {
+    "field": "place",
+    "gloss": "bank"
+  },
+  "بورصة": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "تأجير": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "تجارة": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "تسوق": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "تكلفة": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "حجوزات": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "حساب": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "حسابات": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "دراهم": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "درهم": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "دولار": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "رسوم": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "رصيد": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "ريال": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "سحب": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "سندات": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "سهم": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "شحن": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "صادرات": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "صرف": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "ضريبة": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "طلبات": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "عقد": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "عمولة": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "غرامة": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "فاتورة": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "فاتوره": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "قرض": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "مبالغ": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "مبلغ": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "مصرف": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "معطف": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "ملابس": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "ملبس": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "ميزانية": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "واردات": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "ودائع": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "يشترك": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "يكتسب": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "يورو": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "جائزة": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "الجائزة": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "جوائز": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "مالية": {
+    "field": "trade",
+    "gloss": "financial, finances"
+  },
+  "خسارة": {
+    "field": "trade",
+    "gloss": "loss"
+  },
+  "دخل": {
+    "field": "trade",
+    "gloss": "income"
+  },
+  "إيراد": {
+    "field": "trade",
+    "gloss": "revenue"
+  },
+  "تسويق": {
+    "field": "trade",
+    "gloss": "marketing"
+  },
+  "عرض": {
+    "field": "health",
+    "gloss": "symptom"
+  },
+  "صفقة": {
+    "field": "trade",
+    "gloss": "deal, transaction"
+  },
+  "بضاعة": {
+    "field": "trade",
+    "gloss": "goods, merchandise"
+  },
+  "بيع": {
+    "field": "trade",
+    "gloss": "sale, selling"
+  },
+  "طلب": {
+    "field": "trade",
+    "gloss": "order, request"
+  },
+  "توصيل": {
+    "field": "trade",
+    "gloss": "delivery"
+  },
+  "ضمان": {
+    "field": "trade",
+    "gloss": "warranty, guarantee"
+  },
+  "خصم": {
+    "field": "trade",
+    "gloss": "discount"
+  },
+  "ائتمان": {
+    "field": "trade",
+    "gloss": "credit"
+  },
+  "ديون": {
+    "field": "trade",
+    "gloss": "debts"
+  },
+  "أسرة": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "أطفال": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "أمة": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "اب": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "اخ": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "اخت": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "اسره": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "اسنابشات": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "اصدقاء": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "الاجتماع": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "ام": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "انسان": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "انستا": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "انستقرام": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "اهلا": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "تحية": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "تحيه": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "تراث": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "تعاون": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "تويتر": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "تيك": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "تيكتوك": {
+    "field": "tech",
+    "gloss": "TikTok"
+  },
+  "ثقافة": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "جار": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "جهات": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "جيران": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "جيل": {
+    "field": "time",
+    "gloss": "generation"
+  },
+  "حضارة": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "حياك": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "خاص": {
+    "field": "quality",
+    "gloss": "private, special"
+  },
+  "رئيس": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "رجال": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "زميل": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "ساكن": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "سكان": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "سناب": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "شباب": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "شخص": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "شريك": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "شعوب": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "صديق": {
+    "field": "person",
+    "gloss": "friend"
+  },
+  "ضيف": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "طلاب": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "عائلة": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "عائله": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "عمال": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "فيسبوك": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "قناة": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "قنوات": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "قهقهة": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "قهقهه": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "كيفك": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "كيفه": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "كيفي": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "مجتمع": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "مجموعات": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "مجموعة": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "مدير": {
+    "field": "person",
+    "gloss": "manager, director"
+  },
+  "مراه": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "مرحبا": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "مسؤول": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "مسئول": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "مستخدم": {
+    "field": "person",
+    "gloss": "user"
+  },
+  "مستخدمون": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "مضحك": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "مضحكه": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "ناد": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "ناس": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "نساء": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "نكتة": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "واتس": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "واتساب": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "وحدة": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "يوتيوب": {
+    "field": "tech",
+    "gloss": "YouTube"
+  },
+  "جماعة": {
+    "field": "social",
+    "gloss": "group, community"
+  },
+  "حفلة": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "عيد": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "زواج": {
+    "field": "social",
+    "gloss": "marriage"
+  },
+  "تقاليد": {
+    "field": "social",
+    "gloss": "traditions"
+  },
+  "عادات": {
+    "field": "social",
+    "gloss": "customs"
+  },
+  "هدية": {
+    "field": "social",
+    "gloss": "gift"
+  },
+  "شبكة": {
+    "field": "tech",
+    "gloss": "network"
+  },
+  "أعضاء": {
+    "field": "social",
+    "gloss": "members"
+  },
+  "عضو": {
+    "field": "social",
+    "gloss": "member"
+  },
+  "عضوية": {
+    "field": "social",
+    "gloss": "membership"
+  },
+  "جمعية": {
+    "field": "social",
+    "gloss": "association, society"
+  },
+  "اتحاد": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "حركة": {
+    "field": "social",
+    "gloss": "movement (social/political)"
+  },
+  "مسلم": {
+    "field": "social",
+    "gloss": "Muslim"
+  },
+  "مسلمين": {
+    "field": "social",
+    "gloss": "Muslims (plural)"
+  },
+  "مسلمون": {
+    "field": "social",
+    "gloss": "Muslims (nominative plural)"
+  },
+  "الاسلامي": {
+    "field": "social",
+    "gloss": "Islamic"
+  },
+  "المسيحي": {
+    "field": "social",
+    "gloss": "Christian"
+  },
+  "إحصاء": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "احسب": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "اكسجين": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "الرياضيات": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "العلمي": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "العلميه": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "تجربة": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "تربيعي": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "جاذبيه": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "جزيء": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "جين": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "خلية": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "خليه": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "دليل": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "دنا": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "ذرة": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "ذره": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "زائد": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "ضوء": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "طاقه": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "فرضية": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "فرضيه": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "فضاء": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "قوانين": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "كهرباء": {
+    "field": "nature",
+    "gloss": "electricity"
+  },
+  "كوكب": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "مبادئ": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "مبدا": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "مجره": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "مضروب": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "مغناطيس": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "مقسوم": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "منهج": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "موجه": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "مورثات": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "نجم": {
+    "field": "nature",
+    "gloss": "star"
+  },
+  "نظرية": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "نواه": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "نيتروجين": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "هندسة": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "هيدروجين": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "نوبل": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "العلماء": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "علماء": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "أمراض": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "الادويه": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "الجسدي": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "الجسديه": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "الحمى": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "السكري": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "الصحه": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "الصحي": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "الصحيه": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "الصيدليه": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "الطبيب": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "الم": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "المرض": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "المستشفى": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "المناعه": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "النفسي": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "النفسيه": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "بالحمى": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "بكتيريا": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "تشخيص": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "تغذية": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "جراحة": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "دكتور": {
+    "field": "person",
+    "gloss": "doctor (title)"
+  },
+  "سكري": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "علاج": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "عيادة": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "فيروس": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "لقاح": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "مرض": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "مناعة": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "نبضة": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "وباء": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "وجع": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "صحة": {
+    "field": "health",
+    "gloss": "health"
+  },
+  "ألم": {
+    "field": "health",
+    "gloss": "pain"
+  },
+  "أعراض": {
+    "field": "health",
+    "gloss": "symptoms"
+  },
+  "تمريض": {
+    "field": "health",
+    "gloss": "nursing"
+  },
+  "صيدلية": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "طوارئ": {
+    "field": "health",
+    "gloss": "emergency"
+  },
+  "إسعاف": {
+    "field": "health",
+    "gloss": "ambulance"
+  },
+  "تأمين": {
+    "field": "health",
+    "gloss": "insurance"
+  },
+  "وصفة": {
+    "field": "food",
+    "gloss": "recipe"
+  },
+  "فيتامين": {
+    "field": "health",
+    "gloss": "vitamin"
+  },
+  "نظافة": {
+    "field": "health",
+    "gloss": "hygiene, cleanliness"
+  },
+  "آلة": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "اجهزة": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "اشعارات": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "اصطناعي": {
+    "field": "tech.ai",
+    "gloss": "artificial"
+  },
+  "اصطناعيه": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "اضاءة": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "اضواء": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "اعدادات": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "الاداء": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "الاصطناعي": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "الاطلاق": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "الالكتروني": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "الالي": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "الانترنت": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "التطبيق": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "الجهاز": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "الحوسبه": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "السحابيه": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "الكتروني": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "الكترونية": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "الكمبيوتر": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "الكهرباء": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "الكود": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "انوار": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "برمجة": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "بطاريه": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "بلوتوث": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "تابلت": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "تحديثات": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "تشغيل": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "تقنيات": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "تقنية": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "جهاز": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "جوال": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "جوجل": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "حاسب": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "خوارزمية": {
+    "field": "tech.ai",
+    "gloss": "algorithm"
+  },
+  "ذاكره": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "سحابة": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "سطوع": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "سماعات": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "سماعة": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "شاحن": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "شاشات": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "شاشة": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "شاشه": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "طابعة": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "طابعه": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "طفي": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "فاي": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "فيش": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "كاميرا": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "كهربائي": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "كهربائية": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "كود": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "كيبورد": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "لاب": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "لابتوب": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "لمبات": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "لمبة": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "ماوس": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "معالج": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "ملف": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "ملفات": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "منصة": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "موبايل": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "نظام": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "هاتف": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "واجهة": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "واي": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "وايفاي": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "موقع": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "انترنت": {
+    "field": "tech",
+    "gloss": "internet"
+  },
+  "إنترنت": {
+    "field": "tech",
+    "gloss": "internet"
+  },
+  "رقمي": {
+    "field": "tech",
+    "gloss": "digital"
+  },
+  "رقمية": {
+    "field": "tech",
+    "gloss": "digital (f)"
+  },
+  "إلكتروني": {
+    "field": "tech",
+    "gloss": "electronic"
+  },
+  "إلكترونية": {
+    "field": "tech",
+    "gloss": "electronic (f)"
+  },
+  "قاعدة": {
+    "field": "tech",
+    "gloss": "database, base"
+  },
+  "أمان": {
+    "field": "tech",
+    "gloss": "security"
+  },
+  "حماية": {
+    "field": "tech",
+    "gloss": "protection"
+  },
+  "رمز": {
+    "field": "tech",
+    "gloss": "code, symbol"
+  },
+  "إطار": {
+    "field": "tech",
+    "gloss": "framework"
+  },
+  "حاسوب": {
+    "field": "tech",
+    "gloss": "computer"
+  },
+  "ذاكرة": {
+    "field": "tech",
+    "gloss": "memory, storage"
+  },
+  "نسخة": {
+    "field": "tech",
+    "gloss": "version"
+  },
+  "إصدار": {
+    "field": "tech",
+    "gloss": "release, version"
+  },
+  "ترقية": {
+    "field": "tech",
+    "gloss": "upgrade"
+  },
+  "اتصال": {
+    "field": "tech",
+    "gloss": "connection"
+  },
+  "لاسلكي": {
+    "field": "tech",
+    "gloss": "wireless"
+  },
+  "بيكسل": {
+    "field": "tech",
+    "gloss": "pixel"
+  },
+  "دقة": {
+    "field": "tech.ai",
+    "gloss": "accuracy, precision"
+  },
+  "رفع": {
+    "field": "tech",
+    "gloss": "upload"
+  },
+  "تنزيل": {
+    "field": "tech",
+    "gloss": "download"
+  },
+  "لينكس": {
+    "field": "tech",
+    "gloss": "Linux (OS)"
+  },
+  "مايكروسوفت": {
+    "field": "tech",
+    "gloss": "Microsoft"
+  },
+  "أبل": {
+    "field": "tech",
+    "gloss": "Apple"
+  },
+  "غوغل": {
+    "field": "tech",
+    "gloss": "Google"
+  },
+  "أمازون": {
+    "field": "tech",
+    "gloss": "Amazon"
+  },
+  "ميتا": {
+    "field": "tech",
+    "gloss": "Meta"
+  },
+  "أنثروبيك": {
+    "field": "tech",
+    "gloss": "Anthropic"
+  },
+  "فيديو": {
+    "field": "tech",
+    "gloss": "video"
+  },
+  "الفيديو": {
+    "field": "tech",
+    "gloss": "the video"
+  },
+  "انستغرام": {
+    "field": "tech",
+    "gloss": "Instagram"
+  },
+  "أدب": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "اذاعات": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "اذاعة": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "اغنيات": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "اغنية": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "بودكاست": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "تشتغل": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "تشغل": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "حفل": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "حفلات": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "حلقات": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "حلقة": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "راديو": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "رواية": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "روايه": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "فلسفة": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "فن": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "قصه": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "مسلسل": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "مسلسلات": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "أغنية": {
+    "field": "art",
+    "gloss": "song"
+  },
+  "شعر": {
+    "field": "art",
+    "gloss": "poetry"
+  },
+  "صورة": {
+    "field": "art",
+    "gloss": "picture, image"
+  },
+  "ألوان": {
+    "field": "art",
+    "gloss": "colors"
+  },
+  "الالعاب": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "الجري": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "الشطرنج": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "العاب": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "العب": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "العبي": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "اللعب": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "ببجي": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "بطولة": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "تسلق": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "تنس": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "جيمنج": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "سباحة": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "سباحه": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "شطرنج": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "غوص": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "فورتنايت": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "فيفا": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "كرة": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "لاعبون": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "لعبة": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "لعبه": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "ماينكرافت": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "مباراه": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "ملاكمه": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "ملعب": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "منافسة": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "نتيجه": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "لاعب": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "لاعبين": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "ارض": {
+    "field": "nature",
+    "gloss": "nature, environment"
+  },
+  "استدامة": {
+    "field": "nature",
+    "gloss": "nature, environment"
+  },
+  "بحيرة": {
+    "field": "nature",
+    "gloss": "nature, environment"
+  },
+  "بحيره": {
+    "field": "nature",
+    "gloss": "nature, environment"
+  },
+  "بخار": {
+    "field": "nature",
+    "gloss": "nature, environment"
+  },
+  "بيئة": {
+    "field": "nature",
+    "gloss": "nature, environment"
+  },
+  "بيئه": {
+    "field": "nature",
+    "gloss": "nature, environment"
+  },
+  "تلوث": {
+    "field": "nature",
+    "gloss": "nature, environment"
+  },
+  "جليد": {
+    "field": "nature",
+    "gloss": "nature, environment"
+  },
+  "جليدي": {
+    "field": "nature",
+    "gloss": "nature, environment"
+  },
+  "جوي": {
+    "field": "nature",
+    "gloss": "nature, environment"
+  },
+  "صحراء": {
+    "field": "nature",
+    "gloss": "nature, environment"
+  },
+  "غابات": {
+    "field": "nature",
+    "gloss": "nature, environment"
+  },
+  "غلاف": {
+    "field": "nature",
+    "gloss": "nature, environment"
+  },
+  "كائنات": {
+    "field": "nature",
+    "gloss": "nature, environment"
+  },
+  "هواء": {
+    "field": "nature",
+    "gloss": "nature, environment"
+  },
+  "طبيعة": {
+    "field": "nature",
+    "gloss": "nature"
+  },
+  "طقس": {
+    "field": "nature",
+    "gloss": "weather"
+  },
+  "شجرة": {
+    "field": "nature",
+    "gloss": "tree"
+  },
+  "مطر": {
+    "field": "nature",
+    "gloss": "rain"
+  },
+  "شمس": {
+    "field": "nature",
+    "gloss": "sun"
+  },
+  "قمر": {
+    "field": "nature",
+    "gloss": "moon"
+  },
+  "طاقة": {
+    "field": "nature",
+    "gloss": "energy"
+  },
+  "الطقس": {
+    "field": "weather",
+    "gloss": "weather, climate"
+  },
+  "تمطر": {
+    "field": "weather",
+    "gloss": "weather, climate"
+  },
+  "توقع": {
+    "field": "tech.ai",
+    "gloss": "prediction"
+  },
+  "توقعات": {
+    "field": "weather",
+    "gloss": "weather, climate"
+  },
+  "درجه": {
+    "field": "weather",
+    "gloss": "weather, climate"
+  },
+  "أسماك": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "ارنب": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "اسد": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "اسماك": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "بقره": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "تمساح": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "ثدييات": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "ثعبان": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "ثعلب": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "حشرات": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "حشره": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "حصان": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "حيوان": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "حيوانات": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "دب": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "زرافه": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "سمكه": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "ضفدع": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "طيور": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "عقرب": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "غزال": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "فراشه": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "فيل": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "قرد": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "قطه": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "نحله": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "نمر": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "ازهار": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "اشجار": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "بذره": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "ثمره": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "جذر": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "زهره": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "ساق": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "شجره": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "شجيره": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "صبار": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "عشب": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "غابه": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "فاكهه": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "قمح": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "نبات": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "نباتات": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "نخل": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "ورق": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "ورود": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "اذن": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "اسنان": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "اعين": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "انف": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "جسد": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "دم": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "دماغ": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "ذراع": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "رئه": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "راس": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "رقبه": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "ركبه": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "شريان": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "عصب": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "عضله": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "عظمه": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "فم": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "كبد": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "كتف": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "لسان": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "يد": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "يدين": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "ارز": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "اكل": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "العشا": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "المطعم": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "بازلاء": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "برتقال": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "بصل": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "بقالة": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "بقاله": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "بيتزا": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "تفاح": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "تمر": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "ثوم": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "جبن": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "حساء": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "حلوى": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "حليب": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "حمص": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "خبز": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "خضار": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "خضروات": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "دجاج": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "دقيق": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "زيت": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "سكر": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "سوبر": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "شاي": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "طاجن": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "طعام": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "طماطم": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "عدس": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "عشا": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "عصير": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "غداء": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "فاكهة": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "فلفل": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "فواكه": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "قهوه": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "كعك": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "لحوم": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "مأكولات": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "ماء": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "ماركت": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "مشروبات": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "مطاعم": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "مطعم": {
+    "field": "place",
+    "gloss": "restaurant"
+  },
+  "مقهى": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "مقهي": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "ملح": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "موز": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "مياه": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "وجبات": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "وجبه": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "وصفات": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "وجبة": {
+    "field": "food",
+    "gloss": "meal"
+  },
+  "قهوة": {
+    "field": "food",
+    "gloss": "coffee"
+  },
+  "أرز": {
+    "field": "food",
+    "gloss": "rice"
+  },
+  "لحم": {
+    "field": "food",
+    "gloss": "meat"
+  },
+  "سمك": {
+    "field": "food",
+    "gloss": "fish"
+  },
+  "اسمنت": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "بلاستيك": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "حديد": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "حرير": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "خامات": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "خليط": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "خيش": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "رخام": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "رمل": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "زجاج": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "سبيكة": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "صلب": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "صوف": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "طين": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "فضه": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "قطن": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "قماش": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "كرتون": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "معادن": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "نحاس": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "ابيض": {
+    "field": "color",
+    "gloss": "color, shade"
+  },
+  "احمر": {
+    "field": "color",
+    "gloss": "color, shade"
+  },
+  "اخضر": {
+    "field": "color",
+    "gloss": "color, shade"
+  },
+  "ازرق": {
+    "field": "color",
+    "gloss": "color, shade"
+  },
+  "اسود": {
+    "field": "color",
+    "gloss": "color, shade"
+  },
+  "اصفر": {
+    "field": "color",
+    "gloss": "color, shade"
+  },
+  "الوان": {
+    "field": "color",
+    "gloss": "color, shade"
+  },
+  "برتقالي": {
+    "field": "color",
+    "gloss": "color, shade"
+  },
+  "بنفسجي": {
+    "field": "color",
+    "gloss": "color, shade"
+  },
+  "ذهبي": {
+    "field": "color",
+    "gloss": "color, shade"
+  },
+  "رمادي": {
+    "field": "color",
+    "gloss": "color, shade"
+  },
+  "زيتوني": {
+    "field": "color",
+    "gloss": "color, shade"
+  },
+  "فضي": {
+    "field": "color",
+    "gloss": "color, shade"
+  },
+  "كحلي": {
+    "field": "color",
+    "gloss": "color, shade"
+  },
+  "وردي": {
+    "field": "color",
+    "gloss": "color, shade"
+  },
+  "ابريل": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "اخير": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "اسابيع": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "اسبوع": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "اشهر": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "اعوام": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "الاثنين": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "الاحد": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "الاخير": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "الاربعاء": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "الثلاثاء": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "الجمعه": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "الحالي": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "الخميس": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "الساعه": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "السبت": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "الصبح": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "المنبه": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "الوقت": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "اليوم": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "امس": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "انتظر": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "ايام": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "بكرة": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "بكره": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "تاريخ": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "تالي": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "تذكيرات": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "ثانية": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "ثانيه": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "ثلثاء": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "ثلوث": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "ثواني": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "جدول": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "حالي": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "حقبة": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "حقبه": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "دقائق": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "دقايق": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "دقيقة": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "دقيقه": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "ذكرني": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "رمضان": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "ساعات": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "ساعة": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "ساعتين": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "ساعه": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "سنه": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "سنوات": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "شهر": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "صباح": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "صحيني": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "طال": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "ظهيره": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "عام": {
+    "field": "quality",
+    "gloss": "public, general"
+  },
+  "عشاء": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "عصر": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "عقود": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "غد": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "غدا": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "فجر": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "قرن": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "قرون": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "قريب": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "لمدة": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "ليل": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "ليله": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "متكرر": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "مرات": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "مرة": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "مسا": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "مساء": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "مغرب": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "مواعيد": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "موعد": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "ميلاد": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "نبهني": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "نهار": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "نهاية": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "ينتظر": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "يوم": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "يونيو": {
+    "field": "time.calendar",
+    "gloss": "June"
+  },
+  "السنة": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "السنوات": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "أسبوع": {
+    "field": "time",
+    "gloss": "week"
+  },
+  "لحظة": {
+    "field": "time",
+    "gloss": "moment"
+  },
+  "فترة": {
+    "field": "time",
+    "gloss": "period"
+  },
+  "مدة": {
+    "field": "time",
+    "gloss": "duration"
+  },
+  "ليلة": {
+    "field": "time",
+    "gloss": "night (occasion)"
+  },
+  "الليلة": {
+    "field": "time",
+    "gloss": "tonight"
+  },
+  "أمس": {
+    "field": "time",
+    "gloss": "yesterday"
+  },
+  "منذ": {
+    "field": "time",
+    "gloss": "since"
+  },
+  "حتى": {
+    "field": "time",
+    "gloss": "until"
+  },
+  "إقليم": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "ابوظبي": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "اراضي": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "استراليا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "اسطنبول": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "اسيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "افريقيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "اقاليم": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "اقليم": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الاردن": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الاماكن": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "البحرين": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الجزائر": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الحديقه": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الشارقة": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الشقه": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الصيدلية": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الصين": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "العراق": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "القاهرة": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الكويت": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "المانيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "المحلات": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "المدينة": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "المركز": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "المستودع": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "المسرح": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "المغرب": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "المكان": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "المنامة": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "المواقع": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الهند": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "اليابان": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "اليمن": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "اماراتي": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "اماراتية": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "اماكن": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "امريكا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "امكان": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "اوروبا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "ايران": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "باريس": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "برلين": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "بكين": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "بلاد": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "بلدان": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "بيت": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "بيتي": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "بيروت": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "تركيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "تونس": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "جامعه": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "جانب": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "جدة": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "جزيره": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "جنوب": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "جيزان": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "حدود": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "حمام": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "حي": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "دبي": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "دكان": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "دمام": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "روسيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "روما": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "ساحل": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "سبيل": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "سرير": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "سطح": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "سعودي": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "سعودية": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "سوريا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "سياحي": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "سياحية": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "سياحيه": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "شارع": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "شرق": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "شمال": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "شوارع": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "صالة": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "طرق": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "طريق": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "طوكيو": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "عاصمة": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "عاصمه": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "عجمان": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "عمان": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "عناوين": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "عنوان": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "غرب": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "غرف": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "غرفة": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "فرنسا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "فلسطين": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "فندق": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "فين": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "قاره": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "قريه": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "كارفور": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "كندا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "كنيسه": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "لبنان": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "لندن": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "ليبيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "محافظة": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "محطه": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "محل": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "محلات": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "مدريد": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "مدينة": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "مدينه": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "مراكز": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "مركز": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "مسارح": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "مسجد": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "مسقط": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "مصر": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "مقاطعة": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "مقاطعه": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "مكان": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "مكة": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "مناطق": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "منزل": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "منطقة": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "منطقتي": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "منطقه": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "مواقع": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "موسكو": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "ميدان": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "نيويورك": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "هنا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "هناك": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "واشنطن": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "وسط": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "ولاية": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "ولايه": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "وين": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "المنزل": {
+    "field": "place",
+    "gloss": "the home"
+  },
+  "محطة": {
+    "field": "place",
+    "gloss": "station"
+  },
+  "سوق": {
+    "field": "place",
+    "gloss": "market, bazaar"
+  },
+  "مدرسة": {
+    "field": "place",
+    "gloss": "school"
+  },
+  "جامعة": {
+    "field": "place",
+    "gloss": "university"
+  },
+  "كنيسة": {
+    "field": "place",
+    "gloss": "church"
+  },
+  "متحف": {
+    "field": "place",
+    "gloss": "museum"
+  },
+  "مستشفى": {
+    "field": "place",
+    "gloss": "hospital"
+  },
+  "مكتبة": {
+    "field": "place",
+    "gloss": "library"
+  },
+  "حديقة": {
+    "field": "place",
+    "gloss": "garden, park"
+  },
+  "سوري": {
+    "field": "place",
+    "gloss": "Syrian (nationality)"
+  },
+  "سورية": {
+    "field": "place",
+    "gloss": "Syrian (fem nationality)"
+  },
+  "مصري": {
+    "field": "place",
+    "gloss": "Egyptian (nationality)"
+  },
+  "لبناني": {
+    "field": "place",
+    "gloss": "Lebanese (nationality)"
+  },
+  "عراقي": {
+    "field": "place",
+    "gloss": "Iraqi (nationality)"
+  },
+  "تقع": {
+    "field": "place",
+    "gloss": "is located, lies"
+  },
+  "يقع": {
+    "field": "place",
+    "gloss": "is located, lies"
+  },
+  "تقعا": {
+    "field": "place",
+    "gloss": "located (dual)"
+  },
+  "خارجية": {
+    "field": "place",
+    "gloss": "external, foreign"
+  },
+  "داخلية": {
+    "field": "place",
+    "gloss": "internal, domestic"
+  },
+  "جنوبية": {
+    "field": "place",
+    "gloss": "southern"
+  },
+  "شمالية": {
+    "field": "place",
+    "gloss": "northern"
+  },
+  "شرقية": {
+    "field": "place",
+    "gloss": "eastern"
+  },
+  "غربية": {
+    "field": "place",
+    "gloss": "western"
+  },
+  "بغداد": {
+    "field": "place",
+    "gloss": "Baghdad"
+  },
+  "القدس": {
+    "field": "place",
+    "gloss": "Jerusalem"
+  },
+  "دمشق": {
+    "field": "place",
+    "gloss": "Damascus"
+  },
+  "غزة": {
+    "field": "place",
+    "gloss": "Gaza"
+  },
+  "الرياض": {
+    "field": "place",
+    "gloss": "Riyadh"
+  },
+  "الخرطوم": {
+    "field": "place",
+    "gloss": "Khartoum"
+  },
+  "الدوحة": {
+    "field": "place",
+    "gloss": "Doha"
+  },
+  "طرابلس": {
+    "field": "place",
+    "gloss": "Tripoli"
+  },
+  "اثنان": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "اثنعش": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "اثنعشر": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "اثنين": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "احدعش": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "احدعشر": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "اربعة": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "اربععشر": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "اربعين": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "الف": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "الفين": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "تسعة": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "تسععشر": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "تسعين": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "تقريبا": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "تقريباً": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "ثلاثة": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "ثلاثعشر": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "ثلاثين": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "ثلث": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "ثمانعشر": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "ثمانية": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "ثمانين": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "ثمنية": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "ثنتين": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "جرام": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "حجم": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "خمسة": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "خمسعشر": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "خمسين": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "ربع": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "سبعة": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "سبععشر": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "سبعين": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "ستة": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "ستعشر": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "ستين": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "سنتيمتر": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "طن": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "عشر": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "عشرة": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "عشرين": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "كميات": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "كمية": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "كيلوجرام": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "كيلومتر": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "مئه": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "مائة": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "متر": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "مساحه": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "معدل": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "مقابل": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "مليار": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "مليون": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "مية": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "نحو": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "نسبه": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "واحد": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "ونص": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "يساوي": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "عدد": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "الأعداد": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "اخر": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "اخرى": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "اخري": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "اصلي": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "اعلى": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "اعلي": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "اهمية": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "اهميه": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "اول": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "اولي": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "بطيء": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "بعض": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "ثالث": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "ثاني": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "جديد": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "جميع": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "جميل": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "جيد": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "حقتي": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "حلو": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "حلوة": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "حوالي": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "ذكي": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "رئيسي": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "رديء": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "سريع": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "شامل": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "صغير": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "صغيرة": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "صغيره": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "ضروري": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "ضعيف": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "طويل": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "عديد": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "عشوائي": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "عشوائية": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "فعال": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "قبيح": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "قديم": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "قصير": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "كبير": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "كبيرة": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "كبيره": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "كثيرة": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "كثيره": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "كفوء": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "متوسط": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "مثال": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "مختلف": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "مستدام": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "مشابه": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "معظم": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "معقول": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "ممتاز": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "مهم": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "موثوق": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "نفس": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "واطي": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "وطي": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "جيدة": {
+    "field": "quality",
+    "gloss": "good (f)"
+  },
+  "سيء": {
+    "field": "quality",
+    "gloss": "bad"
+  },
+  "سهل": {
+    "field": "quality",
+    "gloss": "easy"
+  },
+  "أزمة": {
+    "field": "quality",
+    "gloss": "crisis"
+  },
+  "مستوى": {
+    "field": "quality",
+    "gloss": "level"
+  },
+  "درجة": {
+    "field": "quality",
+    "gloss": "degree, grade"
+  },
+  "الدولية": {
+    "field": "quality",
+    "gloss": "international (f)"
+  },
+  "الدولي": {
+    "field": "quality",
+    "gloss": "international (m)"
+  },
+  "دولية": {
+    "field": "quality",
+    "gloss": "international"
+  },
+  "دولي": {
+    "field": "quality",
+    "gloss": "international"
+  },
+  "العالمية": {
+    "field": "quality",
+    "gloss": "global, worldwide (f)"
+  },
+  "العالمي": {
+    "field": "quality",
+    "gloss": "global, worldwide (m)"
+  },
+  "عالمية": {
+    "field": "quality",
+    "gloss": "global"
+  },
+  "عالمي": {
+    "field": "quality",
+    "gloss": "global"
+  },
+  "إقليمي": {
+    "field": "quality",
+    "gloss": "regional"
+  },
+  "إقليمية": {
+    "field": "quality",
+    "gloss": "regional"
+  },
+  "محلي": {
+    "field": "quality",
+    "gloss": "local"
+  },
+  "محلية": {
+    "field": "quality",
+    "gloss": "local (f)"
+  },
+  "وطني": {
+    "field": "quality",
+    "gloss": "national"
+  },
+  "وطنية": {
+    "field": "quality",
+    "gloss": "national (f)"
+  },
+  "رسمي": {
+    "field": "quality",
+    "gloss": "official, formal"
+  },
+  "رسمية": {
+    "field": "quality",
+    "gloss": "official (f)"
+  },
+  "شخصي": {
+    "field": "quality",
+    "gloss": "personal"
+  },
+  "شخصية": {
+    "field": "quality",
+    "gloss": "personal (f)"
+  },
+  "مجاني": {
+    "field": "quality",
+    "gloss": "free (no cost)"
+  },
+  "مجانية": {
+    "field": "quality",
+    "gloss": "free (f)"
+  },
+  "تجاري": {
+    "field": "quality",
+    "gloss": "commercial"
+  },
+  "تجارية": {
+    "field": "quality",
+    "gloss": "commercial (f)"
+  },
+  "أساسي": {
+    "field": "quality",
+    "gloss": "fundamental, basic"
+  },
+  "أساسية": {
+    "field": "quality",
+    "gloss": "fundamental (f)"
+  },
+  "مبدئي": {
+    "field": "quality",
+    "gloss": "initial, preliminary"
+  },
+  "نهائي": {
+    "field": "quality",
+    "gloss": "final"
+  },
+  "نهائية": {
+    "field": "quality",
+    "gloss": "final (f)"
+  },
+  "تلقائي": {
+    "field": "quality",
+    "gloss": "automatic"
+  },
+  "يدوي": {
+    "field": "quality",
+    "gloss": "manual"
+  },
+  "افتراضي": {
+    "field": "quality",
+    "gloss": "default, virtual"
+  },
+  "إضافي": {
+    "field": "quality",
+    "gloss": "additional, extra"
+  },
+  "إضافية": {
+    "field": "quality",
+    "gloss": "additional (f)"
+  },
+  "خاصة": {
+    "field": "quality",
+    "gloss": "private (f)"
+  },
+  "عامة": {
+    "field": "quality",
+    "gloss": "public (f)"
+  },
+  "قوه": {
+    "field": "quality",
+    "gloss": "strength, power"
+  },
+  "قوة": {
+    "field": "quality",
+    "gloss": "strength, power"
+  },
+  "عادي": {
+    "field": "quality",
+    "gloss": "normal, ordinary, okay"
+  },
+  "عادية": {
+    "field": "quality",
+    "gloss": "normal, ordinary (fem)"
+  },
+  "طبيعي": {
+    "field": "quality",
+    "gloss": "natural, normal"
+  },
+  "طبيعية": {
+    "field": "quality",
+    "gloss": "natural, normal (fem)"
+  },
+  "حالة": {
+    "field": "quality",
+    "gloss": "state, condition, case"
+  },
+  "حالات": {
+    "field": "quality",
+    "gloss": "states, conditions"
+  },
+  "أهم": {
+    "field": "quality",
+    "gloss": "most important"
+  },
+  "أهمية": {
+    "field": "quality",
+    "gloss": "importance"
+  },
+  "الرجل": {
+    "field": "person",
+    "gloss": "man, male person"
+  },
+  "المرأة": {
+    "field": "person",
+    "gloss": "woman, female person"
+  },
+  "رجل": {
+    "field": "person",
+    "gloss": "man"
+  },
+  "امرأة": {
+    "field": "person",
+    "gloss": "woman"
+  },
+  "ولد": {
+    "field": "person",
+    "gloss": "boy"
+  },
+  "بنت": {
+    "field": "person",
+    "gloss": "girl"
+  },
+  "طفل": {
+    "field": "person",
+    "gloss": "child"
+  },
+  "شاب": {
+    "field": "person",
+    "gloss": "youth, young man"
+  },
+  "الناس": {
+    "field": "person",
+    "gloss": "people"
+  },
+  "الشعب": {
+    "field": "person",
+    "gloss": "the people"
+  },
+  "سيد": {
+    "field": "person",
+    "gloss": "sir, mister"
+  },
+  "سيدي": {
+    "field": "person",
+    "gloss": "sir (formal address)"
+  },
+  "سيدة": {
+    "field": "person",
+    "gloss": "madam, lady"
+  },
+  "أستاذ": {
+    "field": "person",
+    "gloss": "professor, teacher (honorific)"
+  },
+  "صاحب": {
+    "field": "person",
+    "gloss": "companion, friend"
+  },
+  "زوج": {
+    "field": "person",
+    "gloss": "husband, spouse"
+  },
+  "زوجة": {
+    "field": "person",
+    "gloss": "wife"
+  },
+  "أب": {
+    "field": "person",
+    "gloss": "father"
+  },
+  "أم": {
+    "field": "person",
+    "gloss": "mother"
+  },
+  "ابن": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "ابنة": {
+    "field": "person",
+    "gloss": "daughter"
+  },
+  "أخ": {
+    "field": "person",
+    "gloss": "brother"
+  },
+  "أخت": {
+    "field": "person",
+    "gloss": "sister"
+  },
+  "عميل": {
+    "field": "person",
+    "gloss": "customer, client"
+  },
+  "مستخدمة": {
+    "field": "person",
+    "gloss": "user (feminine)"
+  },
+  "زبون": {
+    "field": "person",
+    "gloss": "customer, client (colloquial)"
+  },
+  "موظف": {
+    "field": "person",
+    "gloss": "employee"
+  },
+  "موظفة": {
+    "field": "person",
+    "gloss": "employee (feminine)"
+  },
+  "مديرة": {
+    "field": "person",
+    "gloss": "director (feminine)"
+  },
+  "لاجئون": {
+    "field": "person",
+    "gloss": "refugees (plural)"
+  },
+  "لاجئين": {
+    "field": "person",
+    "gloss": "refugees (plural acc)"
+  },
+  "مهاجرين": {
+    "field": "person",
+    "gloss": "immigrants (plural)"
+  },
+  "باسم": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "بن": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "أبو": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "أبي": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "اسم": {
+    "field": "name",
+    "gloss": "name"
+  },
+  "أسماء": {
+    "field": "name",
+    "gloss": "names"
+  },
+  "تسمية": {
+    "field": "name",
+    "gloss": "naming, denomination"
+  },
+  "لقب": {
+    "field": "name",
+    "gloss": "title, nickname"
+  },
+  "نموذج": {
+    "field": "tech.ai",
+    "gloss": "model (AI)"
+  },
+  "تدريب": {
+    "field": "tech.ai",
+    "gloss": "training (AI)"
+  },
+  "توليد": {
+    "field": "tech.ai",
+    "gloss": "generation (AI)"
+  },
+  "تحليل": {
+    "field": "tech.ai",
+    "gloss": "analysis"
+  },
+  "تصنيف": {
+    "field": "tech.ai",
+    "gloss": "classification"
+  },
+  "مساعد": {
+    "field": "tech.ai",
+    "gloss": "assistant (AI)"
+  },
+  "وكيل": {
+    "field": "tech.ai",
+    "gloss": "agent (AI)"
+  },
+  "دردشة": {
+    "field": "tech.ai",
+    "gloss": "chat"
+  },
+  "بوت": {
+    "field": "tech.ai",
+    "gloss": "bot"
+  },
+  "برومبت": {
+    "field": "tech.ai",
+    "gloss": "prompt"
+  },
+  "استجابة": {
+    "field": "tech.ai",
+    "gloss": "response, output"
+  },
+  "توصية": {
+    "field": "tech.ai",
+    "gloss": "recommendation"
+  },
+  "أتمتة": {
+    "field": "tech.ai",
+    "gloss": "automation"
+  },
+  "مؤتمت": {
+    "field": "tech.ai",
+    "gloss": "automated"
+  },
+  "تضمين": {
+    "field": "tech.ai",
+    "gloss": "embedding"
+  },
+  "انتباه": {
+    "field": "tech.ai",
+    "gloss": "attention (AI mechanism)"
+  },
+  "محول": {
+    "field": "tech.ai",
+    "gloss": "transformer (AI)"
+  },
+  "استدلال": {
+    "field": "tech.ai",
+    "gloss": "inference"
+  },
+  "أداء": {
+    "field": "tech.ai",
+    "gloss": "performance"
+  },
+  "تقييم": {
+    "field": "tech.ai",
+    "gloss": "evaluation"
+  },
+  "اختبار": {
+    "field": "tech.ai",
+    "gloss": "testing"
+  },
+  "نشر": {
+    "field": "tech.ai",
+    "gloss": "deployment"
+  },
+  "إنتاج": {
+    "field": "tech.ai",
+    "gloss": "production"
+  },
+  "سياق": {
+    "field": "tech.ai",
+    "gloss": "context"
+  },
+  "هلوسة": {
+    "field": "tech.ai",
+    "gloss": "hallucination (AI)"
+  },
+  "تحيز": {
+    "field": "tech.ai",
+    "gloss": "bias (AI)"
+  },
+  "شفافية": {
+    "field": "tech.ai",
+    "gloss": "transparency (AI)"
+  },
+  "أخلاقيات": {
+    "field": "tech.ai",
+    "gloss": "ethics (AI ethics)"
+  },
+  "يناير": {
+    "field": "time.calendar",
+    "gloss": "January"
+  },
+  "فبراير": {
+    "field": "time.calendar",
+    "gloss": "February"
+  },
+  "مارس": {
+    "field": "time.calendar",
+    "gloss": "March"
+  },
+  "أبريل": {
+    "field": "time.calendar",
+    "gloss": "April"
+  },
+  "مايو": {
+    "field": "time.calendar",
+    "gloss": "May"
+  },
+  "يوليو": {
+    "field": "time.calendar",
+    "gloss": "July"
+  },
+  "أغسطس": {
+    "field": "time.calendar",
+    "gloss": "August"
+  },
+  "سبتمبر": {
+    "field": "time.calendar",
+    "gloss": "September"
+  },
+  "أكتوبر": {
+    "field": "time.calendar",
+    "gloss": "October"
+  },
+  "نوفمبر": {
+    "field": "time.calendar",
+    "gloss": "November"
+  },
+  "ديسمبر": {
+    "field": "time.calendar",
+    "gloss": "December"
+  },
+  "كانون": {
+    "field": "time.calendar",
+    "gloss": "January/December (Levantine calendar)"
+  },
+  "شباط": {
+    "field": "time.calendar",
+    "gloss": "February (Levantine)"
+  },
+  "آذار": {
+    "field": "time.calendar",
+    "gloss": "March (Levantine)"
+  },
+  "نيسان": {
+    "field": "time.calendar",
+    "gloss": "April (Levantine)"
+  },
+  "أيار": {
+    "field": "time.calendar",
+    "gloss": "May (Levantine)"
+  },
+  "حزيران": {
+    "field": "time.calendar",
+    "gloss": "June (Levantine)"
+  },
+  "تموز": {
+    "field": "time.calendar",
+    "gloss": "July (Levantine)"
+  },
+  "آب": {
+    "field": "time.calendar",
+    "gloss": "August (Levantine)"
+  },
+  "أيلول": {
+    "field": "time.calendar",
+    "gloss": "September (Levantine)"
+  },
+  "تشرين": {
+    "field": "time.calendar",
+    "gloss": "October/November (Levantine)"
+  },
+  "الطيران": {
+    "field": "move.fly",
+    "gloss": "aviation, air travel"
+  },
+  "المطار": {
+    "field": "move.fly",
+    "gloss": "the airport"
+  },
+  "المتحدة": {
+    "field": "place.country",
+    "gloss": "country, nation"
+  },
+  "الولايات": {
+    "field": "place.country",
+    "gloss": "country, nation"
+  },
+  "الأمريكية": {
+    "field": "place.country",
+    "gloss": "country, nation"
+  },
+  "أمريكي": {
+    "field": "place.country",
+    "gloss": "country, nation"
+  },
+  "العربية": {
+    "field": "place.country",
+    "gloss": "country, nation"
+  },
+  "العربي": {
+    "field": "place.country",
+    "gloss": "country, nation"
+  },
+  "الأمريكي": {
+    "field": "place.country",
+    "gloss": "country, nation"
+  },
+  "إسرائيل": {
+    "field": "place.country",
+    "gloss": "country, nation"
+  },
+  "الغربية": {
+    "field": "place.country",
+    "gloss": "country, nation"
+  },
+  "إيطاليا": {
+    "field": "place.country",
+    "gloss": "Italy"
+  },
+  "أوروبا": {
+    "field": "place.country",
+    "gloss": "Europe"
+  },
+  "أوروبية": {
+    "field": "place.country",
+    "gloss": "European (fem)"
+  },
+  "الأوروبية": {
+    "field": "place.country",
+    "gloss": "the European (fem)"
+  },
+  "الأوروبي": {
+    "field": "place.country",
+    "gloss": "the European"
+  },
+  "البريطانية": {
+    "field": "place.country",
+    "gloss": "British (fem)"
+  },
+  "البريطاني": {
+    "field": "place.country",
+    "gloss": "British"
+  },
+  "الفرنسية": {
+    "field": "place.country",
+    "gloss": "French (fem)"
+  },
+  "الفرنسي": {
+    "field": "place.country",
+    "gloss": "French"
+  },
+  "الألمانية": {
+    "field": "place.country",
+    "gloss": "German (fem)"
+  },
+  "الألماني": {
+    "field": "place.country",
+    "gloss": "German"
+  },
+  "الروسية": {
+    "field": "place.country",
+    "gloss": "Russian (fem)"
+  },
+  "الروسي": {
+    "field": "place.country",
+    "gloss": "Russian"
+  },
+  "العثمانية": {
+    "field": "place.country",
+    "gloss": "Ottoman (fem)"
+  },
+  "العثماني": {
+    "field": "place.country",
+    "gloss": "Ottoman"
+  }
+}
