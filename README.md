@@ -131,12 +131,12 @@ speak.command   speak.greeting   speak.farewell
 
 ### English
 
-| Source           | Entries | Covers                                       |
-| ---------------- | ------- | -------------------------------------------- |
-| Stems            | 644     | Direct word → field lookup                   |
-| Compounds        | 48      | Bigram phrases → field (e.g. "coffee shop")  |
-| Function words   | 70      | STR/REL tokens (not, will, if, who, …)       |
-| Morphology rules | —       | Prefix/suffix stripping (un-, -er, -tion, …) |
+| Source           | Entries | Covers                                      |
+| ---------------- | ------- | ------------------------------------------- |
+| Stems            | 1,491   | Direct word → field lookup                  |
+| Compounds        | 49      | Bigram phrases → field (e.g. "coffee shop") |
+| Function words   | 93      | STR/REL tokens (not, will, if, who, …)      |
+| Morphology rules | 25      | Prefix/suffix stripping → CONCEPT + role    |
 
 **English pipeline:**
 
@@ -144,18 +144,50 @@ speak.command   speak.greeting   speak.farewell
 2. Bigram compound scan
 3. Function-word check → STR / REL token
 4. Direct stem lookup → CONCEPT
-5. Morphological stripping → CONCEPT + role
-6. LIT fallback
+5. `words.json` surface-form lookup → CONCEPT
+6. Morphological stripping → CONCEPT + role
+7. LIT fallback
+
+**Morphological prefix rules:**
+
+| Prefix  | Role emitted | Example                              |
+| ------- | ------------ | ------------------------------------ |
+| `un-`   | `negate`     | unreadable → [NEG] + read + possible |
+| `dis-`  | `negate`     | disconnect → [NEG] + connect         |
+| `non-`  | `negate`     | nonfiction → [NEG] + fiction         |
+| `re-`   | `repeat`     | rewrite → [REPEAT] + write           |
+| `pre-`  | `before`     | prepay → [BEFORE] + pay              |
+| `mis-`  | `wrong`      | misunderstand → [WRONG] + know       |
+| `over-` | `excess`     | overload → [EXCESS] + load           |
+| `co-`   | `mutual`     | cooperate → [MUTUAL] + work          |
+| `out-`  | `exceed`     | outperform → [EXCEED] + work         |
+
+**Morphological suffix rules:**
+
+| Suffix                        | Role emitted | Meaning           |
+| ----------------------------- | ------------ | ----------------- |
+| `-tion/-sion/-ment/-ion/-ing` | `instance`   | act or result of  |
+| `-ness/-ance/-ence/-ity`      | `state`      | quality or state  |
+| `-able/-ible`                 | `possible`   | capable of        |
+| `-ery/-ory/-ary`              | `place`      | place of          |
+| `-ful`                        | `has`        | full of, having   |
+| `-less`                       | `negate`     | without           |
+| `-er/-or/-ist/-ian`           | `agent`      | one who does      |
+| `-ee`                         | `patient`    | one who receives  |
+| `-ly`                         | `manner`     | in the manner of  |
+| `-al`                         | `quality`    | of or relating to |
+| `-ed`                         | `past`       | completed action  |
+| `-s`                          | `plural`     | plural inflection |
 
 ### Arabic
 
 | Source         | Entries | Covers                                          |
 | -------------- | ------- | ----------------------------------------------- |
-| Roots          | 1,540   | Trilateral root form → field                    |
-| Direct         | 986     | Direct word → field (no root extraction needed) |
-| Compounds      | 79      | Bigram phrases → field (e.g. "ذكاء اصطناعي")    |
-| Structural     | 62      | STR tokens (لا، يجب، إذا، كيف، …)               |
-| Relations      | 60      | REL tokens (في، إلى، من، بسبب، …)               |
+| Stems          | 2,201   | Trilateral root form → field                    |
+| Words          | 1,515   | Direct word → field (no root extraction needed) |
+| Compounds      | 170     | Bigram phrases → field (e.g. "ذكاء اصطناعي")    |
+| Structural     | 85      | STR tokens (لا، يجب، إذا، كيف، …)               |
+| Relations      | 78      | REL tokens (في، إلى، من، بسبب، …)               |
 | Function words | —       | Skip list (pronouns, copulas)                   |
 
 **Arabic pipeline:**
