@@ -11,10 +11,13 @@
  *   English: 12.5%  →  threshold 0.16
  *   Arabic : 29.1%  →  threshold 0.34
  *
- * NOTE on the Arabic threshold: the eval corpus is Wikipedia/historical text,
- * dense with proper nouns (people, places, organizations) that a tokenizer
- * SHOULD leave as LIT — so a meaningful floor of "correct LIT" is baked in.
- * This is a regression guard, not an aspiration to drive LIT arbitrarily low.
+ * NOTE on the Arabic threshold: AR LIT measured ~26–28% across three
+ * independent corpora — Wikipedia (28.3%), everyday Tatoeba MSA (26.1%), and
+ * dialectal/social text (37.8%). So the gap is NOT a Wikipedia proper-noun
+ * artifact; it is genuine breadth coverage (vocabulary + function words + verb
+ * morphology). Driving it below ~20% needs real coverage work (weak-root
+ * morphology, a larger curated root set), not metric tuning. This is a
+ * regression guard at the current honest baseline.
  *
  * To tighten after intentional improvements: re-measure, then lower the
  * toBeLessThan() value to (new_baseline + ~0.04) and update this comment.
