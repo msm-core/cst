@@ -760,6 +760,10 @@
       {
         "word": "مصدر",
         "gloss": "source, origin"
+      },
+      {
+        "stem": "عرف",
+        "gloss": "know, recognize"
       }
     ]
   },
@@ -1742,6 +1746,14 @@
       {
         "stem": "توشوش",
         "gloss": "whisper"
+      },
+      {
+        "stem": "حدث",
+        "gloss": "talk, speak, recount, event"
+      },
+      {
+        "stem": "دعو",
+        "gloss": "call, invite, summon"
       }
     ]
   },
@@ -1987,6 +1999,10 @@
       {
         "stem": "اعاليم",
         "gloss": "sign"
+      },
+      {
+        "stem": "خط",
+        "gloss": "line, handwriting, script"
       }
     ]
   },
@@ -3134,6 +3150,10 @@
       {
         "stem": "تنشو",
         "gloss": "grow;develop"
+      },
+      {
+        "stem": "نشا",
+        "gloss": "create, establish, arise, found"
       }
     ]
   },
@@ -5253,6 +5273,10 @@
       {
         "stem": "توقل",
         "gloss": "climb"
+      },
+      {
+        "stem": "عود",
+        "gloss": "return, come back"
       }
     ]
   },
@@ -6667,6 +6691,14 @@
       },
       {
         "stem": "يعلق"
+      },
+      {
+        "stem": "وصل",
+        "gloss": "connect, link, join"
+      },
+      {
+        "stem": "سلسل",
+        "gloss": "chain, series, sequence"
       }
     ]
   },
@@ -6976,6 +7008,10 @@
       {
         "stem": "تواجد",
         "gloss": "exist;be present;presence"
+      },
+      {
+        "stem": "تم",
+        "gloss": "be completed, be accomplished, be done"
       }
     ]
   },
@@ -7602,6 +7638,10 @@
       {
         "stem": "ملكوت",
         "gloss": "kingdom"
+      },
+      {
+        "stem": "خلف",
+        "gloss": "succeed, caliph, successor"
       }
     ]
   },
@@ -8004,6 +8044,10 @@
       {
         "stem": "اهجم",
         "gloss": "attack;strike"
+      },
+      {
+        "stem": "ثور",
+        "gloss": "revolt, revolution, uprising"
       }
     ]
   },
@@ -9789,6 +9833,10 @@
       {
         "stem": "تناص",
         "gloss": "join forces;unite;associate"
+      },
+      {
+        "word": "وكاله",
+        "gloss": "agency, bureau"
       }
     ]
   },
@@ -16604,6 +16652,10 @@
       },
       {
         "word": "الأعداد"
+      },
+      {
+        "stem": "نطاق",
+        "gloss": "scope, range, extent"
       }
     ]
   },

@@ -1,8 +1,8 @@
 /**
  * index.ts — Public API for @msm-core/cst
  *
- * English tokenizer is Phase 1.
- * Arabic tokenizer will be added in Phase 5.
+ * Both the English and Arabic tokenizers are implemented; `tokenize()`
+ * auto-detects the language (or split-routes mixed text).
  */
 
 // ── Types ─────────────────────────────────────────────────────────────────────

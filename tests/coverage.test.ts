@@ -1,24 +1,23 @@
 /**
  * tests/coverage.test.ts — LIT-ratio regression guards.
  *
- * These tests fail if a vocab change, morphological rule change, or function-
- * word edit accidentally degrades coverage below the recorded baseline.
+ * Fails if a vocab change, morphology change, or function-word edit degrades
+ * coverage below the recorded baseline. Runs against committed fixtures
+ * (tests/fixtures/coverage-{en,ar}.txt — 150 stratified sentences each, sampled
+ * from the eval-10k sets), so the gate is CI-portable and does NOT depend on the
+ * gitignored plan/data corpora.
  *
- * Methodology:
- *   - Every 20th entry from eval-en-10k.json and eval-ar-10k.json gives a
- *     500-sentence stratified sample that is fast to run (~2s) and
- *     representative of the full distribution.
- *   - Thresholds are set 6 pp above the current measured baseline to absorb
- *     small natural variation without allowing real regressions.
+ * Baselines (measured 2026-06-09, after root-reduction + curated-root vocab):
+ *   English: 12.5%  →  threshold 0.16
+ *   Arabic : 29.1%  →  threshold 0.34
  *
- * Baselines (measured 2026-06-01, build-vocab v2200/v1490 entries):
- *   English (eval-en-10k, 500-sentence sample): 13.48 %  →  threshold 0.17
- *   Arabic  (eval-ar-10k, 500-sentence sample): 35.61 %  →  threshold 0.40
+ * NOTE on the Arabic threshold: the eval corpus is Wikipedia/historical text,
+ * dense with proper nouns (people, places, organizations) that a tokenizer
+ * SHOULD leave as LIT — so a meaningful floor of "correct LIT" is baked in.
+ * This is a regression guard, not an aspiration to drive LIT arbitrarily low.
  *
- * To update thresholds after intentional improvements:
- *   1. Run the lit-profiler to confirm the new baseline.
- *   2. Lower the toBeLessThan() value to (new_baseline + 0.06).
- *   3. Update the comment above.
+ * To tighten after intentional improvements: re-measure, then lower the
+ * toBeLessThan() value to (new_baseline + ~0.04) and update this comment.
  */
 
 import { readFileSync } from "node:fs";
@@ -27,82 +26,56 @@ import { fileURLToPath } from "node:url";
 import { tokenize } from "../src/index.js";
 
 const __dir = dirname(fileURLToPath(import.meta.url));
-const ROOT = resolve(__dir, "..");
 
-interface EvalItem {
-  text: string;
-  domain?: string;
-  source?: string;
+function loadFixture(lang: "en" | "ar"): string[] {
+  return readFileSync(resolve(__dir, "fixtures", `coverage-${lang}.txt`), "utf-8")
+    .split("\n")
+    .map((l) => l.trim())
+    .filter(Boolean);
 }
 
-function loadSample(file: string, stride: number): EvalItem[] {
-  const all = JSON.parse(
-    readFileSync(resolve(ROOT, "plan/data", file), "utf-8"),
-  ) as EvalItem[];
-  return all.filter((_, i) => i % stride === 0);
-}
-
-function computeLitRatio(
-  items: EvalItem[],
+function litRatio(
+  sentences: string[],
   lang: "en" | "ar",
-): { ratio: number; totalTokens: number; litTokens: number } {
-  let totalTokens = 0;
-  let litTokens = 0;
-  for (const { text } of items) {
-    const result = tokenize(text, lang);
-    totalTokens += result.coverage.total;
-    litTokens += result.coverage.lit;
+): { ratio: number; total: number; lit: number } {
+  let total = 0;
+  let lit = 0;
+  for (const text of sentences) {
+    const { coverage } = tokenize(text, lang);
+    total += coverage.total;
+    lit += coverage.lit;
   }
-  return {
-    ratio: totalTokens > 0 ? litTokens / totalTokens : 0,
-    totalTokens,
-    litTokens,
-  };
+  return { ratio: total > 0 ? lit / total : 0, total, lit };
 }
 
-// ── English baseline ──────────────────────────────────────────────────────────
+describe("Coverage regression guard — English", () => {
+  const sentences = loadFixture("en");
 
-describe("Coverage regression guard — English (eval-en-10k)", () => {
-  // 500 stratified sentences, ~2–3 s
-  const sample = loadSample("eval-en-10k.json", 20);
-
-  test("sample size is correct", () => {
-    expect(sample.length).toBeGreaterThanOrEqual(490);
-    expect(sample.length).toBeLessThanOrEqual(510);
+  test("fixture is present", () => {
+    expect(sentences.length).toBeGreaterThanOrEqual(140);
   });
 
-  test("aggregate LIT ratio < 0.17  (baseline: 13.48%)", () => {
-    const { ratio, totalTokens, litTokens } = computeLitRatio(sample, "en");
-    const pct = (ratio * 100).toFixed(2);
-    // Provide a useful failure message showing current values
-    expect(ratio).toBeLessThan(0.17);
-    if (ratio >= 0.17) {
-      console.error(
-        `English LIT ratio regression: ${pct}% (${litTokens}/${totalTokens} tokens)`,
-      );
+  test("aggregate LIT ratio < 0.16  (baseline 12.5%)", () => {
+    const { ratio, total, lit } = litRatio(sentences, "en");
+    if (ratio >= 0.16) {
+      console.error(`EN LIT regression: ${(ratio * 100).toFixed(2)}% (${lit}/${total})`);
     }
+    expect(ratio).toBeLessThan(0.16);
   });
 });
 
-// ── Arabic baseline ───────────────────────────────────────────────────────────
+describe("Coverage regression guard — Arabic MSA", () => {
+  const sentences = loadFixture("ar");
 
-describe("Coverage regression guard — Arabic MSA (eval-ar-10k)", () => {
-  // 500 stratified sentences, ~3–4 s
-  const sample = loadSample("eval-ar-10k.json", 20);
-
-  test("sample size is correct", () => {
-    expect(sample.length).toBeGreaterThanOrEqual(490);
-    expect(sample.length).toBeLessThanOrEqual(510);
+  test("fixture is present", () => {
+    expect(sentences.length).toBeGreaterThanOrEqual(140);
   });
 
-  test("aggregate LIT ratio < 0.40  (baseline: 35.61%)", () => {
-    const { ratio, totalTokens, litTokens } = computeLitRatio(sample, "ar");
-    const pct = (ratio * 100).toFixed(2);
-    expect(ratio).toBeLessThan(0.4);
-    if (ratio >= 0.4) {
-      console.error(
-        `Arabic LIT ratio regression: ${pct}% (${litTokens}/${totalTokens} tokens)`,
-      );
+  test("aggregate LIT ratio < 0.34  (baseline 29.1%; proper-noun floor)", () => {
+    const { ratio, total, lit } = litRatio(sentences, "ar");
+    if (ratio >= 0.34) {
+      console.error(`AR LIT regression: ${(ratio * 100).toFixed(2)}% (${lit}/${total})`);
     }
+    expect(ratio).toBeLessThan(0.34);
   });
 });

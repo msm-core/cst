@@ -75,7 +75,7 @@ export function digest(tokens: CSTToken[]): string {
  *
  * Example:
  *   Input tokens for "set an alarm for tomorrow morning"
- *   → "[set:CONCEPT:fix/adjust] [alarm:CONCEPT:time.alarm] [for:REL:for] [tomorrow:CONCEPT:time] [morning:CONCEPT:time]"
+ *   → "[set:ROOT:fix/adjust] [alarm:ROOT:time.alarm] [for:REL:for] [tomorrow:ROOT:time] [morning:ROOT:time]"
  */
 export function gloss(tokens: CSTToken[]): string {
   return tokens

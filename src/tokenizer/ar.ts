@@ -200,6 +200,55 @@ function detectRoleAr(stem: string): string | undefined {
   return undefined;
 }
 
+// ── 3b. Root reduction (derived form → triliteral root) ──────────────────────
+//
+// Most Arabic LIT misses are derived noun/verb forms whose ROOT is already in
+// the vocabulary — the lookup just never reduced them (مقتل place-noun of قتل,
+// الزراعة masdar of زرع, العلاقات plural of علق). These helpers propose candidate
+// roots; the caller accepts a candidate ONLY if it resolves to a known stem, so
+// an over-eager reduction can never invent a wrong field.
+
+/** Remove the first interior long vowel (ا/و/ي) — e.g. فعال→فعل, مفعول→مفعل. */
+function removeMedialVowel(s: string): string {
+  for (let i = 1; i < s.length - 1; i++) {
+    if (s[i] === ALEF || s[i] === WAW || s[i] === YEH) {
+      return s.slice(0, i) + s.slice(i + 1);
+    }
+  }
+  return s;
+}
+
+/**
+ * Candidate triliteral roots for a derived form. Strips common noun/plural/
+ * nisba/verb affixes and long-vowel infixes. Returns plausible roots (len 2–4)
+ * other than the input itself; the caller validates each against the vocab.
+ */
+function deriveRootCandidates(stem: string): string[] {
+  const bases = new Set<string>([stem]);
+  const n = stem.length;
+  if (stem.endsWith(HA) && n > 3) bases.add(stem.slice(0, -1)); // ة/ه feminine
+  if (stem.endsWith(ALEF + TA2) && n > 4) bases.add(stem.slice(0, -2)); // ات plural
+  if ((stem.endsWith(WAW + NUN) || stem.endsWith(YEH + NUN)) && n > 4)
+    bases.add(stem.slice(0, -2)); // ون/ين sound plural
+  if ((stem.endsWith(YEH + HA) || stem.endsWith(YEH + TA2)) && n > 4)
+    bases.add(stem.slice(0, -2)); // ية nisba
+  if (stem.endsWith(TA2) && n > 3) bases.add(stem.slice(0, -1)); // verb ت suffix
+  if (stem.endsWith(YEH) && n > 3) bases.add(stem.slice(0, -1)); // nisba ي
+
+  const out = new Set<string>();
+  for (const b of bases) {
+    out.add(b);
+    out.add(removeMedialVowel(b)); // فعال/فعيل → فعل
+    if (b[0] === MIM && b.length >= 4) {
+      const noM = b.slice(1); // مفعل/مفعول → place/instrument/participle
+      out.add(noM);
+      out.add(removeMedialVowel(noM));
+    }
+    if (b[0] === ALEF && b.length >= 4) out.add(b.slice(1)); // أفعل Form IV / elative
+  }
+  return [...out].filter((r) => r.length >= 2 && r.length <= 4 && r !== stem);
+}
+
 // ── 4. Cached normalized lookups ─────────────────────────────────────────────
 
 // We normalize all vocab keys at load time so lookup is O(1)
@@ -210,6 +259,7 @@ let _wordsNorm: Record<string, ArVocabEntry> | null = null;
 let _structNorm: Record<string, string> | null = null;
 let _relNorm: Record<string, string> | null = null;
 let _funcNorm: Set<string> | null = null;
+let _compoundsNorm: Record<string, string> | null = null;
 
 /**
  * words.json (surface forms) — checked at step 5 (before segmentation).
@@ -268,6 +318,18 @@ function getFuncNorm(): Set<string> {
     }
   }
   return _funcNorm;
+}
+
+/** Normalized compound-bigram map. Cached at module level — was previously
+ *  rebuilt on every tokenizeAr() call, making the AR path needlessly slow. */
+function getCompoundsNorm(): Record<string, string> {
+  if (!_compoundsNorm) {
+    _compoundsNorm = {};
+    for (const [k, v] of Object.entries(getArCompounds())) {
+      _compoundsNorm[normalizeAr(k)] = v;
+    }
+  }
+  return _compoundsNorm;
 }
 
 // ── 5. Vocab lookup (words → stems, per BIBLE §8.2 steps 5–6) ───────────────────
@@ -374,12 +436,8 @@ export function tokenizeAr(text: string): CSTOutput {
     );
   }
 
-  // Pre-build normalized compound bigrams map
-  const compounds = getArCompounds();
-  const compoundsNorm: Record<string, string> = {};
-  for (const [k, v] of Object.entries(compounds)) {
-    compoundsNorm[normalizeAr(k)] = v;
-  }
+  // Normalized compound bigrams map (module-cached).
+  const compoundsNorm = getCompoundsNorm();
 
   let i = 0;
   while (i < wordEntries.length) {
@@ -580,9 +638,28 @@ export function tokenizeAr(text: string): CSTOutput {
       }
     }
 
+    // The derived surface form drives ROLE detection (مقتل = place-noun of قتل).
+    // Root reduction below changes matchStem to the bare root for the FIELD only.
+    const roleStem = matchStem;
+
+    // Pattern-based root reduction — reduce a derived noun/verb to its root and
+    // retry the field lookup. Accepts ONLY a reduction that hits a known stem,
+    // so an over-eager reduction can never invent a field (precision-safe).
+    if (!lookup) {
+      for (const cand of deriveRootCandidates(matchStem)) {
+        const hit = lookupField(cand);
+        if (hit) {
+          lookup = hit;
+          matchStem = cand;
+          confidence = 0.6;
+          break;
+        }
+      }
+    }
+
     if (lookup) {
       const { field, gloss } = lookup;
-      const role = detectRoleAr(matchStem);
+      const role = detectRoleAr(roleStem);
       // Emit ROOT first, then a separate ROLE token if morphological pattern detected
       // This is the Arabic algebra: roots × patterns = coverage without enumerating all combos
       tokens.push(

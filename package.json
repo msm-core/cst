@@ -1,6 +1,6 @@
 {
   "name": "@msm-core/cst",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Contextual Semantic Tokenizer — zero-dependency, multilingual, reversible",
   "type": "module",
   "main": "./dist/index.js",
@@ -13,8 +13,17 @@
   },
   "files": [
     "dist",
-    "vocab"
+    "vocab",
+    "README.md",
+    "CHANGELOG.md"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/msm-core/cst.git"
+  },
   "scripts": {
     "vocab": "node scripts/build-vocab.mjs",
     "profile": "node scripts/lit-profiler.mjs",

@@ -5,13 +5,13 @@
 CST converts raw text into structured semantic tokens: each word is mapped to a field, role, relation, or structural marker. The token stream is designed to feed directly into HDC (Hyperdimensional Computing) models, LLM context injection, intent routing, and semantic search — without any external library.
 
 ```
-"Set an alarm for tomorrow morning"
-→ CONCEPT:time.alarm  CONCEPT:time  REL:for  STR:imperative
+"the teacher writes books"
+→ ROOT:person  ROLE:agent  ROOT:write  ROLE:plural  ROOT:art.book  ROLE:plural
 ```
 
 ```
 "سيكتب الكتاب"  (He will write the book)
-→ STR:future  CONCEPT:write  CONCEPT:write
+→ STR:future  ROOT:write  ROOT:write
 ```
 
 ---
@@ -43,40 +43,43 @@ const { tokens } = tokenize("Can you help me write a report?");
 // English
 const en = tokenizeEn("I can't find the document");
 console.log(digest(en.tokens));
-// STR:modal STR:negation CONCEPT:write CONCEPT:write
+// STR:negation ROOT:know.search ROOT:write
 
 // Arabic
 const ar = tokenizeAr("لا أعرف كيف أكتب التقرير");
 console.log(digest(ar.tokens));
-// STR:negation CONCEPT:know STR:how_question CONCEPT:write CONCEPT:write
+// STR:negation STR:question ROOT:write ROOT:work
 
 // LLM context injection
 console.log(toLLMContext(en.tokens));
-// Intent: modal, negation | Topics: write
+// Intent: negation | Topics: know.search, write | Meaning: find=find, locate or discover; document=document, write down
 ```
 
 ---
 
 ## Token Types
 
-Every token has one of four types:
+Every token has one of five types. A content word emits a `ROOT` token and,
+when a morphological pattern is detected, a **separate** `ROLE` token sharing the
+same surface and offset (the "root × role" algebra):
 
-| Type      | Meaning                                      | compact format              |
-| --------- | -------------------------------------------- | --------------------------- |
-| `CONCEPT` | Content word mapped to a semantic field      | `CONCEPT:write:agent`       |
-| `REL`     | Relational/function word (prep, conjunction) | `REL:in`, `REL:causes`      |
-| `STR`     | Sentence-level structural marker             | `STR:negation`, `STR:modal` |
-| `LIT`     | Unknown word, named entity, fallback         | `LIT:iPhone`                |
+| Type   | Meaning                                                   | compact format                 |
+| ------ | --------------------------------------------------------- | ------------------------------ |
+| `ROOT` | Content word mapped to a semantic field                   | `ROOT:write`, `ROOT:tech.code` |
+| `ROLE` | Morphological role of the preceding ROOT (separate token) | `ROLE:agent`, `ROLE:past`      |
+| `REL`  | Relational/function word (prep, conjunction)              | `REL:in`, `REL:causes`         |
+| `STR`  | Sentence-level structural marker                          | `STR:negation`, `STR:future`   |
+| `LIT`  | Unknown word, named entity, fallback                      | `LIT:iPhone`                   |
 
 ### CSTToken interface
 
 ```typescript
 interface CSTToken {
-  type: "CONCEPT" | "REL" | "STR" | "LIT";
+  type: "ROOT" | "ROLE" | "REL" | "STR" | "LIT";
   surface: string; // exact word from input — never dropped
   compact: string; // serializable single string
-  field?: string; // "write" | "tech.code" — CONCEPT only
-  role?: string; // "agent" | "patient" — CONCEPT only
+  field?: string; // "write" | "tech.code" — ROOT only
+  role?: string; // "agent" | "patient" — ROLE only
   relation?: string; // "in" | "causes" — REL only
   structure?: string; // "negation" | "modal" — STR only
   gloss?: string; // human-readable meaning from vocab
@@ -136,16 +139,16 @@ speak.command   speak.greeting   speak.farewell
 | Stems            | 1,491   | Direct word → field lookup                  |
 | Compounds        | 49      | Bigram phrases → field (e.g. "coffee shop") |
 | Function words   | 93      | STR/REL tokens (not, will, if, who, …)      |
-| Morphology rules | 25      | Prefix/suffix stripping → CONCEPT + role    |
+| Morphology rules | 25      | Prefix/suffix stripping → ROOT + role    |
 
 **English pipeline:**
 
 1. Normalize (lowercase, NFKC, expand contractions: `can't` → `can not`)
 2. Bigram compound scan
 3. Function-word check → STR / REL token
-4. Direct stem lookup → CONCEPT
-5. `words.json` surface-form lookup → CONCEPT
-6. Morphological stripping → CONCEPT + role
+4. Direct stem lookup → ROOT
+5. `words.json` surface-form lookup → ROOT
+6. Morphological stripping → ROOT + role
 7. LIT fallback
 
 **Morphological prefix rules:**
@@ -198,7 +201,7 @@ speak.command   speak.greeting   speak.farewell
 4. Structural map → STR token
 5. Relation map → REL token
 6. Function-word skip
-7. **`سـ` future prefix** — strip `س`, check remainder field, emit STR:future + CONCEPT (guarded: no false positives on unrelated words like `سيارة`)
+7. **`سـ` future prefix** — strip `س`, check remainder field, emit STR:future + ROOT (guarded: no false positives on unrelated words like `سيارة`)
 8. Root/direct lookup
 9. Clitic segmentation (و/ف conjunction, ب/ل/ك prep, ال article, object suffixes) → retry lookup
 10. Augmented-verb stripping (Form X/V/I) → retry
@@ -233,7 +236,7 @@ speak.command   speak.greeting   speak.farewell
 
 ## Morphological Roles
 
-When a word is identified as morphologically derived from a known stem, the CONCEPT token carries a `role`:
+When a word is identified as morphologically derived from a known stem, the ROOT token carries a `role`:
 
 | role          | English examples         | Arabic pattern (وزن) |
 | ------------- | ------------------------ | -------------------- |
@@ -295,12 +298,12 @@ detokenize(tokens: CSTToken[]): string
 // Exact reconstruction using char offsets — requires original string
 reconstruct(original: string, tokens: CSTToken[]): string
 
-// Compact debug string: "STR:modal CONCEPT:write REL:for CONCEPT:time.alarm"
+// Compact debug string: "STR:modal ROOT:write REL:for ROOT:time.alarm"
 digest(tokens: CSTToken[]): string
 
 // Human-readable annotation per token
 gloss(tokens: CSTToken[]): string
-// → "[set|CONCEPT:fix:manage/fix] [alarm|CONCEPT:time.alarm:set an alarm]"
+// → "[set|ROOT:fix:manage/fix] [alarm|ROOT:time.alarm:set an alarm]"
 
 // Inject semantic context before an LLM prompt
 toLLMContext(tokens: CSTToken[]): string

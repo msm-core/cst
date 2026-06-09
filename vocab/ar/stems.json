@@ -352,6 +352,10 @@
     "field": "know",
     "gloss": "study;investigate;examine;explore"
   },
+  "عرف": {
+    "field": "know",
+    "gloss": "know, recognize"
+  },
   "استنتاج": {
     "field": "think",
     "gloss": "think, reason, consider"
@@ -980,6 +984,14 @@
     "field": "speak",
     "gloss": "whisper"
   },
+  "حدث": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "دعو": {
+    "field": "speak",
+    "gloss": "call, invite, summon"
+  },
   "تسجيل": {
     "field": "write",
     "gloss": "write, compose, record"
@@ -1111,6 +1123,10 @@
   "اعاليم": {
     "field": "write",
     "gloss": "sign"
+  },
+  "خط": {
+    "field": "write",
+    "gloss": "line, handwriting, script"
   },
   "بصر": {
     "field": "see",
@@ -2111,6 +2127,10 @@
   "تنشو": {
     "field": "create",
     "gloss": "grow;develop"
+  },
+  "نشا": {
+    "field": "create",
+    "gloss": "create, establish, arise, found"
   },
   "اتلف": {
     "field": "destroy",
@@ -3340,6 +3360,10 @@
     "field": "move",
     "gloss": "climb"
   },
+  "عود": {
+    "field": "move",
+    "gloss": "return, come back"
+  },
   "ارسال": {
     "field": "send",
     "gloss": "send, transmit, deliver"
@@ -3421,8 +3445,8 @@
     "gloss": "send, transmit, deliver"
   },
   "وصل": {
-    "field": "send",
-    "gloss": "send, transmit, deliver"
+    "field": "connect",
+    "gloss": "connect, link, join"
   },
   "وصول": {
     "field": "send",
@@ -4524,6 +4548,10 @@
     "field": "connect",
     "gloss": "connect, link"
   },
+  "سلسل": {
+    "field": "connect",
+    "gloss": "chain, series, sequence"
+  },
   "أقم": {
     "field": "exist",
     "gloss": "exist, be present"
@@ -4792,6 +4820,10 @@
     "field": "exist",
     "gloss": "exist;be present;presence"
   },
+  "تم": {
+    "field": "exist",
+    "gloss": "be completed, be accomplished, be done"
+  },
   "اراد": {
     "field": "want",
     "gloss": "want, desire, need"
@@ -4995,6 +5027,10 @@
   "ملكوت": {
     "field": "govern",
     "gloss": "kingdom"
+  },
+  "خلف": {
+    "field": "govern",
+    "gloss": "succeed, caliph, successor"
   },
   "أرغ": {
     "field": "fight",
@@ -5371,6 +5407,10 @@
   "اهجم": {
     "field": "fight",
     "gloss": "attack;strike"
+  },
+  "ثور": {
+    "field": "fight",
+    "gloss": "revolt, revolution, uprising"
   },
   "اثمان": {
     "field": "trade",
@@ -7920,10 +7960,6 @@
     "field": "time",
     "gloss": "time, date, period"
   },
-  "حدث": {
-    "field": "time",
-    "gloss": "time, date, period"
-  },
   "ختم": {
     "field": "time",
     "gloss": "time, date, period"
@@ -8499,6 +8535,10 @@
   "ينصف": {
     "field": "measure",
     "gloss": "measure, quantity, count"
+  },
+  "نطاق": {
+    "field": "measure",
+    "gloss": "scope, range, extent"
   },
   "جدد": {
     "field": "quality",

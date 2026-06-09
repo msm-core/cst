@@ -218,14 +218,18 @@ function stripMorphology(lower: string): StripResult | null {
     // Minimum stem length = 2 chars after stripping
     if (lower.endsWith(suf) && lower.length > suf.length + 2) {
       const stem = lower.slice(0, lower.length - suf.length);
-      // Try stem, stem+e (for silent-e drop: "writ" → "write")
-      const entry = lookupEnStem(stem) ?? lookupEnStem(stem + "e");
-      if (entry)
+      // Try the bare stem, then the silent-e restored form ("writ" → "write").
+      // Report whichever actually matched (the old ternary always returned the
+      // bare stem, so silent-e words got the wrong stem).
+      const direct = lookupEnStem(stem);
+      const withE = direct ? null : lookupEnStem(stem + "e");
+      if (direct || withE) {
         return {
-          stem: entry ? stem : stem + "e",
+          stem: direct ? stem : stem + "e",
           role: rule.role,
           gloss: rule.gloss,
         };
+      }
     }
   }
 
