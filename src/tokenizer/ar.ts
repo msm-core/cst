@@ -219,6 +219,33 @@ function removeMedialVowel(s: string): string {
 }
 
 /**
+ * Weak-root variants — the hardest Arabic reduction case. In derived forms the
+ * weak radical (و/ي) surfaces as ا or is dropped, so the surface never matches
+ * the stored root: عاد↔عود (hollow), دعا↔دعو (defective), مدّ→مد↔مدد (geminate).
+ * Restores them as candidates; the caller still only accepts a known stem.
+ */
+function weakRootVariants(s: string): string[] {
+  const out: string[] = [];
+  const n = s.length;
+  // Geminate: a 2-letter surface is a doubled root — مد→مدد, رد→ردد.
+  if (n === 2) out.push(s + s[1]);
+  // Hollow: a medial weak letter swaps among ا/و/ي — عاد→عود/عيد, قال→قول,
+  // ريد→رود (present-stem ي ↔ root و).
+  for (let i = 1; i < n - 1; i++) {
+    if (s[i] === ALEF || s[i] === WAW || s[i] === YEH) {
+      if (s[i] !== WAW) out.push(s.slice(0, i) + WAW + s.slice(i + 1));
+      if (s[i] !== YEH) out.push(s.slice(0, i) + YEH + s.slice(i + 1));
+    }
+  }
+  // Defective: a final weak letter restores to و/ي — دعا→دعو, رمي→رمو.
+  const last = s[n - 1];
+  if (n >= 3 && (last === ALEF || last === YEH || last === WAW)) {
+    out.push(s.slice(0, -1) + WAW, s.slice(0, -1) + YEH);
+  }
+  return out;
+}
+
+/**
  * Candidate triliteral roots for a derived form. Strips common noun/plural/
  * nisba/verb affixes and long-vowel infixes. Returns plausible roots (len 2–4)
  * other than the input itself; the caller validates each against the vocab.
@@ -234,6 +261,10 @@ function deriveRootCandidates(stem: string): string[] {
     bases.add(stem.slice(0, -2)); // ية nisba
   if (stem.endsWith(TA2) && n > 3) bases.add(stem.slice(0, -1)); // verb ت suffix
   if (stem.endsWith(YEH) && n > 3) bases.add(stem.slice(0, -1)); // nisba ي
+  // Imperfect (present-tense) verb prefix ي/ت/ن/ا — يريد/تريد/نريد → ريد.
+  // Safe because every candidate is still validated against the vocab.
+  if ((stem[0] === YEH || stem[0] === TA2 || stem[0] === NUN || stem[0] === ALEF) && n >= 4)
+    bases.add(stem.slice(1));
 
   const out = new Set<string>();
   for (const b of bases) {
@@ -245,6 +276,12 @@ function deriveRootCandidates(stem: string): string[] {
       out.add(removeMedialVowel(noM));
     }
     if (b[0] === ALEF && b.length >= 4) out.add(b.slice(1)); // أفعل Form IV / elative
+  }
+  // Weak-root restoration on the reduced (2–4 char) candidates.
+  for (const c of [...out]) {
+    if (c.length >= 2 && c.length <= 4) {
+      for (const v of weakRootVariants(c)) out.add(v);
+    }
   }
   return [...out].filter((r) => r.length >= 2 && r.length <= 4 && r !== stem);
 }

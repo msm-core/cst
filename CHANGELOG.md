@@ -5,6 +5,24 @@ Follows [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [0.3.2] — 2026-06-09
+
+### Added
+
+- **Weak-root Arabic morphology** in root reduction: hollow (medial ا↔و/ي — عاد↔عود,
+  قال→قول), defective (final weak — دعا→دعو), geminate (مد→مدد), and imperfect
+  verb-prefix stripping (تريد/يريد→ريد→رود). Still precision-safe — a candidate is
+  accepted only if it resolves to a known root.
+- Larger curated common-root vocab (قول, بيع, جري, فهم, رود, نوم, قوم, لعب, …).
+
+### Impact
+
+- Arabic LIT ratio: ~28%→**24%** (Wikipedia), ~26%→**21%** (everyday Tatoeba),
+  **16%** on short voice-command text (MASSIVE ar-SA). Coverage gate tightened
+  (AR fixture 29%→26%, threshold 0.34→0.30). EN unchanged (12.5%). 123 tests pass.
+
+---
+
 ## [0.3.1] — 2026-06-09
 
 ### Added

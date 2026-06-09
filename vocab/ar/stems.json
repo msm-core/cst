@@ -356,6 +356,10 @@
     "field": "know",
     "gloss": "know, recognize"
   },
+  "سمع": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
   "استنتاج": {
     "field": "think",
     "gloss": "think, reason, consider"
@@ -1128,6 +1132,10 @@
     "field": "write",
     "gloss": "line, handwriting, script"
   },
+  "قلم": {
+    "field": "write",
+    "gloss": "pen, writing"
+  },
   "بصر": {
     "field": "see",
     "gloss": "see, look, observe"
@@ -1383,6 +1391,10 @@
   "اضاء": {
     "field": "see",
     "gloss": "shine;illuminate;lighting;illumination"
+  },
+  "بدو": {
+    "field": "see",
+    "gloss": "appear, seem, look"
   },
   "ألمة": {
     "field": "feel",
@@ -1876,6 +1888,10 @@
     "field": "feel",
     "gloss": "excitement"
   },
+  "بني": {
+    "field": "create",
+    "gloss": "create, produce"
+  },
   "أنش": {
     "field": "create",
     "gloss": "create, produce"
@@ -1913,10 +1929,6 @@
     "gloss": "create, produce"
   },
   "بنى": {
-    "field": "create",
-    "gloss": "create, produce"
-  },
-  "بني": {
     "field": "create",
     "gloss": "create, produce"
   },
@@ -2400,6 +2412,10 @@
     "field": "destroy",
     "gloss": "hurt"
   },
+  "موت": {
+    "field": "destroy",
+    "gloss": "death, die"
+  },
   "بدل": {
     "field": "change",
     "gloss": "change, modification"
@@ -2491,6 +2507,10 @@
   "نتقل": {
     "field": "change",
     "gloss": "move;transfer"
+  },
+  "صير": {
+    "field": "change",
+    "gloss": "become, turn into"
   },
   "اصلاح": {
     "field": "fix",
@@ -3363,6 +3383,18 @@
   "عود": {
     "field": "move",
     "gloss": "return, come back"
+  },
+  "جي": {
+    "field": "move",
+    "gloss": "come, arrive"
+  },
+  "زور": {
+    "field": "move",
+    "gloss": "visit"
+  },
+  "رمي": {
+    "field": "move",
+    "gloss": "throw, cast"
   },
   "ارسال": {
     "field": "send",
@@ -4669,8 +4701,8 @@
     "gloss": "exist, be present"
   },
   "نوم": {
-    "field": "exist",
-    "gloss": "exist, be present"
+    "field": "rest",
+    "gloss": "sleep"
   },
   "نومة": {
     "field": "exist",
@@ -4824,6 +4856,14 @@
     "field": "exist",
     "gloss": "be completed, be accomplished, be done"
   },
+  "قوم": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "حيي": {
+    "field": "exist",
+    "gloss": "live, be alive"
+  },
   "اراد": {
     "field": "want",
     "gloss": "want, desire, need"
@@ -4847,6 +4887,10 @@
   "يريد": {
     "field": "want",
     "gloss": "want, desire, need"
+  },
+  "رود": {
+    "field": "want",
+    "gloss": "want, wish, intend"
   },
   "أمر": {
     "field": "govern",
@@ -5032,6 +5076,10 @@
     "field": "govern",
     "gloss": "succeed, caliph, successor"
   },
+  "ملك": {
+    "field": "possess",
+    "gloss": "possess, own, have"
+  },
   "أرغ": {
     "field": "fight",
     "gloss": "fight, conflict"
@@ -5113,10 +5161,6 @@
     "gloss": "fight, conflict"
   },
   "قهرة": {
-    "field": "fight",
-    "gloss": "fight, conflict"
-  },
-  "قوم": {
     "field": "fight",
     "gloss": "fight, conflict"
   },
@@ -6000,10 +6044,6 @@
     "field": "possess",
     "gloss": "possess, own, have"
   },
-  "ملك": {
-    "field": "possess",
-    "gloss": "possess, own, have"
-  },
   "ملكيه": {
     "field": "possess",
     "gloss": "possess, own, have"
@@ -6303,6 +6343,10 @@
   "عانا": {
     "field": "health",
     "gloss": "suffer"
+  },
+  "شفي": {
+    "field": "health",
+    "gloss": "heal, cure, recover"
   },
   "اداء": {
     "field": "tech",
@@ -6808,6 +6852,10 @@
     "field": "sport",
     "gloss": "sport, athletics, competition"
   },
+  "لعب": {
+    "field": "sport",
+    "gloss": "play, game"
+  },
   "أرض": {
     "field": "nature",
     "gloss": "nature, environment"
@@ -7132,6 +7180,10 @@
     "field": "weather",
     "gloss": "weather, climate"
   },
+  "جو": {
+    "field": "weather",
+    "gloss": "weather, air, atmosphere"
+  },
   "أسد": {
     "field": "animal",
     "gloss": "animal, creature"
@@ -7417,10 +7469,6 @@
     "gloss": "body, physical anatomy"
   },
   "رأسة": {
-    "field": "body",
-    "gloss": "body, physical anatomy"
-  },
-  "سمع": {
     "field": "body",
     "gloss": "body, physical anatomy"
   },
@@ -7751,6 +7799,10 @@
   "مائ": {
     "field": "food",
     "gloss": "water"
+  },
+  "شرب": {
+    "field": "food",
+    "gloss": "drink"
   },
   "حجر": {
     "field": "material",
@@ -8259,6 +8311,10 @@
   "بقرب": {
     "field": "place",
     "gloss": "near"
+  },
+  "باب": {
+    "field": "structure",
+    "gloss": "door, gate, chapter"
   },
   "صغر": {
     "field": "size",
@@ -8827,6 +8883,10 @@
   "وضيئ": {
     "field": "quality",
     "gloss": "pure;clean"
+  },
+  "نور": {
+    "field": "quality",
+    "gloss": "light, bright, illuminate"
   },
   "لاجئ": {
     "field": "person",

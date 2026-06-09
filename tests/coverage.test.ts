@@ -7,9 +7,9 @@
  * from the eval-10k sets), so the gate is CI-portable and does NOT depend on the
  * gitignored plan/data corpora.
  *
- * Baselines (measured 2026-06-09, after root-reduction + curated-root vocab):
+ * Baselines (measured 2026-06-09, after weak-root morphology + curated vocab):
  *   English: 12.5%  →  threshold 0.16
- *   Arabic : 29.1%  →  threshold 0.34
+ *   Arabic : 25.6%  →  threshold 0.30
  *
  * NOTE on the Arabic threshold: AR LIT measured ~26–28% across three
  * independent corpora — Wikipedia (28.3%), everyday Tatoeba MSA (26.1%), and
@@ -74,11 +74,11 @@ describe("Coverage regression guard — Arabic MSA", () => {
     expect(sentences.length).toBeGreaterThanOrEqual(140);
   });
 
-  test("aggregate LIT ratio < 0.34  (baseline 29.1%; proper-noun floor)", () => {
+  test("aggregate LIT ratio < 0.30  (baseline 25.6%)", () => {
     const { ratio, total, lit } = litRatio(sentences, "ar");
-    if (ratio >= 0.34) {
+    if (ratio >= 0.3) {
       console.error(`AR LIT regression: ${(ratio * 100).toFixed(2)}% (${lit}/${total})`);
     }
-    expect(ratio).toBeLessThan(0.34);
+    expect(ratio).toBeLessThan(0.3);
   });
 });

@@ -764,6 +764,10 @@
       {
         "stem": "عرف",
         "gloss": "know, recognize"
+      },
+      {
+        "stem": "سمع",
+        "gloss": "hear, listen"
       }
     ]
   },
@@ -1004,6 +1008,10 @@
       {
         "stem": "انتوا",
         "gloss": "intend;consider"
+      },
+      {
+        "stem": "حلم",
+        "gloss": "dream"
       }
     ]
   },
@@ -2003,6 +2011,10 @@
       {
         "stem": "خط",
         "gloss": "line, handwriting, script"
+      },
+      {
+        "stem": "قلم",
+        "gloss": "pen, writing"
       }
     ]
   },
@@ -2272,6 +2284,14 @@
       {
         "stem": "اضاء",
         "gloss": "shine;illuminate;lighting;illumination"
+      },
+      {
+        "stem": "راي",
+        "gloss": "see, view, opinion"
+      },
+      {
+        "stem": "بدو",
+        "gloss": "appear, seem, look"
       }
     ]
   },
@@ -2870,7 +2890,12 @@
         "gloss": "create, make something new"
       }
     ],
-    "ar": []
+    "ar": [
+      {
+        "stem": "بني",
+        "gloss": "build, construct"
+      }
+    ]
   },
   "create": {
     "en": [
@@ -3437,6 +3462,10 @@
       {
         "stem": "اوجع",
         "gloss": "hurt"
+      },
+      {
+        "stem": "موت",
+        "gloss": "death, die"
       }
     ]
   },
@@ -3615,6 +3644,10 @@
       {
         "word": "تحولت",
         "gloss": "transformed (fem)"
+      },
+      {
+        "stem": "صير",
+        "gloss": "become, turn into"
       }
     ]
   },
@@ -5277,6 +5310,22 @@
       {
         "stem": "عود",
         "gloss": "return, come back"
+      },
+      {
+        "stem": "جي",
+        "gloss": "come, arrive"
+      },
+      {
+        "stem": "دور",
+        "gloss": "turn, rotate, circulate"
+      },
+      {
+        "stem": "زور",
+        "gloss": "visit"
+      },
+      {
+        "stem": "رمي",
+        "gloss": "throw, cast"
       }
     ]
   },
@@ -7012,6 +7061,14 @@
       {
         "stem": "تم",
         "gloss": "be completed, be accomplished, be done"
+      },
+      {
+        "stem": "قوم",
+        "gloss": "rise, stand, undertake"
+      },
+      {
+        "stem": "حيي",
+        "gloss": "live, be alive"
       }
     ]
   },
@@ -7042,7 +7099,12 @@
         "gloss": "break, pause from work"
       }
     ],
-    "ar": []
+    "ar": [
+      {
+        "stem": "نوم",
+        "gloss": "sleep"
+      }
+    ]
   },
   "want": {
     "en": [
@@ -7128,6 +7190,10 @@
       },
       {
         "stem": "يريد"
+      },
+      {
+        "stem": "رود",
+        "gloss": "want, wish, intend"
       }
     ]
   },
@@ -7642,6 +7708,10 @@
       {
         "stem": "خلف",
         "gloss": "succeed, caliph, successor"
+      },
+      {
+        "stem": "ملك",
+        "gloss": "own, rule, possess, king"
       }
     ]
   },
@@ -10760,6 +10830,10 @@
       {
         "stem": "عانا",
         "gloss": "suffer"
+      },
+      {
+        "stem": "شفي",
+        "gloss": "heal, cure, recover"
       }
     ]
   },
@@ -12327,6 +12401,10 @@
       },
       {
         "word": "لاعبين"
+      },
+      {
+        "stem": "لعب",
+        "gloss": "play, game"
       }
     ]
   },
@@ -12890,6 +12968,10 @@
       },
       {
         "stem": "يمطر"
+      },
+      {
+        "stem": "جو",
+        "gloss": "weather, air, atmosphere"
       }
     ]
   },
@@ -14161,6 +14243,10 @@
       {
         "stem": "مائ",
         "gloss": "water"
+      },
+      {
+        "stem": "شرب",
+        "gloss": "drink"
       }
     ]
   },
@@ -16112,7 +16198,12 @@
         "gloss": "tower, tall building"
       }
     ],
-    "ar": []
+    "ar": [
+      {
+        "stem": "باب",
+        "gloss": "door, gate, chapter"
+      }
+    ]
   },
   "size": {
     "en": [
@@ -17616,6 +17707,10 @@
       {
         "word": "أهمية",
         "gloss": "importance"
+      },
+      {
+        "stem": "نور",
+        "gloss": "light, bright, illuminate"
       }
     ]
   },
