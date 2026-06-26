@@ -5,6 +5,36 @@ Follows [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [0.4.0] — 2026-06-26
+
+### Added
+
+- **Contextual Arabic entity tagger (NER).** A LIT-only post-pass that reclassifies an unknown token
+  following an entity **trigger** (title / kinship / place / org marker — الرئيس, مدينة, نهر, بن, شركة …)
+  as a named entity (`person` / `place` / `name`). Safe by construction (touches only LIT tokens → never
+  overrides a real mapping or collides with morphology), high-precision (trigger-gated), offset-aware
+  (handles multi-token words + multi-word names), and it **generalises** — no per-name vocabulary needed.
+- **~520 curated Arabic vocabulary entries** across all fields: routing-domain terms, high-frequency
+  general vocabulary (places→`place`, foreign names→`person`, ordinals/numbers→`measure`, content
+  nouns→fields), geography + unambiguous proper names, core content vocabulary, and **common triliteral
+  verb roots** (so imperfect inflections resolve: يبلغ→`measure`, يخدم→`social`, تنقل→`move`, يظهر→`exist`).
+- Repeatable batch scripts under `scripts/add-ar-*.mjs` (mine → map → measure).
+
+### Impact
+
+- **Arabic LIT ratio: 24.7% → 19.99%** (Wikipedia) — crosses the <20% target for the first time.
+- English LIT unchanged (13.5%). Precision held throughout (L1 fields only; foreign/unambiguous names only —
+  Arabic agent/passive forms like كاتب/محمود collide with morphology and were excluded; homographs skipped).
+- Tests: 123 → **127** (added entity-tagger tests); all pass.
+
+### Notes
+
+- Remaining Arabic gap toward English parity = deeper morphology (weak/Form-X imperfect verbs تصل→وصل,
+  تستخدم) + the open-class proper-noun/abbreviation tail. The entity tagger + scripted vocab batches are
+  the path to continue.
+
+---
+
 ## [0.3.2] — 2026-06-09
 
 ### Added
