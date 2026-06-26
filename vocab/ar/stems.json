@@ -73,8 +73,8 @@
     "gloss": "know, learn, information"
   },
   "سمي": {
-    "field": "know",
-    "gloss": "know, learn, information"
+    "field": "speak",
+    "gloss": "speak, communicate, say"
   },
   "سمية": {
     "field": "know",
@@ -360,6 +360,42 @@
     "field": "body",
     "gloss": "body, physical anatomy"
   },
+  "اكتشف": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "معلومه": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "معرفه": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "وثيقه": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "سجل": {
+    "field": "write",
+    "gloss": "write, compose, record"
+  },
+  "ارشيف": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "وسيله": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "قرا": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "حفظ": {
+    "field": "hold",
+    "gloss": "hold, keep, maintain"
+  },
   "استنتاج": {
     "field": "think",
     "gloss": "think, reason, consider"
@@ -389,8 +425,8 @@
     "gloss": "think, reason, consider"
   },
   "حلل": {
-    "field": "think",
-    "gloss": "think, reason, consider"
+    "field": "science",
+    "gloss": "science, research, discovery"
   },
   "خمن": {
     "field": "think",
@@ -595,6 +631,22 @@
   "انتوا": {
     "field": "think",
     "gloss": "intend;consider"
+  },
+  "افتراض": {
+    "field": "think",
+    "gloss": "think, reason, consider"
+  },
+  "نظره": {
+    "field": "think",
+    "gloss": "think, reason, consider"
+  },
+  "افترض": {
+    "field": "think",
+    "gloss": "think, reason, consider"
+  },
+  "تخيل": {
+    "field": "think",
+    "gloss": "think, reason, consider"
   },
   "اجاب": {
     "field": "speak",
@@ -996,6 +1048,38 @@
     "field": "speak",
     "gloss": "call, invite, summon"
   },
+  "صرح": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "اشار": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "اضاف": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "نفي": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "تصريح": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "عني": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
+  "عبر": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "سرد": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
   "تسجيل": {
     "field": "write",
     "gloss": "write, compose, record"
@@ -1013,10 +1097,6 @@
     "gloss": "write, compose, record"
   },
   "رقمة": {
-    "field": "write",
-    "gloss": "write, compose, record"
-  },
-  "سجل": {
     "field": "write",
     "gloss": "write, compose, record"
   },
@@ -1396,6 +1476,30 @@
     "field": "see",
     "gloss": "appear, seem, look"
   },
+  "مشهد": {
+    "field": "see",
+    "gloss": "see, look, observe"
+  },
+  "رؤيه": {
+    "field": "see",
+    "gloss": "see, look, observe"
+  },
+  "مراقبه": {
+    "field": "see",
+    "gloss": "see, look, observe"
+  },
+  "شهد": {
+    "field": "see",
+    "gloss": "see, look, observe"
+  },
+  "راقب": {
+    "field": "see",
+    "gloss": "see, look, observe"
+  },
+  "ابصر": {
+    "field": "see",
+    "gloss": "see, look, observe"
+  },
   "ألمة": {
     "field": "feel",
     "gloss": "feel, emotion"
@@ -1453,8 +1557,8 @@
     "gloss": "feel, emotion"
   },
   "تمني": {
-    "field": "feel",
-    "gloss": "feel, emotion"
+    "field": "want",
+    "gloss": "want, desire, need"
   },
   "حب": {
     "field": "feel",
@@ -1888,9 +1992,17 @@
     "field": "feel",
     "gloss": "excitement"
   },
+  "رفض": {
+    "field": "decide",
+    "gloss": "decide, resolve"
+  },
+  "اقرار": {
+    "field": "decide",
+    "gloss": "decide, resolve"
+  },
   "بني": {
-    "field": "create",
-    "gloss": "create, produce"
+    "field": "color",
+    "gloss": "color, shade"
   },
   "أنش": {
     "field": "create",
@@ -1901,16 +2013,16 @@
     "gloss": "create, produce"
   },
   "انتاج": {
-    "field": "create",
-    "gloss": "create, produce"
+    "field": "work",
+    "gloss": "work, job, task"
   },
   "انتاجي": {
     "field": "create",
     "gloss": "create, produce"
   },
   "انتج": {
-    "field": "create",
-    "gloss": "create, produce"
+    "field": "work",
+    "gloss": "work, job, task"
   },
   "بدع": {
     "field": "create",
@@ -1945,8 +2057,8 @@
     "gloss": "create, produce"
   },
   "تطور": {
-    "field": "create",
-    "gloss": "create, produce"
+    "field": "science",
+    "gloss": "science, research, discovery"
   },
   "خالق": {
     "field": "create",
@@ -2141,8 +2253,32 @@
     "gloss": "grow;develop"
   },
   "نشا": {
+    "field": "exist",
+    "gloss": "exist, be present"
+  },
+  "انشا": {
     "field": "create",
-    "gloss": "create, establish, arise, found"
+    "gloss": "create, produce"
+  },
+  "صنع": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "اخترع": {
+    "field": "create",
+    "gloss": "create, produce"
+  },
+  "تاسيس": {
+    "field": "create",
+    "gloss": "create, produce"
+  },
+  "تشييد": {
+    "field": "create",
+    "gloss": "create, produce"
+  },
+  "اسس": {
+    "field": "create",
+    "gloss": "create, produce"
   },
   "اتلف": {
     "field": "destroy",
@@ -2512,15 +2648,47 @@
     "field": "change",
     "gloss": "become, turn into"
   },
+  "عدل": {
+    "field": "change",
+    "gloss": "change, modification"
+  },
+  "تقدم": {
+    "field": "change",
+    "gloss": "change, modification"
+  },
+  "تغيير": {
+    "field": "change",
+    "gloss": "change, modification"
+  },
   "اصلاح": {
     "field": "fix",
     "gloss": "fix, repair, set"
   },
-  "اصلاحات": {
+  "توسع": {
+    "field": "change",
+    "gloss": "change, modification"
+  },
+  "غيّر": {
+    "field": "change",
+    "gloss": "change, modification"
+  },
+  "حوّل": {
+    "field": "change",
+    "gloss": "change, modification"
+  },
+  "عدّل": {
+    "field": "change",
+    "gloss": "change, modification"
+  },
+  "طوّر": {
+    "field": "change",
+    "gloss": "change, modification"
+  },
+  "اصلح": {
     "field": "fix",
     "gloss": "fix, repair, set"
   },
-  "اصلح": {
+  "اصلاحات": {
     "field": "fix",
     "gloss": "fix, repair, set"
   },
@@ -2820,6 +2988,46 @@
     "field": "work",
     "gloss": "success"
   },
+  "وظيفه": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "مهنه": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "مصنع": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "اداره": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "عامل": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "استخدم": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "خدم": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "ادار": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "نظم": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "شغل": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
   "فتح": {
     "field": "enable",
     "gloss": "enable, allow, turn on"
@@ -2869,8 +3077,8 @@
     "gloss": "move, travel, transport"
   },
   "حمل": {
-    "field": "move",
-    "gloss": "move, travel, transport"
+    "field": "hold",
+    "gloss": "hold, keep, maintain"
   },
   "حمولات": {
     "field": "move",
@@ -2977,10 +3185,6 @@
     "gloss": "fly, aviation"
   },
   "طيرة": {
-    "field": "move",
-    "gloss": "move, travel, transport"
-  },
-  "عبر": {
     "field": "move",
     "gloss": "move, travel, transport"
   },
@@ -3396,6 +3600,66 @@
     "field": "move",
     "gloss": "throw, cast"
   },
+  "اجره": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "مترو": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "عباره": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "سائق": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "غادر": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "سفينه": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "عبور": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "وصول": {
+    "field": "send",
+    "gloss": "send, transmit, deliver"
+  },
+  "مغادره": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "تنقل": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "اطلاق": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "اطلق": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "نقل": {
+    "field": "send",
+    "gloss": "send, transmit, deliver"
+  },
+  "سار": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "تحرك": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
   "ارسال": {
     "field": "send",
     "gloss": "send, transmit, deliver"
@@ -3460,10 +3724,6 @@
     "field": "send",
     "gloss": "send, transmit, deliver"
   },
-  "نقل": {
-    "field": "send",
-    "gloss": "send, transmit, deliver"
-  },
   "نقلة": {
     "field": "send",
     "gloss": "send, transmit, deliver"
@@ -3473,16 +3733,12 @@
     "gloss": "send, transmit, deliver"
   },
   "وجه": {
-    "field": "send",
-    "gloss": "send, transmit, deliver"
+    "field": "body",
+    "gloss": "body, physical anatomy"
   },
   "وصل": {
     "field": "connect",
     "gloss": "connect, link, join"
-  },
-  "وصول": {
-    "field": "send",
-    "gloss": "send, transmit, deliver"
   },
   "يبث": {
     "field": "send",
@@ -3531,6 +3787,10 @@
   "اوفد": {
     "field": "send",
     "gloss": "dispatch;send"
+  },
+  "وزّع": {
+    "field": "send",
+    "gloss": "send, transmit, deliver"
   },
   "اهدى": {
     "field": "give",
@@ -3691,6 +3951,14 @@
   "وزع": {
     "field": "give",
     "gloss": "distribute"
+  },
+  "اهدي": {
+    "field": "give",
+    "gloss": "give, donate, share"
+  },
+  "سلّم": {
+    "field": "give",
+    "gloss": "give, donate, share"
   },
   "أخذ": {
     "field": "take",
@@ -3924,6 +4192,22 @@
     "field": "take",
     "gloss": "consume"
   },
+  "اخذ": {
+    "field": "take",
+    "gloss": "take, get, receive"
+  },
+  "تلقي": {
+    "field": "take",
+    "gloss": "take, get, receive"
+  },
+  "استلم": {
+    "field": "take",
+    "gloss": "take, get, receive"
+  },
+  "حصل": {
+    "field": "possess",
+    "gloss": "possess, own, have"
+  },
   "التقاء": {
     "field": "gather",
     "gloss": "gather, collect, group"
@@ -4012,10 +4296,6 @@
     "field": "hold",
     "gloss": "hold, keep, maintain"
   },
-  "حفظ": {
-    "field": "hold",
-    "gloss": "hold, keep, maintain"
-  },
   "حمايه": {
     "field": "hold",
     "gloss": "hold, keep, maintain"
@@ -4061,8 +4341,8 @@
     "gloss": "hold, keep, maintain"
   },
   "شمل": {
-    "field": "hold",
-    "gloss": "hold, keep, maintain"
+    "field": "contain",
+    "gloss": "contain, hold inside"
   },
   "شملة": {
     "field": "hold",
@@ -4272,6 +4552,10 @@
     "field": "hold",
     "gloss": "protect;defend"
   },
+  "ضم": {
+    "field": "hold",
+    "gloss": "hold, keep, maintain"
+  },
   "ابدو": {
     "field": "open",
     "gloss": "initiate;begin"
@@ -4331,6 +4615,18 @@
   "افرج": {
     "field": "open",
     "gloss": "release;liberate;set free"
+  },
+  "بدا": {
+    "field": "open",
+    "gloss": "open, unlock, start"
+  },
+  "افتتح": {
+    "field": "open",
+    "gloss": "open, unlock, start"
+  },
+  "دشّن": {
+    "field": "open",
+    "gloss": "open, unlock, start"
   },
   "تبهرج": {
     "field": "hide",
@@ -4521,8 +4817,8 @@
     "gloss": "connect, link"
   },
   "شبكه": {
-    "field": "connect",
-    "gloss": "connect, link"
+    "field": "tech",
+    "gloss": "technology, digital, software"
   },
   "شبكي": {
     "field": "connect",
@@ -4864,6 +5160,30 @@
     "field": "exist",
     "gloss": "live, be alive"
   },
+  "نشاه": {
+    "field": "exist",
+    "gloss": "exist, be present"
+  },
+  "حدوث": {
+    "field": "exist",
+    "gloss": "exist, be present"
+  },
+  "اختفاء": {
+    "field": "exist",
+    "gloss": "exist, be present"
+  },
+  "بقاء": {
+    "field": "exist",
+    "gloss": "exist, be present"
+  },
+  "اختفي": {
+    "field": "exist",
+    "gloss": "exist, be present"
+  },
+  "زال": {
+    "field": "exist",
+    "gloss": "exist, be present"
+  },
   "اراد": {
     "field": "want",
     "gloss": "want, desire, need"
@@ -5080,6 +5400,26 @@
     "field": "possess",
     "gloss": "possess, own, have"
   },
+  "حزب": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "وزاره": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "سفير": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
+  "ولي": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "ساس": {
+    "field": "govern",
+    "gloss": "govern, politics, authority"
+  },
   "أرغ": {
     "field": "fight",
     "gloss": "fight, conflict"
@@ -5117,8 +5457,8 @@
     "gloss": "fight, conflict"
   },
   "دفع": {
-    "field": "fight",
-    "gloss": "fight, conflict"
+    "field": "trade",
+    "gloss": "trade, commerce, business"
   },
   "دفعة": {
     "field": "fight",
@@ -5456,6 +5796,42 @@
     "field": "fight",
     "gloss": "revolt, revolution, uprising"
   },
+  "دفاع": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "نزاع": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "اعتداء": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "ثوره": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "تمرد": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "حصار": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "ضرب": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "دافع": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "غزا": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
   "اثمان": {
     "field": "trade",
     "gloss": "trade, commerce, business"
@@ -5712,6 +6088,50 @@
     "field": "trade",
     "gloss": "rent;hire"
   },
+  "بتكوين": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "محفظه": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "مشتريات": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "شحنه": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "ضريبه": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "تصدير": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "استيراد": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "ميزانيه": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "باع": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "اشتري": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "موّل": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
   "أمم": {
     "field": "social",
     "gloss": "social, community"
@@ -5749,10 +6169,6 @@
     "gloss": "social, community"
   },
   "جورة": {
-    "field": "social",
-    "gloss": "social, community"
-  },
-  "حزب": {
     "field": "social",
     "gloss": "social, community"
   },
@@ -5813,10 +6229,6 @@
     "gloss": "social, community"
   },
   "نسب": {
-    "field": "social",
-    "gloss": "social, community"
-  },
-  "نسبة": {
     "field": "social",
     "gloss": "social, community"
   },
@@ -5996,6 +6408,54 @@
     "field": "social",
     "gloss": "join forces;unite;associate"
   },
+  "حظر": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "تهنئه": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "تعليق": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "علاقه": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "منظمه": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "جمعيه": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "مؤسسه": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "وفد": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "ساعد": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "زار": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "خاطب": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "اجتمع": {
+    "field": "social",
+    "gloss": "social, community"
+  },
   "حاصل": {
     "field": "possess",
     "gloss": "possess, own, have"
@@ -6005,10 +6465,6 @@
     "gloss": "possess, own, have"
   },
   "حرمة": {
-    "field": "possess",
-    "gloss": "possess, own, have"
-  },
-  "حصل": {
     "field": "possess",
     "gloss": "possess, own, have"
   },
@@ -6224,6 +6680,54 @@
     "field": "science",
     "gloss": "science, research, discovery"
   },
+  "ثقب": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "حمض": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "نووي": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "زلزال": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "انشطار": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "صفائح": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "تكتوني": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "مريخ": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "نسبيه": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "وراثه": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "جرب": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "قاس": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
   "ادويه": {
     "field": "health",
     "gloss": "health, medicine, wellbeing"
@@ -6249,8 +6753,8 @@
     "gloss": "health, medicine, wellbeing"
   },
   "تنفس": {
-    "field": "health",
-    "gloss": "health, medicine, wellbeing"
+    "field": "body",
+    "gloss": "body, physical anatomy"
   },
   "جراح": {
     "field": "health",
@@ -6285,8 +6789,8 @@
     "gloss": "health, medicine, wellbeing"
   },
   "صيدليه": {
-    "field": "health",
-    "gloss": "health, medicine, wellbeing"
+    "field": "place",
+    "gloss": "place, location"
   },
   "ضغط": {
     "field": "health",
@@ -6347,6 +6851,66 @@
   "شفي": {
     "field": "health",
     "gloss": "heal, cure, recover"
+  },
+  "صداع": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "حمي": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "طفح": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "غثيان": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "زكام": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "دوار": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "ايبوبروفين": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "مسكن": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "كوليسترول": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "لياقه": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "عدوي": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "اصابه": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "تطعيم": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "عالج": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "اصيب": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
   },
   "اداء": {
     "field": "tech",
@@ -6508,6 +7072,42 @@
     "field": "tech",
     "gloss": "technology, digital, software"
   },
+  "بايثون": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "سكريبت": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "نود": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "جيت": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "هاب": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "متغير": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "حزمه": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "تعطل": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "تسرب": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
   "اغاني": {
     "field": "art",
     "gloss": "art, creative work"
@@ -6573,10 +7173,6 @@
     "gloss": "art, creative work"
   },
   "شاغل": {
-    "field": "art",
-    "gloss": "art, creative work"
-  },
-  "شغل": {
     "field": "art",
     "gloss": "art, creative work"
   },
@@ -6692,10 +7288,6 @@
     "field": "art",
     "gloss": "art, creative work"
   },
-  "وظيفه": {
-    "field": "art",
-    "gloss": "art, creative work"
-  },
   "يرسم": {
     "field": "art",
     "gloss": "art, creative work"
@@ -6747,6 +7339,54 @@
   "اهزوج": {
     "field": "art",
     "gloss": "song"
+  },
+  "جاز": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "البوم": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "سبوتيفاي": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "وثائقي": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "نتفليكس": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "جرافيك": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "لوحه": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "ثقافه": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "تمثيل": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "اخراج": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "معرض": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "تحفه": {
+    "field": "art",
+    "gloss": "art, creative work"
   },
   "ابطال": {
     "field": "sport",
@@ -6856,6 +7496,38 @@
     "field": "sport",
     "gloss": "play, game"
   },
+  "فورمولا": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "ميداليه": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "ماراثون": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "غولف": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "ميسي": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "كريكت": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "رغبي": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "منتخب": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
   "أرض": {
     "field": "nature",
     "gloss": "nature, environment"
@@ -6917,8 +7589,8 @@
     "gloss": "nature, environment"
   },
   "مناخ": {
-    "field": "nature",
-    "gloss": "nature, environment"
+    "field": "weather",
+    "gloss": "weather, climate"
   },
   "مناخي": {
     "field": "nature",
@@ -7027,6 +7699,14 @@
   "مومائ": {
     "field": "nature",
     "gloss": "desert"
+  },
+  "طبيعه": {
+    "field": "nature",
+    "gloss": "nature, environment"
+  },
+  "سماء": {
+    "field": "nature",
+    "gloss": "nature, environment"
   },
   "اشعه": {
     "field": "weather",
@@ -7183,6 +7863,26 @@
   "جو": {
     "field": "weather",
     "gloss": "weather, air, atmosphere"
+  },
+  "رطوبه": {
+    "field": "weather",
+    "gloss": "weather, climate"
+  },
+  "ضباب": {
+    "field": "weather",
+    "gloss": "weather, climate"
+  },
+  "جبهه": {
+    "field": "weather",
+    "gloss": "weather, climate"
+  },
+  "هطول": {
+    "field": "weather",
+    "gloss": "weather, climate"
+  },
+  "اعصار": {
+    "field": "weather",
+    "gloss": "weather, climate"
   },
   "أسد": {
     "field": "animal",
@@ -7348,6 +8048,18 @@
     "field": "animal",
     "gloss": "lion"
   },
+  "طائر": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "ثديي": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
+  "زواحف": {
+    "field": "animal",
+    "gloss": "animal, creature"
+  },
   "ثمر": {
     "field": "plant",
     "gloss": "plant, vegetation"
@@ -7437,6 +8149,14 @@
     "gloss": "plant, vegetation"
   },
   "ينبت": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "محصول": {
+    "field": "plant",
+    "gloss": "plant, vegetation"
+  },
+  "بذور": {
     "field": "plant",
     "gloss": "plant, vegetation"
   },
@@ -7587,6 +8307,14 @@
   "نعمان": {
     "field": "body",
     "gloss": "blood"
+  },
+  "عاش": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
+  },
+  "نام": {
+    "field": "body",
+    "gloss": "body, physical anatomy"
   },
   "أكل": {
     "field": "food",
@@ -7804,6 +8532,58 @@
     "field": "food",
     "gloss": "drink"
   },
+  "معكرونه": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "كيكه": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "يخنه": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "مقلاه": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "سوشي": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "نودلز": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "عجين": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "شوكولاته": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "سلمون": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "وصفه": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "شراب": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "حلوي": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "مشروب": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
   "حجر": {
     "field": "material",
     "gloss": "material, substance"
@@ -7897,6 +8677,10 @@
     "gloss": "material, substance"
   },
   "ينسج": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "معدن": {
     "field": "material",
     "gloss": "material, substance"
   },
@@ -8164,6 +8948,42 @@
     "field": "time",
     "gloss": "evening time"
   },
+  "مؤقت": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "اسبوعي": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "تقويم": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "فتره": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "لحظه": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "ماضي": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "مستقبل": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "حاضر": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "موسم": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
   "بلد": {
     "field": "place",
     "gloss": "place, location"
@@ -8233,10 +9053,6 @@
     "gloss": "place, location"
   },
   "موضة": {
-    "field": "place",
-    "gloss": "place, location"
-  },
-  "ولي": {
     "field": "place",
     "gloss": "place, location"
   },
@@ -8311,6 +9127,22 @@
   "بقرب": {
     "field": "place",
     "gloss": "near"
+  },
+  "بنزين": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "ساحه": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "محافظه": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "ضاحيه": {
+    "field": "place",
+    "gloss": "place, location"
   },
   "باب": {
     "field": "structure",
@@ -8484,19 +9316,23 @@
     "field": "size",
     "gloss": "make grow;increase;exceed"
   },
+  "طول": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "ضخم": {
+    "field": "size",
+    "gloss": "size, dimension, scale"
+  },
+  "هائل": {
+    "field": "size",
+    "gloss": "size, dimension, scale"
+  },
   "بعد": {
     "field": "measure",
     "gloss": "measure, quantity, count"
   },
   "حسب": {
-    "field": "measure",
-    "gloss": "measure, quantity, count"
-  },
-  "طول": {
-    "field": "measure",
-    "gloss": "measure, quantity, count"
-  },
-  "قاس": {
     "field": "measure",
     "gloss": "measure, quantity, count"
   },
@@ -8595,6 +9431,46 @@
   "نطاق": {
     "field": "measure",
     "gloss": "scope, range, extent"
+  },
+  "كميه": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "مقدار": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "اجمالي": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "احصاء": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "ميل": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "نقص": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "بلغ": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "عدّ": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "زاد": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "قدّر": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
   },
   "جدد": {
     "field": "quality",
@@ -8888,11 +9764,43 @@
     "field": "quality",
     "gloss": "light, bright, illuminate"
   },
+  "جوده": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "صفه": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "ميزه": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "حاله": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "طابع": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
+  "خاصيه": {
+    "field": "quality",
+    "gloss": "quality, property, attribute"
+  },
   "لاجئ": {
     "field": "person",
     "gloss": "refugee"
   },
   "مليئه": {
+    "field": "contain",
+    "gloss": "contain, hold inside"
+  },
+  "تضمّن": {
+    "field": "contain",
+    "gloss": "contain, hold inside"
+  },
+  "احتوي": {
     "field": "contain",
     "gloss": "contain, hold inside"
   },

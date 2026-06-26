@@ -453,6 +453,57 @@ function splitArWords(
   return results;
 }
 
+// ── 7b. Entity tagging — contextual, LIT-only post-pass ──────────────────────
+//
+// Arabic has no capitalisation, so proper nouns can't be spotted by surface alone. Instead we use
+// CONTEXT: an UNKNOWN (LIT) token that follows an entity TRIGGER (a title / place / org marker) is
+// almost always a named entity. Reclassify it as ROOT with field person|place|name. SAFE by
+// construction — it only ever touches LIT tokens, so it can never override a real mapping or collide
+// with morphology; and it requires a trigger, so precision stays high. Offset-aware: skips a word's
+// own extra tokens (e.g. an attached ROLE) and tags up to 3 following unknown words (multi-word names).
+
+const _trigKey = (s: string): string =>
+  normalizeAr(s).replace(/^(وال|فال|بال|كال|ال|و|ف)/, "");
+
+// High-precision triggers only (titles/kinship/place/org). Avoid ones often followed by common nouns
+// (لاعب/فنان/عالم → may precede a domain word, not a name).
+const PERSON_TRIG = new Set([
+  "رئيس", "ملك", "ملكه", "دكتور", "سيد", "سيده", "شيخ", "امير", "اميره", "وزير", "قائد", "زعيم", "نبي",
+  "سلطان", "خليفه", "امام", "قديس", "بابا", "سير", "لورد", "جنرال", "مشير", "كولونيل", "بن", "ابن", "ابو",
+]);
+const PLACE_TRIG = new Set([
+  "مدينه", "دوله", "جمهوريه", "مملكه", "اماره", "ولايه", "مقاطعه", "محافظه", "اقليم", "قريه", "نهر",
+  "جبل", "بحر", "بحيره", "خليج", "جزيره", "صحراء", "عاصمه", "ميناء", "مطار", "معبد", "قلعه", "سد", "هضبه",
+]);
+const ORG_TRIG = new Set([
+  "شركه", "منظمه", "جامعه", "مؤسسه", "وزاره", "حزب", "نادي", "جمعيه", "بنك", "مصرف", "كليه", "معهد",
+  "اتحاد", "رابطه", "صحيفه", "قناه", "وكاله", "منتخب",
+]);
+
+function tagArEntities(tokens: CSTToken[]): void {
+  for (let i = 0; i < tokens.length - 1; i++) {
+    const key = _trigKey(tokens[i].surface);
+    const field = PERSON_TRIG.has(key) ? "person" : PLACE_TRIG.has(key) ? "place" : ORG_TRIG.has(key) ? "name" : null;
+    if (!field) continue;
+    const trigOff = tokens[i].offset[0];
+    let j = i + 1;
+    while (j < tokens.length && tokens[j].offset[0] === trigOff) j++; // skip trigger's own extra tokens
+    let tagged = 0;
+    while (j < tokens.length && tagged < 3 && tokens[j].type === "LIT") {
+      const t = tokens[j];
+      t.type = "ROOT";
+      t.field = field;
+      t.compact = `ROOT:${field}`;
+      t.gloss = field === "person" ? "named person" : field === "place" ? "named place" : "named entity";
+      t.confidence = 0.6;
+      const off0 = t.offset[0];
+      j++;
+      while (j < tokens.length && tokens[j].offset[0] === off0) j++; // advance to the next word
+      tagged++;
+    }
+  }
+}
+
 // ── 8. Main tokenizer ─────────────────────────────────────────────────────────
 
 export function tokenizeAr(text: string): CSTOutput {
@@ -726,6 +777,7 @@ export function tokenizeAr(text: string): CSTOutput {
     i++;
   }
 
+  tagArEntities(tokens); // contextual NER post-pass (LIT-only) before coverage is computed
   return { tokens, coverage: computeCoverageAr(tokens) };
 }
 

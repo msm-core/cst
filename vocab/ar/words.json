@@ -288,6 +288,14 @@
     "field": "think",
     "gloss": "think, reason, consider"
   },
+  "يعتقد": {
+    "field": "think",
+    "gloss": "think, reason, consider"
+  },
+  "اعتقاد": {
+    "field": "think",
+    "gloss": "think, reason, consider"
+  },
   "اخبرني": {
     "field": "speak",
     "gloss": "speak, communicate, say"
@@ -628,6 +636,22 @@
     "field": "create",
     "gloss": "create, produce"
   },
+  "تأسست": {
+    "field": "create",
+    "gloss": "create, produce"
+  },
+  "أسس": {
+    "field": "create",
+    "gloss": "create, produce"
+  },
+  "تأسس": {
+    "field": "create",
+    "gloss": "create, produce"
+  },
+  "إنشاء": {
+    "field": "create",
+    "gloss": "create, produce"
+  },
   "احذف": {
     "field": "destroy",
     "gloss": "destroy, break"
@@ -905,8 +929,8 @@
     "gloss": "trade, commerce, business"
   },
   "منظمة": {
-    "field": "work",
-    "gloss": "organization"
+    "field": "social",
+    "gloss": "social, community"
   },
   "مكتب": {
     "field": "work",
@@ -943,6 +967,26 @@
   "اضطلع": {
     "field": "work",
     "gloss": "undertook, took on"
+  },
+  "صناعة": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "الصناعات": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "منصب": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "النشاط": {
+    "field": "work",
+    "gloss": "work, job, task"
+  },
+  "الإنتاج": {
+    "field": "work",
+    "gloss": "work, job, task"
   },
   "الحافله": {
     "field": "move",
@@ -1024,6 +1068,26 @@
     "field": "move",
     "gloss": "distance"
   },
+  "الطائرات": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "طائرات": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "اتجاه": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "انتشار": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "سقوط": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
   "إشعار": {
     "field": "send",
     "gloss": "send, transmit, deliver"
@@ -1099,6 +1163,22 @@
   "الطبيعة": {
     "field": "exist",
     "gloss": "nature"
+  },
+  "وفاة": {
+    "field": "exist",
+    "gloss": "exist, be present"
+  },
+  "وفيات": {
+    "field": "exist",
+    "gloss": "exist, be present"
+  },
+  "وفاته": {
+    "field": "exist",
+    "gloss": "exist, be present"
+  },
+  "نشأة": {
+    "field": "exist",
+    "gloss": "exist, be present"
   },
   "احتاج": {
     "field": "want",
@@ -1381,6 +1461,26 @@
     "gloss": "fight, conflict"
   },
   "معركه": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "المسلحة": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "الحلفاء": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "اغتيال": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "حلف": {
+    "field": "fight",
+    "gloss": "fight, conflict"
+  },
+  "الحرب": {
     "field": "fight",
     "gloss": "fight, conflict"
   },
@@ -1747,6 +1847,22 @@
   "ديون": {
     "field": "trade",
     "gloss": "debts"
+  },
+  "الناتج": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "ناتج": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "الصادرات": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "الواردات": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
   },
   "أسرة": {
     "field": "social",
@@ -2124,6 +2240,86 @@
     "field": "social",
     "gloss": "agency, bureau"
   },
+  "مؤتمر": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "المؤتمر": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "قبائل": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "القبائل": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "أفراد": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "اتفاق": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "المنظمات": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "السلطات": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "اللجنة": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "اليهود": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "الدروز": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "المسيحيين": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "الأتراك": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "المغول": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "الأمريكيين": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "الصليبيين": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "الأوروبيين": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "العثمانيين": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "تمتلك": {
+    "field": "possess",
+    "gloss": "possess, own, have"
+  },
+  "يمتلك": {
+    "field": "possess",
+    "gloss": "possess, own, have"
+  },
   "إحصاء": {
     "field": "science",
     "gloss": "science, research, discovery"
@@ -2297,6 +2493,46 @@
     "gloss": "science, research, discovery"
   },
   "علماء": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "العناصر": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "عناصر": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "الحمض": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "النووي": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "الانشطار": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "الصفائح": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "التكتونية": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "المريخ": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "الكواكب": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "الذرة": {
     "field": "science",
     "gloss": "science, research, discovery"
   },
@@ -3108,6 +3344,22 @@
     "field": "sport",
     "gloss": "sport, athletics, competition"
   },
+  "كأس": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "الأولمبية": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "لكرة": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "الدوري": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
   "ارض": {
     "field": "nature",
     "gloss": "nature, environment"
@@ -3808,6 +4060,34 @@
     "field": "material",
     "gloss": "material, substance"
   },
+  "النفط": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "نفط": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "المادة": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "مادة": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "الغاز": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "الحديد": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
+  "النحاس": {
+    "field": "material",
+    "gloss": "material, substance"
+  },
   "ابيض": {
     "field": "color",
     "gloss": "color, shade"
@@ -4239,6 +4519,38 @@
   "حتى": {
     "field": "time",
     "gloss": "until"
+  },
+  "عهد": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "العهد": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "مواليد": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "الغريغوري": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "الكبيسة": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "ميلادي": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "هجري": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "التاريخية": {
+    "field": "time",
+    "gloss": "time, date, period"
   },
   "إقليم": {
     "field": "place",
@@ -4916,6 +5228,314 @@
     "field": "place",
     "gloss": "Tripoli"
   },
+  "بريطانيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "أفغانستان": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "النمسا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "كوريا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "حلب": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "لاتفيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "كرواتيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "نابلس": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الضفة": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "هولندا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "فنلندا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الخليج": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "بولندا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "البلطيق": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "إثيوبيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "رومانيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "أوكرانيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "المجر": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الدنمارك": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "السودان": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الأندلس": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الشام": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "وادي": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "جزر": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الجزر": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "المحيط": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الأطلسي": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "قلعة": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "مقر": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "إمارة": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "قمة": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الأهلية": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "البيضاء": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "إسرائيل": {
+    "field": "place.country",
+    "gloss": "country, nation"
+  },
+  "اليونان": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "ألمانيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "إيطاليا": {
+    "field": "place.country",
+    "gloss": "Italy"
+  },
+  "الأردن": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "السعودية": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "عُمان": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الإمارات": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الصومال": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "موريتانيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "جيبوتي": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "إيران": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "أمريكا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "إسبانيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "البرتغال": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "بلجيكا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "سويسرا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "السويد": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "النرويج": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "المكسيك": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "البرازيل": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الأرجنتين": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "أستراليا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "نيوزيلندا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "باكستان": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "بنغلاديش": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "إندونيسيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "ماليزيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "تايلاند": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "فيتنام": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الفلبين": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "نيجيريا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "كينيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "أوروبا": {
+    "field": "place.country",
+    "gloss": "Europe"
+  },
+  "آسيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "أفريقيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "إفريقيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "إسطنبول": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "أبوظبي": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الإسكندرية": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "صنعاء": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "أنحاء": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "القطاع": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "قطاع": {
+    "field": "place",
+    "gloss": "place, location"
+  },
   "اثنان": {
     "field": "measure",
     "gloss": "measure, quantity, count"
@@ -5161,6 +5781,90 @@
     "gloss": "measure, quantity, count"
   },
   "الأعداد": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "التاسع": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "الخامس": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "السابع": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "السادس": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "خمس": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "آلاف": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "ملايين": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "المئتين": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "نقطة": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "درجات": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "مرتبة": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "المرتبة": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "كثافة": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "كتلة": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "الكتلة": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "ارتفاع": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "نسبة": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "جزء": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "الجزء": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "زاوية": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "أجزاء": {
     "field": "measure",
     "gloss": "measure, quantity, count"
   },
@@ -5728,6 +6432,218 @@
     "field": "person",
     "gloss": "immigrants (plural)"
   },
+  "هتلر": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "تشرشل": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "مانديلا": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "لويس": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "أينشتاين": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "أرسطو": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "جورج": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "هنري": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "ستيف": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "جيمس": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "تشارلز": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "ويليام": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "نابليون": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "ديزني": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "أوباما": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "بوتين": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "ستالين": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "غاندي": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "إبراهيم": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "إسماعيل": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "يوسف": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "يعقوب": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "إسحاق": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "موسى": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "هارون": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "داود": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "سليمان": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "عيسى": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "يحيى": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "زكريا": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "مريم": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "عائشة": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "فاطمة": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "خديجة": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "إدريس": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "يونس": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "آدم": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "نوح": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "روزفلت": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "كينيدي": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "لينكولن": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "ماركس": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "فرويد": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "بيتهوفن": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "موزارت": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "شكسبير": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "نيوتن": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "غاليليو": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "باشا": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "الإمبراطور": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "فيروز": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "النبي": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "نسمة": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
   "باسم": {
     "field": "name",
     "gloss": "name, person identifier"
@@ -5759,6 +6675,90 @@
   "لقب": {
     "field": "name",
     "gloss": "title, nickname"
+  },
+  "الفلسطينية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "الإسرائيلية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "الرومانية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "الروماني": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "اليونانية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "اللاتينية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "الإيطالية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "النازية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "الصهيونية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "فلسطيني": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "بريطاني": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "كويتي": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "تايمز": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "طالبان": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "الكاثوليكية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "الكاثوليك": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "الأممية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "الفيدرالية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "تضم": {
+    "field": "contain",
+    "gloss": "contain, hold inside"
+  },
+  "يضم": {
+    "field": "contain",
+    "gloss": "contain, hold inside"
+  },
+  "تشمل": {
+    "field": "contain",
+    "gloss": "contain, hold inside"
   },
   "نموذج": {
     "field": "tech.ai",
@@ -5992,21 +6992,9 @@
     "field": "place.country",
     "gloss": "country, nation"
   },
-  "إسرائيل": {
-    "field": "place.country",
-    "gloss": "country, nation"
-  },
   "الغربية": {
     "field": "place.country",
     "gloss": "country, nation"
-  },
-  "إيطاليا": {
-    "field": "place.country",
-    "gloss": "Italy"
-  },
-  "أوروبا": {
-    "field": "place.country",
-    "gloss": "Europe"
   },
   "أوروبية": {
     "field": "place.country",
