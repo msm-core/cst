@@ -306,3 +306,25 @@ describe("Coverage (Arabic)", () => {
     }
   });
 });
+
+// ── Entity tagging (contextual NER, LIT-only post-pass) ─────────────────────────
+
+describe("Entity tagging (Arabic)", () => {
+  const fieldOf = (sentence: string, surface: string) =>
+    tokenizeAr(sentence).tokens.find((t) => t.surface === surface)?.field;
+
+  test("unknown name after a person trigger → person", () => {
+    expect(fieldOf("التقى الرئيس أوباما", "أوباما")).toBe("person");
+  });
+  test("unknown name after a place trigger → place", () => {
+    expect(fieldOf("زار مدينة سراييفو", "سراييفو")).toBe("place");
+  });
+  test("does NOT fire without a trigger (unknown stays LIT)", () => {
+    const t = tokenizeAr("سراييفو جميلة").tokens.find((x) => x.surface === "سراييفو");
+    expect(t?.type).toBe("LIT");
+  });
+  test("never reclassifies a KNOWN word after a trigger (precision)", () => {
+    const t = tokenizeAr("مدينة كبيرة").tokens.find((x) => x.surface === "كبيرة");
+    expect(t?.field).not.toBe("place");
+  });
+});
