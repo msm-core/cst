@@ -1164,6 +1164,22 @@
     "field": "exist",
     "gloss": "nature"
   },
+  "وفاة": {
+    "field": "exist",
+    "gloss": "exist, be present"
+  },
+  "وفيات": {
+    "field": "exist",
+    "gloss": "exist, be present"
+  },
+  "وفاته": {
+    "field": "exist",
+    "gloss": "exist, be present"
+  },
+  "نشأة": {
+    "field": "exist",
+    "gloss": "exist, be present"
+  },
   "احتاج": {
     "field": "want",
     "gloss": "want, desire, need"
@@ -1832,6 +1848,22 @@
     "field": "trade",
     "gloss": "debts"
   },
+  "الناتج": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "ناتج": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "الصادرات": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "الواردات": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
   "أسرة": {
     "field": "social",
     "gloss": "social, community"
@@ -2241,6 +2273,42 @@
     "gloss": "social, community"
   },
   "اللجنة": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "اليهود": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "الدروز": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "المسيحيين": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "الأتراك": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "المغول": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "الأمريكيين": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "الصليبيين": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "الأوروبيين": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "العثمانيين": {
     "field": "social",
     "gloss": "social, community"
   },
@@ -4460,6 +4528,30 @@
     "field": "time",
     "gloss": "time, date, period"
   },
+  "مواليد": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "الغريغوري": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "الكبيسة": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "ميلادي": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "هجري": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "التاريخية": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
   "إقليم": {
     "field": "place",
     "gloss": "place, location"
@@ -5432,6 +5524,18 @@
     "field": "place",
     "gloss": "place, location"
   },
+  "أنحاء": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "القطاع": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "قطاع": {
+    "field": "place",
+    "gloss": "place, location"
+  },
   "اثنان": {
     "field": "measure",
     "gloss": "measure, quantity, count"
@@ -5745,6 +5849,22 @@
     "gloss": "measure, quantity, count"
   },
   "نسبة": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "جزء": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "الجزء": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "زاوية": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "أجزاء": {
     "field": "measure",
     "gloss": "measure, quantity, count"
   },
@@ -6504,6 +6624,26 @@
     "field": "person",
     "gloss": "person, individual"
   },
+  "باشا": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "الإمبراطور": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "فيروز": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "النبي": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "نسمة": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
   "باسم": {
     "field": "name",
     "gloss": "name, person identifier"
@@ -6535,6 +6675,78 @@
   "لقب": {
     "field": "name",
     "gloss": "title, nickname"
+  },
+  "الفلسطينية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "الإسرائيلية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "الرومانية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "الروماني": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "اليونانية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "اللاتينية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "الإيطالية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "النازية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "الصهيونية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "فلسطيني": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "بريطاني": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "كويتي": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "تايمز": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "طالبان": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "الكاثوليكية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "الكاثوليك": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "الأممية": {
+    "field": "name",
+    "gloss": "name, person identifier"
+  },
+  "الفيدرالية": {
+    "field": "name",
+    "gloss": "name, person identifier"
   },
   "تضم": {
     "field": "contain",

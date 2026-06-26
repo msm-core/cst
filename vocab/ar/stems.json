@@ -73,8 +73,8 @@
     "gloss": "know, learn, information"
   },
   "سمي": {
-    "field": "know",
-    "gloss": "know, learn, information"
+    "field": "speak",
+    "gloss": "speak, communicate, say"
   },
   "سمية": {
     "field": "know",
@@ -381,6 +381,10 @@
     "gloss": "write, compose, record"
   },
   "ارشيف": {
+    "field": "know",
+    "gloss": "know, learn, information"
+  },
+  "وسيله": {
     "field": "know",
     "gloss": "know, learn, information"
   },
@@ -1048,6 +1052,10 @@
     "field": "speak",
     "gloss": "speak, communicate, say"
   },
+  "عني": {
+    "field": "speak",
+    "gloss": "speak, communicate, say"
+  },
   "تسجيل": {
     "field": "write",
     "gloss": "write, compose, record"
@@ -1453,6 +1461,10 @@
     "gloss": "see, look, observe"
   },
   "مراقبه": {
+    "field": "see",
+    "gloss": "see, look, observe"
+  },
+  "شهد": {
     "field": "see",
     "gloss": "see, look, observe"
   },
@@ -1947,6 +1959,14 @@
   "وجيف": {
     "field": "feel",
     "gloss": "excitement"
+  },
+  "رفض": {
+    "field": "decide",
+    "gloss": "decide, resolve"
+  },
+  "اقرار": {
+    "field": "decide",
+    "gloss": "decide, resolve"
   },
   "بني": {
     "field": "color",
@@ -3553,6 +3573,14 @@
     "gloss": "move, travel, transport"
   },
   "تنقل": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "اطلاق": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "اطلق": {
     "field": "move",
     "gloss": "move, travel, transport"
   },
@@ -9241,6 +9269,14 @@
     "gloss": "measure, quantity, count"
   },
   "احصاء": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "ميل": {
+    "field": "measure",
+    "gloss": "measure, quantity, count"
+  },
+  "نقص": {
     "field": "measure",
     "gloss": "measure, quantity, count"
   },
