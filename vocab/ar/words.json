@@ -5284,6 +5284,154 @@
     "field": "place.country",
     "gloss": "Italy"
   },
+  "الأردن": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "السعودية": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "عُمان": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الإمارات": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الصومال": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "موريتانيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "جيبوتي": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "إيران": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "أمريكا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "إسبانيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "البرتغال": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "بلجيكا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "سويسرا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "السويد": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "النرويج": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "المكسيك": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "البرازيل": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الأرجنتين": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "أستراليا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "نيوزيلندا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "باكستان": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "بنغلاديش": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "إندونيسيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "ماليزيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "تايلاند": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "فيتنام": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الفلبين": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "نيجيريا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "كينيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "أوروبا": {
+    "field": "place.country",
+    "gloss": "Europe"
+  },
+  "آسيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "أفريقيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "إفريقيا": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "إسطنبول": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "أبوظبي": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "الإسكندرية": {
+    "field": "place",
+    "gloss": "place, location"
+  },
+  "صنعاء": {
+    "field": "place",
+    "gloss": "place, location"
+  },
   "اثنان": {
     "field": "measure",
     "gloss": "measure, quantity, count"
@@ -6236,6 +6384,126 @@
     "field": "person",
     "gloss": "person, individual"
   },
+  "إبراهيم": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "إسماعيل": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "يوسف": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "يعقوب": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "إسحاق": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "موسى": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "هارون": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "داود": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "سليمان": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "عيسى": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "يحيى": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "زكريا": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "مريم": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "عائشة": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "فاطمة": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "خديجة": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "إدريس": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "يونس": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "آدم": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "نوح": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "روزفلت": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "كينيدي": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "لينكولن": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "ماركس": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "فرويد": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "بيتهوفن": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "موزارت": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "شكسبير": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "نيوتن": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
+  "غاليليو": {
+    "field": "person",
+    "gloss": "person, individual"
+  },
   "باسم": {
     "field": "name",
     "gloss": "name, person identifier"
@@ -6515,10 +6783,6 @@
   "الغربية": {
     "field": "place.country",
     "gloss": "country, nation"
-  },
-  "أوروبا": {
-    "field": "place.country",
-    "gloss": "Europe"
   },
   "أوروبية": {
     "field": "place.country",
