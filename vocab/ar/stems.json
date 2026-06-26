@@ -3396,6 +3396,22 @@
     "field": "move",
     "gloss": "throw, cast"
   },
+  "اجره": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "مترو": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "عباره": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
+  "سائق": {
+    "field": "move",
+    "gloss": "move, travel, transport"
+  },
   "ارسال": {
     "field": "send",
     "gloss": "send, transmit, deliver"
@@ -5712,6 +5728,22 @@
     "field": "trade",
     "gloss": "rent;hire"
   },
+  "بتكوين": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "محفظه": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "مشتريات": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
+  "شحنه": {
+    "field": "trade",
+    "gloss": "trade, commerce, business"
+  },
   "أمم": {
     "field": "social",
     "gloss": "social, community"
@@ -5996,6 +6028,18 @@
     "field": "social",
     "gloss": "join forces;unite;associate"
   },
+  "حظر": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "تهنئه": {
+    "field": "social",
+    "gloss": "social, community"
+  },
+  "تعليق": {
+    "field": "social",
+    "gloss": "social, community"
+  },
   "حاصل": {
     "field": "possess",
     "gloss": "possess, own, have"
@@ -6224,6 +6268,42 @@
     "field": "science",
     "gloss": "science, research, discovery"
   },
+  "ثقب": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "حمض": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "نووي": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "زلزال": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "انشطار": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "صفائح": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "تكتوني": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "مريخ": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
+  "نسبيه": {
+    "field": "science",
+    "gloss": "science, research, discovery"
+  },
   "ادويه": {
     "field": "health",
     "gloss": "health, medicine, wellbeing"
@@ -6285,8 +6365,8 @@
     "gloss": "health, medicine, wellbeing"
   },
   "صيدليه": {
-    "field": "health",
-    "gloss": "health, medicine, wellbeing"
+    "field": "place",
+    "gloss": "place, location"
   },
   "ضغط": {
     "field": "health",
@@ -6347,6 +6427,46 @@
   "شفي": {
     "field": "health",
     "gloss": "heal, cure, recover"
+  },
+  "صداع": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "حمي": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "طفح": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "غثيان": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "زكام": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "دوار": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "ايبوبروفين": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "مسكن": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "كوليسترول": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
+  },
+  "لياقه": {
+    "field": "health",
+    "gloss": "health, medicine, wellbeing"
   },
   "اداء": {
     "field": "tech",
@@ -6505,6 +6625,42 @@
     "gloss": "technology, digital, software"
   },
   "يهند": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "بايثون": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "سكريبت": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "نود": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "جيت": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "هاب": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "متغير": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "حزمه": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "تعطل": {
+    "field": "tech",
+    "gloss": "technology, digital, software"
+  },
+  "تسرب": {
     "field": "tech",
     "gloss": "technology, digital, software"
   },
@@ -6748,6 +6904,30 @@
     "field": "art",
     "gloss": "song"
   },
+  "جاز": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "البوم": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "سبوتيفاي": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "وثائقي": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "نتفليكس": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
+  "جرافيك": {
+    "field": "art",
+    "gloss": "art, creative work"
+  },
   "ابطال": {
     "field": "sport",
     "gloss": "sport, athletics, competition"
@@ -6855,6 +7035,34 @@
   "لعب": {
     "field": "sport",
     "gloss": "play, game"
+  },
+  "فورمولا": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "ميداليه": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "ماراثون": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "غولف": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "ميسي": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "كريكت": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
+  },
+  "رغبي": {
+    "field": "sport",
+    "gloss": "sport, athletics, competition"
   },
   "أرض": {
     "field": "nature",
@@ -7183,6 +7391,22 @@
   "جو": {
     "field": "weather",
     "gloss": "weather, air, atmosphere"
+  },
+  "رطوبه": {
+    "field": "weather",
+    "gloss": "weather, climate"
+  },
+  "ضباب": {
+    "field": "weather",
+    "gloss": "weather, climate"
+  },
+  "جبهه": {
+    "field": "weather",
+    "gloss": "weather, climate"
+  },
+  "هطول": {
+    "field": "weather",
+    "gloss": "weather, climate"
   },
   "أسد": {
     "field": "animal",
@@ -7804,6 +8028,46 @@
     "field": "food",
     "gloss": "drink"
   },
+  "معكرونه": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "كيكه": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "يخنه": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "مقلاه": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "سوشي": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "نودلز": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "عجين": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "شوكولاته": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "سلمون": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
+  "وصفه": {
+    "field": "food",
+    "gloss": "food, eat"
+  },
   "حجر": {
     "field": "material",
     "gloss": "material, substance"
@@ -8164,6 +8428,18 @@
     "field": "time",
     "gloss": "evening time"
   },
+  "مؤقت": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "اسبوعي": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
+  "تقويم": {
+    "field": "time",
+    "gloss": "time, date, period"
+  },
   "بلد": {
     "field": "place",
     "gloss": "place, location"
@@ -8311,6 +8587,10 @@
   "بقرب": {
     "field": "place",
     "gloss": "near"
+  },
+  "بنزين": {
+    "field": "place",
+    "gloss": "place, location"
   },
   "باب": {
     "field": "structure",
